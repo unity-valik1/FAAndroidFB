@@ -118,9 +118,9 @@ public class FirebaseMessagingActivityGenerator : IPreprocessBuildWithReport {
 "}}"
   };
   private readonly string BaseActivityClass = "UnityPlayerActivity";
-  private readonly string BaseGameActivityClass = "UnityPlayerGameActivity";
+        private readonly string BaseGameActivityClass = "UnityPlayerGameActivity";
 
-  private readonly string GeneratedFileTag = "FirebaseMessagingActivityGenerated";
+        private readonly string GeneratedFileTag = "FirebaseMessagingActivityGenerated";
   // If this tag is present on the generated file, it will not be replaced.
   private readonly string PreserveTag = "FirebasePreserve";
 

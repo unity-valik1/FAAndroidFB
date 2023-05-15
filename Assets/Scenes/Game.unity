@@ -29517,6 +29517,7 @@ GameObject:
   - component: {fileID: 1094693681}
   - component: {fileID: 1094693682}
   - component: {fileID: 1094693683}
+  - component: {fileID: 1094693684}
   m_Layer: 0
   m_Name: aaa
   m_TagString: Untagged
@@ -29563,6 +29564,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ed2c73658b041f49ae4d6ddfe48992a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1094693684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094693680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0949a1a179cd52d429d67fd4475fb15e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnAdOpeningEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAdClosedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1102624102
 GameObject:
   m_ObjectHideFlags: 0
@@ -45320,6 +45339,18 @@ MonoBehaviour:
       - m_Target: {fileID: 229805043}
         m_TargetAssemblyTypeName: ActiveMenu, Assembly-CSharp
         m_MethodName: rrr
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1094693684}
+        m_TargetAssemblyTypeName: AdScript, Assembly-CSharp
+        m_MethodName: ShowAd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
