@@ -31,10 +31,13 @@ public class AdScript : MonoBehaviour
         Debug.Log("Loading the interstitial ad.");
 
         // create our request used to load the ad.
-        var adRequest = new AdRequest.Builder()
-                .AddKeyword("unity-admob-sample")
-                .Build();
-
+        //var adRequest = new AdRequest.Builder()
+        //        .AddKeyword("unity-admob-sample")
+        //        .Build();
+        var adRequest = new AdRequest
+        {
+            Keywords = new HashSet<string> { "unity-admob-sample" }
+        };
         // send the request to load the ad.
         InterstitialAd.Load(_adUnitId, adRequest,
             (InterstitialAd ad, LoadAdError error) =>

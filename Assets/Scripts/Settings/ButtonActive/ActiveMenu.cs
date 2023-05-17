@@ -277,13 +277,11 @@ public class ActiveMenu : MonoBehaviour
     public void rrr()
     {
         gameManager.saveGo = 0;
-        gameManager.recGo = 0;
         gameManager.SavePlayer6();
     }
-    public void rrrNo()
-    {
-        gameManager.saveGo = 1;
-        gameManager.recGo = 1;
-        gameManager.SavePlayer6();
-    }
+    //public void rrrNo()
+    //{
+    //    gameManager.saveGo = 1;
+    //    gameManager.SavePlayer6();
+    //}
 }

@@ -104,7 +104,6 @@ public class GameManager : MonoBehaviour
 
     [Header("Покупка")]
     [Tooltip("Сохраненки")] public int saveGo = 0;//S
-    [Tooltip("Реклама")] public int recGo = 0;//S
 
     private void Awake()
     {
@@ -119,7 +118,6 @@ public class GameManager : MonoBehaviour
         PlayerIAP data = SaveSystem.LoadPlayer6();
 
         saveGo = data.saveGo;
-        recGo = data.recGo;
 
     }
     public void ResetPlayer6()
