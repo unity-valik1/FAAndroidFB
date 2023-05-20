@@ -229,6 +229,7 @@ public class Typography : MonoBehaviour
 
     public void S()
     {
+        FireBaseAnalyticsEvents.EventsTyphographySmall("TyphographySmall");
         s = 1;
         m = 0;
         l = 0;
@@ -243,6 +244,7 @@ public class Typography : MonoBehaviour
 
     public void M()
     {
+        FireBaseAnalyticsEvents.EventsTyphographyMiddle("TyphographyMiddle");
         s = 0;
         m = 1;
         l = 0;
@@ -257,6 +259,7 @@ public class Typography : MonoBehaviour
 
     public void L()
     {
+        FireBaseAnalyticsEvents.EventsTyphographyLarge("TyphographyLarge");
         s = 0;
         m = 0;
         l = 1;

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
@@ -33,11 +34,13 @@ public class ActiveMenu : MonoBehaviour
 
 
     [SerializeField] private Image imgMenuAnim;
-
+    public int ii;
+    public int oo;
+    public int aa;
     //public List<GameObject> buttons;
 
 
-    private void Start()
+    public void Start()
     {
         imgMenuAnim.gameObject.SetActive(true);
         anim.Play("LoadingMenuAnim");
@@ -63,7 +66,7 @@ public class ActiveMenu : MonoBehaviour
     }
     public void HowToPlayNewGame()
     {
-        FireBaseAnalyticsEvents.EventsCharter("charter");
+        FireBaseAnalyticsEvents.EventsNewGame("NewGame", ii, oo, aa);
         imgMenuAnim.gameObject.SetActive(true);
         anim.Play("MenuStartAnim");
 
@@ -99,7 +102,7 @@ public class ActiveMenu : MonoBehaviour
     //}
     public void YesNewGameButton()
     {
-        //FireBaseAnalyticsEvents.EventsCharter("жопа");
+        FireBaseAnalyticsEvents.EventsNewGameStart("NewGameStart");
         imgMenuAnim.gameObject.SetActive(true);
         anim.Play("MenuStartAnim");
 
@@ -126,6 +129,13 @@ public class ActiveMenu : MonoBehaviour
     }
 
     public void BackLossGame()
+    {
+        FireBaseAnalyticsEvents.EventsNewGameClose("NewGameClose");
+        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
+        saveAndLoad.lossGameStart.gameObject.SetActive(false);
+        saveAndLoad.lossGameLoad.gameObject.SetActive(false);
+    }
+    public void BackLoadGame()
     {
         camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
         saveAndLoad.lossGameStart.gameObject.SetActive(false);
@@ -193,6 +203,7 @@ public class ActiveMenu : MonoBehaviour
  
     public void Settings()
     {
+        FireBaseAnalyticsEvents.EventsSettings("Settings");
         menuUI.gameObject.SetActive(false);
         loadUI.gameObject.SetActive(false);
         settingsUI.gameObject.SetActive(true);
@@ -202,6 +213,7 @@ public class ActiveMenu : MonoBehaviour
     }
     public void About()
     {
+        FireBaseAnalyticsEvents.EventsAbout("About");
         menuUI.gameObject.SetActive(false);
         aboutUI.gameObject.SetActive(true);
         howToPlayUI.gameObject.SetActive(false);
@@ -234,13 +246,14 @@ public class ActiveMenu : MonoBehaviour
     //}
     public void Achievements()
     {
+        FireBaseAnalyticsEvents.EventsAchievements("Achievements");
         menuUI.gameObject.SetActive(false);
         achievementsUI.gameObject.SetActive(true);
-
     }
 
     public void Typography()
     {
+        FireBaseAnalyticsEvents.EventsTyphography("Typhography");
         settingsUI.gameObject.SetActive(false);
         typographyUI.gameObject.SetActive(true);
 
@@ -248,6 +261,7 @@ public class ActiveMenu : MonoBehaviour
 
     public void Theme()
     {
+        FireBaseAnalyticsEvents.EventsTheme("Theme");
         settingsUI.gameObject.SetActive(false);
         themeUI.gameObject.SetActive(true);
 
@@ -255,6 +269,7 @@ public class ActiveMenu : MonoBehaviour
 
     public void Sounds()
     {
+        FireBaseAnalyticsEvents.EventsMusicSounds("MusicSounds");
         settingsUI.gameObject.SetActive(false);
         soundsUI.gameObject.SetActive(true);
     }
@@ -268,6 +283,7 @@ public class ActiveMenu : MonoBehaviour
     }
     public void Invoker2()
     {
+        FireBaseAnalyticsEvents.EventsContinueGame("ContinueGame");
         menuUI.gameObject.SetActive(false);
         loadUI.gameObject.SetActive(false);
         musicMenu.MenuMusic();

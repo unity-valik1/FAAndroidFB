@@ -911,6 +911,7 @@ public class SaveAndLoad : MonoBehaviour
     }
     public void ResetGame1()
     {
+        FireBaseAnalyticsEvents.EventsLoadGameDelete("LoadGameDelete");
         save1Text.text = "Empty slot";
         load1Text.text = save1Text.text;
         nameLocation1.text = "";
@@ -944,6 +945,7 @@ public class SaveAndLoad : MonoBehaviour
     }
     public void ResetGame2()
     {
+        FireBaseAnalyticsEvents.EventsLoadGameDelete("LoadGameDelete");
         save2Text.text = "Empty slot";
         load2Text.text = save2Text.text;
         nameLocation2.text = "";
@@ -977,6 +979,7 @@ public class SaveAndLoad : MonoBehaviour
     }
     public void ResetGame3()
     {
+        FireBaseAnalyticsEvents.EventsLoadGameDelete("LoadGameDelete");
         save3Text.text = "Empty slot";
         load3Text.text = save3Text.text;
         nameLocation3.text = "";
@@ -1010,6 +1013,7 @@ public class SaveAndLoad : MonoBehaviour
     }
     public void ResetGame4()
     {
+        FireBaseAnalyticsEvents.EventsLoadGameDelete("LoadGameDelete");
         save4Text.text = "Empty slot";
         load4Text.text = save4Text.text;
         nameLocation4.text = "";
@@ -1043,6 +1047,7 @@ public class SaveAndLoad : MonoBehaviour
     }
     public void ResetGame5()
     {
+        FireBaseAnalyticsEvents.EventsLoadGameDelete("LoadGameDelete");
         save5Text.text = "Empty slot";
         load5Text.text = save5Text.text;
         nameLocation5.text = "";
@@ -1086,10 +1091,12 @@ public class SaveAndLoad : MonoBehaviour
     {
         if(gameManager.saveGo == 1)
         {
+            FireBaseAnalyticsEvents.EventsSave_Button("Save_Button");
             saveSave.gameObject.SetActive(true);
         }
         else
         {
+            FireBaseAnalyticsEvents.EventsSave_Button_Buy("Save_Button_Buy");
             money.gameObject.SetActive(true);
         }
     }

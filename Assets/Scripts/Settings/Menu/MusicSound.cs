@@ -51,6 +51,7 @@ public class MusicSound : MonoBehaviour
     {
         if (sound.sound == 1)
         {
+            FireBaseAnalyticsEvents.EventsSoundsButtonOff("SoundsButtonOff");
             sound.sound = 0;
             soundText.text = "Sounds: OFF";
             sound.SoundSettings();
@@ -59,6 +60,7 @@ public class MusicSound : MonoBehaviour
         }
         else
         {
+            FireBaseAnalyticsEvents.EventsSoundsButtonOn("SoundsButtonOn");
             sound.sound = 1;
             soundText.text = "Sounds: ON";
             sound.SoundSettings();
@@ -85,6 +87,7 @@ public class MusicSound : MonoBehaviour
     {
         if (musicMenu.music == 1)
         {
+            FireBaseAnalyticsEvents.EventsMusicButtonOff("MusicButtonOff");
             musicMenu.music = 0;
             musicText.text = "Music: OFF";
             musicMenu.MenuMusicStart();
@@ -93,6 +96,7 @@ public class MusicSound : MonoBehaviour
         }
         else
         {
+            FireBaseAnalyticsEvents.EventsMusicButtonOn("MusicButtonOn");
             musicMenu.music = 1;
             musicText.text = "Music: ON";
             musicMenu.MenuMusicStart();

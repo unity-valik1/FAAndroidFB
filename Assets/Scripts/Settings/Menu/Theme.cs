@@ -87,6 +87,7 @@ public class Theme : MonoBehaviour
 
     public void ThemeLight()
     {
+        FireBaseAnalyticsEvents.EventsThemeLight("ThemeLight");
         theme = 1;
         ThemeSettings();
         PlayerPrefs.SetInt("theme", theme);
@@ -95,6 +96,7 @@ public class Theme : MonoBehaviour
 
     public void ThemeDark()
     {
+        FireBaseAnalyticsEvents.EventsThemeDark("ThemeDark");
         theme = 0;
         ThemeSettings();
         PlayerPrefs.SetInt("theme", theme);

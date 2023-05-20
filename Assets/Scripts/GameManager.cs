@@ -220,6 +220,7 @@ public class GameManager : MonoBehaviour
         //_musicCamp.CampMusicOnOff();
         //_musicForest.ForestMusicOnOff();
         SavePlayer();
+        FireBaseAnalyticsEvents.EventsLoadGame1("LoadGame1");
     }
 
     public void ResetPlayer1()
@@ -270,6 +271,7 @@ public class GameManager : MonoBehaviour
         //_musicCamp.CampMusicOnOff();
         //_musicForest.ForestMusicOnOff();
         SavePlayer();
+        FireBaseAnalyticsEvents.EventsLoadGame2("LoadGame2");
     }
 
     public void ResetPlayer2()
@@ -320,6 +322,7 @@ public class GameManager : MonoBehaviour
         //_musicCamp.CampMusicOnOff();
         //_musicForest.ForestMusicOnOff();
         SavePlayer();
+        FireBaseAnalyticsEvents.EventsLoadGame3("LoadGame3");
     }
 
     public void ResetPlayer3()
@@ -370,6 +373,7 @@ public class GameManager : MonoBehaviour
         //_musicCamp.CampMusicOnOff();
         //_musicForest.ForestMusicOnOff();
         SavePlayer();
+        FireBaseAnalyticsEvents.EventsLoadGame4("LoadGame4");
     }
 
     public void ResetPlayer4()
@@ -420,6 +424,7 @@ public class GameManager : MonoBehaviour
         //_musicCamp.CampMusicOnOff();
         //_musicForest.ForestMusicOnOff();
         SavePlayer();
+        FireBaseAnalyticsEvents.EventsLoadGame5("LoadGame5");
     }
 
     public void ResetPlayer5()

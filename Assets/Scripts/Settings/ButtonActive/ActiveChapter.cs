@@ -841,6 +841,7 @@ public class ActiveChapter : MonoBehaviour
 
     public void ButtonC13()
     {
+        FireBaseAnalyticsEvents.EventsWinGame("WinGame");
         imgBlackout.gameObject.SetActive(true);
         if (theme.theme == 0)
         {

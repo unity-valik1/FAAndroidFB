@@ -23,7 +23,12 @@ public class Purchaser : MonoBehaviour
 
     private void RemoveAds()
     {
+        FireBaseAnalyticsEvents.EventsPurchase_Successfull("Purchase_Successfull");
         gameManager.saveGo = 1;
         gameManager.SavePlayer6();
+    }
+    public void rrr()
+    {
+        FireBaseAnalyticsEvents.EventsPurchase_Continue("Purchase_Continue");
     }
 }
