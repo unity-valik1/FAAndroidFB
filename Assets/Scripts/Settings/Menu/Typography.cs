@@ -19,7 +19,7 @@ public class Typography : MonoBehaviour
     [Tooltip("60")] public TMP_Text[] typographyText60;
     [Tooltip("60")] public TMP_Text[] typographyText72;
     [Tooltip("84")] public TMP_Text[] typographyText84;
-    [Tooltip("126")] public TMP_Text[] typographyText126;
+    [Tooltip("126")] public TMP_Text[] typographyText108;
 
     [Header("״נטפע ג ׀׀")]
     [Tooltip("ּאכוםüךטי רנטפע")] public int s = 0;//PP
@@ -208,21 +208,21 @@ public class Typography : MonoBehaviour
 
         if (s == 1)
         {
-            for (int i = 0; i < typographyText126.Length; ++i)
-                typographyText126[i].fontSize = 120;
+            for (int i = 0; i < typographyText108.Length; ++i)
+                typographyText108[i].fontSize = 102;
         } //126
         else if (m == 1)
         {
-            for (int i = 0; i < typographyText126.Length; ++i)
+            for (int i = 0; i < typographyText108.Length; ++i)
             {
-                typographyText126[i].fontSize = 126;
+                typographyText108[i].fontSize = 108;
             }
         }
         else if (l == 1)
         {
-            for (int i = 0; i < typographyText126.Length; ++i)
+            for (int i = 0; i < typographyText108.Length; ++i)
             {
-                typographyText126[i].fontSize = 132;
+                typographyText108[i].fontSize = 114;
             }
         }
     }

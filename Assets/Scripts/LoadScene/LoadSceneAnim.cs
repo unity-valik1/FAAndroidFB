@@ -10,11 +10,14 @@ public class LoadSceneAnim : MonoBehaviour
 {
 
     [SerializeField] private Animation anim;
+    [SerializeField] private RulesPP rulesPP;
 
-    public int sceneID;
+    public int sceneID=1;
+    public int sceneID1=2;
     public GameObject img1;
     public GameObject img2;
     public GameObject img3;
+    public GameObject img4;
     public string textLoading;
     public TMP_Text textLoadingDot;
     public GameObject textSay1;
@@ -30,11 +33,25 @@ public class LoadSceneAnim : MonoBehaviour
 
     void Start()
     {
+        if (PlayerPrefs.HasKey("rules"))
+        {
+            rulesPP.rules = PlayerPrefs.GetInt("rules");
+        }
         ImgRandom();
         SayRandom();
         textLoading = textLoadingDot.text;
         textLoadingDot.text = "Loading";
-        Invoke("Invoker", 3f);
+
+        if (rulesPP.rules==0)
+        {
+            Invoke("Invoker", 4f);
+            Invoke("Invoker1", 2f);
+        }
+        if (rulesPP.rules == 1)
+        {
+            Invoke("Invoker2", 5f);
+            Invoke("Invoker3", 3f);
+        }
     }
 
     private void Update()
@@ -71,49 +88,82 @@ public class LoadSceneAnim : MonoBehaviour
         {
             nextText -= Time.deltaTime;
         }
-        print(nextText);
     }
 
     IEnumerator AsyncLoad()
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneID);
-
+        print("111");
         while (operation.isDone)
         {
             yield return null;
         }
-        anim.Play("LoadingScenesAnim");
-        yield return new WaitForSeconds(2.0f);
-
+        print("333");
+        yield return new WaitForSeconds(0.1f);
         // Загружаем следующую сцену
         SceneManager.LoadScene(sceneID);
+    }
+    IEnumerator AsyncLoad1()
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneID1);
+        print("111");
+        while (operation.isDone)
+        {
+            yield return null;
+        }
+        //print("333");
+        //yield return new WaitForSeconds(0.1f);
+        //// Загружаем следующую сцену
+        //SceneManager.LoadScene(sceneID1);
+    }
+    public void Invoker1()
+    {
+        anim.Play("LoadingScenesAnim");
+    }
+    public void Invoker3()
+    {
+        anim.Play("LoadingScenesAnim");
     }
 
     public void Invoker()
     {
         StartCoroutine(AsyncLoad());
     }
+    public void Invoker2()
+    {
+        StartCoroutine(AsyncLoad1());
+    }
 
     public void ImgRandom()
     {
-        int a = Random.Range(0, 3);
+        int a = Random.Range(0, 4);
         if (a == 0)
         {
             img1.SetActive(true);
             img2.SetActive(false);
             img3.SetActive(false);
+            img4.SetActive(false);
         }
         else if (a == 1)
         {
             img1.SetActive(false);
             img2.SetActive(true);
             img3.SetActive(false);
+            img4.SetActive(false);
         }
         else if (a == 2)
         {
             img1.SetActive(false);
             img2.SetActive(false);
             img3.SetActive(true);
+            img4.SetActive(false);
+        }
+        else if (a == 3)
+        {
+            img1.SetActive(false);
+            img2.SetActive(false);
+            img3.SetActive(false);
+            img4.SetActive(true);
         }
     }
 

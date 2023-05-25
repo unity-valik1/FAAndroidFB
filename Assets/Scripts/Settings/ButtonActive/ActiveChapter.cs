@@ -35,6 +35,7 @@ public class ActiveChapter : MonoBehaviour
     public Button star5;
     public Sprite starYes;
     public Sprite starNo;
+    public GameObject rateUsNot;
 
     public void CharterActiveUpdate()
     {
@@ -1029,6 +1030,17 @@ public class ActiveChapter : MonoBehaviour
         camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
         rateUs.gameObject.SetActive(false);
         Star5();
+    }
+    public void RateUsNot()
+    {
+        rateUs.gameObject.SetActive(false);
+        rateUsNot.gameObject.SetActive(true);
+    }
+
+    public void RateUsNotClose()
+    {
+        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
+        rateUsNot.gameObject.SetActive(false);
     }
 
     public void Star1()

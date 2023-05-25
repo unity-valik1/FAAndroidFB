@@ -7,20 +7,22 @@ using UnityEngine;
 public static class FireBaseAnalyticsEvents
 {
 
-    public static void EventsNewGame(string NewGame, int ii, int oo, int aa)
-    {
-        var id = new Parameter("NewGame", ii);
-        var gg = new Parameter("NewGame", oo);
-        var SS = new Parameter("NewGame", aa);
-        FirebaseAnalytics.LogEvent("NewGame", id, gg, SS);
+    //public static void EventsNewGame(string NewGame, int ii, int oo, int aa)
+    //{
+    //    var id = new Parameter("NewGame", ii);
+    //    var gg = new Parameter("NewGame", oo);
+    //    var SS = new Parameter("NewGame", aa);
+    //    FirebaseAnalytics.LogEvent("NewGame", id, gg, SS);
 
-    }
-    public static void EventsNewGame1(ActiveMenu activeMenu)
+    //}
+    public static void EventsNewGame1(string NewGame, string gg)
     {
         FirebaseAnalytics.LogEvent("NewGame",
-            new Parameter("id", activeMenu.ii),
-            new Parameter("gg", activeMenu.oo),
-            new Parameter("ff", activeMenu.aa));
+            new Parameter("NewGame", gg));
+        //FirebaseAnalytics.LogEvent("NewGame",
+        //    new Parameter("id", activeMenu.ii),
+        //    new Parameter("gg", activeMenu.oo),
+        //    new Parameter("ff", activeMenu.aa));
 
     }
     public static void EventsNewGameStart(string NewGameStart)

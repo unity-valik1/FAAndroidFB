@@ -17,6 +17,7 @@ public class ActiveMenu : MonoBehaviour
     [SerializeField] private Camera camera1;
     [SerializeField] private SaveAndLoad saveAndLoad;
     [SerializeField] private Animation anim;
+    [SerializeField] private Stopwatch stopwatch;
 
     public GameObject menuUI;
     public GameObject buttonContinueGame;
@@ -34,9 +35,7 @@ public class ActiveMenu : MonoBehaviour
 
 
     [SerializeField] private Image imgMenuAnim;
-    public int ii;
-    public int oo;
-    public int aa;
+    public string gg;
     //public List<GameObject> buttons;
 
 
@@ -54,6 +53,11 @@ public class ActiveMenu : MonoBehaviour
 
     public void StartButton()
     {
+        stopwatch.StopTimer();
+        gg = stopwatch.timerText;
+        stopwatch.ResetTimer();
+        FireBaseAnalyticsEvents.EventsNewGame1("NewGame", gg);
+        stopwatch.gameObject.SetActive(false);
         if (saveAndLoad.continueGame == 0)
         {
             HowToPlayNewGame();
@@ -66,7 +70,7 @@ public class ActiveMenu : MonoBehaviour
     }
     public void HowToPlayNewGame()
     {
-        FireBaseAnalyticsEvents.EventsNewGame("NewGame", ii, oo, aa);
+        FireBaseAnalyticsEvents.EventsNewGameStart("NewGameStart");
         imgMenuAnim.gameObject.SetActive(true);
         anim.Play("MenuStartAnim");
 
@@ -102,7 +106,6 @@ public class ActiveMenu : MonoBehaviour
     //}
     public void YesNewGameButton()
     {
-        FireBaseAnalyticsEvents.EventsNewGameStart("NewGameStart");
         imgMenuAnim.gameObject.SetActive(true);
         anim.Play("MenuStartAnim");
 
