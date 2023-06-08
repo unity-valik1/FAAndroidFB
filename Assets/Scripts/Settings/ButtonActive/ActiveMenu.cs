@@ -55,8 +55,8 @@ public class ActiveMenu : MonoBehaviour
     {
         stopwatch.StopTimer();
         gg = stopwatch.timerText;
-        stopwatch.ResetTimer();
         FireBaseAnalyticsEvents.EventsNewGame1("NewGame", gg);
+        stopwatch.ResetTimer();
         stopwatch.gameObject.SetActive(false);
         if (saveAndLoad.continueGame == 0)
         {

@@ -83,6 +83,7 @@ public class BuyStopwatch : MonoBehaviour
 
     public void StartTimer()
     {
+        //isRunning = true;
         Invoke("Invoker", 1f);
     }
 

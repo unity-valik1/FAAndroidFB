@@ -11,6 +11,7 @@ public class AdScript : MonoBehaviour
     public UnityEvent OnAdOpeningEvent;
     public UnityEvent OnAdClosedEvent;
 
+    //ca-app-pub-8820941749262255/2928514036 для залива билда настоящая ссылка
     private string _adUnitId = "ca-app-pub-3940256099942544/1033173712";
 
     private void Start()

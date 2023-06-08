@@ -16,7 +16,6 @@ public class InAppReview : MonoBehaviour
     private IEnumerator OpenReview()
     {
         _reviewManager = new ReviewManager();
-
         var requestFlowOperation = _reviewManager.RequestReviewFlow();
         yield return requestFlowOperation;
         if (requestFlowOperation.Error != ReviewErrorCode.NoError)
@@ -25,6 +24,7 @@ public class InAppReview : MonoBehaviour
             yield break;
         }
         _playReviewInfo = requestFlowOperation.GetResult();
+
 
         var launchFlowOperation = _reviewManager.LaunchReviewFlow(_playReviewInfo);
         yield return launchFlowOperation;

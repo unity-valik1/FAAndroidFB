@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class PageSwiper : MonoBehaviour, IDragHandler, IEndDragHandler
+public class PageSwiperBuy : MonoBehaviour, IDragHandler, IEndDragHandler
 {
-    private Vector3 panelLocation;
+    [SerializeField] private BuyStopwatch buyStopwatch;
+    public Vector3 panelLocation;
     public float percentThreshold = 0.2f;
     public float easing = 0.5f;
     public int totalPages = 1;
@@ -22,6 +23,7 @@ public class PageSwiper : MonoBehaviour, IDragHandler, IEndDragHandler
     {
         float difference = data.pressPosition.x - data.position.x;
         transform.position = panelLocation - new Vector3(difference, 0, 0);
+        buyStopwatch.elapsedTime = 0f;
     }
     public void OnEndDrag(PointerEventData data)
     {
@@ -33,11 +35,13 @@ public class PageSwiper : MonoBehaviour, IDragHandler, IEndDragHandler
             {
                 currentPage++;
                 newLocation += new Vector3(-Screen.width, 0, 0);
+                FireBaseAnalyticsEvents.EventsOnboardingSwipeBuy("EventsOnboardingSwipeBuy");
             }
             else if (percentage < 0 && currentPage > 1)
             {
                 currentPage--;
                 newLocation += new Vector3(Screen.width, 0, 0);
+                FireBaseAnalyticsEvents.EventsOnboardingSwipeBuy("EventsOnboardingSwipeBuy");
             }
             StartCoroutine(SmoothMove(transform.position, newLocation, easing));
             panelLocation = newLocation;
@@ -98,6 +102,38 @@ public class PageSwiper : MonoBehaviour, IDragHandler, IEndDragHandler
         newLocation += new Vector3(-Screen.width, 0, 0);
         StartCoroutine(SmoothMove(transform.position, newLocation, easing));
         panelLocation = newLocation;
+    }
+
+    public void PanelBack()
+    {
+        notTab.gameObject.SetActive(true);
+        Invoke("Invoker", 0.5f);
+        panelLocation = transform.position;
+        currentPage--;
+        Vector3 newLocation = panelLocation;
+        newLocation -= new Vector3(-Screen.width/**2*/, 0, 0);
+        StartCoroutine(SmoothMove(transform.position, newLocation, easing));
+        panelLocation = newLocation;
+    }
+    public void PanelBackButton()
+    {
+        panelLocation = transform.position;
+        Vector3 newLocation = panelLocation;
+        newLocation -= new Vector3(-Screen.width/**2*/, 0, 0);
+        easing = 0.000001f;
+        StartCoroutine(SmoothMove(transform.position, newLocation, easing));
+        panelLocation = newLocation;
+        easing = 0.5f;
+    }
+    public void PanelBackButton2()
+    {
+        panelLocation = transform.position;
+        Vector3 newLocation = panelLocation;
+        newLocation -= new Vector3(-Screen.width*2, 0, 0);
+        easing = 0.000001f;
+        StartCoroutine(SmoothMove(transform.position, newLocation, easing));
+        panelLocation = newLocation;
+        easing = 0.5f;
     }
     public void Invoker()
     {

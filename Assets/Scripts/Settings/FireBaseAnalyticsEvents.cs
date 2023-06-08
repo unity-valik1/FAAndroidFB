@@ -18,7 +18,7 @@ public static class FireBaseAnalyticsEvents
     public static void EventsNewGame1(string NewGame, string gg)
     {
         FirebaseAnalytics.LogEvent("NewGame",
-            new Parameter("NewGame", gg));
+            new Parameter("timer", gg));
         //FirebaseAnalytics.LogEvent("NewGame",
         //    new Parameter("id", activeMenu.ii),
         //    new Parameter("gg", activeMenu.oo),
@@ -129,17 +129,28 @@ public static class FireBaseAnalyticsEvents
     {
         FirebaseAnalytics.LogEvent(About);
     }
-    public static void EventsOnboarding_1(string Onboarding_1)//?
+    public static void EventsOnboarding_1Button(string Onboarding_1Button, string timer)
     {
-        FirebaseAnalytics.LogEvent(Onboarding_1);
+        FirebaseAnalytics.LogEvent("Onboarding_1Button",
+            new Parameter("timer", timer));
     }
-    public static void EventsOnboarding_2(string Onboarding_2)//?
+    public static void EventsOnboarding_2Button(string Onboarding_2Button, string timer)
     {
-        FirebaseAnalytics.LogEvent(Onboarding_2);
+        FirebaseAnalytics.LogEvent("Onboarding_2Button",
+            new Parameter("timer", timer));
     }
-    public static void EventsOnboarding_3(string Onboarding_3)//?
+    public static void EventsOnboarding_3Button(string Onboarding_3Button, string timer)
     {
-        FirebaseAnalytics.LogEvent(Onboarding_3);
+        FirebaseAnalytics.LogEvent("Onboarding_3Button",
+            new Parameter("timer", timer));
+    }
+    public static void EventsOnboarding_Swipe(string Onboarding_Swipe)
+    {
+        FirebaseAnalytics.LogEvent("Onboarding_Swipe");
+    }
+    public static void EventsOnboardingSwipeBuy(string EventsOnboardingSwipeBuy)
+    {
+        FirebaseAnalytics.LogEvent("EventsOnboardingSwipeBuy");
     }
     public static void EventsSave_Button(string Save_Button)
     {
