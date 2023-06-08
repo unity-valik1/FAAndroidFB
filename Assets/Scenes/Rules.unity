@@ -1582,18 +1582,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709238992}
-        m_TargetAssemblyTypeName: RulesPP, Assembly-CSharp
-        m_MethodName: RulesGo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 7557465152674966278}
         m_TargetAssemblyTypeName: SceneRulesNext, Assembly-CSharp
         m_MethodName: Go
@@ -2365,9 +2353,6 @@ MonoBehaviour:
   - {fileID: 7557465152648661545}
   - {fileID: 7557465152352935093}
   notTab: {fileID: 7557465152462297972}
-  button1: 0
-  button2: 0
-  swipe: 1
   timer1: 
   timer2: 
 --- !u!224 &7557465152674966277

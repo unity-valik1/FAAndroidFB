@@ -10,10 +10,8 @@ public class LoadSceneAnim : MonoBehaviour
 {
 
     [SerializeField] private Animation anim;
-    [SerializeField] private RulesPP rulesPP;
 
-    public int sceneID=1;
-    public int sceneID1=2;
+    public int sceneID = 2;
     public GameObject img1;
     public GameObject img2;
     public GameObject img3;
@@ -33,25 +31,11 @@ public class LoadSceneAnim : MonoBehaviour
 
     void Start()
     {
-        if (PlayerPrefs.HasKey("rules"))
-        {
-            rulesPP.rules = PlayerPrefs.GetInt("rules");
-        }
         ImgRandom();
         SayRandom();
         textLoading = textLoadingDot.text;
         textLoadingDot.text = "Loading";
-
-        if (rulesPP.rules==0)
-        {
-            Invoke("Invoker", 4f);
-            Invoke("Invoker1", 2f);
-        }
-        if (rulesPP.rules == 1)
-        {
-            Invoke("Invoker2", 5f);
-            Invoke("Invoker3", 3f);
-        }
+        Invoke("Invoker", 2f);
     }
 
     private void Update()
@@ -93,46 +77,31 @@ public class LoadSceneAnim : MonoBehaviour
     IEnumerator AsyncLoad()
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneID);
-        print("111");
-        while (operation.isDone)
+        operation.allowSceneActivation = false;
+        while (!operation.isDone)
         {
+            if (operation.progress >=.9f && !operation.allowSceneActivation)
+            {
+                anim.Play("LoadingScenesAnim");
+                yield return new WaitForSeconds(2.0f);
+                operation.allowSceneActivation = true;
+            }
             yield return null;
         }
-        print("333");
-        yield return new WaitForSeconds(0.1f);
+        //yield return new WaitForSeconds(1.0f);
         // Загружаем следующую сцену
-        SceneManager.LoadScene(sceneID);
+        //SceneManager.LoadScene(sceneID);
     }
-    IEnumerator AsyncLoad1()
-    {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneID1);
-        print("111");
-        while (operation.isDone)
-        {
-            yield return null;
-        }
-        //print("333");
-        //yield return new WaitForSeconds(0.1f);
-        //// Загружаем следующую сцену
-        //SceneManager.LoadScene(sceneID1);
-    }
-    public void Invoker1()
-    {
-        anim.Play("LoadingScenesAnim");
-    }
-    public void Invoker3()
-    {
-        anim.Play("LoadingScenesAnim");
-    }
+    //public void Invoker1()
+    //{
+    //    anim.Play("LoadingScenesAnim");
+    //}
 
     public void Invoker()
     {
         StartCoroutine(AsyncLoad());
     }
-    public void Invoker2()
-    {
-        StartCoroutine(AsyncLoad1());
-    }
+    
 
     public void ImgRandom()
     {

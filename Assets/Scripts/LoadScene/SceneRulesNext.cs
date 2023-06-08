@@ -28,7 +28,7 @@ public class SceneRulesNext : MonoBehaviour
     }
     public void Invoker()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
     public void Invoker1()
     {
