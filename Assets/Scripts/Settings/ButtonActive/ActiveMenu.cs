@@ -34,6 +34,7 @@ public class ActiveMenu : MonoBehaviour
     public GameObject howToPlayNewGame;
 
 
+
     [SerializeField] private Image imgMenuAnim;
     public string gg;
     //public List<GameObject> buttons;
@@ -49,6 +50,7 @@ public class ActiveMenu : MonoBehaviour
             saveAndLoad.continueGame = PlayerPrefs.GetInt("continueGame");
         }
         Menu();
+        //gameManager.LoadPlayer6();
     }
 
     public void StartButton()
@@ -293,14 +295,9 @@ public class ActiveMenu : MonoBehaviour
         gameManager.LoadPlayer();
     }
 
-    public void rrr()
-    {
-        gameManager.saveGo = 0;
-        gameManager.SavePlayer6();
-    }
-    //public void rrrNo()
+    //public void rrr()
     //{
-    //    gameManager.saveGo = 1;
+    //    gameManager.saveGo = 0;
     //    gameManager.SavePlayer6();
     //}
 }
