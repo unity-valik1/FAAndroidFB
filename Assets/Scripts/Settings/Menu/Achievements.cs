@@ -279,7 +279,7 @@ public class Achievements : MonoBehaviour
         {
             anim.Play("Achievements");
             Invoke("Invoker", 1f);
-            camera1.GetComponentInChildren<PostProcessVolume>().isGlobal= true;
+            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal= true;
             canvasAchievement.gameObject.SetActive(true);
             nameAchievement = textnameAchievement.text;
             textnameAchievement.text = "Hero";
@@ -300,7 +300,7 @@ public class Achievements : MonoBehaviour
         {
             anim.Play("Achievements");
             Invoke("Invoker", 1f);
-            camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             canvasAchievement.gameObject.SetActive(true);
             nameAchievement = textnameAchievement.text;
             textnameAchievement.text = "Dima";
@@ -321,7 +321,7 @@ public class Achievements : MonoBehaviour
         {
             anim.Play("Achievements");
             Invoke("Invoker", 1f);
-            camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             canvasAchievement.gameObject.SetActive(true);
             nameAchievement = textnameAchievement.text;
             textnameAchievement.text = "Valik";

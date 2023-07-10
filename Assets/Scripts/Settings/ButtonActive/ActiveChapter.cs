@@ -1021,7 +1021,7 @@ public class ActiveChapter : MonoBehaviour
 
     public void RateUs()
     {
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+        //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
         rateUs.gameObject.SetActive(true);
     }
 

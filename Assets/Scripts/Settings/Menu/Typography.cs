@@ -12,14 +12,14 @@ public class Typography : MonoBehaviour
     [Tooltip("Крупный шрифт")] public GameObject imageVectorL;
 
     [Header("Текста")]
-    [Tooltip("42")] public TMP_Text[] typographyText36;
+    [Tooltip("36")] public TMP_Text[] typographyText36;
     [Tooltip("42")] public TMP_Text[] typographyText42;
     [Tooltip("48")] public TMP_Text[] typographyText48;
     [Tooltip("54")] public TMP_Text[] typographyText54;
     [Tooltip("60")] public TMP_Text[] typographyText60;
-    [Tooltip("60")] public TMP_Text[] typographyText72;
+    [Tooltip("72")] public TMP_Text[] typographyText72;
     [Tooltip("84")] public TMP_Text[] typographyText84;
-    [Tooltip("126")] public TMP_Text[] typographyText108;
+    [Tooltip("108")] public TMP_Text[] typographyText108;
 
     [Header("Шрифт в РР")]
     [Tooltip("Маленький шрифт")] public int s = 0;//PP
@@ -66,25 +66,27 @@ public class Typography : MonoBehaviour
             imageVectorL.SetActive(true);
         }
 
+
         if (s == 1)
         {
-            for (int i = 0; i < typographyText42.Length; ++i)
+            for (int i = 0; i < typographyText36.Length; ++i)
                 typographyText36[i].fontSize = 30;
         } //36
         else if (m == 1)
         {
-            for (int i = 0; i < typographyText42.Length; ++i)
+            for (int i = 0; i < typographyText36.Length; ++i)
             {
                 typographyText36[i].fontSize = 36;
             }
         }
         else if (l == 1)
         {
-            for (int i = 0; i < typographyText42.Length; ++i)
+            for (int i = 0; i < typographyText36.Length; ++i)
             {
                 typographyText36[i].fontSize = 42;
             }
         }
+
 
         if (s == 1)
         {

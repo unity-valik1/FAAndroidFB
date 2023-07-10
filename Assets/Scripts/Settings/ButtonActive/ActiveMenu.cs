@@ -33,6 +33,10 @@ public class ActiveMenu : MonoBehaviour
 
     public GameObject howToPlayNewGame;
 
+    public Image menuBgImg;
+
+    public Sprite[] spriteMenuBg;
+
 
 
     [SerializeField] private Image imgMenuAnim;
@@ -50,9 +54,30 @@ public class ActiveMenu : MonoBehaviour
             saveAndLoad.continueGame = PlayerPrefs.GetInt("continueGame");
         }
         Menu();
-        //gameManager.LoadPlayer6();
+        ImgRandom();
     }
 
+    public void ImgRandom()
+    {
+        int a = UnityEngine.Random.Range(0, 4);
+        if (a == 0)
+        {
+            menuBgImg.sprite = spriteMenuBg[a];
+        }
+        else if (a == 1)
+        {
+            menuBgImg.sprite = spriteMenuBg[a];
+        }
+        else if (a == 2)
+        {
+            menuBgImg.sprite = spriteMenuBg[a];
+        }
+        else if (a == 3)
+        {
+            menuBgImg.sprite = spriteMenuBg[a];
+        }
+
+    }
     public void StartButton()
     {
         stopwatch.StopTimer();
@@ -66,7 +91,7 @@ public class ActiveMenu : MonoBehaviour
         }
         else
         {
-            camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             saveAndLoad.lossGameStart.gameObject.SetActive(true);
         }
     }
@@ -189,7 +214,7 @@ public class ActiveMenu : MonoBehaviour
 
     public void LoadMenu()
     {
-        if(gameManager.saveGo == 1)
+        if (gameManager.saveGo == 1)
         {
             menuUI.gameObject.SetActive(false);
             loadUI.gameObject.SetActive(true);
@@ -205,7 +230,7 @@ public class ActiveMenu : MonoBehaviour
         camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
         saveAndLoad.lossGameLoad.gameObject.SetActive(false);
     }
- 
+
     public void Settings()
     {
         FireBaseAnalyticsEvents.EventsSettings("Settings");

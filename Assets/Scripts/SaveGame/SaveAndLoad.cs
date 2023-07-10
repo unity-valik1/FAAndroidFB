@@ -311,7 +311,7 @@ public class SaveAndLoad : MonoBehaviour
         }
         else
         {
-            camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             lossGameLoad.gameObject.SetActive(true);
             ButtonLoad1.gameObject.SetActive(true);
             ButtonLoad2.gameObject.SetActive(false);
@@ -328,7 +328,7 @@ public class SaveAndLoad : MonoBehaviour
         }
         else
         {
-            camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             lossGameLoad.gameObject.SetActive(true);
             ButtonLoad1.gameObject.SetActive(false);
             ButtonLoad2.gameObject.SetActive(true);
@@ -345,7 +345,7 @@ public class SaveAndLoad : MonoBehaviour
         }
         else
         {
-            camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             lossGameLoad.gameObject.SetActive(true);
             ButtonLoad1.gameObject.SetActive(false);
             ButtonLoad2.gameObject.SetActive(false);
@@ -362,7 +362,7 @@ public class SaveAndLoad : MonoBehaviour
         }
         else
         {
-            camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             lossGameLoad.gameObject.SetActive(true);
             ButtonLoad1.gameObject.SetActive(false);
             ButtonLoad2.gameObject.SetActive(false);
@@ -379,7 +379,7 @@ public class SaveAndLoad : MonoBehaviour
         }
         else
         {
-            camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             lossGameLoad.gameObject.SetActive(true);
             ButtonLoad1.gameObject.SetActive(false);
             ButtonLoad2.gameObject.SetActive(false);
@@ -432,7 +432,7 @@ public class SaveAndLoad : MonoBehaviour
         }
         else if (SL1 == 1)
         {
-            camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             saveGame.gameObject.SetActive(true);
 
             ButtonSave1.gameObject.SetActive(true);
@@ -485,7 +485,7 @@ public class SaveAndLoad : MonoBehaviour
         }
         else if (SL2 == 1)
         {
-            camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             saveGame.gameObject.SetActive(true);
 
             ButtonSave1.gameObject.SetActive(false);
@@ -538,7 +538,7 @@ public class SaveAndLoad : MonoBehaviour
         }
         else if (SL3 == 1)
         {
-            camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             saveGame.gameObject.SetActive(true);
 
             ButtonSave1.gameObject.SetActive(false);
@@ -591,7 +591,7 @@ public class SaveAndLoad : MonoBehaviour
         }
         else if (SL4 == 1)
         {
-            camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             saveGame.gameObject.SetActive(true);
 
             ButtonSave1.gameObject.SetActive(false);
@@ -644,7 +644,7 @@ public class SaveAndLoad : MonoBehaviour
         }
         else if (SL5 == 1)
         {
-            camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             saveGame.gameObject.SetActive(true);
 
             ButtonSave1.gameObject.SetActive(false);
@@ -856,7 +856,7 @@ public class SaveAndLoad : MonoBehaviour
 
     public void Reset1()
     {
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+        //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
         resetGame.gameObject.SetActive(true);
 
         ButtonReset1Canvas.gameObject.SetActive(true);
@@ -867,7 +867,7 @@ public class SaveAndLoad : MonoBehaviour
     }
     public void Reset2()
     {
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+        //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
         resetGame.gameObject.SetActive(true);
 
         ButtonReset1Canvas.gameObject.SetActive(false);
@@ -878,7 +878,7 @@ public class SaveAndLoad : MonoBehaviour
     }
     public void Reset3()
     {
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+        //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
         resetGame.gameObject.SetActive(true);
 
         ButtonReset1Canvas.gameObject.SetActive(false);
@@ -889,7 +889,7 @@ public class SaveAndLoad : MonoBehaviour
     }
     public void Reset4()
     {
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+        //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
         resetGame.gameObject.SetActive(true);
 
         ButtonReset1Canvas.gameObject.SetActive(false);
@@ -900,7 +900,7 @@ public class SaveAndLoad : MonoBehaviour
     }
     public void Reset5()
     {
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
+        //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
         resetGame.gameObject.SetActive(true);
 
         ButtonReset1Canvas.gameObject.SetActive(false);
@@ -1099,5 +1099,11 @@ public class SaveAndLoad : MonoBehaviour
             FireBaseAnalyticsEvents.EventsSave_Button_Buy("Save_Button_Buy");
             money.gameObject.SetActive(true);
         }
+    }
+
+    public void RefreshApi()
+    {
+        gameManager.saveGo = 0;
+        gameManager.SavePlayer6();
     }
 }
