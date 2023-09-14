@@ -1,14 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
 
 public class Achievements : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
-    [SerializeField] private Camera camera1;
     [SerializeField] private Animation anim;
     [SerializeField] private Button button;
 
@@ -24,6 +23,10 @@ public class Achievements : MonoBehaviour
     [Tooltip("Достижение 9")] public int achievements9 = 0;//S
     [Tooltip("Достижение 10")] public int achievements10 = 0;//S
     [Tooltip("Достижение 11")] public int achievements11 = 0;//S
+    [Tooltip("Достижение 12")] public int achievements12 = 0;//S
+    [Tooltip("Достижение 13")] public int achievements13 = 0;//S
+    [Tooltip("Достижение 14")] public int achievements14 = 0;//S
+    [Tooltip("Достижение 15")] public int achievements15 = 0;//S
 
     [Header("Фон активных достижений")]
     [SerializeField] private Image imageBgAchievements1;
@@ -37,6 +40,10 @@ public class Achievements : MonoBehaviour
     [SerializeField] private Image imageBgAchievements9;
     [SerializeField] private Image imageBgAchievements10;
     [SerializeField] private Image imageBgAchievements11;
+    [SerializeField] private Image imageBgAchievements12;
+    [SerializeField] private Image imageBgAchievements13;
+    [SerializeField] private Image imageBgAchievements14;
+    [SerializeField] private Image imageBgAchievements15;
 
     [Header("Фон неактивных достижений")]
     [SerializeField] private Image imageBlurAchievements1;
@@ -50,13 +57,25 @@ public class Achievements : MonoBehaviour
     [SerializeField] private Image imageBlurAchievements9;
     [SerializeField] private Image imageBlurAchievements10;
     [SerializeField] private Image imageBlurAchievements11;
+    [SerializeField] private Image imageBlurAchievements12;
+    [SerializeField] private Image imageBlurAchievements13;
+    [SerializeField] private Image imageBlurAchievements14;
+    [SerializeField] private Image imageBlurAchievements15;
 
     public string nameAchievement;
     public TMP_Text textnameAchievement;
+    public int number;
+    public TMP_Text numberAchievement;
     public GameObject canvasAchievement;
+    public Sprite[] imgAchievement;
+    public Image achievement;
 
     private void Start()
     {
+        if (PlayerPrefs.HasKey("number"))
+        {
+            number = PlayerPrefs.GetInt("number");
+        }
         if (PlayerPrefs.HasKey("achievements1"))
         {
             achievements1 = PlayerPrefs.GetInt("achievements1");
@@ -101,8 +120,25 @@ public class Achievements : MonoBehaviour
         {
             achievements11 = PlayerPrefs.GetInt("achievements11");
         }
+        if (PlayerPrefs.HasKey("achievements12"))
+        {
+            achievements12 = PlayerPrefs.GetInt("achievements12");
+        }
+        if (PlayerPrefs.HasKey("achievements13"))
+        {
+            achievements13 = PlayerPrefs.GetInt("achievements13");
+        }
+        if (PlayerPrefs.HasKey("achievements14"))
+        {
+            achievements14 = PlayerPrefs.GetInt("achievements14");
+        }
+        if (PlayerPrefs.HasKey("achievements15"))
+        {
+            achievements15 = PlayerPrefs.GetInt("achievements15");
+        }
         AchievementsOnOff();
     }
+
     public void AchievementsOnOff()
     {
         if (achievements1 == 1)
@@ -225,11 +261,58 @@ public class Achievements : MonoBehaviour
             imageBlurAchievements11.gameObject.SetActive(true);
             imageBgAchievements11.GetComponent<Image>().enabled = false;
         }
-    }
 
+        if (achievements12 == 1)
+        {
+            imageBlurAchievements12.gameObject.SetActive(false);
+            imageBgAchievements12.GetComponent<Image>().enabled = true;
+        }
+        else if (achievements12 == 0)
+        {
+            imageBlurAchievements12.gameObject.SetActive(true);
+            imageBgAchievements12.GetComponent<Image>().enabled = false;
+        }
+
+        if (achievements13 == 1)
+        {
+            imageBlurAchievements13.gameObject.SetActive(false);
+            imageBgAchievements13.GetComponent<Image>().enabled = true;
+        }
+        else if (achievements13 == 0)
+        {
+            imageBlurAchievements13.gameObject.SetActive(true);
+            imageBgAchievements13.GetComponent<Image>().enabled = false;
+        }
+
+        if (achievements14 == 1)
+        {
+            imageBlurAchievements14.gameObject.SetActive(false);
+            imageBgAchievements14.GetComponent<Image>().enabled = true;
+        }
+        else if (achievements14 == 0)
+        {
+            imageBlurAchievements14.gameObject.SetActive(true);
+            imageBgAchievements14.GetComponent<Image>().enabled = false;
+        }
+
+        if (achievements15 == 1)
+        {
+            imageBlurAchievements15.gameObject.SetActive(false);
+            imageBgAchievements15.GetComponent<Image>().enabled = true;
+        }
+        else if (achievements15 == 0)
+        {
+            imageBlurAchievements15.gameObject.SetActive(true);
+            imageBgAchievements15.GetComponent<Image>().enabled = false;
+        }
+    }
 
     public void BackAchievement()
     {
+        number = 0;
+        PlayerPrefs.SetInt("number", number);
+        PlayerPrefs.Save();
+
         achievements1 = 0;
         achievements2 = 0;
         achievements3 = 0;
@@ -241,6 +324,10 @@ public class Achievements : MonoBehaviour
         achievements9 = 0;
         achievements10 = 0;
         achievements11 = 0;
+        achievements12 = 0;
+        achievements13 = 0;
+        achievements14 = 0;
+        achievements15 = 0;
         PlayerPrefs.SetInt("achievements1", achievements1);
         PlayerPrefs.Save();
         PlayerPrefs.SetInt("achievements2", achievements2);
@@ -263,6 +350,14 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.Save();
         PlayerPrefs.SetInt("achievements11", achievements11);
         PlayerPrefs.Save();
+        PlayerPrefs.SetInt("achievements12", achievements12);
+        PlayerPrefs.Save();
+        PlayerPrefs.SetInt("achievements13", achievements13);
+        PlayerPrefs.Save();
+        PlayerPrefs.SetInt("achievements14", achievements14);
+        PlayerPrefs.Save();
+        PlayerPrefs.SetInt("achievements15", achievements15);
+        PlayerPrefs.Save();
         anim.Play("BackAchievement");
         Invoke("BackAchievementInvok", 0.5f);
     }
@@ -270,22 +365,26 @@ public class Achievements : MonoBehaviour
     public void BackAchievementInvok()
     {
         button.interactable = false;
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
         canvasAchievement.gameObject.SetActive(false);
     }
+
     public void Achievements1()
     {
         if (achievements1 == 0)
         {
             anim.Play("Achievements");
             Invoke("Invoker", 1f);
-            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal= true;
             canvasAchievement.gameObject.SetActive(true);
             nameAchievement = textnameAchievement.text;
-            textnameAchievement.text = "Hero";
+            textnameAchievement.text = "None of your business";
+            achievement.sprite = imgAchievement[0];
             achievements1 = 1;
+            number++;
+            numberAchievement.text = (number + "/15").ToString();
             AchievementsOnOff();
             PlayerPrefs.SetInt("achievements1", achievements1);
+            PlayerPrefs.Save();
+            PlayerPrefs.SetInt("number", number);
             PlayerPrefs.Save();
         }
         else if (achievements1 == 1)
@@ -293,20 +392,23 @@ public class Achievements : MonoBehaviour
 
         }
     }
-
     public void Achievements2()
     {
         if (achievements2 == 0)
         {
             anim.Play("Achievements");
             Invoke("Invoker", 1f);
-            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             canvasAchievement.gameObject.SetActive(true);
             nameAchievement = textnameAchievement.text;
-            textnameAchievement.text = "Dima";
+            textnameAchievement.text = "Travelling Buddy";
+            achievement.sprite = imgAchievement[1];
             achievements2 = 1;
+            number++;
+            numberAchievement.text = (number + "/15").ToString();
             AchievementsOnOff();
             PlayerPrefs.SetInt("achievements2", achievements2);
+            PlayerPrefs.Save();
+            PlayerPrefs.SetInt("number", number);
             PlayerPrefs.Save();
         }
         else if (achievements2 == 1)
@@ -314,20 +416,23 @@ public class Achievements : MonoBehaviour
 
         }
     }
-
     public void Achievements3()
     {
         if (achievements3 == 0)
         {
             anim.Play("Achievements");
             Invoke("Invoker", 1f);
-            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             canvasAchievement.gameObject.SetActive(true);
             nameAchievement = textnameAchievement.text;
-            textnameAchievement.text = "Valik";
+            textnameAchievement.text = "Sixth Sense";
+            achievement.sprite = imgAchievement[2];
             achievements3 = 1;
+            number++;
+            numberAchievement.text = (number + "/15").ToString();
             AchievementsOnOff();
             PlayerPrefs.SetInt("achievements3", achievements3);
+            PlayerPrefs.Save();
+            PlayerPrefs.SetInt("number", number);
             PlayerPrefs.Save();
         }
         else if (achievements3 == 1)
@@ -335,69 +440,293 @@ public class Achievements : MonoBehaviour
 
         }
     }
-
     public void Achievements4()
     {
-        achievements4 = 1;
-        AchievementsOnOff();
-        PlayerPrefs.SetInt("achievements4", achievements4);
-        PlayerPrefs.Save();
-    }
+        if (achievements4 == 0)
+        {
+            anim.Play("Achievements");
+            Invoke("Invoker", 1f);
+            canvasAchievement.gameObject.SetActive(true);
+            nameAchievement = textnameAchievement.text;
+            textnameAchievement.text = "Wasted!";
+            achievement.sprite = imgAchievement[3];
+            achievements4 = 1;
+            number++;
+            numberAchievement.text = (number + "/15").ToString();
+            AchievementsOnOff();
+            PlayerPrefs.SetInt("achievements4", achievements4);
+            PlayerPrefs.Save();
+            PlayerPrefs.SetInt("number", number);
+            PlayerPrefs.Save();
+        }
+        else if (achievements4 == 1)
+        {
 
+        }
+    }
     public void Achievements5()
     {
-        achievements5 = 1;
-        AchievementsOnOff();
-        PlayerPrefs.SetInt("achievements5", achievements5);
-        PlayerPrefs.Save();
-    }
+        if (achievements5 == 0)
+        {
+            anim.Play("Achievements");
+            Invoke("Invoker", 1f);
+            canvasAchievement.gameObject.SetActive(true);
+            nameAchievement = textnameAchievement.text;
+            textnameAchievement.text = "Straight-Edge";
+            achievement.sprite = imgAchievement[4];
+            achievements5 = 1;
+            number++;
+            numberAchievement.text = (number + "/15").ToString();
+            AchievementsOnOff();
+            PlayerPrefs.SetInt("achievements5", achievements5);
+            PlayerPrefs.Save();
+            PlayerPrefs.SetInt("number", number);
+            PlayerPrefs.Save();
+        }
+        else if (achievements5 == 1)
+        {
 
+        }
+    }
     public void Achievements6()
     {
-        achievements6 = 1;
-        AchievementsOnOff();
-        PlayerPrefs.SetInt("achievements6", achievements6);
-        PlayerPrefs.Save();
-    }
+        if (achievements6 == 0)
+        {
+            anim.Play("Achievements");
+            Invoke("Invoker", 1f);
+            canvasAchievement.gameObject.SetActive(true);
+            nameAchievement = textnameAchievement.text;
+            textnameAchievement.text = "Do Not Disturb";
+            achievement.sprite = imgAchievement[5];
+            achievements6 = 1;
+            number++;
+            numberAchievement.text = (number + "/15").ToString();
+            AchievementsOnOff();
+            PlayerPrefs.SetInt("achievements6", achievements6);
+            PlayerPrefs.Save();
+            PlayerPrefs.SetInt("number", number);
+            PlayerPrefs.Save();
+        }
+        else if (achievements6 == 1)
+        {
 
+        }
+    }
     public void Achievements7()
     {
-        achievements7 = 1;
-        AchievementsOnOff();
-        PlayerPrefs.SetInt("achievements7", achievements7);
-        PlayerPrefs.Save();
-    }
+        if (achievements7 == 0)
+        {
+            anim.Play("Achievements");
+            Invoke("Invoker", 1f);
+            canvasAchievement.gameObject.SetActive(true);
+            nameAchievement = textnameAchievement.text;
+            textnameAchievement.text = "The Forecast is…";
+            achievement.sprite = imgAchievement[6];
+            achievements7 = 1;
+            number++;
+            numberAchievement.text = (number + "/15").ToString();
+            AchievementsOnOff();
+            PlayerPrefs.SetInt("achievements7", achievements7);
+            PlayerPrefs.Save();
+            PlayerPrefs.SetInt("number", number);
+            PlayerPrefs.Save();
+        }
+        else if (achievements7 == 1)
+        {
 
+        }
+    }
     public void Achievements8()
     {
-        achievements8 = 1;
-        AchievementsOnOff();
-        PlayerPrefs.SetInt("achievements8", achievements8);
-        PlayerPrefs.Save();
-    }
+        if (achievements8 == 0)
+        {
+            anim.Play("Achievements");
+            Invoke("Invoker", 1f);
+            canvasAchievement.gameObject.SetActive(true);
+            nameAchievement = textnameAchievement.text;
+            textnameAchievement.text = "Money solves everything";
+            achievement.sprite = imgAchievement[7];
+            achievements8 = 1;
+            number++;
+            numberAchievement.text = (number + "/15").ToString();
+            AchievementsOnOff();
+            PlayerPrefs.SetInt("achievements8", achievements8);
+            PlayerPrefs.Save();
+            PlayerPrefs.SetInt("number", number);
+            PlayerPrefs.Save();
+        }
+        else if (achievements8 == 1)
+        {
 
+        }
+    }
     public void Achievements9()
     {
-        achievements9 = 1;
-        AchievementsOnOff();
-        PlayerPrefs.SetInt("achievements9", achievements9);
-        PlayerPrefs.Save();
-    }
+        if (achievements9 == 0)
+        {
+            anim.Play("Achievements");
+            Invoke("Invoker", 1f);
+            canvasAchievement.gameObject.SetActive(true);
+            nameAchievement = textnameAchievement.text;
+            textnameAchievement.text = "Caused a scene";
+            achievement.sprite = imgAchievement[8];
+            achievements9 = 1;
+            number++;
+            numberAchievement.text = (number + "/15").ToString();
+            AchievementsOnOff();
+            PlayerPrefs.SetInt("achievements9", achievements9);
+            PlayerPrefs.Save();
+            PlayerPrefs.SetInt("number", number);
+            PlayerPrefs.Save();
+        }
+        else if (achievements9 == 1)
+        {
 
+        }
+    }
     public void Achievements10()
     {
-        achievements10 = 1;
-        AchievementsOnOff();
-        PlayerPrefs.SetInt("achievements10", achievements10);
-        PlayerPrefs.Save();
-    }
+        if (achievements10 == 0)
+        {
+            anim.Play("Achievements");
+            Invoke("Invoker", 1f);
+            canvasAchievement.gameObject.SetActive(true);
+            nameAchievement = textnameAchievement.text;
+            textnameAchievement.text = "Not My Bag, Not My Problem";
+            achievement.sprite = imgAchievement[9];
+            achievements10 = 1;
+            number++;
+            numberAchievement.text = (number + "/15").ToString();
+            AchievementsOnOff();
+            PlayerPrefs.SetInt("achievements10", achievements10);
+            PlayerPrefs.Save();
+            PlayerPrefs.SetInt("number", number);
+            PlayerPrefs.Save();
+        }
+        else if (achievements10 == 1)
+        {
 
+        }
+    }
     public void Achievements11()
     {
-        achievements11 = 1;
-        AchievementsOnOff();
-        PlayerPrefs.SetInt("achievements11", achievements11);
-        PlayerPrefs.Save();
+        if (achievements11 == 0)
+        {
+            anim.Play("Achievements");
+            Invoke("Invoker", 1f);
+            canvasAchievement.gameObject.SetActive(true);
+            nameAchievement = textnameAchievement.text;
+            textnameAchievement.text = "Curiosity";
+            achievement.sprite = imgAchievement[10];
+            achievements11 = 1;
+            number++;
+            numberAchievement.text = (number + "/15").ToString();
+            AchievementsOnOff();
+            PlayerPrefs.SetInt("achievements11", achievements11);
+            PlayerPrefs.Save();
+            PlayerPrefs.SetInt("number", number);
+            PlayerPrefs.Save();
+        }
+        else if (achievements11 == 1)
+        {
+
+        }
+    }
+    public void Achievements12()
+    {
+        if (achievements12 == 0)
+        {
+            anim.Play("Achievements");
+            Invoke("Invoker", 1f);
+            canvasAchievement.gameObject.SetActive(true);
+            nameAchievement = textnameAchievement.text;
+            textnameAchievement.text = "Brought a Knife to a Fist Fight";
+            achievement.sprite = imgAchievement[11];
+            achievements12 = 1;
+            number++;
+            numberAchievement.text = (number + "/15").ToString();
+            AchievementsOnOff();
+            PlayerPrefs.SetInt("achievements12", achievements12);
+            PlayerPrefs.Save();
+            PlayerPrefs.SetInt("number", number);
+            PlayerPrefs.Save();
+        }
+        else if (achievements12 == 1)
+        {
+
+        }
+    }
+    public void Achievements13()
+    {
+        if (achievements13 == 0)
+        {
+            anim.Play("Achievements");
+            Invoke("Invoker", 1f);
+            canvasAchievement.gameObject.SetActive(true);
+            nameAchievement = textnameAchievement.text;
+            textnameAchievement.text = "A matter of life and death";
+            achievement.sprite = imgAchievement[12];
+            achievements13 = 1;
+            number++;
+            numberAchievement.text = (number + "/15").ToString();
+            AchievementsOnOff();
+            PlayerPrefs.SetInt("achievements13", achievements13);
+            PlayerPrefs.Save();
+            PlayerPrefs.SetInt("number", number);
+            PlayerPrefs.Save();
+        }
+        else if (achievements13 == 1)
+        {
+
+        }
+    }
+    public void Achievements14()
+    {
+        if (achievements14 == 0)
+        {
+            anim.Play("Achievements");
+            Invoke("Invoker", 1f);
+            canvasAchievement.gameObject.SetActive(true);
+            nameAchievement = textnameAchievement.text;
+            textnameAchievement.text = "Nobody Left Behind";
+            achievement.sprite = imgAchievement[13];
+            achievements14 = 1;
+            number++;
+            numberAchievement.text = (number + "/15").ToString();
+            AchievementsOnOff();
+            PlayerPrefs.SetInt("achievements14", achievements14);
+            PlayerPrefs.Save();
+            PlayerPrefs.SetInt("number", number);
+            PlayerPrefs.Save();
+        }
+        else if (achievements14 == 1)
+        {
+
+        }
+    }
+    public void Achievements15()
+    {
+        if (achievements15 == 0)
+        {
+            anim.Play("Achievements");
+            Invoke("Invoker", 1f);
+            canvasAchievement.gameObject.SetActive(true);
+            nameAchievement = textnameAchievement.text;
+            textnameAchievement.text = "Stroke Man";
+            achievement.sprite = imgAchievement[14];
+            achievements15 = 1;
+            number++;
+            numberAchievement.text = (number + "/15").ToString();
+            AchievementsOnOff();
+            PlayerPrefs.SetInt("achievements15", achievements15);
+            PlayerPrefs.Save();
+            PlayerPrefs.SetInt("number", number);
+            PlayerPrefs.Save();
+        }
+        else if (achievements15 == 1)
+        {
+
+        }
     }
 
     public void Invoker()

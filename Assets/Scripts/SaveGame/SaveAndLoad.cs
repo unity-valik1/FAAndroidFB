@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
@@ -9,7 +10,7 @@ using UnityEngine.UI;
 public class SaveAndLoad : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
-    [SerializeField] private Camera camera1;
+    [SerializeField] private SaveName saveName;
 
 
     [Tooltip("Μενώ")] public int continueGame = 0;//PP
@@ -308,10 +309,18 @@ public class SaveAndLoad : MonoBehaviour
         if (continueGame == 0)
         {
             gameManager.LoadPlayer1();
+
+            saveName.nameSave = nameLocation1.text;
+
+            PlayerPrefs.SetString("nameSave", saveName.nameSave);
+            PlayerPrefs.Save();
+            if (PlayerPrefs.HasKey("nameSave"))
+            {
+                saveName.nameSave = PlayerPrefs.GetString("nameSave");
+            }
         }
         else
         {
-            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             lossGameLoad.gameObject.SetActive(true);
             ButtonLoad1.gameObject.SetActive(true);
             ButtonLoad2.gameObject.SetActive(false);
@@ -325,10 +334,16 @@ public class SaveAndLoad : MonoBehaviour
         if (continueGame == 0)
         {
             gameManager.LoadPlayer2();
+            saveName.nameSave = nameLocation2.text;
+            PlayerPrefs.SetString("nameSave", saveName.nameSave);
+            PlayerPrefs.Save();
+            if (PlayerPrefs.HasKey("nameSave"))
+            {
+                saveName.nameSave = PlayerPrefs.GetString("nameSave");
+            }
         }
         else
         {
-            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             lossGameLoad.gameObject.SetActive(true);
             ButtonLoad1.gameObject.SetActive(false);
             ButtonLoad2.gameObject.SetActive(true);
@@ -342,10 +357,16 @@ public class SaveAndLoad : MonoBehaviour
         if (continueGame == 0)
         {
             gameManager.LoadPlayer3();
+            saveName.nameSave = nameLocation3.text;
+            PlayerPrefs.SetString("nameSave", saveName.nameSave);
+            PlayerPrefs.Save();
+            if (PlayerPrefs.HasKey("nameSave"))
+            {
+                saveName.nameSave = PlayerPrefs.GetString("nameSave");
+            }
         }
         else
         {
-            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             lossGameLoad.gameObject.SetActive(true);
             ButtonLoad1.gameObject.SetActive(false);
             ButtonLoad2.gameObject.SetActive(false);
@@ -359,10 +380,16 @@ public class SaveAndLoad : MonoBehaviour
         if (continueGame == 0)
         {
             gameManager.LoadPlayer4();
+            saveName.nameSave = nameLocation4.text;
+            PlayerPrefs.SetString("nameSave", saveName.nameSave);
+            PlayerPrefs.Save();
+            if (PlayerPrefs.HasKey("nameSave"))
+            {
+                saveName.nameSave = PlayerPrefs.GetString("nameSave");
+            }
         }
         else
         {
-            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             lossGameLoad.gameObject.SetActive(true);
             ButtonLoad1.gameObject.SetActive(false);
             ButtonLoad2.gameObject.SetActive(false);
@@ -376,10 +403,16 @@ public class SaveAndLoad : MonoBehaviour
         if (continueGame == 0)
         {
             gameManager.LoadPlayer5();
+            saveName.nameSave = nameLocation5.text;
+            PlayerPrefs.SetString("nameSave", saveName.nameSave);
+            PlayerPrefs.Save();
+            if (PlayerPrefs.HasKey("nameSave"))
+            {
+                saveName.nameSave = PlayerPrefs.GetString("nameSave");
+            }
         }
         else
         {
-            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             lossGameLoad.gameObject.SetActive(true);
             ButtonLoad1.gameObject.SetActive(false);
             ButtonLoad2.gameObject.SetActive(false);
@@ -403,7 +436,11 @@ public class SaveAndLoad : MonoBehaviour
             //year = System.DateTime.Now.Year;
             //display.text = day + "." + month + "." + year + " " + hour + ":" + minutes;
             //displayLoad.text = display.text;
-            nameLocation1.text = "1";
+            if (PlayerPrefs.HasKey("nameSave"))
+            {
+                nameLocation1.text = PlayerPrefs.GetString("nameSave");
+            }
+            //nameLocation1.text = saveName.nameSave;
             nameLocation1Load.text = nameLocation1.text;
             save1Text.text = "";
             load1Text.text = save1Text.text;
@@ -432,7 +469,6 @@ public class SaveAndLoad : MonoBehaviour
         }
         else if (SL1 == 1)
         {
-            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             saveGame.gameObject.SetActive(true);
 
             ButtonSave1.gameObject.SetActive(true);
@@ -456,7 +492,11 @@ public class SaveAndLoad : MonoBehaviour
             //year = System.DateTime.Now.Year;
             //display2.text = day + "." + month + "." + year + " " + hour + ":" + minutes;
             //display2Load.text = display2.text;
-            nameLocation2.text = "2";
+            if (PlayerPrefs.HasKey("nameSave"))
+            {
+                nameLocation2.text = PlayerPrefs.GetString("nameSave");
+            }
+            //nameLocation2.text = saveName.nameSave;
             nameLocation2Load.text = nameLocation2.text;
             save2Text.text = "";
             load2Text.text = save2Text.text;
@@ -485,7 +525,6 @@ public class SaveAndLoad : MonoBehaviour
         }
         else if (SL2 == 1)
         {
-            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             saveGame.gameObject.SetActive(true);
 
             ButtonSave1.gameObject.SetActive(false);
@@ -509,7 +548,11 @@ public class SaveAndLoad : MonoBehaviour
             //year = System.DateTime.Now.Year;
             //display3.text = day + "." + month + "." + year + " " + hour + ":" + minutes;
             //display3Load.text = display3.text;
-            nameLocation3.text = "3";
+            if (PlayerPrefs.HasKey("nameSave"))
+            {
+                nameLocation3.text = PlayerPrefs.GetString("nameSave");
+            }
+            //nameLocation3.text = saveName.nameSave;
             nameLocation3Load.text = nameLocation3.text;
             save3Text.text = "";
             load3Text.text = save3Text.text;
@@ -538,7 +581,6 @@ public class SaveAndLoad : MonoBehaviour
         }
         else if (SL3 == 1)
         {
-            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             saveGame.gameObject.SetActive(true);
 
             ButtonSave1.gameObject.SetActive(false);
@@ -562,7 +604,11 @@ public class SaveAndLoad : MonoBehaviour
             //year = System.DateTime.Now.Year;
             //display4.text = day + "." + month + "." + year + " " + hour + ":" + minutes;
             //display4Load.text = display4.text;
-            nameLocation4.text = "4";
+            if (PlayerPrefs.HasKey("nameSave"))
+            {
+                nameLocation4.text = PlayerPrefs.GetString("nameSave");
+            }
+            //nameLocation4.text = saveName.nameSave;
             nameLocation4Load.text = nameLocation4.text;
             save4Text.text = "";
             load4Text.text = save4Text.text;
@@ -591,7 +637,6 @@ public class SaveAndLoad : MonoBehaviour
         }
         else if (SL4 == 1)
         {
-            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             saveGame.gameObject.SetActive(true);
 
             ButtonSave1.gameObject.SetActive(false);
@@ -615,7 +660,11 @@ public class SaveAndLoad : MonoBehaviour
             //year = System.DateTime.Now.Year;
             //display5.text = day + "." + month + "." + year + " " + hour + ":" + minutes;
             //display5Load.text = display5.text;
-            nameLocation5.text = "5";
+            if (PlayerPrefs.HasKey("nameSave"))
+            {
+                nameLocation5.text = PlayerPrefs.GetString("nameSave");
+            }
+            //nameLocation5.text = saveName.nameSave;
             nameLocation5Load.text = nameLocation5.text;
             save5Text.text = "";
             load5Text.text = save5Text.text;
@@ -644,7 +693,6 @@ public class SaveAndLoad : MonoBehaviour
         }
         else if (SL5 == 1)
         {
-            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             saveGame.gameObject.SetActive(true);
 
             ButtonSave1.gameObject.SetActive(false);
@@ -660,7 +708,11 @@ public class SaveAndLoad : MonoBehaviour
         DateTime now = DateTime.Now;
         display.text = now.ToString("dd.MM.yyyy HH:mm");
         displayLoad.text = display.text;
-        nameLocation1.text = "1";
+        if (PlayerPrefs.HasKey("nameSave"))
+        {
+            nameLocation1.text = PlayerPrefs.GetString("nameSave");
+        }
+        //nameLocation1.text = saveName.nameSave;
         nameLocation1Load.text = nameLocation1.text;
         save1Text.text = "";
         load1Text.text = save1Text.text;
@@ -687,7 +739,6 @@ public class SaveAndLoad : MonoBehaviour
             loadBatton[5].gameObject.SetActive(true);
             loadBatton[10].gameObject.SetActive(true);
         }
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
     }
     public void SaveGame2()
     {
@@ -701,7 +752,11 @@ public class SaveAndLoad : MonoBehaviour
         //year = System.DateTime.Now.Year;
         //display2.text = day + "." + month + "." + year + " " + hour + ":" + minutes;
         //display2Load.text = display2.text;
-        nameLocation2.text = "2";
+        if (PlayerPrefs.HasKey("nameSave"))
+        {
+            nameLocation2.text = PlayerPrefs.GetString("nameSave");
+        }
+        //nameLocation2.text = saveName.nameSave;
         nameLocation2Load.text = nameLocation2.text;
         save2Text.text = "";
         load2Text.text = save2Text.text;
@@ -728,7 +783,6 @@ public class SaveAndLoad : MonoBehaviour
             loadBatton[6].gameObject.SetActive(true);
             loadBatton[11].gameObject.SetActive(true);
         }
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
     }
     public void SaveGame3()
     {
@@ -742,7 +796,11 @@ public class SaveAndLoad : MonoBehaviour
         //year = System.DateTime.Now.Year;
         //display3.text = day + "." + month + "." + year + " " + hour + ":" + minutes;
         //display3Load.text = display3.text;
-        nameLocation3.text = "3";
+        if (PlayerPrefs.HasKey("nameSave"))
+        {
+            nameLocation3.text = PlayerPrefs.GetString("nameSave");
+        }
+        //nameLocation3.text = saveName.nameSave;
         nameLocation3Load.text = nameLocation3.text;
         save3Text.text = "";
         load3Text.text = save3Text.text;
@@ -769,7 +827,6 @@ public class SaveAndLoad : MonoBehaviour
             loadBatton[7].gameObject.SetActive(true);
             loadBatton[12].gameObject.SetActive(true);
         }
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
     }
     public void SaveGame4()
     {
@@ -783,7 +840,11 @@ public class SaveAndLoad : MonoBehaviour
         //year = System.DateTime.Now.Year;
         //display4.text = day + "." + month + "." + year + " " + hour + ":" + minutes;
         //display4Load.text = display4.text;
-        nameLocation4.text = "4";
+        if (PlayerPrefs.HasKey("nameSave"))
+        {
+            nameLocation4.text = PlayerPrefs.GetString("nameSave");
+        }
+        //nameLocation4.text = saveName.nameSave;
         nameLocation4Load.text = nameLocation4.text;
         save4Text.text = "";
         load4Text.text = save4Text.text;
@@ -810,7 +871,6 @@ public class SaveAndLoad : MonoBehaviour
             loadBatton[8].gameObject.SetActive(true);
             loadBatton[13].gameObject.SetActive(true);
         }
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
     }
     public void SaveGame5()
     {
@@ -824,7 +884,11 @@ public class SaveAndLoad : MonoBehaviour
         //year = System.DateTime.Now.Year;
         //display5.text = day + "." + month + "." + year + " " + hour + ":" + minutes;
         //display5Load.text = display5.text;
-        nameLocation5.text = "5";
+        if (PlayerPrefs.HasKey("nameSave"))
+        {
+            nameLocation5.text = PlayerPrefs.GetString("nameSave");
+        }
+        //nameLocation5.text = saveName.nameSave;
         nameLocation5Load.text = nameLocation5.text;
         save5Text.text = "";
         load5Text.text = save5Text.text;
@@ -851,12 +915,10 @@ public class SaveAndLoad : MonoBehaviour
             loadBatton[9].gameObject.SetActive(true);
             loadBatton[14].gameObject.SetActive(true);
         }
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
     }
 
     public void Reset1()
     {
-        //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
         resetGame.gameObject.SetActive(true);
 
         ButtonReset1Canvas.gameObject.SetActive(true);
@@ -867,7 +929,6 @@ public class SaveAndLoad : MonoBehaviour
     }
     public void Reset2()
     {
-        //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
         resetGame.gameObject.SetActive(true);
 
         ButtonReset1Canvas.gameObject.SetActive(false);
@@ -878,7 +939,6 @@ public class SaveAndLoad : MonoBehaviour
     }
     public void Reset3()
     {
-        //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
         resetGame.gameObject.SetActive(true);
 
         ButtonReset1Canvas.gameObject.SetActive(false);
@@ -889,7 +949,6 @@ public class SaveAndLoad : MonoBehaviour
     }
     public void Reset4()
     {
-        //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
         resetGame.gameObject.SetActive(true);
 
         ButtonReset1Canvas.gameObject.SetActive(false);
@@ -900,7 +959,6 @@ public class SaveAndLoad : MonoBehaviour
     }
     public void Reset5()
     {
-        //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
         resetGame.gameObject.SetActive(true);
 
         ButtonReset1Canvas.gameObject.SetActive(false);
@@ -909,6 +967,7 @@ public class SaveAndLoad : MonoBehaviour
         ButtonReset4Canvas.gameObject.SetActive(false);
         ButtonReset5Canvas.gameObject.SetActive(true);
     }
+
     public void ResetGame1()
     {
         FireBaseAnalyticsEvents.EventsLoadGameDelete("LoadGameDelete");
@@ -940,7 +999,6 @@ public class SaveAndLoad : MonoBehaviour
             loadBatton[5].gameObject.SetActive(false);
             loadBatton[10].gameObject.SetActive(false);
         }
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
         resetGame.gameObject.SetActive(false);
     }
     public void ResetGame2()
@@ -974,7 +1032,6 @@ public class SaveAndLoad : MonoBehaviour
             loadBatton[6].gameObject.SetActive(false);
             loadBatton[11].gameObject.SetActive(false);
         }
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
         resetGame.gameObject.SetActive(false);
     }
     public void ResetGame3()
@@ -1008,7 +1065,6 @@ public class SaveAndLoad : MonoBehaviour
             loadBatton[7].gameObject.SetActive(false);
             loadBatton[12].gameObject.SetActive(false);
         }
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
         resetGame.gameObject.SetActive(false);
     }
     public void ResetGame4()
@@ -1042,7 +1098,6 @@ public class SaveAndLoad : MonoBehaviour
             loadBatton[8].gameObject.SetActive(false);
             loadBatton[13].gameObject.SetActive(false);
         }
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
         resetGame.gameObject.SetActive(false);
     }
     public void ResetGame5()
@@ -1076,20 +1131,18 @@ public class SaveAndLoad : MonoBehaviour
             loadBatton[9].gameObject.SetActive(false);
             loadBatton[14].gameObject.SetActive(false);
         }
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
         resetGame.gameObject.SetActive(false);
     }
 
     public void BackSaveGame()
     {
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
         saveGame.gameObject.SetActive(false);
         resetGame.gameObject.SetActive(false);
     }
 
     public void SaveGo()
     {
-        if(gameManager.saveGo == 1)
+        if (gameManager.saveGo == 1)
         {
             FireBaseAnalyticsEvents.EventsSave_Button("Save_Button");
             saveSave.gameObject.SetActive(true);

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,73 +6,26 @@ using UnityEngine;
 public class MusicCharter : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
-    [SerializeField] private AudioSource[] audioSource;
-    [SerializeField] private MusicMenu musicMenu;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip[] audioClip;
+    [SerializeField] private MusicSound musicSound;
 
-    //public float startVolume = 0f;
-    //public float endVolume = 1f;
-    //public float duration = 0.1f;
-
-    //private float timer = 0f;
-
-    private void Start()
+    public void StopMusic()
     {
-        audioSource[0].Stop();
-        audioSource[1].Stop();
-        //audioSource.Stop();
+        audioSource.Stop();
     }
-
-    public void CharterMusicOnOff()
+    public void PlayMusic(int index)
     {
-        if (musicMenu.music == 1 && gameManager.musicCharter == true)
+        if (musicSound.music == 1)
         {
-            int a = Random.Range(0, 2);
-            if (a == 0)
+            for (int i = 0; i < audioClip.Length; i++)
             {
-                audioSource[0].Play();
+                if (i == index)
+                {
+                    audioSource.clip = audioClip[i];
+                }
             }
-            else if (a == 1)
-            {
-                audioSource[1].Play();
-            }
-            //audioSource.Play();
-        }
-        else if (musicMenu.music == 1 && gameManager.musicCharter == false || musicMenu.music == 0 && gameManager.musicCharter == false ||
-            musicMenu.music == 0 && gameManager.musicCharter == true)
-        {
-            audioSource[0].Stop();
-            audioSource[1].Stop();
-            //audioSource.Stop();
-        }
-    }
-
-    public void CharterMusic()
-    {
-        if (musicMenu.music == 1 && gameManager.musicCharter == false)
-        {
-            gameManager.musicCharter = true;
-
-            int a = Random.Range(0, 2);
-            if (a == 0)
-            {
-                audioSource[0].Play();
-            }
-            else if (a == 1)
-            {
-                audioSource[1].Play();
-            }
-            //audioSource.Play();
-        }
-        else if (musicMenu.music == 1 && gameManager.musicCharter == true)
-        {
-            gameManager.musicCharter = false;
-            audioSource[0].Stop();
-            audioSource[1].Stop();
-            //audioSource.Stop();
-        }
-        else
-        {
-            return;
+            audioSource.Play();
         }
     }
 }

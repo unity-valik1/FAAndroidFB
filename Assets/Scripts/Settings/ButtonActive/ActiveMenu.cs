@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
@@ -12,12 +13,14 @@ public class ActiveMenu : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
     [SerializeField] private ActiveChapter activeChapter;
-    [SerializeField] private ActiveCamp activeCamp;
+    //[SerializeField] private ActiveCamp activeCamp;
     [SerializeField] private MusicMenu musicMenu;
-    [SerializeField] private Camera camera1;
+    [SerializeField] private MusicCharter musicCharter;
     [SerializeField] private SaveAndLoad saveAndLoad;
     [SerializeField] private Animation anim;
     [SerializeField] private Stopwatch stopwatch;
+    [SerializeField] private SaveName saveName;
+    [SerializeField] private AnimContent animContent;
 
     public GameObject menuUI;
     public GameObject buttonContinueGame;
@@ -25,7 +28,6 @@ public class ActiveMenu : MonoBehaviour
     public GameObject settingsUI;
     public GameObject achievementsUI;
     public GameObject typographyUI;
-    public GameObject themeUI;
     public GameObject soundsUI;
     public GameObject aboutUI;
     public GameObject howToPlayUI;
@@ -85,6 +87,7 @@ public class ActiveMenu : MonoBehaviour
         FireBaseAnalyticsEvents.EventsNewGame1("NewGame", gg);
         stopwatch.ResetTimer();
         stopwatch.gameObject.SetActive(false);
+        saveName.NewGameNameSave();
         if (saveAndLoad.continueGame == 0)
         {
             HowToPlayNewGame();
@@ -101,16 +104,17 @@ public class ActiveMenu : MonoBehaviour
         imgMenuAnim.gameObject.SetActive(true);
         anim.Play("MenuStartAnim");
 
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
         saveAndLoad.lossGameStart.gameObject.SetActive(false);
 
         Invoke("Invoker3", 1f);
         Invoke("Invoker4", 2f);
+        saveName.NewGameNameSave();
     }
     public void Invoker3()
     {
         menuUI.gameObject.SetActive(false);
         howToPlayNewGame.gameObject.SetActive(true);
+        animContent.AllAnim();
     }
     public void Invoker4()
     {
@@ -136,8 +140,6 @@ public class ActiveMenu : MonoBehaviour
         imgMenuAnim.gameObject.SetActive(true);
         anim.Play("MenuStartAnim");
 
-
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
         saveAndLoad.lossGameStart.gameObject.SetActive(false);
 
         Invoke("Invoker", 1f);
@@ -150,7 +152,7 @@ public class ActiveMenu : MonoBehaviour
         PlayerPrefs.Save();
         menuUI.gameObject.SetActive(false);
         howToPlayNewGame.gameObject.SetActive(false);
-        musicMenu.MenuMusic();
+        musicMenu.StopMusic();
         activeChapter.Charter1_1UI(0);
     }
     public void Invoker1()
@@ -161,13 +163,11 @@ public class ActiveMenu : MonoBehaviour
     public void BackLossGame()
     {
         FireBaseAnalyticsEvents.EventsNewGameClose("NewGameClose");
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
         saveAndLoad.lossGameStart.gameObject.SetActive(false);
         saveAndLoad.lossGameLoad.gameObject.SetActive(false);
     }
     public void BackLoadGame()
     {
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
         saveAndLoad.lossGameStart.gameObject.SetActive(false);
         saveAndLoad.lossGameLoad.gameObject.SetActive(false);
     }
@@ -179,7 +179,6 @@ public class ActiveMenu : MonoBehaviour
         settingsUI.gameObject.SetActive(false);
         achievementsUI.gameObject.SetActive(false);
         typographyUI.gameObject.SetActive(false);
-        themeUI.gameObject.SetActive(false);
         soundsUI.gameObject.SetActive(false);
         aboutUI.gameObject.SetActive(false);
         howToPlayUI.gameObject.SetActive(false);
@@ -200,7 +199,7 @@ public class ActiveMenu : MonoBehaviour
         menuUI.gameObject.SetActive(true);
         loadUI.gameObject.SetActive(false);
 
-        musicMenu.MenuMusic();
+        musicMenu.PlayMusic();
 
         if (saveAndLoad.continueGame == 0)
         {
@@ -227,7 +226,6 @@ public class ActiveMenu : MonoBehaviour
 
     public void YesLoadGame()
     {
-        camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
         saveAndLoad.lossGameLoad.gameObject.SetActive(false);
     }
 
@@ -238,7 +236,6 @@ public class ActiveMenu : MonoBehaviour
         loadUI.gameObject.SetActive(false);
         settingsUI.gameObject.SetActive(true);
         typographyUI.gameObject.SetActive(false);
-        themeUI.gameObject.SetActive(false);
         soundsUI.gameObject.SetActive(false);
     }
     public void About()
@@ -259,21 +256,6 @@ public class ActiveMenu : MonoBehaviour
         aboutUI.gameObject.SetActive(false);
         aboutUsUI.gameObject.SetActive(true);
     }
-
-    //public void SetActiveButton(int index)
-    //{
-    //    for (int i = 1; i < buttons.Count; i++)
-    //    {
-    //        if (i == index)
-    //        {
-    //            buttons[i].SetActive(true);
-    //        }
-    //        else
-    //        {
-    //            buttons[i].SetActive(false);
-    //        }
-    //    }
-    //}
     public void Achievements()
     {
         FireBaseAnalyticsEvents.EventsAchievements("Achievements");
@@ -286,14 +268,6 @@ public class ActiveMenu : MonoBehaviour
         FireBaseAnalyticsEvents.EventsTyphography("Typhography");
         settingsUI.gameObject.SetActive(false);
         typographyUI.gameObject.SetActive(true);
-
-    }
-
-    public void Theme()
-    {
-        FireBaseAnalyticsEvents.EventsTheme("Theme");
-        settingsUI.gameObject.SetActive(false);
-        themeUI.gameObject.SetActive(true);
 
     }
 
@@ -316,13 +290,20 @@ public class ActiveMenu : MonoBehaviour
         FireBaseAnalyticsEvents.EventsContinueGame("ContinueGame");
         menuUI.gameObject.SetActive(false);
         loadUI.gameObject.SetActive(false);
-        musicMenu.MenuMusic();
+        musicMenu.StopMusic();
+        musicCharter.PlayMusic(0);
         gameManager.LoadPlayer();
     }
-
-    //public void rrr()
-    //{
-    //    gameManager.saveGo = 0;
-    //    gameManager.SavePlayer6();
-    //}
+    public void Load1()
+    {
+        imgMenuAnim.gameObject.SetActive(true);
+        anim.Play("MenuStartAnim");
+        Invoke("Invoker2_1", 1f);
+        Invoke("Invoker1", 2f);
+    }
+    public void Invoker2_1()
+    {
+        menuUI.gameObject.SetActive(false);
+        loadUI.gameObject.SetActive(false);
+    }
 }
