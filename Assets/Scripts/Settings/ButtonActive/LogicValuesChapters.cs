@@ -130,4 +130,8 @@ public class LogicValuesChapters : MonoBehaviour
     {
         gameManager.b_tuck_in_the_loose_wires = 1;
     }
+    public void B_Take_The_Knife()
+    {
+        gameManager.b_take_the_knife = 1;
+    }
 }

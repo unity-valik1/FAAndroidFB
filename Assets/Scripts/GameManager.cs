@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour
     [Tooltip("Озеро")] public bool lakeUI = false;
 
     [Header("ЭлементыUI Самолет")]
-    [Tooltip("Самолет")] public int[] charter = new int[50];
+    [Tooltip("Самолет")] public int[] charter = new int[182];
 
     //[Header("ЭлементыUI Самолет")]
     //[Tooltip("Самолет")] public bool charter1UI = false;//S
@@ -165,6 +165,9 @@ public class GameManager : MonoBehaviour
     [Tooltip("Алкоголь")] public int b_pick_up_the_tray_table = 0;//S
     [Tooltip("Алкоголь")] public int b_pick_up_the_bent_metal = 0;//S
     [Tooltip("Алкоголь")] public int b_tuck_in_the_loose_wires = 0;//S
+    [Tooltip("Алкоголь")] public int b_take_the_knife = 0;//S
+
+    public int numberMusic = 0;//S
 
 
     private void Awake()
@@ -233,6 +236,8 @@ public class GameManager : MonoBehaviour
         b_pick_up_the_tray_table = data.b_pick_up_the_tray_table;
         b_pick_up_the_bent_metal = data.b_pick_up_the_bent_metal;
         b_tuck_in_the_loose_wires = data.b_tuck_in_the_loose_wires;
+        b_take_the_knife = data.b_take_the_knife;
+        numberMusic = data.numberMusic;
         //charter1UI = data.charter1UI;
         //charter2UI = data.charter2UI;
         //charter3UI = data.charter3UI;
@@ -284,9 +289,10 @@ public class GameManager : MonoBehaviour
         //charter49UI = data.charter49UI;
         //charter50UI = data.charter50UI;
 
-        activeChapter.CharterActiveUpdate();
         _musicMenu.StopMusic();
-        _musicCharter.PlayMusic(0);
+        activeChapter.CharterActiveUpdate();
+        _musicCharter.PlayMusic(numberMusic);
+        //_musicCharter.PlayMusic(0);
         //activeCamp.CampActiveUpdate();
         //_musicCamp.CampMusicOnOff();
         //_musicForest.ForestMusicOnOff();
@@ -341,6 +347,8 @@ public class GameManager : MonoBehaviour
         b_pick_up_the_tray_table = data.b_pick_up_the_tray_table;
         b_pick_up_the_bent_metal = data.b_pick_up_the_bent_metal;
         b_tuck_in_the_loose_wires = data.b_tuck_in_the_loose_wires;
+        b_take_the_knife = data.b_take_the_knife;
+        numberMusic = data.numberMusic;
         //charter1UI = data.charter1UI;
         //charter2UI = data.charter2UI;
         //charter3UI = data.charter3UI;
@@ -395,7 +403,7 @@ public class GameManager : MonoBehaviour
         activeMenu.Load1();
         _musicMenu.StopMusic();
         activeChapter.CharterActiveUpdate();
-        _musicCharter.PlayMusic(0);
+        _musicCharter.PlayMusic(numberMusic);
         //activeCamp.CampActiveUpdate();
         //_musicCamp.CampMusicOnOff();
         //_musicForest.ForestMusicOnOff();
@@ -451,6 +459,8 @@ public class GameManager : MonoBehaviour
         b_pick_up_the_tray_table = data.b_pick_up_the_tray_table;
         b_pick_up_the_bent_metal = data.b_pick_up_the_bent_metal;
         b_tuck_in_the_loose_wires = data.b_tuck_in_the_loose_wires;
+        b_take_the_knife = data.b_take_the_knife;
+        numberMusic = data.numberMusic;
         //charter1UI = data.charter1UI;
         //charter2UI = data.charter2UI;
         //charter3UI = data.charter3UI;
@@ -505,7 +515,8 @@ public class GameManager : MonoBehaviour
         activeMenu.Load1();
         _musicMenu.StopMusic();
         activeChapter.CharterActiveUpdate();
-        _musicCharter.PlayMusic(0);
+        _musicCharter.PlayMusic(numberMusic);
+
         //activeCamp.CampActiveUpdate();
         //_musicCamp.CampMusicOnOff();
         //_musicForest.ForestMusicOnOff();
@@ -561,6 +572,8 @@ public class GameManager : MonoBehaviour
         b_pick_up_the_tray_table = data.b_pick_up_the_tray_table;
         b_pick_up_the_bent_metal = data.b_pick_up_the_bent_metal;
         b_tuck_in_the_loose_wires = data.b_tuck_in_the_loose_wires;
+        b_take_the_knife = data.b_take_the_knife;
+        numberMusic = data.numberMusic;
         //charter1UI = data.charter1UI;
         //charter2UI = data.charter2UI;
         //charter3UI = data.charter3UI;
@@ -615,7 +628,8 @@ public class GameManager : MonoBehaviour
         activeMenu.Load1();
         _musicMenu.StopMusic();
         activeChapter.CharterActiveUpdate();
-        _musicCharter.PlayMusic(0);
+        _musicCharter.PlayMusic(numberMusic);
+
         //activeCamp.CampActiveUpdate();
         //_musicCamp.CampMusicOnOff();
         //_musicForest.ForestMusicOnOff();
@@ -671,6 +685,8 @@ public class GameManager : MonoBehaviour
         b_pick_up_the_tray_table = data.b_pick_up_the_tray_table;
         b_pick_up_the_bent_metal = data.b_pick_up_the_bent_metal;
         b_tuck_in_the_loose_wires = data.b_tuck_in_the_loose_wires;
+        b_take_the_knife = data.b_take_the_knife;
+        numberMusic = data.numberMusic;
         //charter1UI = data.charter1UI;
         //charter2UI = data.charter2UI;
         //charter3UI = data.charter3UI;
@@ -725,7 +741,8 @@ public class GameManager : MonoBehaviour
         activeMenu.Load1();
         _musicMenu.StopMusic();
         activeChapter.CharterActiveUpdate();
-        _musicCharter.PlayMusic(0);
+        _musicCharter.PlayMusic(numberMusic);
+
         //activeCamp.CampActiveUpdate();
         //_musicCamp.CampMusicOnOff();
         //_musicForest.ForestMusicOnOff();
@@ -782,6 +799,8 @@ public class GameManager : MonoBehaviour
         b_pick_up_the_tray_table = data.b_pick_up_the_tray_table;
         b_pick_up_the_bent_metal = data.b_pick_up_the_bent_metal;
         b_tuck_in_the_loose_wires = data.b_tuck_in_the_loose_wires;
+        b_take_the_knife = data.b_take_the_knife;
+        numberMusic = data.numberMusic;
         //charter1UI = data.charter1UI;
         //charter2UI = data.charter2UI;
         //charter3UI = data.charter3UI;
@@ -836,7 +855,7 @@ public class GameManager : MonoBehaviour
         activeMenu.Load1();
         _musicMenu.StopMusic();
         activeChapter.CharterActiveUpdate();
-        _musicCharter.PlayMusic(0);
+        _musicCharter.PlayMusic(numberMusic);
         //activeCamp.CampActiveUpdate();
         //_musicCamp.CampMusicOnOff();
         //_musicForest.ForestMusicOnOff();

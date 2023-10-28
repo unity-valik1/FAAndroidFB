@@ -9,9 +9,22 @@ public class SceneRulesNext : MonoBehaviour
     [SerializeField] private Animation anim;
     public GameObject animka;
     public string timer3;
+    public int rules = 0;
     private void Start()
     {
         anim.Play("RulesAnim");
+        if (PlayerPrefs.HasKey("rules"))
+        {
+            rules = PlayerPrefs.GetInt("rules");
+        }
+        if (rules == 1)
+        {
+            SceneManager.LoadScene(1);
+        }
+
+        rules = 1;
+        PlayerPrefs.SetInt("rules", rules);
+        PlayerPrefs.Save();
         Invoke("Invoker1", 1f);
     }
     public void Go()

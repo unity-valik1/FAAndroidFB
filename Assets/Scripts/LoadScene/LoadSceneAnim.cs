@@ -13,13 +13,11 @@ public class LoadSceneAnim : MonoBehaviour
     [SerializeField] private Animation anim1;
     [SerializeField] private Animation anim2;
     [SerializeField] private Animation anim3;
-    [SerializeField] private Animation anim4;
 
     public int sceneID = 2;
     public GameObject img1;
     public GameObject img2;
     public GameObject img3;
-    public GameObject img4;
     public string textLoading;
     public TMP_Text textLoadingDot;
     public GameObject textSay1;
@@ -87,7 +85,7 @@ public class LoadSceneAnim : MonoBehaviour
             if (operation.progress >=.9f && !operation.allowSceneActivation)
             {
                 anim.Play("LoadingScenesAnim");
-                yield return new WaitForSeconds(1.0f);
+                //yield return new WaitForSeconds(1.0f);
                 operation.allowSceneActivation = true;
             }
             yield return null;
@@ -109,13 +107,12 @@ public class LoadSceneAnim : MonoBehaviour
 
     public void ImgRandom()
     {
-        int a = Random.Range(0, 4);
+        int a = Random.Range(0, 3);
         if (a == 0)
         {
             img1.SetActive(true);
             img2.SetActive(false);
             img3.SetActive(false);
-            img4.SetActive(false);
             anim1.Play("AnimBgImg1");
         }
         else if (a == 1)
@@ -123,7 +120,6 @@ public class LoadSceneAnim : MonoBehaviour
             img1.SetActive(false);
             img2.SetActive(true);
             img3.SetActive(false);
-            img4.SetActive(false);
             anim2.Play("AnimBgImg2");
         }
         else if (a == 2)
@@ -131,16 +127,7 @@ public class LoadSceneAnim : MonoBehaviour
             img1.SetActive(false);
             img2.SetActive(false);
             img3.SetActive(true);
-            img4.SetActive(false);
             anim3.Play("AnimBgImg3");
-        }
-        else if (a == 3)
-        {
-            img1.SetActive(false);
-            img2.SetActive(false);
-            img3.SetActive(false);
-            img4.SetActive(true);
-            anim4.Play("AnimBgImg4");
         }
     }
 

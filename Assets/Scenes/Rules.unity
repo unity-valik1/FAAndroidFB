@@ -328,51 +328,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1709238991
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1709238993}
-  - component: {fileID: 1709238992}
-  m_Layer: 0
-  m_Name: RulesPP
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1709238992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709238991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 970750ad121565a41827784b5a773100, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rules: 0
---- !u!4 &1709238993
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709238991}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1868161787
@@ -614,14 +569,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e0881ba1b11801144af89bf29108bcfb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c363b1fe87db6c345872aa57c3d1aa58, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -708,7 +663,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1170, y: 2532}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0.5
+  m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -896,9 +851,9 @@ RectTransform:
   m_Father: {fileID: 7557465151136861374}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -138}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 1128}
   m_SizeDelta: {x: 700, y: 228}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7557465151423345623
@@ -924,9 +879,9 @@ RectTransform:
   m_Father: {fileID: 7557465152947265858}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -474}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 720}
   m_SizeDelta: {x: 963, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7557465151475698835
@@ -975,9 +930,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'At each stage of the text-based story, you will be faced with several
-    choices based on a situation. These choices will determine the eventual outcome
-    of your adventure. '
+  m_text: At each story stage, your choices shape the adventure's outcome.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 45ce1a70323bdf442a3996aa637af749, type: 2}
   m_sharedMaterial: {fileID: 6275285168723390503, guid: 45ce1a70323bdf442a3996aa637af749, type: 2}
@@ -1004,15 +957,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48
-  m_fontSizeBase: 48
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1540,10 +1493,10 @@ RectTransform:
   m_Father: {fileID: 7557465153103734350}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -504}
-  m_SizeDelta: {x: 963, y: 360}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 720}
+  m_SizeDelta: {x: 963, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7557465152270647821
 GameObject:
@@ -1591,9 +1544,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Each circumstance will be accompanied by gripping sounds and detailed
-    images that will allow you to fully immerse yourself in this intricately crafted
-    world. We recommend using headphones for total immersion. '
+  m_text: Immerse yourself in each scene with sounds and images.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 45ce1a70323bdf442a3996aa637af749, type: 2}
   m_sharedMaterial: {fileID: 6275285168723390503, guid: 45ce1a70323bdf442a3996aa637af749, type: 2}
@@ -1620,15 +1571,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48
-  m_fontSizeBase: 48
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1792,9 +1743,9 @@ RectTransform:
   m_Father: {fileID: 7557465153103734350}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -138}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 1128}
   m_SizeDelta: {x: 700, y: 228}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &7557465152352935092
@@ -2192,7 +2143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopwatch: {fileID: 1015932731}
   percentThreshold: 0.2
-  easing: 0.5
+  easing: 0.25
   totalPages: 3
   currentPage: 1
   img:
@@ -2241,6 +2192,7 @@ MonoBehaviour:
   anim: {fileID: 390518883}
   animka: {fileID: 390518881}
   timer3: 
+  rules: 0
 --- !u!1 &7557465152675015110
 GameObject:
   m_ObjectHideFlags: 0
@@ -2337,9 +2289,9 @@ RectTransform:
   m_Father: {fileID: 7557465152947265858}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -138}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 1128}
   m_SizeDelta: {x: 700, y: 228}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7557465152703438553
@@ -2598,14 +2550,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.43529412, g: 0.43529412, b: 0.43529412, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f8e1015732ebc804f8eed57c03f6af80, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1ed231cd5fa467c47a0e35a12b93da0b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2630,10 +2582,10 @@ RectTransform:
   m_Father: {fileID: 7557465151136861374}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -444}
-  m_SizeDelta: {x: 963, y: 240}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 720}
+  m_SizeDelta: {x: 963, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7557465152968930849
 GameObject:
@@ -2681,8 +2633,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Stranded Horizons is a text-based adventure game, where you can choose
-    the outcome of the story based on the choices you make.
+  m_text: Stranded Horizons is a text adventure game.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 45ce1a70323bdf442a3996aa637af749, type: 2}
   m_sharedMaterial: {fileID: 6275285168723390503, guid: 45ce1a70323bdf442a3996aa637af749, type: 2}
@@ -2709,15 +2660,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48
-  m_fontSizeBase: 48
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2948,14 +2899,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.43529412, g: 0.43529412, b: 0.43529412, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 328d3183cdb982a40a3bda2b797503c2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: babf13b2904a6654b8fb92849cc743e2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

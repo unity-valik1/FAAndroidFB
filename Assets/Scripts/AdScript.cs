@@ -11,6 +11,8 @@ public class AdScript : MonoBehaviour
     public UnityEvent OnAdOpeningEvent;
     public UnityEvent OnAdClosedEvent;
 
+    public int number = 0;
+
     //ca-app-pub-8820941749262255/2928514036 для залива билда настоящая ссылка
     private string _adUnitId = "ca-app-pub-3940256099942544/1033173712";
 
@@ -60,7 +62,6 @@ public class AdScript : MonoBehaviour
                 RegisterReloadHandler(ad);
             });
     }
-
     public void ShowAd()
     {
         if (interstitialAd != null && interstitialAd.CanShowAd())
@@ -108,7 +109,6 @@ public class AdScript : MonoBehaviour
                            "with error : " + error);
         };
     }
-
     private void RegisterReloadHandler(InterstitialAd ad)
     {
         // Raised when the ad closed full screen content.
@@ -128,5 +128,15 @@ public class AdScript : MonoBehaviour
             // Reload the ad so that we can show another as soon as possible.
             LoadInterstitialAd();
         };
+    }
+
+    public void NumberAd()
+    {
+        number++;
+        if(number >= 10)
+        {
+            number = 0;
+            ShowAd();
+        }
     }
 }

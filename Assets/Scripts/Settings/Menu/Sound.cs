@@ -54,7 +54,7 @@ public class Sound : MonoBehaviour
             FireBaseAnalyticsEvents.EventsSoundsButtonOn("SoundsButtonOn");
             sound = 1;
             soundText.text = "Sounds: ON";
-            PlaySound(-1);
+            PlaySound(2);
             PlayerPrefs.SetInt("sound", sound);
             PlayerPrefs.Save();
         }
@@ -62,14 +62,17 @@ public class Sound : MonoBehaviour
 
     public void PlaySound(int index)
     {
-        for (int i = 0; i < audioClip.Length; i++)
+        if(sound == 1)
         {
-            if (i == index)
+            for (int i = 0; i < audioClip.Length; i++)
             {
-                audioSource.clip = audioClip[i];
+                if (i == index)
+                {
+                    audioSource.clip = audioClip[i];
+                }
             }
+            audioSource.Play();
         }
-        audioSource.Play();
     }
     public void StopSound()
     {

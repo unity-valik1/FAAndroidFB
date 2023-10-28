@@ -318,6 +318,9 @@ public class SaveAndLoad : MonoBehaviour
             {
                 saveName.nameSave = PlayerPrefs.GetString("nameSave");
             }
+            continueGame = 1;
+            PlayerPrefs.SetInt("continueGame", continueGame);
+            PlayerPrefs.Save();
         }
         else
         {
@@ -341,6 +344,9 @@ public class SaveAndLoad : MonoBehaviour
             {
                 saveName.nameSave = PlayerPrefs.GetString("nameSave");
             }
+            continueGame = 1;
+            PlayerPrefs.SetInt("continueGame", continueGame);
+            PlayerPrefs.Save();
         }
         else
         {
@@ -364,6 +370,9 @@ public class SaveAndLoad : MonoBehaviour
             {
                 saveName.nameSave = PlayerPrefs.GetString("nameSave");
             }
+            continueGame = 1;
+            PlayerPrefs.SetInt("continueGame", continueGame);
+            PlayerPrefs.Save();
         }
         else
         {
@@ -387,6 +396,9 @@ public class SaveAndLoad : MonoBehaviour
             {
                 saveName.nameSave = PlayerPrefs.GetString("nameSave");
             }
+            continueGame = 1;
+            PlayerPrefs.SetInt("continueGame", continueGame);
+            PlayerPrefs.Save();
         }
         else
         {
@@ -410,6 +422,9 @@ public class SaveAndLoad : MonoBehaviour
             {
                 saveName.nameSave = PlayerPrefs.GetString("nameSave");
             }
+            continueGame = 1;
+            PlayerPrefs.SetInt("continueGame", continueGame);
+            PlayerPrefs.Save();
         }
         else
         {
@@ -1142,16 +1157,17 @@ public class SaveAndLoad : MonoBehaviour
 
     public void SaveGo()
     {
-        if (gameManager.saveGo == 1)
-        {
-            FireBaseAnalyticsEvents.EventsSave_Button("Save_Button");
-            saveSave.gameObject.SetActive(true);
-        }
-        else
-        {
-            FireBaseAnalyticsEvents.EventsSave_Button_Buy("Save_Button_Buy");
-            money.gameObject.SetActive(true);
-        }
+        saveSave.gameObject.SetActive(true);
+        //if (gameManager.saveGo == 1)
+        //{
+        //    FireBaseAnalyticsEvents.EventsSave_Button("Save_Button");
+        //    saveSave.gameObject.SetActive(true);
+        //}
+        //else
+        //{
+        //    FireBaseAnalyticsEvents.EventsSave_Button_Buy("Save_Button_Buy");
+        //    money.gameObject.SetActive(true);
+        //}
     }
 
     public void RefreshApi()

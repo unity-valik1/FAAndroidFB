@@ -57,7 +57,7 @@ public class PlayerData
     //public bool charter50UI;
 
 
-    public int[] charter = new int[50];
+    public int[] charter = new int[182];
 
 
     public int b_alcohol;//S
@@ -91,7 +91,9 @@ public class PlayerData
     public int b_pick_up_the_tray_table;
     public int b_pick_up_the_bent_metal;
     public int b_tuck_in_the_loose_wires;
+    public int b_take_the_knife;
 
+    public int numberMusic;
     public PlayerData(GameManager gameManager)
     {
         for (int i = 0; i < gameManager.charter.Length; i++)
@@ -129,6 +131,8 @@ public class PlayerData
         b_pick_up_the_tray_table = gameManager.b_pick_up_the_tray_table;
         b_pick_up_the_bent_metal = gameManager.b_pick_up_the_bent_metal;
         b_tuck_in_the_loose_wires = gameManager.b_tuck_in_the_loose_wires;
+        b_take_the_knife = gameManager.b_take_the_knife;
+        numberMusic = gameManager.numberMusic;
 
     //charter1UI = gameManager.charter1UI;
     //charter2UI = gameManager.charter2UI;

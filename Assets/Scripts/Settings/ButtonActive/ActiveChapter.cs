@@ -19,15 +19,17 @@ public class ActiveChapter : MonoBehaviour
     [SerializeField] private SaveAndLoad saveAndLoad;
     [SerializeField] private Animation anim;
     [SerializeField] private AnimContent[] animContent;
+    [SerializeField] private AnimContent animContentPanel;
     [SerializeField] private LogicValuesChapters logicValuesChapters;
     [SerializeField] private GameObject[] buttonIf;
+    [SerializeField] private AnimStar animStar;
     //[SerializeField] private ActiveCamp activeCamp;
     //[SerializeField] private MusicCamp musicCamp;
 
     public GameObject panel;
     public GameObject[] charter;
 
-    [SerializeField] private Image imgBlackout;
+    [SerializeField] public Image imgBlackout;
     public TMP_Text toBeContinued;
     public GameObject rateUs;
     public Button star1;
@@ -307,6 +309,834 @@ public class ActiveChapter : MonoBehaviour
             panel.gameObject.SetActive(true);
             tPCharter.C1();
         }
+        else if (gameManager.charter[44] == 1)
+        {
+            ButtonC45();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[45] == 1)
+        {
+            ButtonC46();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[46] == 1)
+        {
+            ButtonC47();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[47] == 1)
+        {
+            ButtonC48();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[48] == 1)
+        {
+            ButtonC49();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[49] == 1)
+        {
+            ButtonC50();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[50] == 1)
+        {
+            ButtonC51();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[51] == 1)
+        {
+            ButtonC52();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[52] == 1)
+        {
+            ButtonC53();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[53] == 1)
+        {
+            ButtonC54();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[54] == 1)
+        {
+            ButtonC55();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[55] == 1)
+        {
+            ButtonC56();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[56] == 1)
+        {
+            ButtonC57();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[57] == 1)
+        {
+            ButtonC58();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[58] == 1)
+        {
+            ButtonC59();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[59] == 1)
+        {
+            ButtonC60();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[60] == 1)
+        {
+            ButtonC61();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[61] == 1)
+        {
+            ButtonC62();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[62] == 1)
+        {
+            ButtonC63();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[63] == 1)
+        {
+            ButtonC64();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[64] == 1)
+        {
+            ButtonC65();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[65] == 1)
+        {
+            ButtonC66();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[66] == 1)
+        {
+            ButtonC67();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[67] == 1)
+        {
+            ButtonC68();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[68] == 1)
+        {
+            ButtonC69();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[69] == 1)
+        {
+            ButtonC70();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[70] == 1)
+        {
+            ButtonC71();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[71] == 1)
+        {
+            ButtonC72();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[72] == 1)
+        {
+            ButtonC73();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[73] == 1)
+        {
+            ButtonC74();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[74] == 1)
+        {
+            ButtonC75();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[75] == 1)
+        {
+            ButtonC76();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[76] == 1)
+        {
+            ButtonC77();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[77] == 1)
+        {
+            ButtonC78();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[78] == 1)
+        {
+            ButtonC79();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[79] == 1)
+        {
+            ButtonC80();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[80] == 1)
+        {
+            ButtonC81();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[81] == 1)
+        {
+            ButtonC82();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[82] == 1)
+        {
+            ButtonC83();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[83] == 1)
+        {
+            ButtonC84();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[84] == 1)
+        {
+            ButtonC85();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[85] == 1)
+        {
+            ButtonC86();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[86] == 1)
+        {
+            ButtonC87();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[87] == 1)
+        {
+            ButtonC88();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[88] == 1)
+        {
+            ButtonC89();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[89] == 1)
+        {
+            ButtonC90();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[90] == 1)
+        {
+            ButtonC91();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[91] == 1)
+        {
+            ButtonC92();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[92] == 1)
+        {
+            ButtonC93();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[93] == 1)
+        {
+            ButtonC94();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[94] == 1)
+        {
+            ButtonC95();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[95] == 1)
+        {
+            ButtonC96();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[96] == 1)
+        {
+            ButtonC97();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[97] == 1)
+        {
+            ButtonC98();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[98] == 1)
+        {
+            ButtonC99();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[99] == 1)
+        {
+            ButtonC100();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[100] == 1)
+        {
+            ButtonC101();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[101] == 1)
+        {
+            ButtonC102();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[102] == 1)
+        {
+            ButtonC103();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[103] == 1)
+        {
+            ButtonC104();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[104] == 1)
+        {
+            ButtonC105();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[105] == 1)
+        {
+            ButtonC106();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[106] == 1)
+        {
+            ButtonC107();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[107] == 1)
+        {
+            ButtonC108();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[108] == 1)
+        {
+            ButtonC109();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[109] == 1)
+        {
+            ButtonC110();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[110] == 1)
+        {
+            ButtonC111();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[111] == 1)
+        {
+            ButtonC112();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[112] == 1)
+        {
+            ButtonC113();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[113] == 1)
+        {
+            ButtonC114();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[114] == 1)
+        {
+            ButtonC115();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[115] == 1)
+        {
+            ButtonC116();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[116] == 1)
+        {
+            ButtonC117();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[117] == 1)
+        {
+            ButtonC118();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[118] == 1)
+        {
+            ButtonC119();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[119] == 1)
+        {
+            ButtonC120();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[120] == 1)
+        {
+            ButtonC121();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[121] == 1)
+        {
+            ButtonC122();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[122] == 1)
+        {
+            ButtonC123();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[123] == 1)
+        {
+            ButtonC124();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[124] == 1)
+        {
+            ButtonC125();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[125] == 1)
+        {
+            ButtonC126();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[126] == 1)
+        {
+            ButtonC127();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[127] == 1)
+        {
+            ButtonC128();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[128] == 1)
+        {
+            ButtonC129();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[129] == 1)
+        {
+            ButtonC130();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[130] == 1)
+        {
+            ButtonC131();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[131] == 1)
+        {
+            ButtonC132();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[132] == 1)
+        {
+            ButtonC133();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[133] == 1)
+        {
+            ButtonC134();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[134] == 1)
+        {
+            ButtonC135();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[135] == 1)
+        {
+            ButtonC136();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[136] == 1)
+        {
+            ButtonC137();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[137] == 1)
+        {
+            ButtonC138();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[138] == 1)
+        {
+            ButtonC139();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[139] == 1)
+        {
+            ButtonC140();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[140] == 1)
+        {
+            ButtonC141();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[141] == 1)
+        {
+            ButtonC142();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[142] == 1)
+        {
+            ButtonC143();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[143] == 1)
+        {
+            ButtonC144();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[144] == 1)
+        {
+            ButtonC145();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[145] == 1)
+        {
+            ButtonC146();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[146] == 1)
+        {
+            ButtonC147();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[147] == 1)
+        {
+            ButtonC148();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[148] == 1)
+        {
+            ButtonC149();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[149] == 1)
+        {
+            ButtonC150();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[150] == 1)
+        {
+            ButtonC151();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[151] == 1)
+        {
+            ButtonC152();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[152] == 1)
+        {
+            ButtonC153();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[153] == 1)
+        {
+            ButtonC154();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[154] == 1)
+        {
+            ButtonC155();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[155] == 1)
+        {
+            ButtonC156();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[156] == 1)
+        {
+            ButtonC157();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[157] == 1)
+        {
+            ButtonC158();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[158] == 1)
+        {
+            ButtonC159();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[159] == 1)
+        {
+            ButtonC160();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[160] == 1)
+        {
+            ButtonC161();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[161] == 1)
+        {
+            ButtonC162();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[162] == 1)
+        {
+            ButtonC163();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[163] == 1)
+        {
+            ButtonC164();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[164] == 1)
+        {
+            ButtonC165();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[165] == 1)
+        {
+            ButtonC166();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[166] == 1)
+        {
+            ButtonC167();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[167] == 1)
+        {
+            ButtonC168();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[168] == 1)
+        {
+            ButtonC169();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[169] == 1)
+        {
+            ButtonC170();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[170] == 1)
+        {
+            ButtonC171();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[171] == 1)
+        {
+            ButtonC172();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[172] == 1)
+        {
+            ButtonC173();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[173] == 1)
+        {
+            ButtonC174();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[174] == 1)
+        {
+            ButtonC175();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[175] == 1)
+        {
+            ButtonC176();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[176] == 1)
+        {
+            ButtonC177();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[177] == 1)
+        {
+            ButtonC178();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[178] == 1)
+        {
+            ButtonC179();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[179] == 1)
+        {
+            ButtonC180();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[180] == 1)
+        {
+            ButtonC181();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[181] == 1)
+        {
+            ButtonC182();
+            panel.gameObject.SetActive(true);
+            tPCharter.C1();
+        }
         else
         {
             for (int i = 0; i < gameManager.charter.Length; i++)
@@ -535,6 +1365,8 @@ public class ActiveChapter : MonoBehaviour
     //1
     public void Charter1_1UI(int index)
     {
+        toBeContinued.text = "Prologue";
+        gameManager.numberMusic = 0;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -560,7 +1392,7 @@ public class ActiveChapter : MonoBehaviour
         }
         panel.gameObject.SetActive(true);
         tPCharter.C1();
-        musicCharter.PlayMusic(0);
+        musicCharter.PlayMusic(gameManager.numberMusic);
         for (int i = 0; i < animContent.Length; i++)
         {
             animContent[0].AllAnim();
@@ -569,6 +1401,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter1UI(int index)
     {
+        toBeContinued.text = "Prologue";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -619,6 +1452,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter2UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -652,7 +1486,6 @@ public class ActiveChapter : MonoBehaviour
         }
         sound.PlaySound(0);
     }
-
     //2_2
     public void ButtonC2_2()
     {
@@ -685,6 +1518,8 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter2_2UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
+        gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -716,6 +1551,7 @@ public class ActiveChapter : MonoBehaviour
                 animContent[i].AllAnim();
             }
         }
+        musicCharter.PlayMusic(gameManager.numberMusic);
         sound.PlaySound(0);
     }
 
@@ -738,6 +1574,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter3UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -771,6 +1608,57 @@ public class ActiveChapter : MonoBehaviour
 
         sound.PlaySound(1);
     }
+    //3A
+    public void AButtonC3()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[1].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC3", 1.1f);
+        Invoke("AInvokerAchievements2", 2.2f);
+    }
+    private void AInvokerC3()
+    {
+        ACharter3UI(2);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements2()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter3UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Alcohol();
+
+        animContent[2].AllAnim2();
+        animContentPanel.AllAnimP();
+        sound.PlaySound(1);
+    }
 
     //4
     public void ButtonC4()
@@ -791,6 +1679,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter4UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -870,6 +1759,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[3].AllAnim();
         }
     }
+    //4A
+    public void AButtonC4()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[1].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC4", 1.1f);
+        Invoke("AInvokerAchievements3", 2.2f);
+    }
+    private void AInvokerC4()
+    {
+        ACharter4UI(3);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements3()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter4UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[3].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //5
     public void ButtonC5()
@@ -877,7 +1814,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC5", 0.5f);
-        Invoke("InvokerAchievements4", 1f);
+        Invoke("InvokerAchievements4", 6.5f);
     }
     public void InvokerC5()
     {
@@ -890,6 +1827,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter5UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -901,56 +1839,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = true;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-        //gameManager.charter31UI = false;
-        //gameManager.charter32UI = false;
-        //gameManager.charter33UI = false;
-        //gameManager.charter34UI = false;
-        //gameManager.charter35UI = false;
-        //gameManager.charter36UI = false;
-        //gameManager.charter37UI = false;
-        //gameManager.charter38UI = false;
-        //gameManager.charter39UI = false;
-        //gameManager.charter40UI = false;
-        //gameManager.charter41UI = false;
-        //gameManager.charter42UI = false;
-        //gameManager.charter43UI = false;
-        //gameManager.charter44UI = false;
-        //gameManager.charter45UI = false;
-        //gameManager.charter46UI = false;
-        //gameManager.charter47UI = false;
-        //gameManager.charter48UI = false;
-        //gameManager.charter49UI = false;
-        //gameManager.charter50UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -969,6 +1857,55 @@ public class ActiveChapter : MonoBehaviour
             animContent[4].AllAnim();
         }
     }
+    //5A
+    public void AButtonC5()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[2].AllAnim1();
+        animContent[3].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC5", 1.1f);
+        Invoke("AInvokerAchievements4", 2.2f);
+    }
+    private void AInvokerC5()
+    {
+        ACharter5UI(4);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements4()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter5UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[4].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //6
     public void ButtonC6()
@@ -976,7 +1913,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC6", 0.5f);
-        Invoke("InvokerAchievements5", 1f);
+        Invoke("InvokerAchievements5", 6.5f);
     }
     public void InvokerC6()
     {
@@ -989,6 +1926,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter6UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -1000,56 +1938,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = true;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-        //gameManager.charter31UI = false;
-        //gameManager.charter32UI = false;
-        //gameManager.charter33UI = false;
-        //gameManager.charter34UI = false;
-        //gameManager.charter35UI = false;
-        //gameManager.charter36UI = false;
-        //gameManager.charter37UI = false;
-        //gameManager.charter38UI = false;
-        //gameManager.charter39UI = false;
-        //gameManager.charter40UI = false;
-        //gameManager.charter41UI = false;
-        //gameManager.charter42UI = false;
-        //gameManager.charter43UI = false;
-        //gameManager.charter44UI = false;
-        //gameManager.charter45UI = false;
-        //gameManager.charter46UI = false;
-        //gameManager.charter47UI = false;
-        //gameManager.charter48UI = false;
-        //gameManager.charter49UI = false;
-        //gameManager.charter50UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -1070,6 +1958,57 @@ public class ActiveChapter : MonoBehaviour
             animContent[5].AllAnim();
         }
     }
+    //6A
+    public void AButtonC6()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[4].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC6", 1.1f);
+        Invoke("AInvokerAchievements5", 2.2f);
+    }
+    private void AInvokerC6()
+    {
+        ACharter6UI(5);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements5()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter6UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Ignore_It();
+
+
+        animContent[5].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //7
     public void ButtonC7()
@@ -1077,7 +2016,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC7", 0.5f);
-        Invoke("InvokerAchievements6", 1f);
+        Invoke("InvokerAchievements6", 6.5f);
     }
     public void InvokerC7()
     {
@@ -1090,6 +2029,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter7UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -1169,65 +2109,65 @@ public class ActiveChapter : MonoBehaviour
             animContent[6].AllAnim();
         }
     }
+    //7A
+    public void AButtonC7()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[4].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC7", 1.1f);
+        Invoke("AInvokerAchievements6", 2.2f);
+    }
+    private void AInvokerC7()
+    {
+        ACharter7UI(6);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements6()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter7UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[6].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //Проигрышь
     public void MenuCharter7UI()
     {
-        sound.StopSound();
+        toBeContinued.text = "Chapter 1";
+        //sound.StopSound();
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             gameManager.charter[i] = 0;
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-        //gameManager.charter31UI = false;
-        //gameManager.charter32UI = false;
-        //gameManager.charter33UI = false;
-        //gameManager.charter34UI = false;
-        //gameManager.charter35UI = false;
-        //gameManager.charter36UI = false;
-        //gameManager.charter37UI = false;
-        //gameManager.charter38UI = false;
-        //gameManager.charter39UI = false;
-        //gameManager.charter40UI = false;
-        //gameManager.charter41UI = false;
-        //gameManager.charter42UI = false;
-        //gameManager.charter43UI = false;
-        //gameManager.charter44UI = false;
-        //gameManager.charter45UI = false;
-        //gameManager.charter46UI = false;
-        //gameManager.charter47UI = false;
-        //gameManager.charter48UI = false;
-        //gameManager.charter49UI = false;
-        //gameManager.charter50UI = false;
+
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -1248,7 +2188,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC8", 0.5f);
-        Invoke("InvokerAchievements7", 1f);
+        Invoke("InvokerAchievements7", 6.5f);
     }
     public void InvokerC8()
     {
@@ -1262,6 +2202,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter8UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -1273,56 +2214,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = true;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-        //gameManager.charter31UI = false;
-        //gameManager.charter32UI = false;
-        //gameManager.charter33UI = false;
-        //gameManager.charter34UI = false;
-        //gameManager.charter35UI = false;
-        //gameManager.charter36UI = false;
-        //gameManager.charter37UI = false;
-        //gameManager.charter38UI = false;
-        //gameManager.charter39UI = false;
-        //gameManager.charter40UI = false;
-        //gameManager.charter41UI = false;
-        //gameManager.charter42UI = false;
-        //gameManager.charter43UI = false;
-        //gameManager.charter44UI = false;
-        //gameManager.charter45UI = false;
-        //gameManager.charter46UI = false;
-        //gameManager.charter47UI = false;
-        //gameManager.charter48UI = false;
-        //gameManager.charter49UI = false;
-        //gameManager.charter50UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -1341,6 +2232,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[7].AllAnim();
         }
     }
+    //8A
+    public void AButtonC8()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[6].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC8", 1.1f);
+        Invoke("AInvokerAchievements7", 2.2f);
+    }
+    private void AInvokerC8()
+    {
+        ACharter8UI(7);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements7()
+    {
+        imgBlackout.gameObject.SetActive(false);
+        gameManager.SavePlayer();
+    }
+    private void ACharter8UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[7].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //9
     public void ButtonC9()
@@ -1348,7 +2287,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC9", 0.5f);
-        Invoke("InvokerAchievements8", 1f);
+        Invoke("InvokerAchievements8", 6.5f);
     }
     public void InvokerC9()
     {
@@ -1361,6 +2300,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter9UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -1372,57 +2312,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = true;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-        //gameManager.charter31UI = false;
-        //gameManager.charter32UI = false;
-        //gameManager.charter33UI = false;
-        //gameManager.charter34UI = false;
-        //gameManager.charter35UI = false;
-        //gameManager.charter36UI = false;
-        //gameManager.charter37UI = false;
-        //gameManager.charter38UI = false;
-        //gameManager.charter39UI = false;
-        //gameManager.charter40UI = false;
-        //gameManager.charter41UI = false;
-        //gameManager.charter42UI = false;
-        //gameManager.charter43UI = false;
-        //gameManager.charter44UI = false;
-        //gameManager.charter45UI = false;
-        //gameManager.charter46UI = false;
-        //gameManager.charter47UI = false;
-        //gameManager.charter48UI = false;
-        //gameManager.charter49UI = false;
-        //gameManager.charter50UI = false;
-
         for (int i = 0; i < charter.Length; i++)
         {
             if (i == index)
@@ -1447,7 +2336,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC10", 0.5f);
-        Invoke("InvokerAchievements9", 1f);
+        Invoke("InvokerAchievements9", 6.5f);
     }
     public void InvokerC10()
     {
@@ -1460,6 +2349,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter10UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -1540,6 +2430,52 @@ public class ActiveChapter : MonoBehaviour
             animContent[9].AllAnim();
         }
     }
+    //10A
+    public void AButtonC10()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[8].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC10", 1.1f);
+        Invoke("AInvokerAchievements9", 2.2f);
+    }
+    private void AInvokerC10()
+    {
+        ACharter10UI(9);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements9()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter10UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+        animContent[9].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //11
     public void ButtonC11()
@@ -1547,7 +2483,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC11", 0.5f);
-        Invoke("InvokerAchievements10", 1f);
+        Invoke("InvokerAchievements10", 6.5f);
     }
     public void InvokerC11()
     {
@@ -1560,6 +2496,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter11UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -1571,56 +2508,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = true;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-        //gameManager.charter31UI = false;
-        //gameManager.charter32UI = false;
-        //gameManager.charter33UI = false;
-        //gameManager.charter34UI = false;
-        //gameManager.charter35UI = false;
-        //gameManager.charter36UI = false;
-        //gameManager.charter37UI = false;
-        //gameManager.charter38UI = false;
-        //gameManager.charter39UI = false;
-        //gameManager.charter40UI = false;
-        //gameManager.charter41UI = false;
-        //gameManager.charter42UI = false;
-        //gameManager.charter43UI = false;
-        //gameManager.charter44UI = false;
-        //gameManager.charter45UI = false;
-        //gameManager.charter46UI = false;
-        //gameManager.charter47UI = false;
-        //gameManager.charter48UI = false;
-        //gameManager.charter49UI = false;
-        //gameManager.charter50UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -1641,6 +2528,55 @@ public class ActiveChapter : MonoBehaviour
             animContent[10].AllAnim();
         }
     }
+    //11A
+    public void AButtonC11()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[8].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC11", 1.1f);
+        Invoke("AInvokerAchievements10", 2.2f);
+    }
+    private void AInvokerC11()
+    {
+        ACharter11UI(10);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements10()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter11UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Any_Other_Flights();
+
+        animContent[10].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //12
     public void ButtonC12()
@@ -1648,7 +2584,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC12", 0.5f);
-        Invoke("InvokerAchievements11", 1f);
+        Invoke("InvokerAchievements11", 6.5f);
     }
     public void InvokerC12()
     {
@@ -1661,6 +2597,8 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter12UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
+        gameManager.numberMusic = 2;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -1672,57 +2610,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = true;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-        //gameManager.charter31UI = false;
-        //gameManager.charter32UI = false;
-        //gameManager.charter33UI = false;
-        //gameManager.charter34UI = false;
-        //gameManager.charter35UI = false;
-        //gameManager.charter36UI = false;
-        //gameManager.charter37UI = false;
-        //gameManager.charter38UI = false;
-        //gameManager.charter39UI = false;
-        //gameManager.charter40UI = false;
-        //gameManager.charter41UI = false;
-        //gameManager.charter42UI = false;
-        //gameManager.charter43UI = false;
-        //gameManager.charter44UI = false;
-        //gameManager.charter45UI = false;
-        //gameManager.charter46UI = false;
-        //gameManager.charter47UI = false;
-        //gameManager.charter48UI = false;
-        //gameManager.charter49UI = false;
-        //gameManager.charter50UI = false;
-
         for (int i = 0; i < charter.Length; i++)
         {
             if (i == index)
@@ -1741,6 +2628,7 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[11].AllAnim();
         }
+        musicCharter.PlayMusic(2);
     }
 
     //13
@@ -1750,7 +2638,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC13", 0.5f);
-        Invoke("InvokerAchievements12", 1f);
+        Invoke("InvokerAchievements12", 6.5f);
     }
     public void InvokerC13()
     {
@@ -1763,6 +2651,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter13UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -1774,56 +2663,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = true;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-        //gameManager.charter31UI = false;
-        //gameManager.charter32UI = false;
-        //gameManager.charter33UI = false;
-        //gameManager.charter34UI = false;
-        //gameManager.charter35UI = false;
-        //gameManager.charter36UI = false;
-        //gameManager.charter37UI = false;
-        //gameManager.charter38UI = false;
-        //gameManager.charter39UI = false;
-        //gameManager.charter40UI = false;
-        //gameManager.charter41UI = false;
-        //gameManager.charter42UI = false;
-        //gameManager.charter43UI = false;
-        //gameManager.charter44UI = false;
-        //gameManager.charter45UI = false;
-        //gameManager.charter46UI = false;
-        //gameManager.charter47UI = false;
-        //gameManager.charter48UI = false;
-        //gameManager.charter49UI = false;
-        //gameManager.charter50UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -1839,17 +2678,77 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_any_other_flights == 0)
         {
-            buttonIf[0].gameObject.SetActive(true);
-        }
-        else if(gameManager.b_any_other_flights == 1)
-        {
             buttonIf[0].gameObject.SetActive(false);
         }
+        else if (gameManager.b_any_other_flights == 1)
+        {
+            buttonIf[0].gameObject.SetActive(true);
+        }
 
-            for (int i = 0; i < animContent.Length; i++)
+        for (int i = 0; i < animContent.Length; i++)
         {
             animContent[12].AllAnim();
         }
+    }
+    //13A
+    public void AButtonC13()
+    {
+        //FireBaseAnalyticsEvents.EventsWinGame("WinGame");
+        imgBlackout.gameObject.SetActive(true);
+        animContent[9].AllAnim1();
+        animContent[10].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC13", 1.1f);
+        Invoke("AInvokerAchievements12", 2.2f);
+    }
+    private void AInvokerC13()
+    {
+        ACharter13UI(12);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements12()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter13UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        if (gameManager.b_any_other_flights == 0)
+        {
+            buttonIf[0].gameObject.SetActive(false);
+        }
+        else if (gameManager.b_any_other_flights == 1)
+        {
+            buttonIf[0].gameObject.SetActive(true);
+        }
+
+
+        animContent[12].AllAnim2();
+        animContentPanel.AllAnimP();
     }
 
     //14
@@ -1858,7 +2757,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC14", 0.5f);
-        Invoke("InvokerAchievements13", 1f);
+        Invoke("InvokerAchievements13", 6.5f);
     }
     public void InvokerC14()
     {
@@ -1871,6 +2770,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter14UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -1954,6 +2854,59 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[13].AllAnim();
         }
+        sound.PlaySound(3);
+    }
+    //14A
+    public void AButtonC14()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[11].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC14", 1.1f);
+        Invoke("AInvokerAchievements13", 2.2f);
+    }
+    private void AInvokerC14()
+    {
+        ACharter14UI(13);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements13()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter14UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+        //toBeContinued.text = "To be continued...";
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Alcohol();
+
+        animContent[13].AllAnim2();
+        animContentPanel.AllAnimP();
+        sound.PlaySound(3);
     }
 
     //15
@@ -1962,7 +2915,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC15", 0.5f);
-        Invoke("InvokerAchievements14", 1f);
+        Invoke("InvokerAchievements14", 6.5f);
     }
     public void InvokerC15()
     {
@@ -1975,6 +2928,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter15UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -2054,6 +3008,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[14].AllAnim();
         }
     }
+    //15A
+    public void AButtonC15()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[11].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC15", 1.1f);
+        Invoke("AInvokerAchievements14", 2.2f);
+    }
+    private void AInvokerC15()
+    {
+        ACharter15UI(14);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements14()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter15UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[14].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //16
     public void ButtonC16()
@@ -2061,7 +3063,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC16", 0.5f);
-        Invoke("InvokerAchievements15", 1f);
+        Invoke("InvokerAchievements15", 6.5f);
     }
     public void InvokerC16()
     {
@@ -2074,6 +3076,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter16UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -2085,56 +3088,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = true;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-        //gameManager.charter31UI = false;
-        //gameManager.charter32UI = false;
-        //gameManager.charter33UI = false;
-        //gameManager.charter34UI = false;
-        //gameManager.charter35UI = false;
-        //gameManager.charter36UI = false;
-        //gameManager.charter37UI = false;
-        //gameManager.charter38UI = false;
-        //gameManager.charter39UI = false;
-        //gameManager.charter40UI = false;
-        //gameManager.charter41UI = false;
-        //gameManager.charter42UI = false;
-        //gameManager.charter43UI = false;
-        //gameManager.charter44UI = false;
-        //gameManager.charter45UI = false;
-        //gameManager.charter46UI = false;
-        //gameManager.charter47UI = false;
-        //gameManager.charter48UI = false;
-        //gameManager.charter49UI = false;
-        //gameManager.charter50UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -2152,6 +3105,59 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[15].AllAnim();
         }
+        sound.PlaySound(4);
+    }
+    //16AA
+    public void AAButtonC16()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        anim.Play("BlackoutDarkAnimation");
+        Invoke("AAInvokerC16", 0.5f);
+        Invoke("AAInvokerAchievements15", 6.5f);
+    }
+    private void AAInvokerC16()
+    {
+        AACharter16UI(15);
+        gameManager.SavePlayer();
+    }
+    private void AAInvokerAchievements15()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void AACharter16UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        gameManager.numberMusic = 1;
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        for (int i = 0; i < animContent.Length; i++)
+        {
+            animContent[15].AllAnim();
+        }
+        sound.PlaySound(4);
+        musicCharter.PlayMusic(gameManager.numberMusic);
     }
 
     //17
@@ -2160,7 +3166,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC17", 0.5f);
-        Invoke("InvokerAchievements16", 1f);
+        Invoke("InvokerAchievements16", 6.5f);
     }
     public void InvokerC17()
     {
@@ -2173,6 +3179,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter17UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -2261,7 +3268,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC18", 0.5f);
-        Invoke("InvokerAchievements17", 1f);
+        Invoke("InvokerAchievements17", 6.5f);
     }
     public void InvokerC18()
     {
@@ -2274,6 +3281,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter18UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -2353,6 +3361,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[17].AllAnim();
         }
     }
+    //18A
+    public void AButtonC18()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[16].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC18", 1.1f);
+        Invoke("AInvokerAchievements17", 2.2f);
+    }
+    private void AInvokerC18()
+    {
+        ACharter18UI(17);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements17()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter18UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[17].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //19
     public void ButtonC19()
@@ -2360,7 +3416,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC19", 0.5f);
-        Invoke("InvokerAchievements18", 1f);
+        Invoke("InvokerAchievements18", 6.5f);
     }
     public void InvokerC19()
     {
@@ -2373,6 +3429,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter19UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -2452,6 +3509,55 @@ public class ActiveChapter : MonoBehaviour
             animContent[18].AllAnim();
         }
     }
+    //19A
+    public void AButtonC19()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[16].AllAnim1();
+        animContent[17].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC19", 1.1f);
+        Invoke("AInvokerAchievements18", 2.2f);
+    }
+    private void AInvokerC19()
+    {
+        ACharter19UI(18);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements18()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter19UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[18].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //20
     public void ButtonC20()
@@ -2459,7 +3565,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC20", 0.5f);
-        Invoke("InvokerAchievements19", 1f);
+        Invoke("InvokerAchievements19", 6.5f);
     }
     public void InvokerC20()
     {
@@ -2472,6 +3578,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter20UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -2531,6 +3638,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[19].AllAnim();
         }
     }
+    //20A
+    public void AButtonC20()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[16].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC20", 1.1f);
+        Invoke("AInvokerAchievements19", 2.2f);
+    }
+    private void AInvokerC20()
+    {
+        ACharter20UI(19);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements19()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter20UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[19].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //21
     public void ButtonC21()
@@ -2538,7 +3693,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC21", 0.5f);
-        Invoke("InvokerAchievements20", 1f);
+        Invoke("InvokerAchievements20", 6.5f);
     }
     public void InvokerC21()
     {
@@ -2551,6 +3706,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter21UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -2610,6 +3766,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[20].AllAnim();
         }
     }
+    //21A
+    public void AButtonC21()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[17].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC21", 1.1f);
+        Invoke("AInvokerAchievements20", 2.2f);
+    }
+    private void AInvokerC21()
+    {
+        ACharter21UI(20);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements20()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter21UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[20].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //22
     public void ButtonC22()
@@ -2617,7 +3821,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC22", 0.5f);
-        Invoke("InvokerAchievements21", 1f);
+        Invoke("InvokerAchievements21", 6.5f);
     }
     public void InvokerC22()
     {
@@ -2630,6 +3834,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter22UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -2689,6 +3894,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[21].AllAnim();
         }
     }
+    //22A
+    public void AButtonC22()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[20].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC22", 1.1f);
+        Invoke("AInvokerAchievements21", 2.2f);
+    }
+    private void AInvokerC22()
+    {
+        ACharter22UI(21);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements21()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter22UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[21].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //23
     public void ButtonC23()
@@ -2696,7 +3949,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC23", 0.5f);
-        Invoke("InvokerAchievements22", 1f);
+        Invoke("InvokerAchievements22", 6.5f);
     }
     public void InvokerC23()
     {
@@ -2709,6 +3962,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter23UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -2768,6 +4022,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[22].AllAnim();
         }
     }
+    //23A
+    public void AButtonC23()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[20].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC23", 1.1f);
+        Invoke("AInvokerAchievements22", 2.2f);
+    }
+    private void AInvokerC23()
+    {
+        ACharter23UI(22);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements22()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter23UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[22].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //24
     public void ButtonC24()
@@ -2775,7 +4077,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC24", 0.5f);
-        Invoke("InvokerAchievements23", 1f);
+        Invoke("InvokerAchievements23", 6.5f);
     }
     public void InvokerC24()
     {
@@ -2788,6 +4090,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter24UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -2854,7 +4157,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC25", 0.5f);
-        Invoke("InvokerAchievements24", 1f);
+        Invoke("InvokerAchievements24", 6.5f);
     }
     public void InvokerC25()
     {
@@ -2867,6 +4170,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter25UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -2925,6 +4229,57 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[24].AllAnim();
         }
+        sound.PlaySound(5);
+    }
+    //25A
+    public void AButtonC25()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[23].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC25", 1.1f);
+        Invoke("AInvokerAchievements24", 2.2f);
+    }
+    private void AInvokerC25()
+    {
+        ACharter25UI(24);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements24()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter25UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[24].AllAnim2();
+        animContentPanel.AllAnimP();
+        sound.PlaySound(5);
+
     }
 
     //26
@@ -2933,7 +4288,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC26", 0.5f);
-        Invoke("InvokerAchievements25", 1f);
+        Invoke("InvokerAchievements25", 6.5f);
     }
     public void InvokerC26()
     {
@@ -2946,6 +4301,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter26UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -2957,36 +4313,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = true;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -3005,6 +4331,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[25].AllAnim();
         }
     }
+    //26A
+    public void AButtonC26()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[24].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC26", 1.1f);
+        Invoke("AInvokerAchievements25", 2.2f);
+    }
+    private void AInvokerC26()
+    {
+        ACharter26UI(25);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements25()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter26UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[25].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //27
     public void ButtonC27()
@@ -3012,7 +4386,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC27", 0.5f);
-        Invoke("InvokerAchievements26", 1f);
+        Invoke("InvokerAchievements26", 6.5f);
     }
     public void InvokerC27()
     {
@@ -3025,6 +4399,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter27UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -3084,6 +4459,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[26].AllAnim();
         }
     }
+    //27A
+    public void AButtonC27()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[24].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC27", 1.1f);
+        Invoke("AInvokerAchievements26", 2.2f);
+    }
+    private void AInvokerC27()
+    {
+        ACharter27UI(26);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements26()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter27UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[26].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //28
     public void ButtonC28()
@@ -3091,7 +4513,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC28", 0.5f);
-        Invoke("InvokerAchievements27", 1f);
+        Invoke("InvokerAchievements27", 6.5f);
     }
     public void InvokerC28()
     {
@@ -3104,6 +4526,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter28UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -3163,6 +4586,56 @@ public class ActiveChapter : MonoBehaviour
             animContent[27].AllAnim();
         }
     }
+    //28A
+    public void AButtonC28()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[24].AllAnim1();
+        animContent[25].AllAnim1();
+        animContent[26].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC28", 1.1f);
+        Invoke("AInvokerAchievements27", 2.2f);
+    }
+    private void AInvokerC28()
+    {
+        ACharter28UI(27);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements27()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter28UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        animContent[27].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //29
     public void ButtonC29()
@@ -3170,7 +4643,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC29", 0.5f);
-        Invoke("InvokerAchievements28", 1f);
+        Invoke("InvokerAchievements28", 6.5f);
     }
     public void InvokerC29()
     {
@@ -3183,6 +4656,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter29UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -3249,7 +4723,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC30", 0.5f);
-        Invoke("InvokerAchievements29", 1f);
+        Invoke("InvokerAchievements29", 6.5f);
     }
     public void InvokerC30()
     {
@@ -3262,6 +4736,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter30UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -3291,6 +4766,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[29].AllAnim();
         }
     }
+    //30A
+    public void AButtonC30()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[28].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC30", 1.1f);
+        Invoke("AInvokerAchievements29", 2.2f);
+    }
+    private void AInvokerC30()
+    {
+        ACharter30UI(29);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements29()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter30UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[29].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //31
     public void ButtonC31()
@@ -3298,7 +4821,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC31", 0.5f);
-        Invoke("InvokerAchievements30", 1f);
+        Invoke("InvokerAchievements30", 6.5f);
     }
     public void InvokerC31()
     {
@@ -3311,6 +4834,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter31UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -3340,6 +4864,56 @@ public class ActiveChapter : MonoBehaviour
             animContent[30].AllAnim();
         }
     }
+    //31A
+    public void AButtonC31()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[28].AllAnim1();
+        animContent[29].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC31", 1.1f);
+        Invoke("AInvokerAchievements30", 2.2f);
+    }
+    private void AInvokerC31()
+    {
+        ACharter31UI(30);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements30()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter31UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        animContent[30].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //32
     public void ButtonC32()
@@ -3347,7 +4921,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC32", 0.5f);
-        Invoke("InvokerAchievements31", 1f);
+        Invoke("InvokerAchievements31", 6.5f);
     }
     public void InvokerC32()
     {
@@ -3360,6 +4934,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter32UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -3389,6 +4964,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[31].AllAnim();
         }
     }
+    //32A
+    public void AButtonC32()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[29].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC32", 1.1f);
+        Invoke("AInvokerAchievements31", 2.2f);
+    }
+    private void AInvokerC32()
+    {
+        ACharter32UI(31);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements31()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter32UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[31].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //33
     public void ButtonC33()
@@ -3396,7 +5019,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC33", 0.5f);
-        Invoke("InvokerAchievements32", 1f);
+        Invoke("InvokerAchievements32", 6.5f);
     }
     public void InvokerC33()
     {
@@ -3409,6 +5032,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter33UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -3438,6 +5062,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[32].AllAnim();
         }
     }
+    //33A
+    public void AButtonC33()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[31].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC33", 1.1f);
+        Invoke("AInvokerAchievements32", 2.2f);
+    }
+    private void AInvokerC33()
+    {
+        ACharter33UI(32);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements32()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter33UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[32].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //34
     public void ButtonC34()
@@ -3445,7 +5117,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC34", 0.5f);
-        Invoke("InvokerAchievements33", 1f);
+        Invoke("InvokerAchievements33", 6.5f);
     }
     public void InvokerC34()
     {
@@ -3458,6 +5130,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter34UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -3487,6 +5160,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[33].AllAnim();
         }
     }
+    //34A
+    public void AButtonC34()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[32].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC34", 1.1f);
+        Invoke("AInvokerAchievements33", 2.2f);
+    }
+    private void AInvokerC34()
+    {
+        ACharter34UI(33);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements33()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter34UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[33].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //35
     public void ButtonC35()
@@ -3494,7 +5215,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC35", 0.5f);
-        Invoke("InvokerAchievements34", 1f);
+        Invoke("InvokerAchievements34", 6.5f);
     }
     public void InvokerC35()
     {
@@ -3507,6 +5228,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter35UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -3547,6 +5269,66 @@ public class ActiveChapter : MonoBehaviour
             animContent[34].AllAnim();
         }
     }
+    //35A
+    public void AButtonC35()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[33].AllAnim1();
+        animContent[35].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC35", 1.1f);
+        Invoke("AInvokerAchievements34", 2.2f);
+    }
+    private void AInvokerC35()
+    {
+        ACharter35UI(34);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements34()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter35UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Ask_About_Her_Toys();
+
+        if (gameManager.b_make_conversation == 0)
+        {
+            buttonIf[1].gameObject.SetActive(true);
+        }
+        else if (gameManager.b_make_conversation == 1)
+        {
+            buttonIf[1].gameObject.SetActive(false);
+        }
+
+        animContent[34].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //36
     public void ButtonC36()
@@ -3554,7 +5336,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC36", 0.5f);
-        Invoke("InvokerAchievements35", 1f);
+        Invoke("InvokerAchievements35", 6.5f);
     }
     public void InvokerC36()
     {
@@ -3567,6 +5349,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter36UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -3607,6 +5390,66 @@ public class ActiveChapter : MonoBehaviour
             animContent[35].AllAnim();
         }
     }
+    //36A
+    public void AButtonC36()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[33].AllAnim1();
+        animContent[34].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC36", 1.1f);
+        Invoke("AInvokerAchievements35", 2.2f);
+    }
+    private void AInvokerC36()
+    {
+        ACharter36UI(35);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements35()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter36UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Make_Conversation();
+
+        if (gameManager.b_ask_about_her_toys == 0)
+        {
+            buttonIf[2].gameObject.SetActive(true);
+        }
+        else if (gameManager.b_ask_about_her_toys == 1)
+        {
+            buttonIf[2].gameObject.SetActive(false);
+        }
+
+        animContent[35].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //37
     public void ButtonC37()
@@ -3614,7 +5457,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC37", 0.5f);
-        Invoke("InvokerAchievements36", 1f);
+        Invoke("InvokerAchievements36", 6.5f);
     }
     public void InvokerC37()
     {
@@ -3627,6 +5470,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter37UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -3665,7 +5509,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC38", 0.5f);
-        Invoke("InvokerAchievements37", 1f);
+        Invoke("InvokerAchievements37", 6.5f);
     }
     public void InvokerC38()
     {
@@ -3678,6 +5522,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter38UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -3707,6 +5552,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[37].AllAnim();
         }
     }
+    //38A
+    public void AButtonC38()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[36].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC38", 1.1f);
+        Invoke("AInvokerAchievements37", 2.2f);
+    }
+    private void AInvokerC38()
+    {
+        ACharter38UI(37);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements37()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter38UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[37].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //39
     public void ButtonC39()
@@ -3714,7 +5607,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC39", 0.5f);
-        Invoke("InvokerAchievements38", 1f);
+        Invoke("InvokerAchievements38", 6.5f);
     }
     public void InvokerC39()
     {
@@ -3728,6 +5621,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter39UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -3759,6 +5653,57 @@ public class ActiveChapter : MonoBehaviour
             animContent[38].AllAnim();
         }
     }
+    //39A
+    public void AButtonC39()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[37].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC39", 1.1f);
+        Invoke("AInvokerAchievements38", 2.2f);
+    }
+    private void AInvokerC39()
+    {
+        ACharter39UI(38);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements38()
+    {
+        imgBlackout.gameObject.SetActive(false);
+        achievements.Achievements1();
+    }
+    private void ACharter39UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_We_Were_Looking();
+
+        animContent[38].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //40
     public void ButtonC40()
@@ -3766,7 +5711,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC40", 0.5f);
-        Invoke("InvokerAchievements39", 1f);
+        Invoke("InvokerAchievements39", 6.5f);
     }
     public void InvokerC40()
     {
@@ -3779,6 +5724,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter40UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -3809,6 +5755,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[39].AllAnim();
         }
     }
+    //40A
+    public void AButtonC40()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[37].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC40", 1.1f);
+        Invoke("AInvokerAchievements39", 2.2f);
+    }
+    private void AInvokerC40()
+    {
+        ACharter40UI(39);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements39()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter40UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[39].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //41
     public void ButtonC41()
@@ -3816,7 +5810,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC41", 0.5f);
-        Invoke("InvokerAchievements40", 1f);
+        Invoke("InvokerAchievements40", 6.5f);
     }
     public void InvokerC41()
     {
@@ -3829,6 +5823,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter41UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -3867,7 +5862,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC42", 0.5f);
-        Invoke("InvokerAchievements41", 1f);
+        Invoke("InvokerAchievements41", 6.5f);
     }
     public void InvokerC42()
     {
@@ -3880,6 +5875,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter42UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -3909,6 +5905,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[41].AllAnim();
         }
     }
+    //42A
+    public void AButtonC42()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[40].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC42", 1.1f);
+        Invoke("AInvokerAchievements41", 2.2f);
+    }
+    private void AInvokerC42()
+    {
+        ACharter42UI(41);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements41()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter42UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[41].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //43
     public void ButtonC43()
@@ -3916,7 +5960,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC43", 0.5f);
-        Invoke("InvokerAchievements42", 1f);
+        Invoke("InvokerAchievements42", 6.5f);
     }
     public void InvokerC43()
     {
@@ -3929,6 +5973,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter43UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -3977,6 +6022,72 @@ public class ActiveChapter : MonoBehaviour
             animContent[42].AllAnim();
         }
     }
+    //43A
+    public void AButtonC43()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[41].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC43", 1.1f);
+        Invoke("AInvokerAchievements42", 2.2f);
+    }
+    private void AInvokerC43()
+    {
+        ACharter43UI(42);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements42()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter43UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        if (gameManager.b_ask_about_her_toys == 1 && gameManager.b_make_conversation == 1)
+        {
+            buttonIf[3].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[3].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_ask_about_her_toys == 0 || gameManager.b_make_conversation == 0)
+        {
+            buttonIf[4].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[4].gameObject.SetActive(false);
+        }
+
+        animContent[42].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //44
     public void ButtonC44()
@@ -3984,7 +6095,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC44", 0.5f);
-        Invoke("InvokerAchievements43", 1f);
+        Invoke("InvokerAchievements43", 6.5f);
     }
     public void InvokerC44()
     {
@@ -3998,6 +6109,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter44UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -4027,6 +6139,55 @@ public class ActiveChapter : MonoBehaviour
             animContent[43].AllAnim();
         }
     }
+    //44A
+    public void AButtonC44()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[42].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC44", 1.1f);
+        Invoke("AInvokerAchievements43", 2.2f);
+    }
+    private void AInvokerC44()
+    {
+        ACharter44UI(43);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements43()
+    {
+        imgBlackout.gameObject.SetActive(false);
+        achievements.Achievements2();
+    }
+    private void ACharter44UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[43].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //45
     public void ButtonC45()
@@ -4034,7 +6195,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC45", 0.5f);
-        Invoke("InvokerAchievements44", 1f);
+        Invoke("InvokerAchievements44", 6.5f);
     }
     public void InvokerC45()
     {
@@ -4047,6 +6208,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter45UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -4101,7 +6263,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC46", 0.5f);
-        Invoke("InvokerAchievements45", 1f);
+        Invoke("InvokerAchievements45", 6.5f);
     }
     public void InvokerC46()
     {
@@ -4114,6 +6276,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter46UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -4152,7 +6315,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC47", 0.5f);
-        Invoke("InvokerAchievements46", 1f);
+        Invoke("InvokerAchievements46", 6.5f);
     }
     public void InvokerC47()
     {
@@ -4165,6 +6328,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter47UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -4226,6 +6390,89 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[46].AllAnim();
         }
+        sound.PlaySound(6);
+    }
+    //47A
+    public void AButtonC47()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[45].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC47", 1.1f);
+        Invoke("AInvokerAchievements46", 2.2f);
+    }
+    private void AInvokerC47()
+    {
+        ACharter47UI(46);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements46()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter47UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Buy_Book();
+
+
+
+        if (gameManager.b_talk_with_a_stranger == 0)
+        {
+            buttonIf[7].gameObject.SetActive(true);
+        }
+        else if (gameManager.b_talk_with_a_stranger == 1)
+        {
+            buttonIf[7].gameObject.SetActive(false);
+        }
+
+
+        if (gameManager.b_grab_some_food == 0)
+        {
+            buttonIf[8].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[8].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_grab_some_food == 1)
+        {
+            buttonIf[9].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[9].gameObject.SetActive(false);
+        }
+
+
+        sound.PlaySound(6);
+        animContent[46].AllAnim2();
+        animContentPanel.AllAnimP();
     }
 
     //48
@@ -4234,7 +6481,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC48", 0.5f);
-        Invoke("InvokerAchievements47", 1f);
+        Invoke("InvokerAchievements47", 6.5f);
     }
     public void InvokerC48()
     {
@@ -4247,6 +6494,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter48UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -4304,6 +6552,81 @@ public class ActiveChapter : MonoBehaviour
             animContent[47].AllAnim();
         }
     }
+    //48A
+    public void AButtonC48()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[45].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC48", 1.1f);
+        Invoke("AInvokerAchievements47", 2.2f);
+    }
+    private void AInvokerC48()
+    {
+        ACharter48UI(47);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements47()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter48UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        if (gameManager.b_talk_with_a_stranger == 0)
+        {
+            buttonIf[10].gameObject.SetActive(true);
+        }
+        else if (gameManager.b_talk_with_a_stranger == 1)
+        {
+            buttonIf[10].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_grab_some_food == 0)
+        {
+            buttonIf[11].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[11].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_grab_some_food == 1)
+        {
+            buttonIf[12].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[12].gameObject.SetActive(false);
+        }
+
+        animContent[47].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //49
     public void ButtonC49()
@@ -4311,7 +6634,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC49", 0.5f);
-        Invoke("InvokerAchievements48", 1f);
+        Invoke("InvokerAchievements48", 6.5f);
     }
     public void InvokerC49()
     {
@@ -4324,6 +6647,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter49UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -4382,6 +6706,84 @@ public class ActiveChapter : MonoBehaviour
             animContent[48].AllAnim();
         }
     }
+    //49A
+    public void AButtonC49()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[46].AllAnim1();
+        animContent[47].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC49", 1.1f);
+        Invoke("AInvokerAchievements48", 2.2f);
+    }
+    private void AInvokerC49()
+    {
+        ACharter49UI(48);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements48()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter49UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Talk_With_A_Stranger();
+
+        if (gameManager.b_grab_some_food == 0)
+        {
+            buttonIf[13].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[13].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_grab_some_food == 1)
+        {
+            buttonIf[14].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[14].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_go_to_the_bookstore == 0)
+        {
+            buttonIf[15].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[15].gameObject.SetActive(false);
+        }
+
+        animContent[48].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //50
     public void ButtonC50()
@@ -4389,7 +6791,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC50", 0.5f);
-        Invoke("InvokerAchievements49", 1f);
+        Invoke("InvokerAchievements49", 6.5f);
     }
     public void InvokerC50()
     {
@@ -4438,7 +6840,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC51", 0.5f);
-        Invoke("InvokerAchievements50", 1f);
+        Invoke("InvokerAchievements50", 6.5f);
     }
     public void InvokerC51()
     {
@@ -4487,7 +6889,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC52", 0.5f);
-        Invoke("InvokerAchievements51", 1f);
+        Invoke("InvokerAchievements51", 6.5f);
     }
     public void InvokerC52()
     {
@@ -4536,7 +6938,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC53", 0.5f);
-        Invoke("InvokerAchievements52", 1f);
+        Invoke("InvokerAchievements52", 6.5f);
     }
     public void InvokerC53()
     {
@@ -4585,7 +6987,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC54", 0.5f);
-        Invoke("InvokerAchievements53", 1f);
+        Invoke("InvokerAchievements53", 6.5f);
     }
     public void InvokerC54()
     {
@@ -4598,6 +7000,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter54UI(int index)
     {
+        gameManager.numberMusic = 0;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -4627,6 +7030,8 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[53].AllAnim();
         }
+        musicCharter.PlayMusic(gameManager.numberMusic);
+        sound.PlaySound(7);
     }
 
     //55
@@ -4635,7 +7040,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC55", 0.5f);
-        Invoke("InvokerAchievements54", 1f);
+        Invoke("InvokerAchievements54", 6.5f);
     }
     public void InvokerC55()
     {
@@ -4684,7 +7089,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC56", 0.5f);
-        Invoke("InvokerAchievements55", 1f);
+        Invoke("InvokerAchievements55", 6.5f);
     }
     public void InvokerC56()
     {
@@ -4733,7 +7138,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC57", 0.5f);
-        Invoke("InvokerAchievements56", 1f);
+        Invoke("InvokerAchievements56", 6.5f);
     }
     public void InvokerC57()
     {
@@ -4782,7 +7187,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC58", 0.5f);
-        Invoke("InvokerAchievements57", 1f);
+        Invoke("InvokerAchievements57", 6.5f);
     }
     public void InvokerC58()
     {
@@ -4824,6 +7229,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[57].AllAnim();
         }
     }
+    //58A
+    public void AButtonC58()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[55].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC58", 1.1f);
+        Invoke("AInvokerAchievements57", 2.2f);
+    }
+    private void AInvokerC58()
+    {
+        ACharter58UI(57);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements57()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter58UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[57].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //59
     public void ButtonC59()
@@ -4831,7 +7283,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC59", 0.5f);
-        Invoke("InvokerAchievements58", 1f);
+        Invoke("InvokerAchievements58", 6.5f);
     }
     public void InvokerC59()
     {
@@ -4873,6 +7325,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[58].AllAnim();
         }
     }
+    //59A
+    public void AButtonC59()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[56].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC59", 1.1f);
+        Invoke("AInvokerAchievements58", 2.2f);
+    }
+    private void AInvokerC59()
+    {
+        ACharter59UI(58);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements58()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter59UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[58].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //60
     public void ButtonC60()
@@ -4880,7 +7379,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC60", 0.5f);
-        Invoke("InvokerAchievements59", 1f);
+        Invoke("InvokerAchievements59", 6.5f);
     }
     public void InvokerC60()
     {
@@ -4922,6 +7421,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[59].AllAnim();
         }
     }
+    //60A
+    public void AButtonC60()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[55].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC60", 1.1f);
+        Invoke("AInvokerAchievements59", 2.2f);
+    }
+    private void AInvokerC60()
+    {
+        ACharter60UI(59);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements59()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter60UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[59].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //61
     public void ButtonC61()
@@ -4929,7 +7475,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC61", 0.5f);
-        Invoke("InvokerAchievements60", 1f);
+        Invoke("InvokerAchievements60", 6.5f);
     }
     public void InvokerC61()
     {
@@ -4971,6 +7517,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[60].AllAnim();
         }
     }
+    //61A
+    public void AButtonC61()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[56].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC61", 1.1f);
+        Invoke("AInvokerAchievements60", 2.2f);
+    }
+    private void AInvokerC61()
+    {
+        ACharter61UI(60);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements60()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter61UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[60].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //62
     public void ButtonC62()
@@ -4978,7 +7571,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC62", 0.5f);
-        Invoke("InvokerAchievements61", 1f);
+        Invoke("InvokerAchievements61", 6.5f);
     }
     public void InvokerC62()
     {
@@ -5020,6 +7613,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[61].AllAnim();
         }
     }
+    //62A
+    public void AButtonC62()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[55].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC62", 1.1f);
+        Invoke("AInvokerAchievements61", 2.2f);
+    }
+    private void AInvokerC62()
+    {
+        ACharter62UI(61);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements61()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter62UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[61].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //63
     public void ButtonC63()
@@ -5027,7 +7667,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC63", 0.5f);
-        Invoke("InvokerAchievements62", 1f);
+        Invoke("InvokerAchievements62", 6.5f);
     }
     public void InvokerC63()
     {
@@ -5076,7 +7716,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC64", 0.5f);
-        Invoke("InvokerAchievements63", 1f);
+        Invoke("InvokerAchievements63", 6.5f);
     }
     public void InvokerC64()
     {
@@ -5118,6 +7758,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[63].AllAnim();
         }
     }
+    //64A
+    public void AButtonC64()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[62].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC64", 1.1f);
+        Invoke("AInvokerAchievements63", 2.2f);
+    }
+    private void AInvokerC64()
+    {
+        ACharter64UI(63);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements63()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter64UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[63].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //65
     public void ButtonC65()
@@ -5125,7 +7812,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC65", 0.5f);
-        Invoke("InvokerAchievements64", 1f);
+        Invoke("InvokerAchievements64", 6.5f);
     }
     public void InvokerC65()
     {
@@ -5139,6 +7826,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter65UI(int index)
     {
+        gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -5204,6 +7892,7 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[64].AllAnim();
         }
+        musicCharter.PlayMusic(gameManager.numberMusic);
     }
 
     //66
@@ -5212,7 +7901,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC66", 0.5f);
-        Invoke("InvokerAchievements65", 1f);
+        Invoke("InvokerAchievements65", 6.5f);
     }
     public void InvokerC66()
     {
@@ -5225,6 +7914,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter66UI(int index)
     {
+        gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -5253,6 +7943,7 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[65].AllAnim();
         }
+        musicCharter.PlayMusic(gameManager.numberMusic);
     }
 
     //67
@@ -5261,7 +7952,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC67", 0.5f);
-        Invoke("InvokerAchievements66", 1f);
+        Invoke("InvokerAchievements66", 6.5f);
     }
     public void InvokerC67()
     {
@@ -5303,6 +7994,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[66].AllAnim();
         }
     }
+    //67A
+    public void AButtonC67()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[65].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC67", 1.1f);
+        Invoke("AInvokerAchievements66", 2.2f);
+    }
+    private void AInvokerC67()
+    {
+        ACharter67UI(66);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements66()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter67UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[66].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //68
     public void ButtonC68()
@@ -5310,7 +8048,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC68", 0.5f);
-        Invoke("InvokerAchievements67", 1f);
+        Invoke("InvokerAchievements67", 6.5f);
     }
     public void InvokerC68()
     {
@@ -5320,7 +8058,10 @@ public class ActiveChapter : MonoBehaviour
     public void InvokerAchievements67()
     {
         imgBlackout.gameObject.SetActive(false);
-        achievements.Achievements4();
+        if (gameManager.b_alcohol == 3)
+        {
+            achievements.Achievements4();
+        }
     }
     public void Charter68UI(int index)
     {
@@ -5354,6 +8095,61 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[67].AllAnim();
         }
+        sound.PlaySound(1);
+    }
+    //68A
+    public void AButtonC68()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[66].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC68", 1.1f);
+        Invoke("AInvokerAchievements67", 2.2f);
+    }
+    private void AInvokerC68()
+    {
+        ACharter68UI(67);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements67()
+    {
+        imgBlackout.gameObject.SetActive(false);
+        if (gameManager.b_alcohol == 3)
+        {
+            achievements.Achievements4();
+        }
+    }
+    private void ACharter68UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Alcohol();
+
+        animContent[67].AllAnim2();
+        animContentPanel.AllAnimP();
+        sound.PlaySound(1);
     }
 
     //69
@@ -5362,7 +8158,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC69", 0.5f);
-        Invoke("InvokerAchievements68", 1f);
+        Invoke("InvokerAchievements68", 6.5f);
     }
     public void InvokerC69()
     {
@@ -5372,7 +8168,10 @@ public class ActiveChapter : MonoBehaviour
     public void InvokerAchievements68()
     {
         imgBlackout.gameObject.SetActive(false);
-        achievements.Achievements5();
+        if (gameManager.b_alcohol == 0)
+        {
+            achievements.Achievements5();
+        }
     }
     public void Charter69UI(int index)
     {
@@ -5405,6 +8204,57 @@ public class ActiveChapter : MonoBehaviour
             animContent[68].AllAnim();
         }
     }
+    //69A
+    public void AButtonC69()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[66].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC69", 1.1f);
+        Invoke("AInvokerAchievements68", 2.2f);
+    }
+    private void AInvokerC69()
+    {
+        ACharter69UI(68);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements68()
+    {
+        imgBlackout.gameObject.SetActive(false); 
+        if (gameManager.b_alcohol == 0)
+        {
+            achievements.Achievements5();
+        }
+    }
+    private void ACharter69UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[68].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //70
     public void ButtonC70()
@@ -5412,7 +8262,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC70", 0.5f);
-        Invoke("InvokerAchievements69", 1f);
+        Invoke("InvokerAchievements69", 6.5f);
     }
     public void InvokerC70()
     {
@@ -5454,6 +8304,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[69].AllAnim();
         }
     }
+    //70A
+    public void AButtonC70()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[67].AllAnim1();
+        animContent[68].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC70", 1.1f);
+        Invoke("AInvokerAchievements69", 2.2f);
+    }
+    private void AInvokerC70()
+    {
+        ACharter70UI(69);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements69()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter70UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[69].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //71
     public void ButtonC71()
@@ -5461,7 +8359,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC71", 0.5f);
-        Invoke("InvokerAchievements70", 1f);
+        Invoke("InvokerAchievements70", 6.5f);
     }
     public void InvokerC71()
     {
@@ -5525,6 +8423,75 @@ public class ActiveChapter : MonoBehaviour
             animContent[70].AllAnim();
         }
     }
+    //71A
+    public void AButtonC71()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[69].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC71", 1.1f);
+        Invoke("AInvokerAchievements70", 2.2f);
+    }
+    private void AInvokerC71()
+    {
+        ACharter71UI(70);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements70()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter71UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        if (gameManager.b_alcohol == 0)
+        {
+            buttonIf[20].gameObject.SetActive(true);
+            buttonIf[21].gameObject.SetActive(true);
+            buttonIf[22].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[20].gameObject.SetActive(false);
+            buttonIf[21].gameObject.SetActive(false);
+            buttonIf[22].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_alcohol > 0)
+        {
+            buttonIf[23].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[23].gameObject.SetActive(false);
+        }
+
+        animContent[70].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //72
     public void ButtonC72()
@@ -5532,7 +8499,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC72", 0.5f);
-        Invoke("InvokerAchievements71", 1f);
+        Invoke("InvokerAchievements71", 6.5f);
     }
     public void InvokerC72()
     {
@@ -5576,6 +8543,56 @@ public class ActiveChapter : MonoBehaviour
             animContent[71].AllAnim();
         }
     }
+    //72A
+    public void AButtonC72()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[69].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC72", 1.1f);
+        Invoke("AInvokerAchievements71", 2.2f);
+    }
+    private void AInvokerC72()
+    {
+        ACharter72UI(71);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements71()
+    {
+        imgBlackout.gameObject.SetActive(false);
+        achievements.Achievements6();
+    }
+    private void ACharter72UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Ignore_It();
+
+        animContent[71].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //73
     public void ButtonC73()
@@ -5583,7 +8600,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC73", 0.5f);
-        Invoke("InvokerAchievements72", 1f);
+        Invoke("InvokerAchievements72", 6.5f);
     }
     public void InvokerC73()
     {
@@ -5625,6 +8642,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[72].AllAnim();
         }
     }
+    //73A
+    public void AButtonC73()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[70].AllAnim1();
+        animContent[80].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC73", 1.1f);
+        Invoke("AInvokerAchievements72", 2.2f);
+    }
+    private void AInvokerC73()
+    {
+        ACharter73UI(72);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements72()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter73UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[72].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //74
     public void ButtonC74()
@@ -5632,7 +8697,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC74", 0.5f);
-        Invoke("InvokerAchievements73", 1f);
+        Invoke("InvokerAchievements73", 6.5f);
     }
     public void InvokerC74()
     {
@@ -5675,6 +8740,56 @@ public class ActiveChapter : MonoBehaviour
             animContent[73].AllAnim();
         }
     }
+    //74A
+    public void AButtonC74()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[70].AllAnim1();
+        animContent[80].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC74", 1.1f);
+        Invoke("AInvokerAchievements73", 2.2f);
+    }
+    private void AInvokerC74()
+    {
+        ACharter74UI(73);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements73()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter74UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Too_Much_Of_A_Risk();
+
+        animContent[73].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //75
     public void ButtonC75()
@@ -5682,7 +8797,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC75", 0.5f);
-        Invoke("InvokerAchievements74", 1f);
+        Invoke("InvokerAchievements74", 6.5f);
     }
     public void InvokerC75()
     {
@@ -5726,6 +8841,55 @@ public class ActiveChapter : MonoBehaviour
             animContent[74].AllAnim();
         }
     }
+    //75A
+    public void AButtonC75()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[70].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC75", 1.1f);
+        Invoke("AInvokerAchievements74", 2.2f);
+    }
+    private void AInvokerC75()
+    {
+        ACharter75UI(74);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements74()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter75UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Give_Me_Some_Time();
+
+        animContent[74].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //76
     public void ButtonC76()
@@ -5733,7 +8897,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC76", 0.5f);
-        Invoke("InvokerAchievements75", 1f);
+        Invoke("InvokerAchievements75", 6.5f);
     }
     public void InvokerC76()
     {
@@ -5782,7 +8946,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC77", 0.5f);
-        Invoke("InvokerAchievements76", 1f);
+        Invoke("InvokerAchievements76", 6.5f);
     }
     public void InvokerC77()
     {
@@ -5824,6 +8988,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[76].AllAnim();
         }
     }
+    //77A
+    public void AButtonC77()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[70].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC77", 1.1f);
+        Invoke("AInvokerAchievements76", 2.2f);
+    }
+    private void AInvokerC77()
+    {
+        ACharter77UI(76);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements76()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter77UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[76].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //78
     public void ButtonC78()
@@ -5831,7 +9042,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC78", 0.5f);
-        Invoke("InvokerAchievements77", 1f);
+        Invoke("InvokerAchievements77", 6.5f);
     }
     public void InvokerC78()
     {
@@ -5872,6 +9083,7 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[77].AllAnim();
         }
+        sound.PlaySound(8);
     }
 
     //79
@@ -5880,7 +9092,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC79", 0.5f);
-        Invoke("InvokerAchievements78", 1f);
+        Invoke("InvokerAchievements78", 6.5f);
     }
     public void InvokerC79()
     {
@@ -5924,6 +9136,55 @@ public class ActiveChapter : MonoBehaviour
             animContent[78].AllAnim();
         }
     }
+    //79A
+    public void AButtonC79()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[75].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC79", 1.1f);
+        Invoke("AInvokerAchievements78", 2.2f);
+    }
+    private void AInvokerC79()
+    {
+        ACharter79UI(78);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements78()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter79UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Nevermind();
+
+        animContent[78].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //80
     public void ButtonC80()
@@ -5931,7 +9192,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC80", 0.5f);
-        Invoke("InvokerAchievements79", 1f);
+        Invoke("InvokerAchievements79", 6.5f);
     }
     public void InvokerC80()
     {
@@ -5976,8 +9237,8 @@ public class ActiveChapter : MonoBehaviour
         else
         {
             buttonIf[24].gameObject.SetActive(false);
-        } 
-        
+        }
+
         if (gameManager.b_give_me_some_time == 1 && gameManager.b_check_the_weather == 0 && gameManager.b_alcohol == 0 && gameManager.b_ignore_it_2 == 0)
         {
             buttonIf[25].gameObject.SetActive(true);
@@ -5992,6 +9253,75 @@ public class ActiveChapter : MonoBehaviour
             animContent[79].AllAnim();
         }
     }
+    //80A
+    public void AButtonC80()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[72].AllAnim1();
+        animContent[74].AllAnim1();
+        animContent[75].AllAnim1();
+        animContent[77].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC80", 1.1f);
+        Invoke("AInvokerAchievements79", 2.2f);
+    }
+    private void AInvokerC80()
+    {
+        ACharter80UI(79);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements79()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter80UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        if (gameManager.b_too_much_of_a_risk == 0 && gameManager.b_nevermind == 0 && gameManager.b_alcohol == 0 && gameManager.b_ignore_it_2 == 0)
+        {
+            buttonIf[24].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[24].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_give_me_some_time == 1 && gameManager.b_check_the_weather == 0 && gameManager.b_alcohol == 0 && gameManager.b_ignore_it_2 == 0)
+        {
+            buttonIf[25].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[25].gameObject.SetActive(false);
+        }
+
+        animContent[79].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //81
     public void ButtonC81()
@@ -5999,7 +9329,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC81", 0.5f);
-        Invoke("InvokerAchievements80", 1f);
+        Invoke("InvokerAchievements80", 6.5f);
     }
     public void InvokerC81()
     {
@@ -6041,6 +9371,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[80].AllAnim();
         }
     }
+    //81A
+    public void AButtonC81()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[79].AllAnim1();
+        animContent[81].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC81", 1.1f);
+        Invoke("AInvokerAchievements80", 2.2f);
+    }
+    private void AInvokerC81()
+    {
+        ACharter81UI(80);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements80()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter81UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[80].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //82
     public void ButtonC82()
@@ -6048,7 +9426,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC82", 0.5f);
-        Invoke("InvokerAchievements81", 1f);
+        Invoke("InvokerAchievements81", 6.5f);
     }
     public void InvokerC82()
     {
@@ -6091,6 +9469,55 @@ public class ActiveChapter : MonoBehaviour
             animContent[81].AllAnim();
         }
     }
+    //82A
+    public void AButtonC82()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[79].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC82", 1.1f);
+        Invoke("AInvokerAchievements81", 2.2f);
+    }
+    private void AInvokerC82()
+    {
+        ACharter82UI(81);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements81()
+    {
+        imgBlackout.gameObject.SetActive(false);
+        achievements.Achievements7();
+    }
+    private void ACharter82UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+        logicValuesChapters.B_Check_The_Weather();
+
+        animContent[81].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //83
     public void ButtonC83()
@@ -6098,7 +9525,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC83", 0.5f);
-        Invoke("InvokerAchievements82", 1f);
+        Invoke("InvokerAchievements82", 6.5f);
     }
     public void InvokerC83()
     {
@@ -6140,6 +9567,55 @@ public class ActiveChapter : MonoBehaviour
             animContent[82].AllAnim();
         }
     }
+    //83A
+    public void AButtonC83()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[51].AllAnim1();
+        animContent[79].AllAnim1();
+        animContent[81].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC83", 1.1f);
+        Invoke("AInvokerAchievements82", 2.2f);
+    }
+    private void AInvokerC83()
+    {
+        ACharter83UI(82);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements82()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter83UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[82].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //84
     public void ButtonC84()
@@ -6147,7 +9623,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC84", 0.5f);
-        Invoke("InvokerAchievements83", 1f);
+        Invoke("InvokerAchievements83", 6.5f);
     }
     public void InvokerC84()
     {
@@ -6227,6 +9703,91 @@ public class ActiveChapter : MonoBehaviour
             animContent[83].AllAnim();
         }
     }
+    //84A
+    public void AButtonC84()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[82].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC84", 1.1f);
+        Invoke("AInvokerAchievements83", 2.2f);
+    }
+    private void AInvokerC84()
+    {
+        ACharter84UI(83);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements83()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter84UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_The_Lounge();
+
+        if (gameManager.b_the_food_court == 0)
+        {
+            buttonIf[26].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[26].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_halls == 0)
+        {
+            buttonIf[27].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[27].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_gates == 0)
+        {
+            buttonIf[28].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[28].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_gates == 1 && gameManager.b_halls == 1 && gameManager.b_the_food_court == 1 && gameManager.b_the_lounge == 1)
+        {
+            buttonIf[29].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[29].gameObject.SetActive(false);
+        }
+
+        animContent[83].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //85
     public void ButtonC85()
@@ -6234,7 +9795,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC85", 0.5f);
-        Invoke("InvokerAchievements84", 1f);
+        Invoke("InvokerAchievements84", 6.5f);
     }
     public void InvokerC85()
     {
@@ -6321,7 +9882,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC86", 0.5f);
-        Invoke("InvokerAchievements85", 1f);
+        Invoke("InvokerAchievements85", 6.5f);
     }
     public void InvokerC86()
     {
@@ -6409,7 +9970,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC87", 0.5f);
-        Invoke("InvokerAchievements86", 1f);
+        Invoke("InvokerAchievements86", 6.5f);
     }
     public void InvokerC87()
     {
@@ -6495,7 +10056,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC88", 0.5f);
-        Invoke("InvokerAchievements87", 1f);
+        Invoke("InvokerAchievements87", 6.5f);
     }
     public void InvokerC88()
     {
@@ -6537,6 +10098,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[87].AllAnim();
         }
     }
+    //88A
+    public void AButtonC88()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[86].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC88", 1.1f);
+        Invoke("AInvokerAchievements87", 2.2f);
+    }
+    private void AInvokerC88()
+    {
+        ACharter88UI(87);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements87()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter88UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[87].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //89
     public void ButtonC89()
@@ -6544,7 +10152,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC89", 0.5f);
-        Invoke("InvokerAchievements88", 1f);
+        Invoke("InvokerAchievements88", 6.5f);
     }
     public void InvokerC89()
     {
@@ -6629,7 +10237,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC90", 0.5f);
-        Invoke("InvokerAchievements89", 1f);
+        Invoke("InvokerAchievements89", 6.5f);
     }
     public void InvokerC90()
     {
@@ -6708,6 +10316,91 @@ public class ActiveChapter : MonoBehaviour
             animContent[89].AllAnim();
         }
     }
+    //90A
+    public void AButtonC90()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[64].AllAnim1();
+        animContent[88].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC90", 1.1f);
+        Invoke("AInvokerAchievements89", 2.2f);
+    }
+    private void AInvokerC90()
+    {
+        ACharter90UI(89);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements89()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter90UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        if (gameManager.b_buy_book == 0)
+        {
+            buttonIf[46].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[46].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_buy_book == 1)
+        {
+            buttonIf[47].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[47].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_we_were_looking == 1)
+        {
+            buttonIf[48].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[48].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_take_the_girl_to_an_officer == 1)
+        {
+            buttonIf[49].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[49].gameObject.SetActive(false);
+        }
+
+        animContent[89].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //91
     public void ButtonC91()
@@ -6715,7 +10408,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC91", 0.5f);
-        Invoke("InvokerAchievements90", 1f);
+        Invoke("InvokerAchievements90", 6.5f);
     }
     public void InvokerC91()
     {
@@ -6758,6 +10451,56 @@ public class ActiveChapter : MonoBehaviour
             animContent[90].AllAnim();
         }
     }
+    //91A
+    public void AButtonC91()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[64].AllAnim1();
+        animContent[88].AllAnim1();
+        animContent[89].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC91", 1.1f);
+        Invoke("AInvokerAchievements90", 2.2f);
+    }
+    private void AInvokerC91()
+    {
+        ACharter91UI(90);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements90()
+    {
+        imgBlackout.gameObject.SetActive(false);
+        achievements.Achievements8();
+    }
+    private void ACharter91UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[90].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //92
     public void ButtonC92()
@@ -6765,7 +10508,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC92", 0.5f);
-        Invoke("InvokerAchievements91", 1f);
+        Invoke("InvokerAchievements91", 6.5f);
     }
     public void InvokerC92()
     {
@@ -6807,6 +10550,55 @@ public class ActiveChapter : MonoBehaviour
             animContent[91].AllAnim();
         }
     }
+    //92A
+    public void AButtonC92()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[64].AllAnim1();
+        animContent[88].AllAnim1();
+        animContent[89].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC92", 1.1f);
+        Invoke("AInvokerAchievements91", 2.2f);
+    }
+    private void AInvokerC92()
+    {
+        ACharter92UI(91);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements91()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter92UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[91].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //93
     public void ButtonC93()
@@ -6814,7 +10606,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC93", 0.5f);
-        Invoke("InvokerAchievements92", 1f);
+        Invoke("InvokerAchievements92", 6.5f);
     }
     public void InvokerC93()
     {
@@ -6857,6 +10649,56 @@ public class ActiveChapter : MonoBehaviour
             animContent[92].AllAnim();
         }
     }
+    //93A
+    public void AButtonC93()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[64].AllAnim1();
+        animContent[88].AllAnim1();
+        animContent[89].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC93", 1.1f);
+        Invoke("AInvokerAchievements92", 2.2f);
+    }
+    private void AInvokerC93()
+    {
+        ACharter93UI(92);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements92()
+    {
+        imgBlackout.gameObject.SetActive(false);
+        achievements.Achievements9();
+    }
+    private void ACharter93UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[92].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //94
     public void ButtonC94()
@@ -6864,7 +10706,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC94", 0.5f);
-        Invoke("InvokerAchievements93", 1f);
+        Invoke("InvokerAchievements93", 6.5f);
     }
     public void InvokerC94()
     {
@@ -6906,6 +10748,55 @@ public class ActiveChapter : MonoBehaviour
             animContent[93].AllAnim();
         }
     }
+    //94A
+    public void AButtonC94()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[64].AllAnim1();
+        animContent[88].AllAnim1();
+        animContent[89].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC94", 1.1f);
+        Invoke("AInvokerAchievements93", 2.2f);
+    }
+    private void AInvokerC94()
+    {
+        ACharter94UI(93);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements93()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter94UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[93].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //95
     public void ButtonC95()
@@ -6913,7 +10804,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC95", 0.5f);
-        Invoke("InvokerAchievements94", 1f);
+        Invoke("InvokerAchievements94", 6.5f);
     }
     public void InvokerC95()
     {
@@ -6962,7 +10853,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC96", 0.5f);
-        Invoke("InvokerAchievements95", 1f);
+        Invoke("InvokerAchievements95", 6.5f);
     }
     public void InvokerC96()
     {
@@ -7003,6 +10894,7 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[95].AllAnim();
         }
+        sound.PlaySound(9);
     }
 
     //97
@@ -7011,7 +10903,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC97", 0.5f);
-        Invoke("InvokerAchievements96", 1f);
+        Invoke("InvokerAchievements96", 6.5f);
     }
     public void InvokerC97()
     {
@@ -7053,6 +10945,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[96].AllAnim();
         }
     }
+    //97A
+    public void AButtonC97()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[95].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC97", 1.1f);
+        Invoke("AInvokerAchievements96", 2.2f);
+    }
+    private void AInvokerC97()
+    {
+        ACharter97UI(96);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements96()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter97UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[96].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //98
     public void ButtonC98()
@@ -7060,7 +10999,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC98", 0.5f);
-        Invoke("InvokerAchievements97", 1f);
+        Invoke("InvokerAchievements97", 6.5f);
     }
     public void InvokerC98()
     {
@@ -7103,6 +11042,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[97].AllAnim();
         }
     }
+    //98A
+    public void AButtonC98()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[96].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC98", 1.1f);
+        Invoke("AInvokerAchievements97", 2.2f);
+    }
+    private void AInvokerC98()
+    {
+        ACharter98UI(97);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements97()
+    {
+        imgBlackout.gameObject.SetActive(false);
+        achievements.Achievements10();
+    }
+    private void ACharter98UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[97].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //99
     public void ButtonC99()
@@ -7110,7 +11097,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC99", 0.5f);
-        Invoke("InvokerAchievements98", 1f);
+        Invoke("InvokerAchievements98", 6.5f);
     }
     public void InvokerC99()
     {
@@ -7123,6 +11110,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter99UI(int index)
     {
+        gameManager.numberMusic = 0;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7151,6 +11139,7 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[98].AllAnim();
         }
+        musicCharter.PlayMusic(gameManager.numberMusic);
     }
 
     //100
@@ -7159,7 +11148,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC100", 0.5f);
-        Invoke("InvokerAchievements99", 1f);
+        Invoke("InvokerAchievements99", 6.5f);
     }
     public void InvokerC100()
     {
@@ -7201,6 +11190,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[99].AllAnim();
         }
     }
+    //100A
+    public void AButtonC100()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[98].AllAnim1();
+        animContent[121].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC100", 1.1f);
+        Invoke("AInvokerAchievements99", 2.2f);
+    }
+    private void AInvokerC100()
+    {
+        ACharter100UI(99);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements99()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter100UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[99].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //101
     public void ButtonC101()
@@ -7208,7 +11245,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC101", 0.5f);
-        Invoke("InvokerAchievements100", 1f);
+        Invoke("InvokerAchievements100", 6.5f);
     }
     public void InvokerC101()
     {
@@ -7221,6 +11258,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter101UI(int index)
     {
+        gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7249,6 +11287,56 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[100].AllAnim();
         }
+        musicCharter.PlayMusic(gameManager.numberMusic);
+    }
+    //101A
+    public void AButtonC101()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[97].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC101", 1.1f);
+        Invoke("AInvokerAchievements100", 2.2f);
+    }
+    private void AInvokerC101()
+    {
+        ACharter101UI(100);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements100()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter101UI(int index)
+    {
+        gameManager.numberMusic = 1;
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[100].AllAnim2();
+        animContentPanel.AllAnimP();
+        musicCharter.PlayMusic(gameManager.numberMusic);
     }
 
     //102
@@ -7257,7 +11345,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC102", 0.5f);
-        Invoke("InvokerAchievements101", 1f);
+        Invoke("InvokerAchievements101", 6.5f);
     }
     public void InvokerC102()
     {
@@ -7306,7 +11394,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC103", 0.5f);
-        Invoke("InvokerAchievements102", 1f);
+        Invoke("InvokerAchievements102", 6.5f);
     }
     public void InvokerC103()
     {
@@ -7348,6 +11436,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[102].AllAnim();
         }
     }
+    //103A
+    public void AButtonC103()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[99].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC103", 1.1f);
+        Invoke("AInvokerAchievements102", 2.2f);
+    }
+    private void AInvokerC103()
+    {
+        ACharter103UI(102);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements102()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter103UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[102].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //104
     public void ButtonC104()
@@ -7355,7 +11490,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC104", 0.5f);
-        Invoke("InvokerAchievements103", 1f);
+        Invoke("InvokerAchievements103", 6.5f);
     }
     public void InvokerC104()
     {
@@ -7368,6 +11503,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter104UI(int index)
     {
+        gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7396,6 +11532,56 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[103].AllAnim();
         }
+        musicCharter.PlayMusic(gameManager.numberMusic);
+    }
+    //104A
+    public void AButtonC104()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[99].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC104", 1.1f);
+        Invoke("AInvokerAchievements103", 2.2f);
+    }
+    private void AInvokerC104()
+    {
+        ACharter104UI(103);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements103()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter104UI(int index)
+    {
+        gameManager.numberMusic = 1;
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[103].AllAnim2();
+        animContentPanel.AllAnimP();
+        musicCharter.PlayMusic(gameManager.numberMusic);
     }
 
     //105
@@ -7404,7 +11590,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC105", 0.5f);
-        Invoke("InvokerAchievements104", 1f);
+        Invoke("InvokerAchievements104", 6.5f);
     }
     public void InvokerC105()
     {
@@ -7446,6 +11632,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[104].AllAnim();
         }
     }
+    //105A
+    public void AButtonC105()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[98].AllAnim1();
+        animContent[121].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC105", 1.1f);
+        Invoke("AInvokerAchievements104", 2.2f);
+    }
+    private void AInvokerC105()
+    {
+        ACharter105UI(104);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements104()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter105UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[104].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //106
     public void ButtonC106()
@@ -7453,7 +11687,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC106", 0.5f);
-        Invoke("InvokerAchievements105", 1f);
+        Invoke("InvokerAchievements105", 6.5f);
     }
     public void InvokerC106()
     {
@@ -7466,6 +11700,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter106UI(int index)
     {
+        gameManager.numberMusic = 3;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7494,6 +11729,57 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[105].AllAnim();
         }
+        musicCharter.PlayMusic(gameManager.numberMusic);
+    }
+    //106A
+    public void AButtonC106()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[98].AllAnim1();
+        animContent[121].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC106", 1.1f);
+        Invoke("AInvokerAchievements105", 2.2f);
+    }
+    private void AInvokerC106()
+    {
+        ACharter106UI(105);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements105()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter106UI(int index)
+    {
+        gameManager.numberMusic = 3;
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[105].AllAnim2();
+        animContentPanel.AllAnimP();
+        musicCharter.PlayMusic(gameManager.numberMusic);
     }
 
     //107
@@ -7502,7 +11788,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC107", 0.5f);
-        Invoke("InvokerAchievements106", 1f);
+        Invoke("InvokerAchievements106", 6.5f);
     }
     public void InvokerC107()
     {
@@ -7515,6 +11801,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter107UI(int index)
     {
+        gameManager.numberMusic = 3;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7543,6 +11830,57 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[106].AllAnim();
         }
+        musicCharter.PlayMusic(gameManager.numberMusic);
+    }
+    //107A
+    public void AButtonC107()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[100].AllAnim1();
+        animContent[127].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC107", 1.1f);
+        Invoke("AInvokerAchievements106", 2.2f);
+    }
+    private void AInvokerC107()
+    {
+        ACharter107UI(106);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements106()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter107UI(int index)
+    {
+        gameManager.numberMusic = 3;
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[106].AllAnim2();
+        animContentPanel.AllAnimP();
+        musicCharter.PlayMusic(gameManager.numberMusic);
     }
 
     //108
@@ -7551,7 +11889,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC108", 0.5f);
-        Invoke("InvokerAchievements107", 1f);
+        Invoke("InvokerAchievements107", 6.5f);
     }
     public void InvokerC108()
     {
@@ -7564,6 +11902,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter108UI(int index)
     {
+        gameManager.numberMusic = 0;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7592,6 +11931,7 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[107].AllAnim();
         }
+        musicCharter.PlayMusic(gameManager.numberMusic);
     }
 
     //109
@@ -7600,7 +11940,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC109", 0.5f);
-        Invoke("InvokerAchievements108", 1f);
+        Invoke("InvokerAchievements108", 6.5f);
     }
     public void InvokerC109()
     {
@@ -7642,6 +11982,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[108].AllAnim();
         }
     }
+    //109A
+    public void AButtonC109()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[107].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC109", 1.1f);
+        Invoke("AInvokerAchievements108", 2.2f);
+    }
+    private void AInvokerC109()
+    {
+        ACharter109UI(108);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements108()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter109UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[108].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //110
     public void ButtonC110()
@@ -7649,7 +12036,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC110", 0.5f);
-        Invoke("InvokerAchievements109", 1f);
+        Invoke("InvokerAchievements109", 6.5f);
     }
     public void InvokerC110()
     {
@@ -7691,6 +12078,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[109].AllAnim();
         }
     }
+    //110A
+    public void AButtonC110()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[108].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC110", 1.1f);
+        Invoke("AInvokerAchievements109", 2.2f);
+    }
+    private void AInvokerC110()
+    {
+        ACharter110UI(109);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements109()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter110UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[109].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //111
     public void ButtonC111()
@@ -7698,7 +12132,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC111", 0.5f);
-        Invoke("InvokerAchievements110", 1f);
+        Invoke("InvokerAchievements110", 6.5f);
     }
     public void InvokerC111()
     {
@@ -7740,6 +12174,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[110].AllAnim();
         }
     }
+    //111A
+    public void AButtonC111()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[109].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC111", 1.1f);
+        Invoke("AInvokerAchievements110", 2.2f);
+    }
+    private void AInvokerC111()
+    {
+        ACharter111UI(110);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements110()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter111UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[110].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //112
     public void ButtonC112()
@@ -7747,7 +12228,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC112", 0.5f);
-        Invoke("InvokerAchievements111", 1f);
+        Invoke("InvokerAchievements111", 6.5f);
     }
     public void InvokerC112()
     {
@@ -7789,6 +12270,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[111].AllAnim();
         }
     }
+    //112A
+    public void AButtonC112()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[110].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC112", 1.1f);
+        Invoke("AInvokerAchievements111", 2.2f);
+    }
+    private void AInvokerC112()
+    {
+        ACharter112UI(111);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements111()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter112UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[111].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //113
     public void ButtonC113()
@@ -7796,7 +12324,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC113", 0.5f);
-        Invoke("InvokerAchievements112", 1f);
+        Invoke("InvokerAchievements112", 6.5f);
     }
     public void InvokerC113()
     {
@@ -7838,6 +12366,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[112].AllAnim();
         }
     }
+    //113A
+    public void AButtonC113()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[111].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("InvokerC113", 1.1f);
+        Invoke("InvokerAchievements112", 2.2f);
+    }
+    private void AInvokerC113()
+    {
+        ACharter113UI(112);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements112()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter113UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[112].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //114
     public void ButtonC114()
@@ -7845,7 +12420,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC114", 0.5f);
-        Invoke("InvokerAchievements113", 1f);
+        Invoke("InvokerAchievements113", 6.5f);
     }
     public void InvokerC114()
     {
@@ -7887,6 +12462,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[113].AllAnim();
         }
     }
+    //114A
+    public void AButtonC114()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[112].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC114", 1.1f);
+        Invoke("AInvokerAchievements113", 2.2f);
+    }
+    private void AInvokerC114()
+    {
+        ACharter114UI(113);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements113()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter114UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[113].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //115
     public void ButtonC115()
@@ -7894,7 +12516,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC115", 0.5f);
-        Invoke("InvokerAchievements114", 1f);
+        Invoke("InvokerAchievements114", 6.5f);
     }
     public void InvokerC115()
     {
@@ -7936,6 +12558,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[114].AllAnim();
         }
     }
+    //115A
+    public void AButtonC115()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[113].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC115", 1.1f);
+        Invoke("AInvokerAchievements114", 2.2f);
+    }
+    private void AInvokerC115()
+    {
+        ACharter115UI(114);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements114()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter115UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[114].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //116
     public void ButtonC116()
@@ -7943,7 +12612,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC116", 0.5f);
-        Invoke("InvokerAchievements115", 1f);
+        Invoke("InvokerAchievements115", 6.5f);
     }
     public void InvokerC116()
     {
@@ -7985,6 +12654,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[115].AllAnim();
         }
     }
+    //116A
+    public void AButtonC116()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[114].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC116", 1.1f);
+        Invoke("AInvokerAchievements115", 2.2f);
+    }
+    private void AInvokerC116()
+    {
+        ACharter116UI(115);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements115()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter116UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[115].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //117
     public void ButtonC117()
@@ -7992,7 +12708,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC117", 0.5f);
-        Invoke("InvokerAchievements116", 1f);
+        Invoke("InvokerAchievements116", 6.5f);
     }
     public void InvokerC117()
     {
@@ -8034,6 +12750,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[116].AllAnim();
         }
     }
+    //117A
+    public void AButtonC117()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[115].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC117", 1.1f);
+        Invoke("AInvokerAchievements116", 2.2f);
+    }
+    private void AInvokerC117()
+    {
+        ACharter117UI(116);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements116()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter117UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[116].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //118
     public void ButtonC118()
@@ -8041,7 +12804,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC118", 0.5f);
-        Invoke("InvokerAchievements117", 1f);
+        Invoke("InvokerAchievements117", 6.5f);
     }
     public void InvokerC118()
     {
@@ -8083,6 +12846,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[117].AllAnim();
         }
     }
+    //118A
+    public void AButtonC118()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[116].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC118", 1.1f);
+        Invoke("AInvokerAchievements117", 2.2f);
+    }
+    private void AInvokerC118()
+    {
+        ACharter118UI(117);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements117()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter118UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[117].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //119
     public void ButtonC119()
@@ -8090,7 +12900,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC119", 0.5f);
-        Invoke("InvokerAchievements118", 1f);
+        Invoke("InvokerAchievements118", 6.5f);
     }
     public void InvokerC119()
     {
@@ -8132,6 +12942,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[118].AllAnim();
         }
     }
+    //119A
+    public void AButtonC119()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[117].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC119", 1.1f);
+        Invoke("AInvokerAchievements118", 2.2f);
+    }
+    private void AInvokerC119()
+    {
+        ACharter119UI(118);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements118()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter119UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[118].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //120
     public void ButtonC120()
@@ -8139,7 +12996,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC120", 0.5f);
-        Invoke("InvokerAchievements119", 1f);
+        Invoke("InvokerAchievements119", 6.5f);
     }
     public void InvokerC120()
     {
@@ -8181,6 +13038,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[119].AllAnim();
         }
     }
+    //120A
+    public void AButtonC120()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[118].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC120", 1.1f);
+        Invoke("AInvokerAchievements119", 2.2f);
+    }
+    private void AInvokerC120()
+    {
+        ACharter120UI(119);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements119()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter120UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[119].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //121
     public void ButtonC121()
@@ -8188,7 +13092,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC121", 0.5f);
-        Invoke("InvokerAchievements120", 1f);
+        Invoke("InvokerAchievements120", 6.5f);
     }
     public void InvokerC121()
     {
@@ -8230,6 +13134,56 @@ public class ActiveChapter : MonoBehaviour
             animContent[120].AllAnim();
         }
     }
+    //121A
+    public void AButtonC121()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[107].AllAnim1();
+        animContent[109].AllAnim1();
+        animContent[113].AllAnim1();
+        animContent[115].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC121", 1.1f);
+        Invoke("AInvokerAchievements120", 2.2f);
+    }
+    private void AInvokerC121()
+    {
+        ACharter121UI(120);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements120()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter121UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[120].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //122
     public void ButtonC122()
@@ -8237,7 +13191,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC122", 0.5f);
-        Invoke("InvokerAchievements121", 1f);
+        Invoke("InvokerAchievements121", 6.5f);
     }
     public void InvokerC122()
     {
@@ -8279,6 +13233,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[121].AllAnim();
         }
     }
+    //122A
+    public void AButtonC122()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[120].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC122", 1.1f);
+        Invoke("AInvokerAchievements121", 2.2f);
+    }
+    private void AInvokerC122()
+    {
+        ACharter122UI(121);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements121()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter122UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[121].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //123
     public void ButtonC123()
@@ -8286,7 +13287,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC123", 0.5f);
-        Invoke("InvokerAchievements122", 1f);
+        Invoke("InvokerAchievements122", 6.5f);
     }
     public void InvokerC123()
     {
@@ -8299,6 +13300,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter123UI(int index)
     {
+        gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8327,6 +13329,61 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[122].AllAnim();
         }
+        musicCharter.PlayMusic(gameManager.numberMusic);
+    }
+    //123A
+    public void AButtonC123()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[107].AllAnim1();
+        animContent[109].AllAnim1();
+        animContent[111].AllAnim1();
+        animContent[113].AllAnim1();
+        animContent[115].AllAnim1();
+        animContent[117].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC123", 1.1f);
+        Invoke("AInvokerAchievements122", 2.2f);
+    }
+    private void AInvokerC123()
+    {
+        ACharter123UI(122);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements122()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter123UI(int index)
+    {
+        gameManager.numberMusic = 1;
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[122].AllAnim2();
+        animContentPanel.AllAnimP();
+        musicCharter.PlayMusic(gameManager.numberMusic);
     }
 
     //124
@@ -8335,7 +13392,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC124", 0.5f);
-        Invoke("InvokerAchievements123", 1f);
+        Invoke("InvokerAchievements123", 6.5f);
     }
     public void InvokerC124()
     {
@@ -8377,6 +13434,57 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[123].AllAnim();
         }
+        sound.PlaySound(10);
+    }
+    //124A
+    public void AButtonC124()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[111].AllAnim1();
+        animContent[117].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC124", 1.1f);
+        Invoke("AInvokerAchievements123", 2.2f);
+    }
+    private void AInvokerC124()
+    {
+        ACharter124UI(123);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements123()
+    {
+        imgBlackout.gameObject.SetActive(false);
+        achievements.Achievements11();
+    }
+    private void ACharter124UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[123].AllAnim2();
+        animContentPanel.AllAnimP();
+        sound.PlaySound(10);
     }
 
     //125
@@ -8385,7 +13493,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC125", 0.5f);
-        Invoke("InvokerAchievements124", 1f);
+        Invoke("InvokerAchievements124", 6.5f);
     }
     public void InvokerC125()
     {
@@ -8427,6 +13535,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[124].AllAnim();
         }
     }
+    //125A
+    public void AButtonC125()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[123].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC125", 1.1f);
+        Invoke("AInvokerAchievements124", 2.2f);
+    }
+    private void AInvokerC125()
+    {
+        ACharter125UI(124);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements124()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter125UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[124].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //126
     public void ButtonC126()
@@ -8434,7 +13589,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC126", 0.5f);
-        Invoke("InvokerAchievements125", 1f);
+        Invoke("InvokerAchievements125", 6.5f);
     }
     public void InvokerC126()
     {
@@ -8471,11 +13626,61 @@ public class ActiveChapter : MonoBehaviour
                 charter[i].SetActive(false);
             }
         }
+        logicValuesChapters.B_Take_The_Knife();
 
         for (int i = 0; i < animContent.Length; i++)
         {
             animContent[125].AllAnim();
         }
+    }
+    //126A
+    public void AButtonC126()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[124].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC126", 1.1f);
+        Invoke("AInvokerAchievements125", 2.2f);
+    }
+    private void AInvokerC126()
+    {
+        ACharter126UI(125);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements125()
+    {
+        imgBlackout.gameObject.SetActive(false);
+        achievements.Achievements12();
+    }
+    private void ACharter126UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+        logicValuesChapters.B_Take_The_Knife();
+
+        animContent[125].AllAnim2();
+        animContentPanel.AllAnimP();
     }
 
     //127
@@ -8484,7 +13689,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC127", 0.5f);
-        Invoke("InvokerAchievements126", 1f);
+        Invoke("InvokerAchievements126", 6.5f);
     }
     public void InvokerC127()
     {
@@ -8526,6 +13731,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[126].AllAnim();
         }
     }
+    //127A
+    public void AButtonC127()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[125].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC127", 1.1f);
+        Invoke("AInvokerAchievements126", 2.2f);
+    }
+    private void AInvokerC127()
+    {
+        ACharter127UI(126);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements126()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter127UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[126].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //128
     public void ButtonC128()
@@ -8533,7 +13785,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC128", 0.5f);
-        Invoke("InvokerAchievements127", 1f);
+        Invoke("InvokerAchievements127", 6.5f);
     }
     public void InvokerC128()
     {
@@ -8546,6 +13798,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter128UI(int index)
     {
+        gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8574,6 +13827,7 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[127].AllAnim();
         }
+        musicCharter.PlayMusic(gameManager.numberMusic);
     }
 
     //129
@@ -8582,7 +13836,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC129", 0.5f);
-        Invoke("InvokerAchievements128", 1f);
+        Invoke("InvokerAchievements128", 6.5f);
     }
     public void InvokerC129()
     {
@@ -8624,6 +13878,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[128].AllAnim();
         }
     }
+    //129A
+    public void AButtonC129()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[124].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC129", 1.1f);
+        Invoke("AInvokerAchievements128", 2.2f);
+    }
+    private void AInvokerC129()
+    {
+        ACharter129UI(128);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements128()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter129UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[128].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //130
     public void ButtonC130()
@@ -8631,7 +13932,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC130", 0.5f);
-        Invoke("InvokerAchievements129", 1f);
+        Invoke("InvokerAchievements129", 6.5f);
     }
     public void InvokerC130()
     {
@@ -8673,6 +13974,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[129].AllAnim();
         }
     }
+    //130A
+    public void AButtonC130()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[126].AllAnim1();
+        animContent[128].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC130", 1.1f);
+        Invoke("AInvokerAchievements129", 2.2f);
+    }
+    private void AInvokerC130()
+    {
+        ACharter130UI(129);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements129()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter130UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[129].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //131
     public void ButtonC131()
@@ -8680,7 +14029,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC131", 0.5f);
-        Invoke("InvokerAchievements130", 1f);
+        Invoke("InvokerAchievements130", 6.5f);
     }
     public void InvokerC131()
     {
@@ -8724,6 +14073,55 @@ public class ActiveChapter : MonoBehaviour
             animContent[130].AllAnim();
         }
     }
+    //131A
+    public void AButtonC131()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[129].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC131", 1.1f);
+        Invoke("AInvokerAchievements130", 2.2f);
+    }
+    private void AInvokerC131()
+    {
+        ACharter131UI(130);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements130()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter131UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Fight();
+
+        animContent[130].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //132
     public void ButtonC132()
@@ -8731,7 +14129,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC132", 0.5f);
-        Invoke("InvokerAchievements131", 1f);
+        Invoke("InvokerAchievements131", 6.5f);
     }
     public void InvokerC132()
     {
@@ -8745,6 +14143,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter132UI(int index)
     {
+        gameManager.numberMusic = 3;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8773,6 +14172,57 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[131].AllAnim();
         }
+        musicCharter.PlayMusic(gameManager.numberMusic);
+    }
+    //132A
+    public void AButtonC132()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[129].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC132", 1.1f);
+        Invoke("AInvokerAchievements131", 2.2f);
+    }
+    private void AInvokerC132()
+    {
+        ACharter132UI(131);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements131()
+    {
+        imgBlackout.gameObject.SetActive(false);
+        achievements.Achievements13();
+    }
+    private void ACharter132UI(int index)
+    {
+        gameManager.numberMusic = 3;
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[131].AllAnim2();
+        animContentPanel.AllAnimP();
+        musicCharter.PlayMusic(gameManager.numberMusic);
     }
 
     //133
@@ -8781,7 +14231,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC133", 0.5f);
-        Invoke("InvokerAchievements132", 1f);
+        Invoke("InvokerAchievements132", 6.5f);
     }
     public void InvokerC133()
     {
@@ -8822,6 +14272,55 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[132].AllAnim();
         }
+        sound.PlaySound(11);
+    }
+    //133A
+    public void AButtonC133()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[131].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC133", 1.1f);
+        Invoke("AInvokerAchievements132", 2.2f);
+    }
+    private void AInvokerC133()
+    {
+        ACharter133UI(132);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements132()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter133UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[132].AllAnim2();
+        animContentPanel.AllAnimP();
+        sound.PlaySound(11);
     }
 
     //134
@@ -8830,7 +14329,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC134", 0.5f);
-        Invoke("InvokerAchievements133", 1f);
+        Invoke("InvokerAchievements133", 6.5f);
     }
     public void InvokerC134()
     {
@@ -8871,6 +14370,55 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[133].AllAnim();
         }
+        sound.PlaySound(12);
+    }
+    //134A
+    public void AButtonC134()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[131].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC134", 1.1f);
+        Invoke("AInvokerAchievements133", 2.2f);
+    }
+    private void AInvokerC134()
+    {
+        ACharter134UI(133);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements133()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter134UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[133].AllAnim2();
+        animContentPanel.AllAnimP();
+        sound.PlaySound(12);
     }
 
     //135
@@ -8879,7 +14427,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC135", 0.5f);
-        Invoke("InvokerAchievements134", 1f);
+        Invoke("InvokerAchievements134", 6.5f);
     }
     public void InvokerC135()
     {
@@ -8920,6 +14468,55 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[134].AllAnim();
         }
+        sound.PlaySound(11);
+    }
+    //135A
+    public void AButtonC135()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[131].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC135", 1.1f);
+        Invoke("AInvokerAchievements134", 2.2f);
+    }
+    private void AInvokerC135()
+    {
+        ACharter135UI(134);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements134()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter135UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[134].AllAnim2();
+        animContentPanel.AllAnimP();
+        sound.PlaySound(11);
     }
 
     //136
@@ -8928,7 +14525,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC136", 0.5f);
-        Invoke("InvokerAchievements135", 1f);
+        Invoke("InvokerAchievements135", 6.5f);
     }
     public void InvokerC136()
     {
@@ -8970,6 +14567,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[135].AllAnim();
         }
     }
+    //136A
+    public void AButtonC136()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[132].AllAnim1();
+        animContent[133].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC136", 1.1f);
+        Invoke("AInvokerAchievements135", 2.2f);
+    }
+    private void AInvokerC136()
+    {
+        ACharter136UI(135);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements135()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter136UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[135].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //137
     public void ButtonC137()
@@ -8977,7 +14622,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC137", 0.5f);
-        Invoke("InvokerAchievements136", 1f);
+        Invoke("InvokerAchievements136", 6.5f);
     }
     public void InvokerC137()
     {
@@ -9014,10 +14659,76 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
+        if (gameManager.b_take_the_knife == 0)
+        {
+            buttonIf[82].gameObject.SetActive(false);
+        }
+        else
+        {
+            buttonIf[82].gameObject.SetActive(true);
+        }
+
         for (int i = 0; i < animContent.Length; i++)
         {
             animContent[136].AllAnim();
         }
+    }
+    //137A
+    public void AButtonC137()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[133].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC137", 1.1f);
+        Invoke("AInvokerAchievements136", 2.2f);
+    }
+    private void AInvokerC137()
+    {
+        ACharter137UI(136);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements136()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter137UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        if (gameManager.b_take_the_knife == 0)
+        {
+            buttonIf[82].gameObject.SetActive(false);
+        }
+        else
+        {
+            buttonIf[82].gameObject.SetActive(true);
+        }
+
+        animContent[136].AllAnim2();
+        animContentPanel.AllAnimP();
     }
 
     //138
@@ -9026,7 +14737,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC138", 0.5f);
-        Invoke("InvokerAchievements137", 1f);
+        Invoke("InvokerAchievements137", 6.5f);
     }
     public void InvokerC138()
     {
@@ -9068,6 +14779,55 @@ public class ActiveChapter : MonoBehaviour
             animContent[137].AllAnim();
         }
     }
+    //138A
+    public void AButtonC138()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[136].AllAnim1();
+        animContent[138].AllAnim1();
+        animContent[139].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC138", 1.1f);
+        Invoke("AInvokerAchievements137", 2.2f);
+    }
+    private void AInvokerC138()
+    {
+        ACharter138UI(137);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements137()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter138UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[137].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //139
     public void ButtonC139()
@@ -9075,7 +14835,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC139", 0.5f);
-        Invoke("InvokerAchievements138", 1f);
+        Invoke("InvokerAchievements138", 6.5f);
     }
     public void InvokerC139()
     {
@@ -9112,10 +14872,76 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
+        if (gameManager.b_take_the_knife == 0)
+        {
+            buttonIf[83].gameObject.SetActive(false);
+        }
+        else
+        {
+            buttonIf[83].gameObject.SetActive(true);
+        }
+
         for (int i = 0; i < animContent.Length; i++)
         {
             animContent[138].AllAnim();
         }
+    }
+    //139A
+    public void AButtonC139()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[132].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC139", 1.1f);
+        Invoke("AInvokerAchievements138", 2.2f);
+    }
+    private void AInvokerC139()
+    {
+        ACharter139UI(138);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements138()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter139UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        if (gameManager.b_take_the_knife == 0)
+        {
+            buttonIf[83].gameObject.SetActive(false);
+        }
+        else
+        {
+            buttonIf[83].gameObject.SetActive(true);
+        }
+
+        animContent[138].AllAnim2();
+        animContentPanel.AllAnimP();
     }
 
     //140
@@ -9124,7 +14950,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC140", 0.5f);
-        Invoke("InvokerAchievements139", 1f);
+        Invoke("InvokerAchievements139", 6.5f);
     }
     public void InvokerC140()
     {
@@ -9165,6 +14991,55 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[139].AllAnim();
         }
+        sound.PlaySound(11);
+    }
+    //140A
+    public void AButtonC140()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[136].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC140", 1.1f);
+        Invoke("AInvokerAchievements139", 2.2f);
+    }
+    private void AInvokerC140()
+    {
+        ACharter140UI(139);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements139()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter140UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[139].AllAnim2();
+        animContentPanel.AllAnimP();
+        sound.PlaySound(11);
     }
 
     //141
@@ -9173,7 +15048,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC141", 0.5f);
-        Invoke("InvokerAchievements140", 1f);
+        Invoke("InvokerAchievements140", 6.5f);
     }
     public void InvokerC141()
     {
@@ -9215,6 +15090,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[140].AllAnim();
         }
     }
+    //141A
+    public void AButtonC141()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[136].AllAnim1();
+        animContent[138].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC141", 1.1f);
+        Invoke("AInvokerAchievements140", 2.2f);
+    }
+    private void AInvokerC141()
+    {
+        ACharter141UI(140);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements140()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter141UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[140].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //142
     public void ButtonC142()
@@ -9222,7 +15145,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC142", 0.5f);
-        Invoke("InvokerAchievements141", 1f);
+        Invoke("InvokerAchievements141", 6.5f);
     }
     public void InvokerC142()
     {
@@ -9235,6 +15158,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter142UI(int index)
     {
+        gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9263,6 +15187,56 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[141].AllAnim();
         }
+        musicCharter.PlayMusic(gameManager.numberMusic);
+    }
+    //142A
+    public void AButtonC142()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[138].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC142", 1.1f);
+        Invoke("AInvokerAchievements141", 2.2f);
+    }
+    private void AInvokerC142()
+    {
+        ACharter142UI(141);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements141()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter142UI(int index)
+    {
+        gameManager.numberMusic = 1;
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[141].AllAnim2();
+        animContentPanel.AllAnimP();
+        musicCharter.PlayMusic(gameManager.numberMusic);
     }
 
     //143
@@ -9271,7 +15245,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC143", 0.5f);
-        Invoke("InvokerAchievements142", 1f);
+        Invoke("InvokerAchievements142", 6.5f);
     }
     public void InvokerC143()
     {
@@ -9313,6 +15287,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[142].AllAnim();
         }
     }
+    //143A
+    public void AButtonC143()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[136].AllAnim1();
+        animContent[138].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC143", 1.1f);
+        Invoke("AInvokerAchievements142", 2.2f);
+    }
+    private void AInvokerC143()
+    {
+        ACharter143UI(142);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements142()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter143UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[142].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //144
     public void ButtonC144()
@@ -9320,7 +15342,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC144", 0.5f);
-        Invoke("InvokerAchievements143", 1f);
+        Invoke("InvokerAchievements143", 6.5f);
     }
     public void InvokerC144()
     {
@@ -9333,6 +15355,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter144UI(int index)
     {
+        gameManager.numberMusic = 0;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9361,6 +15384,7 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[143].AllAnim();
         }
+        musicCharter.PlayMusic(gameManager.numberMusic);
     }
 
     //145
@@ -9369,7 +15393,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC145", 0.5f);
-        Invoke("InvokerAchievements144", 1f);
+        Invoke("InvokerAchievements144", 6.5f);
     }
     public void InvokerC145()
     {
@@ -9422,6 +15446,65 @@ public class ActiveChapter : MonoBehaviour
             animContent[144].AllAnim();
         }
     }
+    //145A
+    public void AButtonC145()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[143].AllAnim1();
+        animContent[145].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC145", 1.1f);
+        Invoke("AInvokerAchievements144", 2.2f);
+    }
+    private void AInvokerC145()
+    {
+        ACharter145UI(144);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements144()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter145UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Looking_Around();
+
+        if (gameManager.b_check_for_survivors == 0)
+        {
+            buttonIf[50].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[50].gameObject.SetActive(false);
+        }
+
+        animContent[144].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //146
     public void ButtonC146()
@@ -9429,7 +15512,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC146", 0.5f);
-        Invoke("InvokerAchievements145", 1f);
+        Invoke("InvokerAchievements145", 6.5f);
     }
     public void InvokerC146()
     {
@@ -9482,6 +15565,65 @@ public class ActiveChapter : MonoBehaviour
             animContent[145].AllAnim();
         }
     }
+    //146A
+    public void AButtonC146()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[143].AllAnim1();
+        animContent[144].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC146", 1.1f);
+        Invoke("AInvokerAchievements145", 2.2f);
+    }
+    private void AInvokerC146()
+    {
+        ACharter146UI(145);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements145()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter146UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Check_For_Survivors();
+
+        if (gameManager.b_looking_around == 0)
+        {
+            buttonIf[51].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[51].gameObject.SetActive(false);
+        }
+
+        animContent[145].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //147
     public void ButtonC147()
@@ -9489,7 +15631,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC147", 0.5f);
-        Invoke("InvokerAchievements146", 1f);
+        Invoke("InvokerAchievements146", 6.5f);
     }
     public void InvokerC147()
     {
@@ -9531,6 +15673,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[146].AllAnim();
         }
     }
+    //147A
+    public void AButtonC147()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[147].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC147", 1.1f);
+        Invoke("AInvokerAchievements146", 2.2f);
+    }
+    private void AInvokerC147()
+    {
+        ACharter147UI(146);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements146()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter147UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[146].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //148
     public void ButtonC148()
@@ -9538,7 +15727,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC148", 0.5f);
-        Invoke("InvokerAchievements147", 1f);
+        Invoke("InvokerAchievements147", 6.5f);
     }
     public void InvokerC148()
     {
@@ -9587,7 +15776,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC149", 0.5f);
-        Invoke("InvokerAchievements148", 1f);
+        Invoke("InvokerAchievements148", 6.5f);
     }
     public void InvokerC149()
     {
@@ -9636,7 +15825,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC150", 0.5f);
-        Invoke("InvokerAchievements149", 1f);
+        Invoke("InvokerAchievements149", 6.5f);
     }
     public void InvokerC150()
     {
@@ -9677,6 +15866,56 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[149].AllAnim();
         }
+        sound.PlaySound(13);
+    }
+    //150A
+    public void AButtonC150()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[148].AllAnim1();
+        animContent[151].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC150", 1.1f);
+        Invoke("AInvokerAchievements149", 2.2f);
+    }
+    private void AInvokerC150()
+    {
+        ACharter150UI(149);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements149()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter150UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[149].AllAnim2();
+        animContentPanel.AllAnimP();
+        sound.PlaySound(13);
     }
 
     //151
@@ -9685,7 +15924,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC151", 0.5f);
-        Invoke("InvokerAchievements150", 1f);
+        Invoke("InvokerAchievements150", 6.5f);
     }
     public void InvokerC151()
     {
@@ -9726,6 +15965,56 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[150].AllAnim();
         }
+        sound.PlaySound(14);
+    }
+    //151A
+    public void AButtonC151()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[148].AllAnim1();
+        animContent[151].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC151", 1.1f);
+        Invoke("AInvokerAchievements150", 2.2f);
+    }
+    private void AInvokerC151()
+    {
+        ACharter151UI(150);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements150()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter151UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[150].AllAnim2();
+        animContentPanel.AllAnimP();
+        sound.PlaySound(14);
     }
 
     //152
@@ -9734,7 +16023,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC152", 0.5f);
-        Invoke("InvokerAchievements151", 1f);
+        Invoke("InvokerAchievements151", 6.5f);
     }
     public void InvokerC152()
     {
@@ -9776,6 +16065,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[151].AllAnim();
         }
     }
+    //152A
+    public void AButtonC152()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[148].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC152", 1.1f);
+        Invoke("AInvokerAchievements151", 2.2f);
+    }
+    private void AInvokerC152()
+    {
+        ACharter152UI(151);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements151()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter152UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[151].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //153
     public void ButtonC153()
@@ -9783,7 +16119,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC153", 0.5f);
-        Invoke("InvokerAchievements152", 1f);
+        Invoke("InvokerAchievements152", 6.5f);
     }
     public void InvokerC153()
     {
@@ -9825,6 +16161,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[152].AllAnim();
         }
     }
+    //153A
+    public void AButtonC153()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[149].AllAnim1();
+        animContent[150].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC153", 1.1f);
+        Invoke("AInvokerAchievements152", 2.2f);
+    }
+    private void AInvokerC153()
+    {
+        ACharter153UI(152);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements152()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter153UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[152].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //154
     public void ButtonC154()
@@ -9832,7 +16216,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC154", 0.5f);
-        Invoke("InvokerAchievements153", 1f);
+        Invoke("InvokerAchievements153", 6.5f);
     }
     public void InvokerC154()
     {
@@ -9874,6 +16258,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[153].AllAnim();
         }
     }
+    //154A
+    public void AButtonC154()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[152].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC154", 1.1f);
+        Invoke("AInvokerAchievements153", 2.2f);
+    }
+    private void AInvokerC154()
+    {
+        ACharter154UI(153);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements153()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter154UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[153].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //155
     public void ButtonC155()
@@ -9881,7 +16312,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC155", 0.5f);
-        Invoke("InvokerAchievements154", 1f);
+        Invoke("InvokerAchievements154", 6.5f);
     }
     public void InvokerC155()
     {
@@ -9930,7 +16361,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC156", 0.5f);
-        Invoke("InvokerAchievements155", 1f);
+        Invoke("InvokerAchievements155", 6.5f);
     }
     public void InvokerC156()
     {
@@ -9972,6 +16403,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[155].AllAnim();
         }
     }
+    //156A
+    public void AButtonC156()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[154].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC156", 1.1f);
+        Invoke("AInvokerAchievements155", 2.2f);
+    }
+    private void AInvokerC156()
+    {
+        ACharter156UI(155);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements155()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter156UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[155].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //157
     public void ButtonC157()
@@ -9979,7 +16457,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC157", 0.5f);
-        Invoke("InvokerAchievements156", 1f);
+        Invoke("InvokerAchievements156", 6.5f);
     }
     public void InvokerC157()
     {
@@ -10021,6 +16499,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[156].AllAnim();
         }
     }
+    //157A
+    public void AButtonC157()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[155].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC157", 1.1f);
+        Invoke("AInvokerAchievements156", 2.2f);
+    }
+    private void AInvokerC157()
+    {
+        ACharter157UI(156);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements156()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter157UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[156].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //158
     public void ButtonC158()
@@ -10028,7 +16553,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC158", 0.5f);
-        Invoke("InvokerAchievements157", 1f);
+        Invoke("InvokerAchievements157", 6.5f);
     }
     public void InvokerC158()
     {
@@ -10069,6 +16594,56 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[157].AllAnim();
         }
+        sound.PlaySound(15);
+    }
+    //158A
+    public void AButtonC158()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[155].AllAnim1();
+        animContent[156].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC158", 1.1f);
+        Invoke("AInvokerAchievements157", 2.2f);
+    }
+    private void AInvokerC158()
+    {
+        ACharter158UI(157);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements157()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter158UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[157].AllAnim2();
+        animContentPanel.AllAnimP();
+        sound.PlaySound(15);
     }
 
     //159
@@ -10077,7 +16652,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC159", 0.5f);
-        Invoke("InvokerAchievements158", 1f);
+        Invoke("InvokerAchievements158", 6.5f);
     }
     public void InvokerC159()
     {
@@ -10119,6 +16694,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[158].AllAnim();
         }
     }
+    //159A
+    public void AButtonC159()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[155].AllAnim1();
+        animContent[156].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC159", 1.1f);
+        Invoke("AInvokerAchievements158", 2.2f);
+    }
+    private void AInvokerC159()
+    {
+        ACharter159UI(158);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements158()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter159UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[158].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //160
     public void ButtonC160()
@@ -10126,7 +16749,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC160", 0.5f);
-        Invoke("InvokerAchievements159", 1f);
+        Invoke("InvokerAchievements159", 6.5f);
     }
     public void InvokerC160()
     {
@@ -10175,7 +16798,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC161", 0.5f);
-        Invoke("InvokerAchievements160", 1f);
+        Invoke("InvokerAchievements160", 6.5f);
     }
     public void InvokerC161()
     {
@@ -10273,6 +16896,115 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[160].AllAnim();
         }
+        sound.PlaySound(16);
+    }
+    //161A
+    public void AButtonC161()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[159].AllAnim1();
+        animContent[161].AllAnim1();
+        animContent[162].AllAnim1();
+        animContent[163].AllAnim1();
+        animContent[164].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC161", 1.1f);
+        Invoke("AInvokerAchievements160", 2.2f);
+    }
+    private void AInvokerC161()
+    {
+        ACharter161UI(160);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements160()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter161UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Push_The_Chair();
+        logicValuesChapters.Climb_Over();
+
+        if (gameManager.b_move_the_luggage == 0)
+        {
+            buttonIf[52].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[52].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_pick_up_the_tray_table == 0)
+        {
+            buttonIf[53].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[53].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_pick_up_the_bent_metal == 0)
+        {
+            buttonIf[54].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[54].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_tuck_in_the_loose_wires == 0)
+        {
+            buttonIf[55].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[55].gameObject.SetActive(false);
+        }
+
+        if (gameManager.climb_over <= 2)
+        {
+            buttonIf[56].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[56].gameObject.SetActive(false);
+        }
+        if (gameManager.climb_over >= 3)
+        {
+            buttonIf[57].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[57].gameObject.SetActive(false);
+        }
+
+        animContent[160].AllAnim2();
+        animContentPanel.AllAnimP();
+        sound.PlaySound(16);
     }
 
     //162
@@ -10281,7 +17013,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC162", 0.5f);
-        Invoke("InvokerAchievements161", 1f);
+        Invoke("InvokerAchievements161", 6.5f);
     }
     public void InvokerC162()
     {
@@ -10379,6 +17111,116 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[161].AllAnim();
         }
+        sound.PlaySound(17);
+    }
+    //162A
+    public void AButtonC162()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[159].AllAnim1();
+        animContent[160].AllAnim1();
+        animContent[162].AllAnim1();
+        animContent[163].AllAnim1();
+        animContent[164].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC162", 1.1f);
+        Invoke("AInvokerAchievements161", 2.2f);
+    }
+    private void AInvokerC162()
+    {
+        ACharter162UI(161);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements161()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter162UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        logicValuesChapters.B_Move_The_Luggage();
+        logicValuesChapters.Climb_Over();
+
+        if (gameManager.b_push_the_chair == 0)
+        {
+            buttonIf[58].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[58].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_pick_up_the_tray_table == 0)
+        {
+            buttonIf[59].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[59].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_pick_up_the_bent_metal == 0)
+        {
+            buttonIf[60].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[60].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_tuck_in_the_loose_wires == 0)
+        {
+            buttonIf[61].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[61].gameObject.SetActive(false);
+        }
+
+        if (gameManager.climb_over <= 2)
+        {
+            buttonIf[62].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[62].gameObject.SetActive(false);
+        }
+        if (gameManager.climb_over >= 3)
+        {
+            buttonIf[63].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[63].gameObject.SetActive(false);
+        }
+
+        animContent[161].AllAnim2();
+        animContentPanel.AllAnimP();
+        sound.PlaySound(17);
     }
 
     //163
@@ -10387,7 +17229,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC163", 0.5f);
-        Invoke("InvokerAchievements162", 1f);
+        Invoke("InvokerAchievements162", 6.5f);
     }
     public void InvokerC163()
     {
@@ -10486,6 +17328,116 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[162].AllAnim();
         }
+        sound.PlaySound(21);
+    }
+    //163A
+    public void AButtonC163()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[159].AllAnim1();
+        animContent[160].AllAnim1();
+        animContent[161].AllAnim1();
+        animContent[163].AllAnim1();
+        animContent[164].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC163", 1.1f);
+        Invoke("AInvokerAchievements162", 2.2f);
+    }
+    private void AInvokerC163()
+    {
+        ACharter163UI(162);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements162()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter163UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        logicValuesChapters.B_Pick_Up_The_Tray_Table();
+        logicValuesChapters.Climb_Over();
+
+        if (gameManager.b_push_the_chair == 0)
+        {
+            buttonIf[64].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[64].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_move_the_luggage == 0)
+        {
+            buttonIf[65].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[65].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_pick_up_the_bent_metal == 0)
+        {
+            buttonIf[66].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[66].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_tuck_in_the_loose_wires == 0)
+        {
+            buttonIf[67].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[67].gameObject.SetActive(false);
+        }
+
+        if (gameManager.climb_over <= 2)
+        {
+            buttonIf[68].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[68].gameObject.SetActive(false);
+        }
+        if (gameManager.climb_over >= 3)
+        {
+            buttonIf[69].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[69].gameObject.SetActive(false);
+        }
+
+        animContent[162].AllAnim2();
+        animContentPanel.AllAnimP();
+        sound.PlaySound(21);
     }
 
     //164
@@ -10494,7 +17446,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC164", 0.5f);
-        Invoke("InvokerAchievements163", 1f);
+        Invoke("InvokerAchievements163", 6.5f);
     }
     public void InvokerC164()
     {
@@ -10592,6 +17544,115 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[163].AllAnim();
         }
+        sound.PlaySound(18);
+    }
+    //164A
+    public void AButtonC164()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[159].AllAnim1();
+        animContent[160].AllAnim1();
+        animContent[161].AllAnim1();
+        animContent[162].AllAnim1();
+        animContent[164].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC164", 1.1f);
+        Invoke("AInvokerAchievements163", 2.2f);
+    }
+    private void AInvokerC164()
+    {
+        ACharter164UI(163);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements163()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter164UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Pick_Up_The_Bent_Metal();
+        logicValuesChapters.Climb_Over();
+
+        if (gameManager.b_push_the_chair == 0)
+        {
+            buttonIf[70].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[70].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_move_the_luggage == 0)
+        {
+            buttonIf[71].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[71].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_pick_up_the_tray_table == 0)
+        {
+            buttonIf[72].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[72].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_tuck_in_the_loose_wires == 0)
+        {
+            buttonIf[73].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[73].gameObject.SetActive(false);
+        }
+
+        if (gameManager.climb_over <= 2)
+        {
+            buttonIf[74].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[74].gameObject.SetActive(false);
+        }
+        if (gameManager.climb_over >= 3)
+        {
+            buttonIf[75].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[75].gameObject.SetActive(false);
+        }
+
+        animContent[163].AllAnim2();
+        animContentPanel.AllAnimP();
+        sound.PlaySound(18);
     }
 
     //165
@@ -10600,7 +17661,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC165", 0.5f);
-        Invoke("InvokerAchievements164", 1f);
+        Invoke("InvokerAchievements164", 6.5f);
     }
     public void InvokerC165()
     {
@@ -10697,6 +17758,116 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[164].AllAnim();
         }
+
+        sound.PlaySound(22);
+    }
+    //165A
+    public void AButtonC165()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[159].AllAnim1();
+        animContent[160].AllAnim1();
+        animContent[161].AllAnim1();
+        animContent[162].AllAnim1();
+        animContent[163].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC165", 1.1f);
+        Invoke("AInvokerAchievements164", 2.2f);
+    }
+    private void AInvokerC165()
+    {
+        ACharter165UI(164);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements164()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter165UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        logicValuesChapters.B_Tuck_In_The_Loose_Wires();
+        logicValuesChapters.Climb_Over();
+
+        if (gameManager.b_push_the_chair == 0)
+        {
+            buttonIf[76].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[76].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_move_the_luggage == 0)
+        {
+            buttonIf[77].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[77].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_pick_up_the_tray_table == 0)
+        {
+            buttonIf[78].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[78].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_pick_up_the_bent_metal == 0)
+        {
+            buttonIf[79].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[79].gameObject.SetActive(false);
+        }
+
+        if (gameManager.climb_over <= 2)
+        {
+            buttonIf[80].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[80].gameObject.SetActive(false);
+        }
+        if (gameManager.climb_over >= 3)
+        {
+            buttonIf[81].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[81].gameObject.SetActive(false);
+        }
+
+        animContent[164].AllAnim2();
+        animContentPanel.AllAnimP();
+        sound.PlaySound(22);
     }
 
     //166
@@ -10705,7 +17876,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC166", 0.5f);
-        Invoke("InvokerAchievements165", 1f);
+        Invoke("InvokerAchievements165", 6.5f);
     }
     public void InvokerC166()
     {
@@ -10747,6 +17918,57 @@ public class ActiveChapter : MonoBehaviour
             animContent[165].AllAnim();
         }
     }
+    //166A
+    public void AButtonC166()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[160].AllAnim1();
+        animContent[161].AllAnim1();
+        animContent[162].AllAnim1();
+        animContent[163].AllAnim1();
+        animContent[164].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC166", 1.1f);
+        Invoke("AInvokerAchievements165", 2.2f);
+    }
+    private void AInvokerC166()
+    {
+        ACharter166UI(165);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements165()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter166UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[165].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //167
     public void ButtonC167()
@@ -10754,7 +17976,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC167", 0.5f);
-        Invoke("InvokerAchievements166", 1f);
+        Invoke("InvokerAchievements166", 6.5f);
     }
     public void InvokerC167()
     {
@@ -10796,6 +18018,57 @@ public class ActiveChapter : MonoBehaviour
             animContent[166].AllAnim();
         }
     }
+    //167A
+    public void AButtonC167()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[160].AllAnim1();
+        animContent[161].AllAnim1();
+        animContent[162].AllAnim1();
+        animContent[163].AllAnim1();
+        animContent[164].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC167", 1.1f);
+        Invoke("AInvokerAchievements166", 2.2f);
+    }
+    private void AInvokerC167()
+    {
+        ACharter167UI(166);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements166()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter167UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[166].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //168
     public void ButtonC168()
@@ -10803,7 +18076,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC168", 0.5f);
-        Invoke("InvokerAchievements167", 1f);
+        Invoke("InvokerAchievements167", 6.5f);
     }
     public void InvokerC168()
     {
@@ -10864,14 +18137,80 @@ public class ActiveChapter : MonoBehaviour
             animContent[167].AllAnim();
         }
     }
+    //168A
+    public void AButtonC168()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[165].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC168", 1.1f);
+        Invoke("AInvokerAchievements167", 2.2f);
+    }
+    private void AInvokerC168()
+    {
+        ACharter168UI(167);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements167()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter168UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
 
-    //169
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        if (gameManager.b_fight == 0)
+        {
+            buttonIf[82].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[82].gameObject.SetActive(false);
+        }
+
+        if (gameManager.b_fight == 1)
+        {
+            buttonIf[83].gameObject.SetActive(true);
+        }
+        else
+        {
+            buttonIf[83].gameObject.SetActive(false);
+        }
+
+
+        animContent[167].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
+
+    //169 - NOOOOOO
     public void ButtonC169()
     {
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC169", 0.5f);
-        Invoke("InvokerAchievements168", 1f);
+        Invoke("InvokerAchievements168", 6.5f);
     }
     public void InvokerC169()
     {
@@ -10914,13 +18253,13 @@ public class ActiveChapter : MonoBehaviour
         }
     }
 
-    //170
+    //170 - NOOOOOO
     public void ButtonC170()
     {
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC170", 0.5f);
-        Invoke("InvokerAchievements169", 1f);
+        Invoke("InvokerAchievements169", 6.5f);
     }
     public void InvokerC170()
     {
@@ -10969,7 +18308,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC171", 0.5f);
-        Invoke("InvokerAchievements170", 1f);
+        Invoke("InvokerAchievements170", 6.5f);
     }
     public void InvokerC171()
     {
@@ -11018,7 +18357,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC172", 0.5f);
-        Invoke("InvokerAchievements171", 1f);
+        Invoke("InvokerAchievements171", 6.5f);
     }
     public void InvokerC172()
     {
@@ -11059,6 +18398,7 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[171].AllAnim();
         }
+        sound.PlaySound(19);
     }
 
     //173
@@ -11067,7 +18407,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC173", 0.5f);
-        Invoke("InvokerAchievements172", 1f);
+        Invoke("InvokerAchievements172", 6.5f);
     }
     public void InvokerC173()
     {
@@ -11117,7 +18457,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC174", 0.5f);
-        Invoke("InvokerAchievements173", 1f);
+        Invoke("InvokerAchievements173", 6.5f);
     }
     public void InvokerC174()
     {
@@ -11160,6 +18500,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[173].AllAnim();
         }
     }
+    //174A
+    public void AButtonC174()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[170].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC174", 1.1f);
+        Invoke("AInvokerAchievements173", 2.2f);
+    }
+    private void AInvokerC174()
+    {
+        ACharter174UI(173);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements173()
+    {
+        imgBlackout.gameObject.SetActive(false);
+        achievements.Achievements14();
+    }
+    private void ACharter174UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[173].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //175
     public void ButtonC175()
@@ -11167,7 +18555,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC175", 0.5f);
-        Invoke("InvokerAchievements174", 1f);
+        Invoke("InvokerAchievements174", 6.5f);
     }
     public void InvokerC175()
     {
@@ -11209,6 +18597,53 @@ public class ActiveChapter : MonoBehaviour
             animContent[174].AllAnim();
         }
     }
+    //175A
+    public void AButtonC175()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[173].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC175", 1.1f);
+        Invoke("AInvokerAchievements174", 2.2f);
+    }
+    private void AInvokerC175()
+    {
+        ACharter175UI(174);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements174()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter175UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[174].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //176
     public void ButtonC176()
@@ -11216,7 +18651,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC176", 0.5f);
-        Invoke("InvokerAchievements175", 1f);
+        Invoke("InvokerAchievements175", 6.5f);
     }
     public void InvokerC176()
     {
@@ -11265,7 +18700,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC177", 0.5f);
-        Invoke("InvokerAchievements176", 1f);
+        Invoke("InvokerAchievements176", 6.5f);
     }
     public void InvokerC177()
     {
@@ -11307,6 +18742,54 @@ public class ActiveChapter : MonoBehaviour
             animContent[176].AllAnim();
         }
     }
+    //177A
+    public void AButtonC177()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[173].AllAnim1();
+        animContent[174].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC177", 1.1f);
+        Invoke("AInvokerAchievements176", 2.2f);
+    }
+    private void AInvokerC177()
+    {
+        ACharter177UI(176);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements176()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter177UI(int index)
+    {
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[176].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //178
     public void ButtonC178()
@@ -11314,7 +18797,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC178", 0.5f);
-        Invoke("InvokerAchievements177", 1f);
+        Invoke("InvokerAchievements177", 6.5f);
     }
     public void InvokerC178()
     {
@@ -11355,6 +18838,7 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[177].AllAnim();
         }
+        sound.PlaySound(19);
     }
 
     //179
@@ -11363,7 +18847,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC179", 0.5f);
-        Invoke("InvokerAchievements178", 1f);
+        Invoke("InvokerAchievements178", 6.5f);
     }
     public void InvokerC179()
     {
@@ -11404,15 +18888,16 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[178].AllAnim();
         }
+        sound.PlaySound(20);
     }
 
-    //180
+    //180 LOGIC
     public void ButtonC180()
     {
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC180", 0.5f);
-        Invoke("InvokerAchievements179", 1f);
+        Invoke("InvokerAchievements179", 6.5f);
     }
     public void InvokerC180()
     {
@@ -11453,6 +18938,7 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[179].AllAnim();
         }
+        sound.PlaySound(20);
     }
 
     //181
@@ -11461,7 +18947,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC181", 0.5f);
-        Invoke("InvokerAchievements180", 1f);
+        Invoke("InvokerAchievements180", 6.5f);
     }
     public void InvokerC181()
     {
@@ -11475,6 +18961,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter181UI(int index)
     {
+        gameManager.numberMusic = 4;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -11503,6 +18990,58 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[180].AllAnim();
         }
+        musicCharter.PlayMusic(gameManager.numberMusic);
+    }
+    //181A
+    public void AButtonC181()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[172].AllAnim1();
+        animContent[177].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC181", 1.1f);
+        Invoke("AInvokerAchievements180", 2.2f);
+    }
+    private void AInvokerC181()
+    {
+        ACharter181UI(180);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements180()
+    {
+        imgBlackout.gameObject.SetActive(false);
+        achievements.Achievements15();
+    }
+    private void ACharter181UI(int index)
+    {
+        gameManager.numberMusic = 4;
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[180].AllAnim2();
+        animContentPanel.AllAnimP();
+        musicCharter.PlayMusic(gameManager.numberMusic);
     }
 
     //182
@@ -11512,7 +19051,7 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC182", 0.5f);
-        Invoke("InvokerAchievements181", 1f);
+        Invoke("InvokerAchievements181", 6.5f);
     }
     public void InvokerC182()
     {
@@ -11525,6 +19064,8 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter182UI(int index)
     {
+        toBeContinued.text = "To be continued...";
+        gameManager.numberMusic = 2;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -11553,6 +19094,8 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[181].AllAnim();
         }
+        animStar.StarAnim();
+        musicCharter.PlayMusic(gameManager.numberMusic);
     }
 
     //Лагерь
@@ -11619,14 +19162,14 @@ public class ActiveChapter : MonoBehaviour
     public void MenuCharterPanel(int index)
     {
 
-        sound.StopSound();
+        //sound.StopSound();
 
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             gameManager.charter[i] = 0;
         }
 
-        //toBeContinued.text = "Chapter 1";
+        toBeContinued.text = "Chapter 1";
 
 
         //gameManager.charter1UI = false;

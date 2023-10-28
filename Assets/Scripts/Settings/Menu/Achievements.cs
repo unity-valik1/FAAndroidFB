@@ -62,6 +62,11 @@ public class Achievements : MonoBehaviour
     [SerializeField] private Image imageBlurAchievements14;
     [SerializeField] private Image imageBlurAchievements15;
 
+    [SerializeField] private TMP_Text[] text1;
+    [SerializeField] private TMP_Text[] text2;
+
+    [SerializeField] private Image[] img;
+
     public string nameAchievement;
     public TMP_Text textnameAchievement;
     public int number;
@@ -145,219 +150,309 @@ public class Achievements : MonoBehaviour
         {
             imageBlurAchievements1.gameObject.SetActive(false);
             imageBgAchievements1.GetComponent<Image>().enabled = true;
+            text1[0].color = Color.white;
+            text2[0].color = Color.white;
+            img[0].color = Color.white;
         }
         else if (achievements1 == 0)
         {
             imageBlurAchievements1.gameObject.SetActive(true);
             imageBgAchievements1.GetComponent<Image>().enabled = false;
+            text1[0].color = new Color32(255, 255, 255, 50);
+            text2[0].color = new Color32(255, 255, 255, 50);
+            img[0].color = new Color32(255, 255, 255, 50);
         }
 
         if (achievements2 == 1)
         {
             imageBlurAchievements2.gameObject.SetActive(false);
             imageBgAchievements2.GetComponent<Image>().enabled = true;
+            text1[1].color = Color.white;
+            text2[1].color = Color.white;
+            img[1].color = Color.white;
         }
         else if (achievements2 == 0)
         {
             imageBlurAchievements2.gameObject.SetActive(true);
             imageBgAchievements2.GetComponent<Image>().enabled = false;
+            text1[1].color = new Color32(255, 255, 255, 50);
+            text2[1].color = new Color32(255, 255, 255, 50);
+            img[1].color = new Color32(255, 255, 255, 50);
         }
 
         if (achievements3 == 1)
         {
             imageBlurAchievements3.gameObject.SetActive(false);
             imageBgAchievements3.GetComponent<Image>().enabled = true;
+            text1[2].color = Color.white;
+            text2[2].color = Color.white;
+            img[2].color = Color.white;
         }
         else if (achievements3 == 0)
         {
             imageBlurAchievements3.gameObject.SetActive(true);
             imageBgAchievements3.GetComponent<Image>().enabled = false;
+            text1[2].color = new Color32(255, 255, 255, 50);
+            text2[2].color = new Color32(255, 255, 255, 50);
+            img[2].color = new Color32(255, 255, 255, 50);
         }
 
         if (achievements4 == 1)
         {
             imageBlurAchievements4.gameObject.SetActive(false);
             imageBgAchievements4.GetComponent<Image>().enabled = true;
+            text1[3].color = Color.white;
+            text2[3].color = Color.white;
+            img[3].color = Color.white;
         }
         else if (achievements4 == 0)
         {
             imageBlurAchievements4.gameObject.SetActive(true);
             imageBgAchievements4.GetComponent<Image>().enabled = false;
+            text1[3].color = new Color32(255, 255, 255, 50);
+            text2[3].color = new Color32(255, 255, 255, 50);
+            img[3].color = new Color32(255, 255, 255, 50);
         }
 
         if (achievements5 == 1)
         {
             imageBlurAchievements5.gameObject.SetActive(false);
             imageBgAchievements5.GetComponent<Image>().enabled = true;
+            text1[4].color = Color.white;
+            text2[4].color = Color.white;
+            img[4].color = Color.white;
         }
         else if (achievements5 == 0)
         {
             imageBlurAchievements5.gameObject.SetActive(true);
             imageBgAchievements5.GetComponent<Image>().enabled = false;
+            text1[4].color = new Color32(255, 255, 255, 50);
+            text2[4].color = new Color32(255, 255, 255, 50);
+            img[4].color = new Color32(255, 255, 255, 50);
         }
 
         if (achievements6 == 1)
         {
             imageBlurAchievements6.gameObject.SetActive(false);
             imageBgAchievements6.GetComponent<Image>().enabled = true;
+            text1[5].color = Color.white;
+            text2[5].color = Color.white;
+            img[5].color = Color.white;
         }
         else if (achievements6 == 0)
         {
             imageBlurAchievements6.gameObject.SetActive(true);
             imageBgAchievements6.GetComponent<Image>().enabled = false;
+            text1[5].color = new Color32(255, 255, 255, 50);
+            text2[5].color = new Color32(255, 255, 255, 50);
+            img[5].color = new Color32(255, 255, 255, 50);
         }
 
         if (achievements7 == 1)
         {
             imageBlurAchievements7.gameObject.SetActive(false);
             imageBgAchievements7.GetComponent<Image>().enabled = true;
+            text1[6].color = Color.white;
+            text2[6].color = Color.white;
+            img[6].color = Color.white;
         }
         else if (achievements7 == 0)
         {
             imageBlurAchievements7.gameObject.SetActive(true);
             imageBgAchievements7.GetComponent<Image>().enabled = false;
+            text1[6].color = new Color32(255, 255, 255, 50);
+            text2[6].color = new Color32(255, 255, 255, 50);
+            img[6].color = new Color32(255, 255, 255, 50);
         }
 
         if (achievements8 == 1)
         {
             imageBlurAchievements8.gameObject.SetActive(false);
             imageBgAchievements8.GetComponent<Image>().enabled = true;
+            text1[7].color = Color.white;
+            text2[7].color = Color.white;
+            img[7].color = Color.white;
         }
         else if (achievements8 == 0)
         {
             imageBlurAchievements8.gameObject.SetActive(true);
             imageBgAchievements8.GetComponent<Image>().enabled = false;
+            text1[7].color = new Color32(255, 255, 255, 50);
+            text2[7].color = new Color32(255, 255, 255, 50);
+            img[7].color = new Color32(255, 255, 255, 50);
         }
 
         if (achievements9 == 1)
         {
             imageBlurAchievements9.gameObject.SetActive(false);
             imageBgAchievements9.GetComponent<Image>().enabled = true;
+            text1[8].color = Color.white;
+            text2[8].color = Color.white;
+            img[8].color = Color.white;
         }
         else if (achievements9 == 0)
         {
             imageBlurAchievements9.gameObject.SetActive(true);
             imageBgAchievements9.GetComponent<Image>().enabled = false;
+            text1[8].color = new Color32(255, 255, 255, 50);
+            text2[8].color = new Color32(255, 255, 255, 50);
+            img[8].color = new Color32(255, 255, 255, 50);
         }
 
         if (achievements10 == 1)
         {
             imageBlurAchievements10.gameObject.SetActive(false);
             imageBgAchievements10.GetComponent<Image>().enabled = true;
+            text1[9].color = Color.white;
+            text2[9].color = Color.white;
+            img[9].color = Color.white;
         }
         else if (achievements10 == 0)
         {
             imageBlurAchievements10.gameObject.SetActive(true);
             imageBgAchievements10.GetComponent<Image>().enabled = false;
+            text1[9].color = new Color32(255, 255, 255, 50);
+            text2[9].color = new Color32(255, 255, 255, 50);
+            img[9].color = new Color32(255, 255, 255, 50);
         } 
         
         if (achievements11 == 1)
         {
             imageBlurAchievements11.gameObject.SetActive(false);
             imageBgAchievements11.GetComponent<Image>().enabled = true;
+            text1[10].color = Color.white;
+            text2[10].color = Color.white;
+            img[10].color = Color.white;
         }
         else if (achievements11 == 0)
         {
             imageBlurAchievements11.gameObject.SetActive(true);
             imageBgAchievements11.GetComponent<Image>().enabled = false;
+            text1[10].color = new Color32(255, 255, 255, 50);
+            text2[10].color = new Color32(255, 255, 255, 50);
+            img[10].color = new Color32(255, 255, 255, 50);
         }
 
         if (achievements12 == 1)
         {
             imageBlurAchievements12.gameObject.SetActive(false);
             imageBgAchievements12.GetComponent<Image>().enabled = true;
+            text1[11].color = Color.white;
+            text2[11].color = Color.white;
+            img[11].color = Color.white;
         }
         else if (achievements12 == 0)
         {
             imageBlurAchievements12.gameObject.SetActive(true);
             imageBgAchievements12.GetComponent<Image>().enabled = false;
+            text1[11].color = new Color32(255, 255, 255, 50);
+            text2[11].color = new Color32(255, 255, 255, 50);
+            img[11].color = new Color32(255, 255, 255, 50);
         }
 
         if (achievements13 == 1)
         {
             imageBlurAchievements13.gameObject.SetActive(false);
             imageBgAchievements13.GetComponent<Image>().enabled = true;
+            text1[12].color = Color.white;
+            text2[12].color = Color.white;
+            img[12].color = Color.white;
         }
         else if (achievements13 == 0)
         {
             imageBlurAchievements13.gameObject.SetActive(true);
             imageBgAchievements13.GetComponent<Image>().enabled = false;
+            text1[12].color = new Color32(255, 255, 255, 50);
+            text2[12].color = new Color32(255, 255, 255, 50);
+            img[12].color = new Color32(255, 255, 255, 50);
         }
 
         if (achievements14 == 1)
         {
             imageBlurAchievements14.gameObject.SetActive(false);
             imageBgAchievements14.GetComponent<Image>().enabled = true;
+            text1[13].color = Color.white;
+            text2[13].color = Color.white;
+            img[13].color = Color.white;
         }
         else if (achievements14 == 0)
         {
             imageBlurAchievements14.gameObject.SetActive(true);
             imageBgAchievements14.GetComponent<Image>().enabled = false;
+            text1[13].color = new Color32(255, 255, 255, 50);
+            text2[13].color = new Color32(255, 255, 255, 50);
+            img[13].color = new Color32(255, 255, 255, 50);
         }
 
         if (achievements15 == 1)
         {
             imageBlurAchievements15.gameObject.SetActive(false);
             imageBgAchievements15.GetComponent<Image>().enabled = true;
+            text1[14].color = Color.white;
+            text2[14].color = Color.white;
+            img[14].color = Color.white;
         }
         else if (achievements15 == 0)
         {
             imageBlurAchievements15.gameObject.SetActive(true);
             imageBgAchievements15.GetComponent<Image>().enabled = false;
+            text1[14].color = new Color32(255, 255, 255, 50);
+            text2[14].color = new Color32(255, 255, 255, 50);
+            img[14].color = new Color32(255, 255, 255, 50);
         }
     }
 
     public void BackAchievement()
     {
-        number = 0;
-        PlayerPrefs.SetInt("number", number);
-        PlayerPrefs.Save();
+        //number = 0;
+        //PlayerPrefs.SetInt("number", number);
+        //PlayerPrefs.Save();
 
-        achievements1 = 0;
-        achievements2 = 0;
-        achievements3 = 0;
-        achievements4 = 0;
-        achievements5 = 0;
-        achievements6 = 0;
-        achievements7 = 0;
-        achievements8 = 0;
-        achievements9 = 0;
-        achievements10 = 0;
-        achievements11 = 0;
-        achievements12 = 0;
-        achievements13 = 0;
-        achievements14 = 0;
-        achievements15 = 0;
-        PlayerPrefs.SetInt("achievements1", achievements1);
-        PlayerPrefs.Save();
-        PlayerPrefs.SetInt("achievements2", achievements2);
-        PlayerPrefs.Save();
-        PlayerPrefs.SetInt("achievements3", achievements3);
-        PlayerPrefs.Save();
-        PlayerPrefs.SetInt("achievements4", achievements4);
-        PlayerPrefs.Save();
-        PlayerPrefs.SetInt("achievements5", achievements5);
-        PlayerPrefs.Save();
-        PlayerPrefs.SetInt("achievements6", achievements6);
-        PlayerPrefs.Save();
-        PlayerPrefs.SetInt("achievements7", achievements7);
-        PlayerPrefs.Save();
-        PlayerPrefs.SetInt("achievements8", achievements8);
-        PlayerPrefs.Save();
-        PlayerPrefs.SetInt("achievements9", achievements9);
-        PlayerPrefs.Save();
-        PlayerPrefs.SetInt("achievements10", achievements10);
-        PlayerPrefs.Save();
-        PlayerPrefs.SetInt("achievements11", achievements11);
-        PlayerPrefs.Save();
-        PlayerPrefs.SetInt("achievements12", achievements12);
-        PlayerPrefs.Save();
-        PlayerPrefs.SetInt("achievements13", achievements13);
-        PlayerPrefs.Save();
-        PlayerPrefs.SetInt("achievements14", achievements14);
-        PlayerPrefs.Save();
-        PlayerPrefs.SetInt("achievements15", achievements15);
-        PlayerPrefs.Save();
+        //achievements1 = 0;
+        //achievements2 = 0;
+        //achievements3 = 0;
+        //achievements4 = 0;
+        //achievements5 = 0;
+        //achievements6 = 0;
+        //achievements7 = 0;
+        //achievements8 = 0;
+        //achievements9 = 0;
+        //achievements10 = 0;
+        //achievements11 = 0;
+        //achievements12 = 0;
+        //achievements13 = 0;
+        //achievements14 = 0;
+        //achievements15 = 0;
+        //PlayerPrefs.SetInt("achievements1", achievements1);
+        //PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("achievements2", achievements2);
+        //PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("achievements3", achievements3);
+        //PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("achievements4", achievements4);
+        //PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("achievements5", achievements5);
+        //PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("achievements6", achievements6);
+        //PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("achievements7", achievements7);
+        //PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("achievements8", achievements8);
+        //PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("achievements9", achievements9);
+        //PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("achievements10", achievements10);
+        //PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("achievements11", achievements11);
+        //PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("achievements12", achievements12);
+        //PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("achievements13", achievements13);
+        //PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("achievements14", achievements14);
+        //PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("achievements15", achievements15);
+        //PlayerPrefs.Save();
         anim.Play("BackAchievement");
         Invoke("BackAchievementInvok", 0.5f);
     }

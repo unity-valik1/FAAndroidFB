@@ -34,10 +34,13 @@ public class ActiveMenu : MonoBehaviour
     public GameObject aboutUsUI;
 
     public GameObject howToPlayNewGame;
+    public int _howToPlayNewGame = 0;
 
-    public Image menuBgImg;
+    public int ActiveOrNot = 0;
 
-    public Sprite[] spriteMenuBg;
+    //public Image menuBgImg;
+
+    //public Sprite[] spriteMenuBg;
 
 
 
@@ -50,36 +53,40 @@ public class ActiveMenu : MonoBehaviour
     {
         imgMenuAnim.gameObject.SetActive(true);
         anim.Play("LoadingMenuAnim");
-        Invoke("Invoker1", 1f);
+        Invoke("Invoker1_1", 1f);
         if (PlayerPrefs.HasKey("continueGame"))
         {
             saveAndLoad.continueGame = PlayerPrefs.GetInt("continueGame");
         }
+        if (PlayerPrefs.HasKey("howToPlayNewGame"))
+        {
+            _howToPlayNewGame = PlayerPrefs.GetInt("howToPlayNewGame");
+        }
         Menu();
-        ImgRandom();
+        //ImgRandom();
     }
 
-    public void ImgRandom()
-    {
-        int a = UnityEngine.Random.Range(0, 4);
-        if (a == 0)
-        {
-            menuBgImg.sprite = spriteMenuBg[a];
-        }
-        else if (a == 1)
-        {
-            menuBgImg.sprite = spriteMenuBg[a];
-        }
-        else if (a == 2)
-        {
-            menuBgImg.sprite = spriteMenuBg[a];
-        }
-        else if (a == 3)
-        {
-            menuBgImg.sprite = spriteMenuBg[a];
-        }
+    //public void ImgRandom()
+    //{
+    //    int a = UnityEngine.Random.Range(0, 4);
+    //    if (a == 0)
+    //    {
+    //        menuBgImg.sprite = spriteMenuBg[a];
+    //    }
+    //    else if (a == 1)
+    //    {
+    //        menuBgImg.sprite = spriteMenuBg[a];
+    //    }
+    //    else if (a == 2)
+    //    {
+    //        menuBgImg.sprite = spriteMenuBg[a];
+    //    }
+    //    else if (a == 3)
+    //    {
+    //        menuBgImg.sprite = spriteMenuBg[a];
+    //    }
 
-    }
+    //}
     public void StartButton()
     {
         stopwatch.StopTimer();
@@ -90,12 +97,45 @@ public class ActiveMenu : MonoBehaviour
         saveName.NewGameNameSave();
         if (saveAndLoad.continueGame == 0)
         {
-            HowToPlayNewGame();
+            if (_howToPlayNewGame == 0)
+            {
+                _howToPlayNewGame = 1;
+                PlayerPrefs.SetInt("howToPlayNewGame", _howToPlayNewGame);
+                PlayerPrefs.Save();
+                HowToPlayNewGame();
+            }
+            else if (_howToPlayNewGame == 1)
+            {
+                YesNewGameButton();
+            }
         }
         else
         {
-            //camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = true;
             saveAndLoad.lossGameStart.gameObject.SetActive(true);
+        }
+    }
+    public void StartButton_EndGame()
+    {
+        FireBaseAnalyticsEvents.EventsNewGame1("NewGame", gg);
+        saveName.NewGameNameSave();
+        Invoke("OffAllScrenes", 0.9f);
+        if (_howToPlayNewGame == 0)
+        {
+            _howToPlayNewGame = 1;
+            PlayerPrefs.SetInt("howToPlayNewGame", _howToPlayNewGame);
+            PlayerPrefs.Save();
+            HowToPlayNewGame();
+        }
+        else if (_howToPlayNewGame == 1)
+        {
+            YesNewGameButton();
+        }
+    }
+    private void OffAllScrenes()
+    {
+        for (int i = 0; i < activeChapter.charter.Length; i++)
+        {
+            activeChapter.charter[i].SetActive(false);
         }
     }
     public void HowToPlayNewGame()
@@ -108,6 +148,7 @@ public class ActiveMenu : MonoBehaviour
 
         Invoke("Invoker3", 1f);
         Invoke("Invoker4", 2f);
+        Invoke("Invoker5", 7f);
         saveName.NewGameNameSave();
     }
     public void Invoker3()
@@ -119,6 +160,11 @@ public class ActiveMenu : MonoBehaviour
     public void Invoker4()
     {
         imgMenuAnim.gameObject.SetActive(false);
+        activeChapter.imgBlackout.gameObject.SetActive(true);
+    }
+    public void Invoker5()
+    {
+        activeChapter.imgBlackout.gameObject.SetActive(false);
     }
     //public void YesStartButton()
     //{
@@ -144,6 +190,7 @@ public class ActiveMenu : MonoBehaviour
 
         Invoke("Invoker", 1f);
         Invoke("Invoker1", 2f);
+        Invoke("Invoker5", 7f);
     }
     public void Invoker()
     {
@@ -156,6 +203,11 @@ public class ActiveMenu : MonoBehaviour
         activeChapter.Charter1_1UI(0);
     }
     public void Invoker1()
+    {
+        imgMenuAnim.gameObject.SetActive(false);
+        activeChapter.imgBlackout.gameObject.SetActive(true);
+    }
+    public void Invoker1_1()
     {
         imgMenuAnim.gameObject.SetActive(false);
     }
@@ -174,24 +226,40 @@ public class ActiveMenu : MonoBehaviour
 
     public void Menu()
     {
-        menuUI.gameObject.SetActive(true);
-        loadUI.gameObject.SetActive(false);
-        settingsUI.gameObject.SetActive(false);
-        achievementsUI.gameObject.SetActive(false);
-        typographyUI.gameObject.SetActive(false);
-        soundsUI.gameObject.SetActive(false);
-        aboutUI.gameObject.SetActive(false);
-        howToPlayUI.gameObject.SetActive(false);
-        aboutUsUI.gameObject.SetActive(false);
 
-        if (saveAndLoad.continueGame == 0)
+        for (int i = 0; i < activeChapter.charter.Length; i++)
         {
-            buttonContinueGame.SetActive(false);
+            if(gameManager.charter[i] == 1)
+            {
+                ActiveOrNot = 1;
+            }
         }
-        else if (saveAndLoad.continueGame == 1)
+        if(ActiveOrNot == 0)
         {
-            buttonContinueGame.SetActive(true);
+            menuUI.gameObject.SetActive(true);
+            loadUI.gameObject.SetActive(false);
+            settingsUI.gameObject.SetActive(false);
+            achievementsUI.gameObject.SetActive(false);
+            typographyUI.gameObject.SetActive(false);
+            soundsUI.gameObject.SetActive(false);
+            aboutUI.gameObject.SetActive(false);
+            howToPlayUI.gameObject.SetActive(false);
+            aboutUsUI.gameObject.SetActive(false);
+
+            if (saveAndLoad.continueGame == 0)
+            {
+                buttonContinueGame.SetActive(false);
+            }
+            else if (saveAndLoad.continueGame == 1)
+            {
+                buttonContinueGame.SetActive(true);
+            }
         }
+        else if(ActiveOrNot == 1)
+        {
+            loadUI.gameObject.SetActive(false);
+        }
+        ActiveOrNot = 0;
     }
 
     public void BackMenu()
@@ -213,15 +281,18 @@ public class ActiveMenu : MonoBehaviour
 
     public void LoadMenu()
     {
-        if (gameManager.saveGo == 1)
-        {
-            menuUI.gameObject.SetActive(false);
-            loadUI.gameObject.SetActive(true);
-        }
-        else
-        {
-            saveAndLoad.money.SetActive(true);
-        }
+
+        menuUI.gameObject.SetActive(false);
+        loadUI.gameObject.SetActive(true);
+        //if (gameManager.saveGo == 1)
+        //{
+        //    menuUI.gameObject.SetActive(false);
+        //    loadUI.gameObject.SetActive(true);
+        //}
+        //else
+        //{
+        //    saveAndLoad.money.SetActive(true);
+        //}
     }
 
     public void YesLoadGame()
@@ -284,6 +355,7 @@ public class ActiveMenu : MonoBehaviour
         anim.Play("MenuStartAnim");
         Invoke("Invoker2", 1f);
         Invoke("Invoker1", 2f);
+        Invoke("Invoker5", 7f);
     }
     public void Invoker2()
     {
@@ -291,7 +363,6 @@ public class ActiveMenu : MonoBehaviour
         menuUI.gameObject.SetActive(false);
         loadUI.gameObject.SetActive(false);
         musicMenu.StopMusic();
-        musicCharter.PlayMusic(0);
         gameManager.LoadPlayer();
     }
     public void Load1()
@@ -300,10 +371,28 @@ public class ActiveMenu : MonoBehaviour
         anim.Play("MenuStartAnim");
         Invoke("Invoker2_1", 1f);
         Invoke("Invoker1", 2f);
+        Invoke("Invoker5", 7f);
     }
     public void Invoker2_1()
     {
         menuUI.gameObject.SetActive(false);
         loadUI.gameObject.SetActive(false);
     }
+    public void Web()
+    {
+        Application.OpenURL("https://textbased.app/");
+    }
+    public void Mail()
+    {
+        Application.OpenURL("mailto:support@textbased.app");
+    }
+    public void Inst()
+    {
+        Application.OpenURL("https://www.instagram.com/textbasedapp/");
+    }
+    public void FaceBook()
+    {
+        Application.OpenURL("https://www.facebook.com/textbasedapp/");
+    }
+
 }

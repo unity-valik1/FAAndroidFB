@@ -8,6 +8,7 @@ public class MusicSound : MonoBehaviour
     [SerializeField] private GameManager gameManager;
     [SerializeField] private MusicMenu musicMenu;
     [SerializeField] private MusicCharter musicCharter;
+    [SerializeField] private Sound sound;
     //[SerializeField] private MusicCamp musicCamp;
     //[SerializeField] private MusicForest musicForest;
 
@@ -44,19 +45,21 @@ public class MusicSound : MonoBehaviour
     {
         if (music == 1)
         {
+            musicMenu.StopMusic();
             FireBaseAnalyticsEvents.EventsMusicButtonOff("MusicButtonOff");
             music = 0;
             musicText.text = "Music: OFF";
-            musicMenu.StopMusic();
             PlayerPrefs.SetInt("music", music);
             PlayerPrefs.Save();
         }
         else
         {
-            FireBaseAnalyticsEvents.EventsMusicButtonOn("MusicButtonOn");
             music = 1;
-            musicText.text = "Music: ON";
             musicMenu.PlayMusic();
+            sound.PlaySound(2);
+            FireBaseAnalyticsEvents.EventsMusicButtonOn("MusicButtonOn");
+            
+            musicText.text = "Music: ON";
             PlayerPrefs.SetInt("music", music);
             PlayerPrefs.Save();
         }
