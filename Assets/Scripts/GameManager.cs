@@ -166,9 +166,12 @@ public class GameManager : MonoBehaviour
     [Tooltip("Алкоголь")] public int b_pick_up_the_bent_metal = 0;//S
     [Tooltip("Алкоголь")] public int b_tuck_in_the_loose_wires = 0;//S
     [Tooltip("Алкоголь")] public int b_take_the_knife = 0;//S
+    [Tooltip("Алкоголь")] public int b_the_end = 0;//S
 
     public int numberMusic = 0;//S
 
+    public int save_buy = 0;
+    public int load_buy = 0;
 
     private void Awake()
     {
@@ -237,6 +240,7 @@ public class GameManager : MonoBehaviour
         b_pick_up_the_bent_metal = data.b_pick_up_the_bent_metal;
         b_tuck_in_the_loose_wires = data.b_tuck_in_the_loose_wires;
         b_take_the_knife = data.b_take_the_knife;
+        b_the_end = data.b_the_end;
         numberMusic = data.numberMusic;
         //charter1UI = data.charter1UI;
         //charter2UI = data.charter2UI;
@@ -348,6 +352,7 @@ public class GameManager : MonoBehaviour
         b_pick_up_the_bent_metal = data.b_pick_up_the_bent_metal;
         b_tuck_in_the_loose_wires = data.b_tuck_in_the_loose_wires;
         b_take_the_knife = data.b_take_the_knife;
+        b_the_end = data.b_the_end;
         numberMusic = data.numberMusic;
         //charter1UI = data.charter1UI;
         //charter2UI = data.charter2UI;
@@ -460,6 +465,7 @@ public class GameManager : MonoBehaviour
         b_pick_up_the_bent_metal = data.b_pick_up_the_bent_metal;
         b_tuck_in_the_loose_wires = data.b_tuck_in_the_loose_wires;
         b_take_the_knife = data.b_take_the_knife;
+        b_the_end = data.b_the_end;
         numberMusic = data.numberMusic;
         //charter1UI = data.charter1UI;
         //charter2UI = data.charter2UI;
@@ -573,6 +579,7 @@ public class GameManager : MonoBehaviour
         b_pick_up_the_bent_metal = data.b_pick_up_the_bent_metal;
         b_tuck_in_the_loose_wires = data.b_tuck_in_the_loose_wires;
         b_take_the_knife = data.b_take_the_knife;
+        b_the_end = data.b_the_end;
         numberMusic = data.numberMusic;
         //charter1UI = data.charter1UI;
         //charter2UI = data.charter2UI;
@@ -686,6 +693,7 @@ public class GameManager : MonoBehaviour
         b_pick_up_the_bent_metal = data.b_pick_up_the_bent_metal;
         b_tuck_in_the_loose_wires = data.b_tuck_in_the_loose_wires;
         b_take_the_knife = data.b_take_the_knife;
+        b_the_end = data.b_the_end;
         numberMusic = data.numberMusic;
         //charter1UI = data.charter1UI;
         //charter2UI = data.charter2UI;
@@ -800,6 +808,7 @@ public class GameManager : MonoBehaviour
         b_pick_up_the_bent_metal = data.b_pick_up_the_bent_metal;
         b_tuck_in_the_loose_wires = data.b_tuck_in_the_loose_wires;
         b_take_the_knife = data.b_take_the_knife;
+        b_the_end = data.b_the_end;
         numberMusic = data.numberMusic;
         //charter1UI = data.charter1UI;
         //charter2UI = data.charter2UI;
@@ -865,5 +874,42 @@ public class GameManager : MonoBehaviour
     public void ResetPlayer5()
     {
         SaveSystem.ResetPlayer5();
+    }
+
+    public void Null()
+    {
+        b_alcohol = 0;//S
+        b_ignore_it = 0;//S
+        b_any_other_flights = 0;//S
+        b_visit_the_cigar_bar = 0;//S
+        b_grab_some_food = 0;//S
+        b_ask_about_her_toys = 0;//S
+        b_make_conversation = 0;//S
+        b_try_to_find_her_parents = 0;//S
+        b_take_the_girl_to_an_officer = 0;//S
+        b_we_were_looking = 0;//S
+       b_go_to_the_bookstore = 0;//S
+        b_talk_with_a_stranger = 0;//S
+        b_buy_book = 0;//S
+        b_ignore_it_2 = 0;//S
+        b_too_much_of_a_risk = 0;//S
+        b_give_me_some_time = 0;//S
+        b_nevermind = 0;//S
+        b_check_the_weather = 0;//S
+        b_the_lounge = 0;//S
+        b_the_food_court = 0;//S
+        b_halls = 0;//S
+        b_gates = 0;//S
+        b_fight = 0;//S
+        b_looking_around = 0;//S
+        b_check_for_survivors = 0;//S
+        b_push_the_chair = 0;//S
+        climb_over = 0;//S
+        b_move_the_luggage = 0;//S
+        b_pick_up_the_tray_table = 0;//S
+        b_pick_up_the_bent_metal = 0;//S
+        b_tuck_in_the_loose_wires = 0;//S
+        b_take_the_knife = 0;//S
+        b_the_end = 0;//S
     }
 }

@@ -6,6 +6,8 @@ using UnityEngine.Purchasing;
 public class Purchaser : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
+    [SerializeField] private SaveAndLoad saveAndLoad;
+    [SerializeField] private ActiveMenu activeMenu;
     private void Start()
     {
         gameManager.LoadPlayer6();
@@ -25,6 +27,16 @@ public class Purchaser : MonoBehaviour
     {
         FireBaseAnalyticsEvents.EventsPurchase_Successfull("Purchase_Successfull");
         gameManager.saveGo = 1;
+        if(gameManager.save_buy == 1)
+        {
+            saveAndLoad.money.SetActive(false);
+            saveAndLoad.saveSave.SetActive(true);
+        }
+        else if( gameManager.load_buy == 1)
+        {
+            saveAndLoad.money.SetActive(false);
+            activeMenu.loadUI.SetActive(true);
+        }
         gameManager.SavePlayer6();
     }
     public void rrr()

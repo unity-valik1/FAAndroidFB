@@ -41,6 +41,9 @@ public class ActiveChapter : MonoBehaviour
     public Sprite starNo;
     public GameObject rateUsNot;
     public GameObject Img2;
+    public GameObject Img_charter_1;
+    public GameObject Img_charter_2;
+    public GameObject Img_charter_3;
 
     //Загрузка места сохранения
     public void CharterActiveUpdate()
@@ -1362,6 +1365,10 @@ public class ActiveChapter : MonoBehaviour
         //}
     }
 
+    public void AAA()
+    {
+        gameManager.b_the_end++;
+    }
     //1
     public void Charter1_1UI(int index)
     {
@@ -1494,12 +1501,15 @@ public class ActiveChapter : MonoBehaviour
         Invoke("ActiveImg", 0.5f);
         Invoke("Bda", 6.0f);
         Invoke("InvokerC2_2", 6.5f);
-        Invoke("InvokerAchievements1_2", 11.5f);
+        Invoke("Bda", 14.0f);
+        Invoke("InvokerC2_3", 14.5f);
+        Invoke("InvokerAchievements1_2", 19.5f);
     }
     public void ActiveImg()
     {
         Img2.gameObject.SetActive(true);
         charter[0].SetActive(false);
+        panel.SetActive(false);
         animContent[182].AllAnim_2();
     }
     public void Bda()
@@ -1508,8 +1518,21 @@ public class ActiveChapter : MonoBehaviour
     }
     public void InvokerC2_2()
     {
-        Charter2_2UI(1);
         Img2.gameObject.SetActive(false);
+        Img_charter_1.gameObject.SetActive(true);
+        animContent[183].AllAnim();
+        musicCharter.StopMusic();
+        sound.PlaySound(0);
+        //animContent[183].AllAnim_2();
+        //Charter2_2UI(1);
+        //Img2.gameObject.SetActive(false);
+        //gameManager.SavePlayer();
+    }
+    public void InvokerC2_3()
+    {
+        Charter2_2UI(1);
+        panel.SetActive(true);
+        Img_charter_1.gameObject.SetActive(false);
         gameManager.SavePlayer();
     }
     public void InvokerAchievements1_2()
@@ -1552,7 +1575,6 @@ public class ActiveChapter : MonoBehaviour
             }
         }
         musicCharter.PlayMusic(gameManager.numberMusic);
-        sound.PlaySound(0);
     }
 
     //3
@@ -1599,7 +1621,6 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
-        logicValuesChapters.B_Alcohol();
 
         for (int i = 0; i < animContent.Length; i++)
         {
@@ -1653,7 +1674,6 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
-        logicValuesChapters.B_Alcohol();
 
         animContent[2].AllAnim2();
         animContentPanel.AllAnimP();
@@ -1691,56 +1711,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = true;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-        //gameManager.charter31UI = false;
-        //gameManager.charter32UI = false;
-        //gameManager.charter33UI = false;
-        //gameManager.charter34UI = false;
-        //gameManager.charter35UI = false;
-        //gameManager.charter36UI = false;
-        //gameManager.charter37UI = false;
-        //gameManager.charter38UI = false;
-        //gameManager.charter39UI = false;
-        //gameManager.charter40UI = false;
-        //gameManager.charter41UI = false;
-        //gameManager.charter42UI = false;
-        //gameManager.charter43UI = false;
-        //gameManager.charter44UI = false;
-        //gameManager.charter45UI = false;
-        //gameManager.charter46UI = false;
-        //gameManager.charter47UI = false;
-        //gameManager.charter48UI = false;
-        //gameManager.charter49UI = false;
-        //gameManager.charter50UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -1856,6 +1826,8 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[4].AllAnim();
         }
+
+        sound.PlaySound(24);
     }
     //5A
     public void AButtonC5()
@@ -1905,6 +1877,7 @@ public class ActiveChapter : MonoBehaviour
 
         animContent[4].AllAnim2();
         animContentPanel.AllAnimP();
+        sound.PlaySound(24);
     }
 
     //6
@@ -1951,7 +1924,6 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
-        logicValuesChapters.B_Ignore_It();
 
         for (int i = 0; i < animContent.Length; i++)
         {
@@ -2003,7 +1975,6 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
-        logicValuesChapters.B_Ignore_It();
 
 
         animContent[5].AllAnim2();
@@ -2041,56 +2012,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = true;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-        //gameManager.charter31UI = false;
-        //gameManager.charter32UI = false;
-        //gameManager.charter33UI = false;
-        //gameManager.charter34UI = false;
-        //gameManager.charter35UI = false;
-        //gameManager.charter36UI = false;
-        //gameManager.charter37UI = false;
-        //gameManager.charter38UI = false;
-        //gameManager.charter39UI = false;
-        //gameManager.charter40UI = false;
-        //gameManager.charter41UI = false;
-        //gameManager.charter42UI = false;
-        //gameManager.charter43UI = false;
-        //gameManager.charter44UI = false;
-        //gameManager.charter45UI = false;
-        //gameManager.charter46UI = false;
-        //gameManager.charter47UI = false;
-        //gameManager.charter48UI = false;
-        //gameManager.charter49UI = false;
-        //gameManager.charter50UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -2782,59 +2703,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //toBeContinued.text = "To be continued...";
-
-
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = true;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-        //gameManager.charter31UI = false;
-        //gameManager.charter32UI = false;
-        //gameManager.charter33UI = false;
-        //gameManager.charter34UI = false;
-        //gameManager.charter35UI = false;
-        //gameManager.charter36UI = false;
-        //gameManager.charter37UI = false;
-        //gameManager.charter38UI = false;
-        //gameManager.charter39UI = false;
-        //gameManager.charter40UI = false;
-        //gameManager.charter41UI = false;
-        //gameManager.charter42UI = false;
-        //gameManager.charter43UI = false;
-        //gameManager.charter44UI = false;
-        //gameManager.charter45UI = false;
-        //gameManager.charter46UI = false;
-        //gameManager.charter47UI = false;
-        //gameManager.charter48UI = false;
-        //gameManager.charter49UI = false;
-        //gameManager.charter50UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -2848,7 +2716,6 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
-        logicValuesChapters.B_Alcohol();
 
         for (int i = 0; i < animContent.Length; i++)
         {
@@ -2888,7 +2755,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //toBeContinued.text = "To be continued...";
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -2902,7 +2768,6 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
-        logicValuesChapters.B_Alcohol();
 
         animContent[13].AllAnim2();
         animContentPanel.AllAnimP();
@@ -6235,20 +6100,13 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_grab_some_food == 0)
         {
+            buttonIf[6].gameObject.SetActive(false);
             buttonIf[5].gameObject.SetActive(true);
         }
         else
         {
             buttonIf[5].gameObject.SetActive(false);
-        }
-
-        if (gameManager.b_grab_some_food == 1)
-        {
             buttonIf[6].gameObject.SetActive(true);
-        }
-        else
-        {
-            buttonIf[6].gameObject.SetActive(false);
         }
 
         for (int i = 0; i < animContent.Length; i++)
@@ -6804,6 +6662,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter50UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -6832,6 +6691,7 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[49].AllAnim();
         }
+        sound.PlaySound(25);
     }
 
     //51
@@ -6853,6 +6713,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter51UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -6881,6 +6742,7 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[50].AllAnim();
         }
+        sound.PlaySound(25);
     }
 
     //52
@@ -6902,6 +6764,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter52UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -6951,6 +6814,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter53UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7000,6 +6864,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter54UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         gameManager.numberMusic = 0;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -7053,6 +6918,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter55UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7102,6 +6968,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter56UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7151,6 +7018,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter57UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7200,6 +7068,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter58UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7249,6 +7118,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter58UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7296,6 +7166,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter59UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7345,6 +7216,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter59UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7392,6 +7264,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter60UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7441,6 +7314,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter60UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7488,6 +7362,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter61UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7537,6 +7412,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter61UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7584,6 +7460,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter62UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7633,6 +7510,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter62UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7680,6 +7558,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter63UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7729,6 +7608,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter64UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7778,6 +7658,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter64UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -7826,6 +7707,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter65UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -7914,6 +7796,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter66UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -7945,6 +7828,57 @@ public class ActiveChapter : MonoBehaviour
         }
         musicCharter.PlayMusic(gameManager.numberMusic);
     }
+    //66A
+    public void AButtonC66()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[51].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC66", 1.1f);
+        Invoke("AInvokerAchievements65", 2.2f);
+    }
+    private void AInvokerC66()
+    {
+        ACharter66UI(65);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements65()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter66UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        gameManager.numberMusic = 1;
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        animContent[65].AllAnim2();
+        animContentPanel.AllAnimP();
+        musicCharter.PlayMusic(gameManager.numberMusic);
+    }
 
     //67
     public void ButtonC67()
@@ -7965,6 +7899,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter67UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8014,6 +7949,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter67UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8065,6 +8001,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter68UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8089,7 +8026,6 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
-        logicValuesChapters.B_Alcohol();
 
         for (int i = 0; i < animContent.Length; i++)
         {
@@ -8121,6 +8057,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter68UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8145,7 +8082,6 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
-        logicValuesChapters.B_Alcohol();
 
         animContent[67].AllAnim2();
         animContentPanel.AllAnimP();
@@ -8175,6 +8111,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter69UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8220,7 +8157,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void AInvokerAchievements68()
     {
-        imgBlackout.gameObject.SetActive(false); 
+        imgBlackout.gameObject.SetActive(false);
         if (gameManager.b_alcohol == 0)
         {
             achievements.Achievements5();
@@ -8228,6 +8165,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter69UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8275,6 +8213,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter70UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8303,6 +8242,7 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[69].AllAnim();
         }
+        sound.PlaySound(24);
     }
     //70A
     public void AButtonC70()
@@ -8325,6 +8265,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter70UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8351,6 +8292,7 @@ public class ActiveChapter : MonoBehaviour
 
         animContent[69].AllAnim2();
         animContentPanel.AllAnimP();
+        sound.PlaySound(24);
     }
 
     //71
@@ -8372,6 +8314,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter71UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8443,6 +8386,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter71UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8513,6 +8457,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter72UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8537,7 +8482,6 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
-        logicValuesChapters.B_Ignore_It();
         for (int i = 0; i < animContent.Length; i++)
         {
             animContent[71].AllAnim();
@@ -8564,6 +8508,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter72UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8588,7 +8533,6 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
-        logicValuesChapters.B_Ignore_It();
 
         animContent[71].AllAnim2();
         animContentPanel.AllAnimP();
@@ -8613,6 +8557,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter73UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8663,6 +8608,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter73UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8710,6 +8656,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter74UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8761,6 +8708,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter74UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8810,6 +8758,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter75UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8861,6 +8810,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter75UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8910,6 +8860,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter76UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -8959,6 +8910,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter77UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9008,6 +8960,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter77UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9055,6 +9008,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter78UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9105,6 +9059,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter79UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9156,6 +9111,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter79UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9205,6 +9161,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter80UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9276,6 +9233,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter80UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9342,6 +9300,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter81UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9392,6 +9351,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter81UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9440,6 +9400,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter82UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9490,6 +9451,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter82UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9538,6 +9500,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter83UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9589,6 +9552,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter83UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9636,6 +9600,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter84UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9723,6 +9688,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter84UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9808,6 +9774,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter85UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9895,6 +9862,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter86UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -9983,6 +9951,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter87UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -10069,6 +10038,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter88UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -10118,6 +10088,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter88UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -10165,6 +10136,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter89UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -10250,6 +10222,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter90UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -10337,6 +10310,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter90UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -10422,6 +10396,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter91UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -10474,6 +10449,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter91UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -10521,6 +10497,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter92UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -10572,6 +10549,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter92UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -10620,6 +10598,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter93UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -10672,6 +10651,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter93UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -10719,6 +10699,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter94UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -10770,6 +10751,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter94UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -10817,6 +10799,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter95UI(int index)
     {
+        toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -10846,7 +10829,80 @@ public class ActiveChapter : MonoBehaviour
             animContent[94].AllAnim();
         }
     }
+    //96_2
+    public void ButtonC96_2()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        anim.Play("BlackoutDarkAnimation");
+        Invoke("ActiveImg2", 0.5f);
+        Invoke("Bda2", 8.0f);
+        Invoke("InvokerC96_3", 8.5f);
+        Invoke("InvokerAchievements96_2", 13.5f);
+    }
+    public void ActiveImg2()
+    {
+        Img2.gameObject.SetActive(true);
+        Img_charter_2.gameObject.SetActive(true);
+        charter[90].SetActive(false);
+        charter[92].SetActive(false);
+        panel.SetActive(false);
+        animContent[184].AllAnim();
+        musicCharter.StopMusic();
+        sound.PlaySound(9);
+    }
+    public void Bda2()
+    {
+        anim.Play("BlackoutDarkAnimation");
+    }
+    public void InvokerC96_3()
+    {
+        Charter96_2UI(95);
+        panel.SetActive(true);
+        Img_charter_2.gameObject.SetActive(false);
+        Img2.gameObject.SetActive(false);
+        gameManager.SavePlayer();
+    }
+    public void InvokerAchievements96_2()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    public void Charter96_2UI(int index)
+    {
+        toBeContinued.text = "Chapter 2";
+        gameManager.numberMusic = 1;
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
 
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        for (int i = 0; i < animContent.Length; i++)
+        {
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
+        }
+        musicCharter.PlayMusic(gameManager.numberMusic);
+    }
     //96
     public void ButtonC96()
     {
@@ -10866,6 +10922,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter96UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -10894,7 +10951,7 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[95].AllAnim();
         }
-        sound.PlaySound(9);
+        //sound.PlaySound(9);
     }
 
     //97
@@ -10916,6 +10973,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter97UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -10965,6 +11023,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter97UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -11013,6 +11072,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter98UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -11063,6 +11123,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter98UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -11110,6 +11171,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter99UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         gameManager.numberMusic = 0;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -11161,6 +11223,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter100UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -11211,6 +11274,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter100UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -11258,6 +11322,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter101UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -11309,6 +11374,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter101UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -11358,6 +11424,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter102UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -11407,6 +11474,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter103UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -11456,6 +11524,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter103UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -11503,6 +11572,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter104UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -11554,6 +11624,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter104UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -11603,6 +11674,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter105UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -11653,6 +11725,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter105UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -11700,6 +11773,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter106UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         gameManager.numberMusic = 3;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -11752,6 +11826,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter106UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         gameManager.numberMusic = 3;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -11801,6 +11876,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter107UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         gameManager.numberMusic = 3;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -11853,6 +11929,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter107UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         gameManager.numberMusic = 3;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -11902,6 +11979,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter108UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         gameManager.numberMusic = 0;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -11953,6 +12031,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter109UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12002,6 +12081,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter109UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12049,6 +12129,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter110UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12098,6 +12179,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter110UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12145,6 +12227,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter111UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12194,6 +12277,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter111UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12241,6 +12325,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter112UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12290,6 +12375,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter112UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12337,6 +12423,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter113UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12372,8 +12459,8 @@ public class ActiveChapter : MonoBehaviour
         imgBlackout.gameObject.SetActive(true);
         animContent[111].AllAnim1();
         animContentPanel.AllAnimP();
-        Invoke("InvokerC113", 1.1f);
-        Invoke("InvokerAchievements112", 2.2f);
+        Invoke("AInvokerC113", 1.1f);
+        Invoke("AInvokerAchievements112", 2.2f);
     }
     private void AInvokerC113()
     {
@@ -12386,6 +12473,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter113UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12433,6 +12521,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter114UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12482,6 +12571,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter114UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12529,6 +12619,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter115UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12578,6 +12669,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter115UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12625,6 +12717,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter116UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12674,6 +12767,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter116UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12721,6 +12815,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter117UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12770,6 +12865,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter117UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12817,6 +12913,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter118UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12866,6 +12963,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter118UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12913,6 +13011,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter119UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -12962,6 +13061,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter119UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -13009,6 +13109,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter120UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -13058,6 +13159,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter120UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -13105,6 +13207,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter121UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -13157,6 +13260,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter121UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -13204,6 +13308,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter122UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -13253,6 +13358,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter122UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -13300,6 +13406,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter123UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -13356,6 +13463,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter123UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -13406,6 +13514,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter124UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -13458,6 +13567,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter124UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -13506,6 +13616,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter125UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -13555,6 +13666,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter125UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -13603,6 +13715,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter126UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -13654,6 +13767,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter126UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -13702,6 +13816,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter127UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -13751,6 +13866,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter127UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -13798,6 +13914,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter128UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -13849,6 +13966,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter129UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -13898,6 +14016,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter129UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -13945,6 +14064,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter130UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -13995,6 +14115,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter130UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -14042,6 +14163,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter131UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -14093,6 +14215,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter131UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -14143,6 +14266,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter132UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         gameManager.numberMusic = 3;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -14195,6 +14319,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter132UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         gameManager.numberMusic = 3;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -14244,6 +14369,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter133UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -14294,6 +14420,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter133UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -14342,6 +14469,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter134UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -14392,6 +14520,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter134UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -14440,6 +14569,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter135UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -14490,6 +14620,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter135UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -14538,6 +14669,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter136UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -14588,6 +14720,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter136UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -14635,6 +14768,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter137UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -14693,6 +14827,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter137UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -14750,6 +14885,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter138UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -14801,6 +14937,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter138UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -14848,6 +14985,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter139UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -14906,6 +15044,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter139UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -14963,6 +15102,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter140UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15013,6 +15153,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter140UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15061,6 +15202,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter141UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15111,6 +15253,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter141UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15158,6 +15301,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter142UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -15209,6 +15353,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter142UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -15258,6 +15403,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter143UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15308,6 +15454,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter143UI(int index)
     {
+        toBeContinued.text = "Chapter 2";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15335,7 +15482,81 @@ public class ActiveChapter : MonoBehaviour
         animContent[142].AllAnim2();
         animContentPanel.AllAnimP();
     }
+    //144_2
+    public void ButtonC144_2()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        anim.Play("BlackoutDarkAnimation");
+        Invoke("ActiveImg3", 0.5f);
+        Invoke("Bda3", 8.0f);
+        Invoke("InvokerC144_3", 8.5f);
+        Invoke("InvokerAchievements144_2", 13.5f);
+    }
+    public void ActiveImg3()
+    {
+        Img2.gameObject.SetActive(true);
+        Img_charter_3.gameObject.SetActive(true);
+        charter[106].SetActive(false);
+        charter[137].SetActive(false);
+        charter[140].SetActive(false);
+        panel.SetActive(false);
+        animContent[185].AllAnim();
+        musicCharter.StopMusic();
+        sound.PlaySound(23);
+    }
+    public void Bda3()
+    {
+        anim.Play("BlackoutDarkAnimation");
+    }
+    public void InvokerC144_3()
+    {
+        Charter144_2UI(143);
+        panel.SetActive(true);
+        Img_charter_3.gameObject.SetActive(false);
+        Img2.gameObject.SetActive(false);
+        gameManager.SavePlayer();
+    }
+    public void InvokerAchievements144_2()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    public void Charter144_2UI(int index)
+    {
+        toBeContinued.text = "Chapter 3";
+        gameManager.numberMusic = 0;
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
 
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        for (int i = 0; i < animContent.Length; i++)
+        {
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
+        }
+        musicCharter.PlayMusic(gameManager.numberMusic);
+    }
     //144
     public void ButtonC144()
     {
@@ -15355,6 +15576,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter144UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         gameManager.numberMusic = 0;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -15406,6 +15628,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter145UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15467,6 +15690,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter145UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15525,6 +15749,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter146UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15586,6 +15811,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter146UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15644,6 +15870,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter147UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15693,6 +15920,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter147UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15740,6 +15968,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter148UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15789,6 +16018,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter149UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15838,6 +16068,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter150UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15889,6 +16120,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter150UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15937,6 +16169,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter151UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15988,6 +16221,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter151UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16036,6 +16270,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter152UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16085,6 +16320,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter152UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16132,6 +16368,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter153UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16182,6 +16419,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter153UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16229,6 +16467,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter154UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16278,6 +16517,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter154UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16325,6 +16565,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter155UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16374,6 +16615,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter156UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16423,6 +16665,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter156UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16470,6 +16713,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter157UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16519,6 +16763,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter157UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16566,6 +16811,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter158UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16617,6 +16863,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter158UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16665,6 +16912,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter159UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16715,6 +16963,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter159UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16762,6 +17011,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter160UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16795,10 +17045,17 @@ public class ActiveChapter : MonoBehaviour
     //161
     public void ButtonC161()
     {
-        imgBlackout.gameObject.SetActive(true);
-        anim.Play("BlackoutDarkAnimation");
-        Invoke("InvokerC161", 0.5f);
-        Invoke("InvokerAchievements160", 6.5f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            anim.Play("BlackoutDarkAnimation");
+            Invoke("InvokerC161", 0.5f);
+            Invoke("InvokerAchievements160", 6.5f);
+        }
     }
     public void InvokerC161()
     {
@@ -16811,6 +17068,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter161UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16836,7 +17094,6 @@ public class ActiveChapter : MonoBehaviour
         }
 
         logicValuesChapters.B_Push_The_Chair();
-        logicValuesChapters.Climb_Over();
 
         if (gameManager.b_move_the_luggage == 0)
         {
@@ -16901,15 +17158,22 @@ public class ActiveChapter : MonoBehaviour
     //161A
     public void AButtonC161()
     {
-        imgBlackout.gameObject.SetActive(true);
-        animContent[159].AllAnim1();
-        animContent[161].AllAnim1();
-        animContent[162].AllAnim1();
-        animContent[163].AllAnim1();
-        animContent[164].AllAnim1();
-        animContentPanel.AllAnimP();
-        Invoke("AInvokerC161", 1.1f);
-        Invoke("AInvokerAchievements160", 2.2f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            animContent[159].AllAnim1();
+            animContent[161].AllAnim1();
+            animContent[162].AllAnim1();
+            animContent[163].AllAnim1();
+            animContent[164].AllAnim1();
+            animContentPanel.AllAnimP();
+            Invoke("AInvokerC161", 1.1f);
+            Invoke("AInvokerAchievements160", 2.2f);
+        }
     }
     private void AInvokerC161()
     {
@@ -16922,6 +17186,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter161UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -16947,7 +17212,6 @@ public class ActiveChapter : MonoBehaviour
         }
 
         logicValuesChapters.B_Push_The_Chair();
-        logicValuesChapters.Climb_Over();
 
         if (gameManager.b_move_the_luggage == 0)
         {
@@ -17010,10 +17274,17 @@ public class ActiveChapter : MonoBehaviour
     //162
     public void ButtonC162()
     {
-        imgBlackout.gameObject.SetActive(true);
-        anim.Play("BlackoutDarkAnimation");
-        Invoke("InvokerC162", 0.5f);
-        Invoke("InvokerAchievements161", 6.5f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            anim.Play("BlackoutDarkAnimation");
+            Invoke("InvokerC162", 0.5f);
+            Invoke("InvokerAchievements161", 6.5f);
+        }
     }
     public void InvokerC162()
     {
@@ -17026,6 +17297,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter162UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -17052,7 +17324,6 @@ public class ActiveChapter : MonoBehaviour
 
 
         logicValuesChapters.B_Move_The_Luggage();
-        logicValuesChapters.Climb_Over();
 
         if (gameManager.b_push_the_chair == 0)
         {
@@ -17116,15 +17387,22 @@ public class ActiveChapter : MonoBehaviour
     //162A
     public void AButtonC162()
     {
-        imgBlackout.gameObject.SetActive(true);
-        animContent[159].AllAnim1();
-        animContent[160].AllAnim1();
-        animContent[162].AllAnim1();
-        animContent[163].AllAnim1();
-        animContent[164].AllAnim1();
-        animContentPanel.AllAnimP();
-        Invoke("AInvokerC162", 1.1f);
-        Invoke("AInvokerAchievements161", 2.2f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            animContent[159].AllAnim1();
+            animContent[160].AllAnim1();
+            animContent[162].AllAnim1();
+            animContent[163].AllAnim1();
+            animContent[164].AllAnim1();
+            animContentPanel.AllAnimP();
+            Invoke("AInvokerC162", 1.1f);
+            Invoke("AInvokerAchievements161", 2.2f);
+        }
     }
     private void AInvokerC162()
     {
@@ -17137,6 +17415,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter162UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -17163,7 +17442,6 @@ public class ActiveChapter : MonoBehaviour
 
 
         logicValuesChapters.B_Move_The_Luggage();
-        logicValuesChapters.Climb_Over();
 
         if (gameManager.b_push_the_chair == 0)
         {
@@ -17226,10 +17504,17 @@ public class ActiveChapter : MonoBehaviour
     //163
     public void ButtonC163()
     {
-        imgBlackout.gameObject.SetActive(true);
-        anim.Play("BlackoutDarkAnimation");
-        Invoke("InvokerC163", 0.5f);
-        Invoke("InvokerAchievements162", 6.5f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            anim.Play("BlackoutDarkAnimation");
+            Invoke("InvokerC163", 0.5f);
+            Invoke("InvokerAchievements162", 6.5f);
+        }
     }
     public void InvokerC163()
     {
@@ -17242,6 +17527,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter163UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -17268,7 +17554,6 @@ public class ActiveChapter : MonoBehaviour
 
 
         logicValuesChapters.B_Pick_Up_The_Tray_Table();
-        logicValuesChapters.Climb_Over();
 
         if (gameManager.b_push_the_chair == 0)
         {
@@ -17333,15 +17618,22 @@ public class ActiveChapter : MonoBehaviour
     //163A
     public void AButtonC163()
     {
-        imgBlackout.gameObject.SetActive(true);
-        animContent[159].AllAnim1();
-        animContent[160].AllAnim1();
-        animContent[161].AllAnim1();
-        animContent[163].AllAnim1();
-        animContent[164].AllAnim1();
-        animContentPanel.AllAnimP();
-        Invoke("AInvokerC163", 1.1f);
-        Invoke("AInvokerAchievements162", 2.2f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            animContent[159].AllAnim1();
+            animContent[160].AllAnim1();
+            animContent[161].AllAnim1();
+            animContent[163].AllAnim1();
+            animContent[164].AllAnim1();
+            animContentPanel.AllAnimP();
+            Invoke("AInvokerC163", 1.1f);
+            Invoke("AInvokerAchievements162", 2.2f);
+        }
     }
     private void AInvokerC163()
     {
@@ -17354,6 +17646,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter163UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -17380,7 +17673,6 @@ public class ActiveChapter : MonoBehaviour
 
 
         logicValuesChapters.B_Pick_Up_The_Tray_Table();
-        logicValuesChapters.Climb_Over();
 
         if (gameManager.b_push_the_chair == 0)
         {
@@ -17443,10 +17735,17 @@ public class ActiveChapter : MonoBehaviour
     //164
     public void ButtonC164()
     {
-        imgBlackout.gameObject.SetActive(true);
-        anim.Play("BlackoutDarkAnimation");
-        Invoke("InvokerC164", 0.5f);
-        Invoke("InvokerAchievements163", 6.5f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            anim.Play("BlackoutDarkAnimation");
+            Invoke("InvokerC164", 0.5f);
+            Invoke("InvokerAchievements163", 6.5f);
+        }
     }
     public void InvokerC164()
     {
@@ -17459,6 +17758,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter164UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -17484,7 +17784,6 @@ public class ActiveChapter : MonoBehaviour
         }
 
         logicValuesChapters.B_Pick_Up_The_Bent_Metal();
-        logicValuesChapters.Climb_Over();
 
         if (gameManager.b_push_the_chair == 0)
         {
@@ -17549,15 +17848,22 @@ public class ActiveChapter : MonoBehaviour
     //164A
     public void AButtonC164()
     {
-        imgBlackout.gameObject.SetActive(true);
-        animContent[159].AllAnim1();
-        animContent[160].AllAnim1();
-        animContent[161].AllAnim1();
-        animContent[162].AllAnim1();
-        animContent[164].AllAnim1();
-        animContentPanel.AllAnimP();
-        Invoke("AInvokerC164", 1.1f);
-        Invoke("AInvokerAchievements163", 2.2f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            animContent[159].AllAnim1();
+            animContent[160].AllAnim1();
+            animContent[161].AllAnim1();
+            animContent[162].AllAnim1();
+            animContent[164].AllAnim1();
+            animContentPanel.AllAnimP();
+            Invoke("AInvokerC164", 1.1f);
+            Invoke("AInvokerAchievements163", 2.2f);
+        }
     }
     private void AInvokerC164()
     {
@@ -17570,6 +17876,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter164UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -17595,7 +17902,6 @@ public class ActiveChapter : MonoBehaviour
         }
 
         logicValuesChapters.B_Pick_Up_The_Bent_Metal();
-        logicValuesChapters.Climb_Over();
 
         if (gameManager.b_push_the_chair == 0)
         {
@@ -17658,10 +17964,17 @@ public class ActiveChapter : MonoBehaviour
     //165
     public void ButtonC165()
     {
-        imgBlackout.gameObject.SetActive(true);
-        anim.Play("BlackoutDarkAnimation");
-        Invoke("InvokerC165", 0.5f);
-        Invoke("InvokerAchievements164", 6.5f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            anim.Play("BlackoutDarkAnimation");
+            Invoke("InvokerC165", 0.5f);
+            Invoke("InvokerAchievements164", 6.5f);
+        }
     }
     public void InvokerC165()
     {
@@ -17674,6 +17987,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter165UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -17699,7 +18013,6 @@ public class ActiveChapter : MonoBehaviour
         }
 
         logicValuesChapters.B_Tuck_In_The_Loose_Wires();
-        logicValuesChapters.Climb_Over();
 
         if (gameManager.b_push_the_chair == 0)
         {
@@ -17764,15 +18077,22 @@ public class ActiveChapter : MonoBehaviour
     //165A
     public void AButtonC165()
     {
-        imgBlackout.gameObject.SetActive(true);
-        animContent[159].AllAnim1();
-        animContent[160].AllAnim1();
-        animContent[161].AllAnim1();
-        animContent[162].AllAnim1();
-        animContent[163].AllAnim1();
-        animContentPanel.AllAnimP();
-        Invoke("AInvokerC165", 1.1f);
-        Invoke("AInvokerAchievements164", 2.2f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            animContent[159].AllAnim1();
+            animContent[160].AllAnim1();
+            animContent[161].AllAnim1();
+            animContent[162].AllAnim1();
+            animContent[163].AllAnim1();
+            animContentPanel.AllAnimP();
+            Invoke("AInvokerC165", 1.1f);
+            Invoke("AInvokerAchievements164", 2.2f);
+        }
     }
     private void AInvokerC165()
     {
@@ -17785,6 +18105,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter165UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -17810,7 +18131,6 @@ public class ActiveChapter : MonoBehaviour
         }
 
         logicValuesChapters.B_Tuck_In_The_Loose_Wires();
-        logicValuesChapters.Climb_Over();
 
         if (gameManager.b_push_the_chair == 0)
         {
@@ -17873,10 +18193,17 @@ public class ActiveChapter : MonoBehaviour
     //166
     public void ButtonC166()
     {
-        imgBlackout.gameObject.SetActive(true);
-        anim.Play("BlackoutDarkAnimation");
-        Invoke("InvokerC166", 0.5f);
-        Invoke("InvokerAchievements165", 6.5f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            anim.Play("BlackoutDarkAnimation");
+            Invoke("InvokerC166", 0.5f);
+            Invoke("InvokerAchievements165", 6.5f);
+        }
     }
     public void InvokerC166()
     {
@@ -17889,6 +18216,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter166UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -17921,15 +18249,22 @@ public class ActiveChapter : MonoBehaviour
     //166A
     public void AButtonC166()
     {
-        imgBlackout.gameObject.SetActive(true);
-        animContent[160].AllAnim1();
-        animContent[161].AllAnim1();
-        animContent[162].AllAnim1();
-        animContent[163].AllAnim1();
-        animContent[164].AllAnim1();
-        animContentPanel.AllAnimP();
-        Invoke("AInvokerC166", 1.1f);
-        Invoke("AInvokerAchievements165", 2.2f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            animContent[160].AllAnim1();
+            animContent[161].AllAnim1();
+            animContent[162].AllAnim1();
+            animContent[163].AllAnim1();
+            animContent[164].AllAnim1();
+            animContentPanel.AllAnimP();
+            Invoke("AInvokerC166", 1.1f);
+            Invoke("AInvokerAchievements165", 2.2f);
+        }
     }
     private void AInvokerC166()
     {
@@ -17942,6 +18277,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter166UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -17973,10 +18309,17 @@ public class ActiveChapter : MonoBehaviour
     //167
     public void ButtonC167()
     {
-        imgBlackout.gameObject.SetActive(true);
-        anim.Play("BlackoutDarkAnimation");
-        Invoke("InvokerC167", 0.5f);
-        Invoke("InvokerAchievements166", 6.5f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            anim.Play("BlackoutDarkAnimation");
+            Invoke("InvokerC167", 0.5f);
+            Invoke("InvokerAchievements166", 6.5f);
+        }
     }
     public void InvokerC167()
     {
@@ -17989,6 +18332,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter167UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18021,15 +18365,22 @@ public class ActiveChapter : MonoBehaviour
     //167A
     public void AButtonC167()
     {
-        imgBlackout.gameObject.SetActive(true);
-        animContent[160].AllAnim1();
-        animContent[161].AllAnim1();
-        animContent[162].AllAnim1();
-        animContent[163].AllAnim1();
-        animContent[164].AllAnim1();
-        animContentPanel.AllAnimP();
-        Invoke("AInvokerC167", 1.1f);
-        Invoke("AInvokerAchievements166", 2.2f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            animContent[160].AllAnim1();
+            animContent[161].AllAnim1();
+            animContent[162].AllAnim1();
+            animContent[163].AllAnim1();
+            animContent[164].AllAnim1();
+            animContentPanel.AllAnimP();
+            Invoke("AInvokerC167", 1.1f);
+            Invoke("AInvokerAchievements166", 2.2f);
+        }
     }
     private void AInvokerC167()
     {
@@ -18042,6 +18393,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter167UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18073,10 +18425,17 @@ public class ActiveChapter : MonoBehaviour
     //168
     public void ButtonC168()
     {
-        imgBlackout.gameObject.SetActive(true);
-        anim.Play("BlackoutDarkAnimation");
-        Invoke("InvokerC168", 0.5f);
-        Invoke("InvokerAchievements167", 6.5f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            anim.Play("BlackoutDarkAnimation");
+            Invoke("InvokerC168", 0.5f);
+            Invoke("InvokerAchievements167", 6.5f);
+        }
     }
     public void InvokerC168()
     {
@@ -18089,6 +18448,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter168UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18140,11 +18500,18 @@ public class ActiveChapter : MonoBehaviour
     //168A
     public void AButtonC168()
     {
-        imgBlackout.gameObject.SetActive(true);
-        animContent[165].AllAnim1();
-        animContentPanel.AllAnimP();
-        Invoke("AInvokerC168", 1.1f);
-        Invoke("AInvokerAchievements167", 2.2f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            animContent[165].AllAnim1();
+            animContentPanel.AllAnimP();
+            Invoke("AInvokerC168", 1.1f);
+            Invoke("AInvokerAchievements167", 2.2f);
+        }
     }
     private void AInvokerC168()
     {
@@ -18157,6 +18524,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter168UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18223,6 +18591,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter169UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18272,6 +18641,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter170UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18305,10 +18675,17 @@ public class ActiveChapter : MonoBehaviour
     //171
     public void ButtonC171()
     {
-        imgBlackout.gameObject.SetActive(true);
-        anim.Play("BlackoutDarkAnimation");
-        Invoke("InvokerC171", 0.5f);
-        Invoke("InvokerAchievements170", 6.5f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            anim.Play("BlackoutDarkAnimation");
+            Invoke("InvokerC171", 0.5f);
+            Invoke("InvokerAchievements170", 6.5f);
+        }
     }
     public void InvokerC171()
     {
@@ -18321,6 +18698,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter171UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18354,10 +18732,17 @@ public class ActiveChapter : MonoBehaviour
     //172
     public void ButtonC172()
     {
-        imgBlackout.gameObject.SetActive(true);
-        anim.Play("BlackoutDarkAnimation");
-        Invoke("InvokerC172", 0.5f);
-        Invoke("InvokerAchievements171", 6.5f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            anim.Play("BlackoutDarkAnimation");
+            Invoke("InvokerC172", 0.5f);
+            Invoke("InvokerAchievements171", 6.5f);
+        }
     }
     public void InvokerC172()
     {
@@ -18370,6 +18755,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter172UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18404,10 +18790,17 @@ public class ActiveChapter : MonoBehaviour
     //173
     public void ButtonC173()
     {
-        imgBlackout.gameObject.SetActive(true);
-        anim.Play("BlackoutDarkAnimation");
-        Invoke("InvokerC173", 0.5f);
-        Invoke("InvokerAchievements172", 6.5f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            anim.Play("BlackoutDarkAnimation");
+            Invoke("InvokerC173", 0.5f);
+            Invoke("InvokerAchievements172", 6.5f);
+        }
     }
     public void InvokerC173()
     {
@@ -18421,6 +18814,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter173UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18454,10 +18848,17 @@ public class ActiveChapter : MonoBehaviour
     //174
     public void ButtonC174()
     {
-        imgBlackout.gameObject.SetActive(true);
-        anim.Play("BlackoutDarkAnimation");
-        Invoke("InvokerC174", 0.5f);
-        Invoke("InvokerAchievements173", 6.5f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            anim.Play("BlackoutDarkAnimation");
+            Invoke("InvokerC174", 0.5f);
+            Invoke("InvokerAchievements173", 6.5f);
+        }
     }
     public void InvokerC174()
     {
@@ -18471,6 +18872,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter174UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18503,11 +18905,18 @@ public class ActiveChapter : MonoBehaviour
     //174A
     public void AButtonC174()
     {
-        imgBlackout.gameObject.SetActive(true);
-        animContent[170].AllAnim1();
-        animContentPanel.AllAnimP();
-        Invoke("AInvokerC174", 1.1f);
-        Invoke("AInvokerAchievements173", 2.2f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            animContent[170].AllAnim1();
+            animContentPanel.AllAnimP();
+            Invoke("AInvokerC174", 1.1f);
+            Invoke("AInvokerAchievements173", 2.2f);
+        }
     }
     private void AInvokerC174()
     {
@@ -18521,6 +18930,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter174UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18552,10 +18962,17 @@ public class ActiveChapter : MonoBehaviour
     //175
     public void ButtonC175()
     {
-        imgBlackout.gameObject.SetActive(true);
-        anim.Play("BlackoutDarkAnimation");
-        Invoke("InvokerC175", 0.5f);
-        Invoke("InvokerAchievements174", 6.5f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            anim.Play("BlackoutDarkAnimation");
+            Invoke("InvokerC175", 0.5f);
+            Invoke("InvokerAchievements174", 6.5f);
+        }
     }
     public void InvokerC175()
     {
@@ -18568,6 +18985,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter175UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18600,11 +19018,18 @@ public class ActiveChapter : MonoBehaviour
     //175A
     public void AButtonC175()
     {
-        imgBlackout.gameObject.SetActive(true);
-        animContent[173].AllAnim1();
-        animContentPanel.AllAnimP();
-        Invoke("AInvokerC175", 1.1f);
-        Invoke("AInvokerAchievements174", 2.2f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            animContent[173].AllAnim1();
+            animContentPanel.AllAnimP();
+            Invoke("AInvokerC175", 1.1f);
+            Invoke("AInvokerAchievements174", 2.2f);
+        }
     }
     private void AInvokerC175()
     {
@@ -18617,6 +19042,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter175UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18648,10 +19074,17 @@ public class ActiveChapter : MonoBehaviour
     //176
     public void ButtonC176()
     {
-        imgBlackout.gameObject.SetActive(true);
-        anim.Play("BlackoutDarkAnimation");
-        Invoke("InvokerC176", 0.5f);
-        Invoke("InvokerAchievements175", 6.5f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            anim.Play("BlackoutDarkAnimation");
+            Invoke("InvokerC176", 0.5f);
+            Invoke("InvokerAchievements175", 6.5f);
+        }
     }
     public void InvokerC176()
     {
@@ -18664,6 +19097,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter176UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18697,10 +19131,17 @@ public class ActiveChapter : MonoBehaviour
     //177
     public void ButtonC177()
     {
-        imgBlackout.gameObject.SetActive(true);
-        anim.Play("BlackoutDarkAnimation");
-        Invoke("InvokerC177", 0.5f);
-        Invoke("InvokerAchievements176", 6.5f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            anim.Play("BlackoutDarkAnimation");
+            Invoke("InvokerC177", 0.5f);
+            Invoke("InvokerAchievements176", 6.5f);
+        }
     }
     public void InvokerC177()
     {
@@ -18713,6 +19154,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter177UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18745,12 +19187,19 @@ public class ActiveChapter : MonoBehaviour
     //177A
     public void AButtonC177()
     {
-        imgBlackout.gameObject.SetActive(true);
-        animContent[173].AllAnim1();
-        animContent[174].AllAnim1();
-        animContentPanel.AllAnimP();
-        Invoke("AInvokerC177", 1.1f);
-        Invoke("AInvokerAchievements176", 2.2f);
+        if (gameManager.b_the_end == 18)
+        {
+            ButtonC180();
+        }
+        else if (gameManager.b_the_end < 18)
+        {
+            imgBlackout.gameObject.SetActive(true);
+            animContent[173].AllAnim1();
+            animContent[174].AllAnim1();
+            animContentPanel.AllAnimP();
+            Invoke("AInvokerC177", 1.1f);
+            Invoke("AInvokerAchievements176", 2.2f);
+        }
     }
     private void AInvokerC177()
     {
@@ -18763,6 +19212,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter177UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18810,6 +19260,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter178UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18860,6 +19311,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter179UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18910,6 +19362,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter180UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -18961,6 +19414,7 @@ public class ActiveChapter : MonoBehaviour
     }
     public void Charter181UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         gameManager.numberMusic = 4;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -19014,6 +19468,7 @@ public class ActiveChapter : MonoBehaviour
     }
     private void ACharter181UI(int index)
     {
+        toBeContinued.text = "Chapter 3";
         gameManager.numberMusic = 4;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
@@ -19047,6 +19502,7 @@ public class ActiveChapter : MonoBehaviour
     //182
     public void ButtonC182()
     {
+
         FireBaseAnalyticsEvents.EventsWinGame("WinGame");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");

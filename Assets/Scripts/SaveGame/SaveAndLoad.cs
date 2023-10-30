@@ -1157,17 +1157,19 @@ public class SaveAndLoad : MonoBehaviour
 
     public void SaveGo()
     {
-        saveSave.gameObject.SetActive(true);
-        //if (gameManager.saveGo == 1)
-        //{
-        //    FireBaseAnalyticsEvents.EventsSave_Button("Save_Button");
-        //    saveSave.gameObject.SetActive(true);
-        //}
-        //else
-        //{
-        //    FireBaseAnalyticsEvents.EventsSave_Button_Buy("Save_Button_Buy");
-        //    money.gameObject.SetActive(true);
-        //}
+        gameManager.load_buy = 0;
+        gameManager.save_buy = 1;
+        //saveSave.gameObject.SetActive(true);
+        if (gameManager.saveGo == 1)
+        {
+            FireBaseAnalyticsEvents.EventsSave_Button("Save_Button");
+            saveSave.gameObject.SetActive(true);
+        }
+        else
+        {
+            FireBaseAnalyticsEvents.EventsSave_Button_Buy("Save_Button_Buy");
+            money.gameObject.SetActive(true);
+        }
     }
 
     public void RefreshApi()

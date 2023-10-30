@@ -194,6 +194,8 @@ public class ActiveMenu : MonoBehaviour
     }
     public void Invoker()
     {
+        gameManager.ResetPlayer();
+        gameManager.Null();
         saveAndLoad.continueGame = 1;
         PlayerPrefs.SetInt("continueGame", saveAndLoad.continueGame);
         PlayerPrefs.Save();
@@ -281,18 +283,19 @@ public class ActiveMenu : MonoBehaviour
 
     public void LoadMenu()
     {
-
-        menuUI.gameObject.SetActive(false);
-        loadUI.gameObject.SetActive(true);
-        //if (gameManager.saveGo == 1)
-        //{
-        //    menuUI.gameObject.SetActive(false);
-        //    loadUI.gameObject.SetActive(true);
-        //}
-        //else
-        //{
-        //    saveAndLoad.money.SetActive(true);
-        //}
+        gameManager.load_buy = 1;
+        gameManager.save_buy = 0;
+        //menuUI.gameObject.SetActive(false);
+        //loadUI.gameObject.SetActive(true);
+        if (gameManager.saveGo == 1)
+        {
+            menuUI.gameObject.SetActive(false);
+            loadUI.gameObject.SetActive(true);
+        }
+        else
+        {
+            saveAndLoad.money.SetActive(true);
+        }
     }
 
     public void YesLoadGame()
@@ -369,7 +372,7 @@ public class ActiveMenu : MonoBehaviour
     {
         imgMenuAnim.gameObject.SetActive(true);
         anim.Play("MenuStartAnim");
-        Invoke("Invoker2_1", 1f);
+        Invoke("Invoker2_1", 0.5f);
         Invoke("Invoker1", 2f);
         Invoke("Invoker5", 7f);
     }

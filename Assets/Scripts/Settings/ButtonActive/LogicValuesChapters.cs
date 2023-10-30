@@ -58,10 +58,6 @@ public class LogicValuesChapters : MonoBehaviour
     {
         gameManager.b_buy_book = 1;
     }
-    public void B_Ignore_It_2()
-    {
-        gameManager.b_ignore_it_2 = 1;
-    }
     public void B_Too_Much_Of_A_Risk()
     {
         gameManager.b_too_much_of_a_risk = 1;

@@ -45,26 +45,26 @@ public class BuyStopwatch : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
         }
-        if (elapsedTime > 3 && pageSwiperBuy.currentPage == 1)
+        if (elapsedTime > 6 && pageSwiperBuy.currentPage == 1)
         {
             print("Panel2");
             pageSwiperBuy.Panel2();
             elapsedTime = 0f;
         }
-        if (elapsedTime > 3 && pageSwiperBuy.currentPage == 2 && back == 0)
+        if (elapsedTime > 6 && pageSwiperBuy.currentPage == 2 && back == 0)
         {
             print("Panel3");
             pageSwiperBuy.Panel2();
             elapsedTime = 0f;
             back = 1;
         }
-        if (elapsedTime > 3 && pageSwiperBuy.currentPage == 3)
+        if (elapsedTime > 6 && pageSwiperBuy.currentPage == 3)
         {
             print("Panel3");
             pageSwiperBuy.PanelBack();
             elapsedTime = 0f;
         }
-        if (elapsedTime > 3 && pageSwiperBuy.currentPage == 2 && back == 1)
+        if (elapsedTime > 6 && pageSwiperBuy.currentPage == 2 && back == 1)
         {
             print("Panel3");
             pageSwiperBuy.PanelBack();
