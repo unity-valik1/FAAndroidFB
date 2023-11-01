@@ -46,6 +46,7 @@ public class MusicSound : MonoBehaviour
         if (music == 1)
         {
             musicMenu.StopMusic();
+            sound.PlaySound(2);
             FireBaseAnalyticsEvents.EventsMusicButtonOff("MusicButtonOff");
             music = 0;
             musicText.text = "Music: OFF";

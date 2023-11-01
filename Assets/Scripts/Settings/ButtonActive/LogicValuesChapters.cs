@@ -14,6 +14,10 @@ public class LogicValuesChapters : MonoBehaviour
     {
         gameManager.b_ignore_it += 1;
     }
+    public void B_Ignore_It_2()
+    {
+        gameManager.b_ignore_it_2 = 1;
+    }
     public void B_Any_Other_Flights()
     {
         gameManager.b_any_other_flights = 1;
@@ -129,5 +133,9 @@ public class LogicValuesChapters : MonoBehaviour
     public void B_Take_The_Knife()
     {
         gameManager.b_take_the_knife = 1;
+    }
+    public void Call_back()
+    {
+        gameManager.call_back = 1;
     }
 }

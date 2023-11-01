@@ -93,6 +93,7 @@ public class PlayerData
     public int b_tuck_in_the_loose_wires;
     public int b_take_the_knife;
     public int b_the_end;
+    public int call_back;
 
     public int numberMusic;
     public PlayerData(GameManager gameManager)
@@ -134,6 +135,7 @@ public class PlayerData
         b_tuck_in_the_loose_wires = gameManager.b_tuck_in_the_loose_wires;
         b_take_the_knife = gameManager.b_take_the_knife;
         b_the_end = gameManager.b_the_end;
+        call_back = gameManager.call_back;
         numberMusic = gameManager.numberMusic;
 
     //charter1UI = gameManager.charter1UI;

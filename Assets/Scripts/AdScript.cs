@@ -13,8 +13,8 @@ public class AdScript : MonoBehaviour
 
     public int number = 0;
 
-    //ca-app-pub-8820941749262255/2928514036 для залива билда настоящая ссылка
-    private string _adUnitId = "ca-app-pub-3940256099942544/1033173712";
+    //private string _adUnitId = "ca-app-pub-3940256099942544/1033173712";
+    private string _adUnitId = "ca-app-pub-8820941749262255/2928514036";
 
     private void Start()
     {

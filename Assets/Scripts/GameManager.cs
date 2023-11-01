@@ -167,6 +167,7 @@ public class GameManager : MonoBehaviour
     [Tooltip("Алкоголь")] public int b_tuck_in_the_loose_wires = 0;//S
     [Tooltip("Алкоголь")] public int b_take_the_knife = 0;//S
     [Tooltip("Алкоголь")] public int b_the_end = 0;//S
+    [Tooltip("Алкоголь")] public int call_back = 0;//S
 
     public int numberMusic = 0;//S
 
@@ -241,6 +242,7 @@ public class GameManager : MonoBehaviour
         b_tuck_in_the_loose_wires = data.b_tuck_in_the_loose_wires;
         b_take_the_knife = data.b_take_the_knife;
         b_the_end = data.b_the_end;
+        call_back = data.call_back;
         numberMusic = data.numberMusic;
         //charter1UI = data.charter1UI;
         //charter2UI = data.charter2UI;
@@ -353,6 +355,7 @@ public class GameManager : MonoBehaviour
         b_tuck_in_the_loose_wires = data.b_tuck_in_the_loose_wires;
         b_take_the_knife = data.b_take_the_knife;
         b_the_end = data.b_the_end;
+        call_back = data.call_back;
         numberMusic = data.numberMusic;
         //charter1UI = data.charter1UI;
         //charter2UI = data.charter2UI;
@@ -466,6 +469,7 @@ public class GameManager : MonoBehaviour
         b_tuck_in_the_loose_wires = data.b_tuck_in_the_loose_wires;
         b_take_the_knife = data.b_take_the_knife;
         b_the_end = data.b_the_end;
+        call_back = data.call_back;
         numberMusic = data.numberMusic;
         //charter1UI = data.charter1UI;
         //charter2UI = data.charter2UI;
@@ -580,6 +584,7 @@ public class GameManager : MonoBehaviour
         b_tuck_in_the_loose_wires = data.b_tuck_in_the_loose_wires;
         b_take_the_knife = data.b_take_the_knife;
         b_the_end = data.b_the_end;
+        call_back = data.call_back;
         numberMusic = data.numberMusic;
         //charter1UI = data.charter1UI;
         //charter2UI = data.charter2UI;
@@ -694,6 +699,7 @@ public class GameManager : MonoBehaviour
         b_tuck_in_the_loose_wires = data.b_tuck_in_the_loose_wires;
         b_take_the_knife = data.b_take_the_knife;
         b_the_end = data.b_the_end;
+        call_back = data.call_back;
         numberMusic = data.numberMusic;
         //charter1UI = data.charter1UI;
         //charter2UI = data.charter2UI;
@@ -809,6 +815,7 @@ public class GameManager : MonoBehaviour
         b_tuck_in_the_loose_wires = data.b_tuck_in_the_loose_wires;
         b_take_the_knife = data.b_take_the_knife;
         b_the_end = data.b_the_end;
+        call_back = data.call_back;
         numberMusic = data.numberMusic;
         //charter1UI = data.charter1UI;
         //charter2UI = data.charter2UI;
@@ -911,5 +918,6 @@ public class GameManager : MonoBehaviour
         b_tuck_in_the_loose_wires = 0;//S
         b_take_the_knife = 0;//S
         b_the_end = 0;//S
+        call_back = 0;
     }
 }

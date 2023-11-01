@@ -3056,56 +3056,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = true;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-        //gameManager.charter31UI = false;
-        //gameManager.charter32UI = false;
-        //gameManager.charter33UI = false;
-        //gameManager.charter34UI = false;
-        //gameManager.charter35UI = false;
-        //gameManager.charter36UI = false;
-        //gameManager.charter37UI = false;
-        //gameManager.charter38UI = false;
-        //gameManager.charter39UI = false;
-        //gameManager.charter40UI = false;
-        //gameManager.charter41UI = false;
-        //gameManager.charter42UI = false;
-        //gameManager.charter43UI = false;
-        //gameManager.charter44UI = false;
-        //gameManager.charter45UI = false;
-        //gameManager.charter46UI = false;
-        //gameManager.charter47UI = false;
-        //gameManager.charter48UI = false;
-        //gameManager.charter49UI = false;
-        //gameManager.charter50UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -6098,21 +6048,22 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
+
         if (gameManager.b_grab_some_food == 0)
         {
-            buttonIf[6].gameObject.SetActive(false);
             buttonIf[5].gameObject.SetActive(true);
+            buttonIf[6].gameObject.SetActive(false);
         }
-        else
+        else if (gameManager.b_grab_some_food == 1)
         {
             buttonIf[5].gameObject.SetActive(false);
             buttonIf[6].gameObject.SetActive(true);
         }
-
         for (int i = 0; i < animContent.Length; i++)
         {
             animContent[44].AllAnim();
         }
+
     }
 
     //46
@@ -6390,7 +6341,7 @@ public class ActiveChapter : MonoBehaviour
         {
             buttonIf[11].gameObject.SetActive(true);
         }
-        else
+        else if (gameManager.b_grab_some_food == 1)
         {
             buttonIf[11].gameObject.SetActive(false);
         }
@@ -6399,7 +6350,7 @@ public class ActiveChapter : MonoBehaviour
         {
             buttonIf[12].gameObject.SetActive(true);
         }
-        else
+        else if (gameManager.b_grab_some_food == 0)
         {
             buttonIf[12].gameObject.SetActive(false);
         }
@@ -6468,7 +6419,7 @@ public class ActiveChapter : MonoBehaviour
         {
             buttonIf[11].gameObject.SetActive(true);
         }
-        else
+        else if (gameManager.b_grab_some_food == 1)
         {
             buttonIf[11].gameObject.SetActive(false);
         }
@@ -6477,7 +6428,7 @@ public class ActiveChapter : MonoBehaviour
         {
             buttonIf[12].gameObject.SetActive(true);
         }
-        else
+        else if (gameManager.b_grab_some_food == 0)
         {
             buttonIf[12].gameObject.SetActive(false);
         }
@@ -6536,7 +6487,7 @@ public class ActiveChapter : MonoBehaviour
         {
             buttonIf[13].gameObject.SetActive(true);
         }
-        else
+        else if (gameManager.b_grab_some_food == 1)
         {
             buttonIf[13].gameObject.SetActive(false);
         }
@@ -6545,7 +6496,7 @@ public class ActiveChapter : MonoBehaviour
         {
             buttonIf[14].gameObject.SetActive(true);
         }
-        else
+        else if (gameManager.b_grab_some_food == 0)
         {
             buttonIf[14].gameObject.SetActive(false);
         }
@@ -6554,7 +6505,7 @@ public class ActiveChapter : MonoBehaviour
         {
             buttonIf[15].gameObject.SetActive(true);
         }
-        else
+        else if (gameManager.b_go_to_the_bookstore == 1)
         {
             buttonIf[15].gameObject.SetActive(false);
         }
@@ -6616,7 +6567,7 @@ public class ActiveChapter : MonoBehaviour
         {
             buttonIf[13].gameObject.SetActive(true);
         }
-        else
+        else if (gameManager.b_grab_some_food == 1)
         {
             buttonIf[13].gameObject.SetActive(false);
         }
@@ -6625,7 +6576,7 @@ public class ActiveChapter : MonoBehaviour
         {
             buttonIf[14].gameObject.SetActive(true);
         }
-        else
+        else if (gameManager.b_grab_some_food == 0)
         {
             buttonIf[14].gameObject.SetActive(false);
         }
@@ -6634,7 +6585,7 @@ public class ActiveChapter : MonoBehaviour
         {
             buttonIf[15].gameObject.SetActive(true);
         }
-        else
+        else if (gameManager.b_go_to_the_bookstore == 1)
         {
             buttonIf[15].gameObject.SetActive(false);
         }
@@ -8031,7 +7982,7 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[67].AllAnim();
         }
-        sound.PlaySound(1);
+        sound.PlaySound(3);
     }
     //68A
     public void AButtonC68()
@@ -8085,7 +8036,7 @@ public class ActiveChapter : MonoBehaviour
 
         animContent[67].AllAnim2();
         animContentPanel.AllAnimP();
-        sound.PlaySound(1);
+        sound.PlaySound(3);
     }
 
     //69
@@ -8481,7 +8432,7 @@ public class ActiveChapter : MonoBehaviour
                 charter[i].SetActive(false);
             }
         }
-
+        logicValuesChapters.B_Ignore_It_2();
         for (int i = 0; i < animContent.Length; i++)
         {
             animContent[71].AllAnim();
@@ -8534,6 +8485,7 @@ public class ActiveChapter : MonoBehaviour
         }
 
 
+        logicValuesChapters.B_Ignore_It_2();
         animContent[71].AllAnim2();
         animContentPanel.AllAnimP();
     }
@@ -9196,7 +9148,7 @@ public class ActiveChapter : MonoBehaviour
             buttonIf[24].gameObject.SetActive(false);
         }
 
-        if (gameManager.b_give_me_some_time == 1 && gameManager.b_check_the_weather == 0 && gameManager.b_alcohol == 0 && gameManager.b_ignore_it_2 == 0)
+        if (gameManager.b_give_me_some_time == 1 && gameManager.b_check_the_weather == 0 && gameManager.b_alcohol == 0 && gameManager.b_ignore_it_2 == 0 && gameManager.call_back == 0)
         {
             buttonIf[25].gameObject.SetActive(true);
         }
@@ -9268,7 +9220,7 @@ public class ActiveChapter : MonoBehaviour
             buttonIf[24].gameObject.SetActive(false);
         }
 
-        if (gameManager.b_give_me_some_time == 1 && gameManager.b_check_the_weather == 0 && gameManager.b_alcohol == 0 && gameManager.b_ignore_it_2 == 0)
+        if (gameManager.b_give_me_some_time == 1 && gameManager.b_check_the_weather == 0 && gameManager.b_alcohol == 0 && gameManager.b_ignore_it_2 == 0 && gameManager.call_back == 0)
         {
             buttonIf[25].gameObject.SetActive(true);
         }
@@ -9982,7 +9934,7 @@ public class ActiveChapter : MonoBehaviour
         {
             buttonIf[38].gameObject.SetActive(true);
         }
-        else
+        else if (gameManager.b_the_lounge == 1)
         {
             buttonIf[38].gameObject.SetActive(false);
         }
@@ -9991,7 +9943,7 @@ public class ActiveChapter : MonoBehaviour
         {
             buttonIf[39].gameObject.SetActive(true);
         }
-        else
+        else if (gameManager.b_the_food_court == 1)
         {
             buttonIf[39].gameObject.SetActive(false);
         }
@@ -10000,7 +9952,7 @@ public class ActiveChapter : MonoBehaviour
         {
             buttonIf[40].gameObject.SetActive(true);
         }
-        else
+        else if (gameManager.b_halls == 1)
         {
             buttonIf[40].gameObject.SetActive(false);
         }
@@ -10009,7 +9961,7 @@ public class ActiveChapter : MonoBehaviour
         {
             buttonIf[41].gameObject.SetActive(true);
         }
-        else
+        else 
         {
             buttonIf[41].gameObject.SetActive(false);
         }
@@ -15302,7 +15254,7 @@ public class ActiveChapter : MonoBehaviour
     public void Charter142UI(int index)
     {
         toBeContinued.text = "Chapter 2";
-        gameManager.numberMusic = 1;
+        gameManager.numberMusic = 3;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15354,7 +15306,7 @@ public class ActiveChapter : MonoBehaviour
     private void ACharter142UI(int index)
     {
         toBeContinued.text = "Chapter 2";
-        gameManager.numberMusic = 1;
+        gameManager.numberMusic = 3;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15998,6 +15950,56 @@ public class ActiveChapter : MonoBehaviour
             animContent[147].AllAnim();
         }
     }
+    //148A
+    public void AButtonC148()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[144].AllAnim1();
+        animContent[145].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC148", 1.1f);
+        Invoke("AInvokerAchievements147", 2.2f);
+    }
+    private void AInvokerC148()
+    {
+        ACharter148UI(147);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements147()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter148UI(int index)
+    {
+        toBeContinued.text = "Chapter 3";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        animContent[147].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
 
     //149
     public void ButtonC149()
@@ -16047,6 +16049,55 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[148].AllAnim();
         }
+    }
+    //149A
+    public void AButtonC149()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[147].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC149", 1.1f);
+        Invoke("AInvokerAchievements148", 2.2f);
+    }
+    private void AInvokerC149()
+    {
+        ACharter149UI(148);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements148()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter149UI(int index)
+    {
+        toBeContinued.text = "Chapter 3";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        animContent[148].AllAnim2();
+        animContentPanel.AllAnimP();
     }
 
     //150
@@ -17040,6 +17091,54 @@ public class ActiveChapter : MonoBehaviour
         {
             animContent[159].AllAnim();
         }
+    }
+    //160A
+    public void AButtonC160()
+    {
+        imgBlackout.gameObject.SetActive(true);
+        animContent[158].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC160", 1.1f);
+        Invoke("AInvokerAchievements159", 2.2f);
+    }
+    private void AInvokerC160()
+    {
+        ACharter160UI(159);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements159()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter160UI(int index)
+    {
+        toBeContinued.text = "Chapter 3";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+        animContent[159].AllAnim2();
+        animContentPanel.AllAnimP();
     }
 
     //161

@@ -73,11 +73,21 @@ public class SaveAndLoad : MonoBehaviour
     public TMP_Text nameLocation3;
     public TMP_Text nameLocation4;
     public TMP_Text nameLocation5;
+    public TMP_Text nameLocation125;
+    public TMP_Text nameLocation225;
+    public TMP_Text nameLocation325;
+    public TMP_Text nameLocation425;
+    public TMP_Text nameLocation525;
     public TMP_Text nameLocation1Load;
     public TMP_Text nameLocation2Load;
     public TMP_Text nameLocation3Load;
     public TMP_Text nameLocation4Load;
     public TMP_Text nameLocation5Load;
+    public TMP_Text nameLocation1Load25;
+    public TMP_Text nameLocation2Load25;
+    public TMP_Text nameLocation3Load25;
+    public TMP_Text nameLocation4Load25;
+    public TMP_Text nameLocation5Load25;
     public TMP_Text display;
     public TMP_Text display2;
     public TMP_Text display3;
@@ -96,7 +106,7 @@ public class SaveAndLoad : MonoBehaviour
 
     public Button[] loadBatton;
 
-
+    public int maxLength = 25;
     private void Start()
     {
         if (PlayerPrefs.HasKey("saveGame1"))
@@ -302,6 +312,47 @@ public class SaveAndLoad : MonoBehaviour
                 loadBatton[14].gameObject.SetActive(true);
             }
         }
+
+        if (nameLocation125.text.Length > maxLength)
+        {
+            nameLocation125.text = nameLocation125.text.Substring(0, maxLength) + "...";
+        }
+        if (nameLocation1Load25.text.Length > maxLength)
+        {
+            nameLocation1Load25.text = nameLocation1Load25.text.Substring(0, maxLength) + "...";
+        }
+        if (nameLocation225.text.Length > maxLength)
+        {
+            nameLocation225.text = nameLocation225.text.Substring(0, maxLength) + "...";
+        }
+        if (nameLocation2Load25.text.Length > maxLength)
+        {
+            nameLocation2Load25.text = nameLocation2Load25.text.Substring(0, maxLength) + "...";
+        }
+        if (nameLocation325.text.Length > maxLength)
+        {
+            nameLocation325.text = nameLocation325.text.Substring(0, maxLength) + "...";
+        }
+        if (nameLocation3Load25.text.Length > maxLength)
+        {
+            nameLocation3Load25.text = nameLocation3Load25.text.Substring(0, maxLength) + "...";
+        }
+        if (nameLocation425.text.Length > maxLength)
+        {
+            nameLocation425.text = nameLocation425.text.Substring(0, maxLength) + "...";
+        }
+        if (nameLocation4Load25.text.Length > maxLength)
+        {
+            nameLocation4Load25.text = nameLocation4Load25.text.Substring(0, maxLength) + "...";
+        }
+        if (nameLocation525.text.Length > maxLength)
+        {
+            nameLocation525.text = nameLocation525.text.Substring(0, maxLength) + "...";
+        }
+        if (nameLocation5Load25.text.Length > maxLength)
+        {
+            nameLocation5Load25.text = nameLocation5Load25.text.Substring(0, maxLength) + "...";
+        }
     }
 
     public void LoadGame1()
@@ -481,6 +532,14 @@ public class SaveAndLoad : MonoBehaviour
                 loadBatton[5].gameObject.SetActive(true);
                 loadBatton[10].gameObject.SetActive(true);
             }
+            if (nameLocation125.text.Length > maxLength)
+            {
+                nameLocation125.text = nameLocation125.text.Substring(0, maxLength) + "...";
+            }
+            if (nameLocation1Load25.text.Length > maxLength)
+            {
+                nameLocation1Load25.text = nameLocation1Load25.text.Substring(0, maxLength) + "...";
+            }
         }
         else if (SL1 == 1)
         {
@@ -536,6 +595,14 @@ public class SaveAndLoad : MonoBehaviour
                 loadBatton[1].interactable = true;
                 loadBatton[6].gameObject.SetActive(true);
                 loadBatton[11].gameObject.SetActive(true);
+            }
+            if (nameLocation225.text.Length > maxLength)
+            {
+                nameLocation225.text = nameLocation225.text.Substring(0, maxLength) + "...";
+            }
+            if (nameLocation2Load25.text.Length > maxLength)
+            {
+                nameLocation2Load25.text = nameLocation2Load25.text.Substring(0, maxLength) + "...";
             }
         }
         else if (SL2 == 1)
@@ -593,6 +660,14 @@ public class SaveAndLoad : MonoBehaviour
                 loadBatton[7].gameObject.SetActive(true);
                 loadBatton[12].gameObject.SetActive(true);
             }
+            if (nameLocation325.text.Length > maxLength)
+            {
+                nameLocation325.text = nameLocation325.text.Substring(0, maxLength) + "...";
+            }
+            if (nameLocation3Load25.text.Length > maxLength)
+            {
+                nameLocation3Load25.text = nameLocation3Load25.text.Substring(0, maxLength) + "...";
+            }
         }
         else if (SL3 == 1)
         {
@@ -648,6 +723,14 @@ public class SaveAndLoad : MonoBehaviour
                 loadBatton[3].interactable = true;
                 loadBatton[8].gameObject.SetActive(true);
                 loadBatton[13].gameObject.SetActive(true);
+            }
+            if (nameLocation425.text.Length > maxLength)
+            {
+                nameLocation425.text = nameLocation425.text.Substring(0, maxLength) + "...";
+            }
+            if (nameLocation4Load25.text.Length > maxLength)
+            {
+                nameLocation4Load25.text = nameLocation4Load25.text.Substring(0, maxLength) + "...";
             }
         }
         else if (SL4 == 1)
@@ -705,6 +788,14 @@ public class SaveAndLoad : MonoBehaviour
                 loadBatton[9].gameObject.SetActive(true);
                 loadBatton[14].gameObject.SetActive(true);
             }
+            if (nameLocation525.text.Length > maxLength)
+            {
+                nameLocation525.text = nameLocation525.text.Substring(0, maxLength) + "...";
+            }
+            if (nameLocation5Load25.text.Length > maxLength)
+            {
+                nameLocation5Load25.text = nameLocation5Load25.text.Substring(0, maxLength) + "...";
+            }
         }
         else if (SL5 == 1)
         {
@@ -754,6 +845,14 @@ public class SaveAndLoad : MonoBehaviour
             loadBatton[5].gameObject.SetActive(true);
             loadBatton[10].gameObject.SetActive(true);
         }
+        if (nameLocation125.text.Length > maxLength)
+        {
+            nameLocation125.text = nameLocation125.text.Substring(0, maxLength) + "...";
+        }
+        if (nameLocation1Load25.text.Length > maxLength)
+        {
+            nameLocation1Load25.text = nameLocation1Load25.text.Substring(0, maxLength) + "...";
+        }
     }
     public void SaveGame2()
     {
@@ -797,6 +896,14 @@ public class SaveAndLoad : MonoBehaviour
             loadBatton[1].interactable = true;
             loadBatton[6].gameObject.SetActive(true);
             loadBatton[11].gameObject.SetActive(true);
+        }
+        if (nameLocation225.text.Length > maxLength)
+        {
+            nameLocation225.text = nameLocation225.text.Substring(0, maxLength) + "...";
+        }
+        if (nameLocation2Load25.text.Length > maxLength)
+        {
+            nameLocation2Load25.text = nameLocation2Load25.text.Substring(0, maxLength) + "...";
         }
     }
     public void SaveGame3()
@@ -842,6 +949,14 @@ public class SaveAndLoad : MonoBehaviour
             loadBatton[7].gameObject.SetActive(true);
             loadBatton[12].gameObject.SetActive(true);
         }
+        if (nameLocation325.text.Length > maxLength)
+        {
+            nameLocation325.text = nameLocation325.text.Substring(0, maxLength) + "...";
+        }
+        if (nameLocation3Load25.text.Length > maxLength)
+        {
+            nameLocation3Load25.text = nameLocation3Load25.text.Substring(0, maxLength) + "...";
+        }
     }
     public void SaveGame4()
     {
@@ -886,6 +1001,14 @@ public class SaveAndLoad : MonoBehaviour
             loadBatton[8].gameObject.SetActive(true);
             loadBatton[13].gameObject.SetActive(true);
         }
+        if (nameLocation425.text.Length > maxLength)
+        {
+            nameLocation425.text = nameLocation425.text.Substring(0, maxLength) + "...";
+        }
+        if (nameLocation4Load25.text.Length > maxLength)
+        {
+            nameLocation4Load25.text = nameLocation4Load25.text.Substring(0, maxLength) + "...";
+        }
     }
     public void SaveGame5()
     {
@@ -929,6 +1052,14 @@ public class SaveAndLoad : MonoBehaviour
             loadBatton[4].interactable = true;
             loadBatton[9].gameObject.SetActive(true);
             loadBatton[14].gameObject.SetActive(true);
+        }
+        if (nameLocation525.text.Length > maxLength)
+        {
+            nameLocation525.text = nameLocation525.text.Substring(0, maxLength) + "...";
+        }
+        if (nameLocation5Load25.text.Length > maxLength)
+        {
+            nameLocation5Load25.text = nameLocation5Load25.text.Substring(0, maxLength) + "...";
         }
     }
 
