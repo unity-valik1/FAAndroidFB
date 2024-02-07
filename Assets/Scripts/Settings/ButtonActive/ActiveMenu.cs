@@ -6,14 +6,12 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
 
 public class ActiveMenu : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
     [SerializeField] private ActiveChapter activeChapter;
-    //[SerializeField] private ActiveCamp activeCamp;
     [SerializeField] private MusicMenu musicMenu;
     [SerializeField] private MusicCharter musicCharter;
     [SerializeField] private SaveAndLoad saveAndLoad;
@@ -39,15 +37,10 @@ public class ActiveMenu : MonoBehaviour
     public int ActiveOrNot = 0;
 
     //public Image menuBgImg;
-
     //public Sprite[] spriteMenuBg;
-
-
 
     [SerializeField] private Image imgMenuAnim;
     public string gg;
-    //public List<GameObject> buttons;
-
 
     public void Start()
     {
@@ -65,7 +58,6 @@ public class ActiveMenu : MonoBehaviour
         Menu();
         //ImgRandom();
     }
-
     //public void ImgRandom()
     //{
     //    int a = UnityEngine.Random.Range(0, 4);
@@ -166,21 +158,6 @@ public class ActiveMenu : MonoBehaviour
     {
         activeChapter.imgBlackout.gameObject.SetActive(false);
     }
-    //public void YesStartButton()
-    //{
-    //    //FireBaseAnalyticsEvents.EventsCharter("жопа");
-    //    menuUI.gameObject.SetActive(false);
-
-    //    saveAndLoad.continueGame = 1;
-    //    PlayerPrefs.SetInt("continueGame", saveAndLoad.continueGame);
-    //    PlayerPrefs.Save();
-
-    //    musicMenu.MenuMusic();
-    //    activeChapter.Charter1_1UI(0);
-
-    //    camera1.GetComponentInChildren<PostProcessVolume>().isGlobal = false;
-    //    saveAndLoad.lossGameStart.gameObject.SetActive(false);
-    //}
     public void YesNewGameButton()
     {
         imgMenuAnim.gameObject.SetActive(true);
@@ -213,7 +190,6 @@ public class ActiveMenu : MonoBehaviour
     {
         imgMenuAnim.gameObject.SetActive(false);
     }
-
     public void BackLossGame()
     {
         FireBaseAnalyticsEvents.EventsNewGameClose("NewGameClose");
@@ -225,7 +201,6 @@ public class ActiveMenu : MonoBehaviour
         saveAndLoad.lossGameStart.gameObject.SetActive(false);
         saveAndLoad.lossGameLoad.gameObject.SetActive(false);
     }
-
     public void Menu()
     {
 
@@ -263,7 +238,6 @@ public class ActiveMenu : MonoBehaviour
         }
         ActiveOrNot = 0;
     }
-
     public void BackMenu()
     {
         menuUI.gameObject.SetActive(true);
@@ -280,7 +254,6 @@ public class ActiveMenu : MonoBehaviour
             buttonContinueGame.SetActive(true);
         }
     }
-
     public void LoadMenu()
     {
         gameManager.load_buy = 1;
@@ -297,12 +270,10 @@ public class ActiveMenu : MonoBehaviour
             saveAndLoad.money.SetActive(true);
         }
     }
-
     public void YesLoadGame()
     {
         saveAndLoad.lossGameLoad.gameObject.SetActive(false);
     }
-
     public void Settings()
     {
         FireBaseAnalyticsEvents.EventsSettings("Settings");
@@ -336,7 +307,6 @@ public class ActiveMenu : MonoBehaviour
         menuUI.gameObject.SetActive(false);
         achievementsUI.gameObject.SetActive(true);
     }
-
     public void Typography()
     {
         FireBaseAnalyticsEvents.EventsTyphography("Typhography");
@@ -344,14 +314,12 @@ public class ActiveMenu : MonoBehaviour
         typographyUI.gameObject.SetActive(true);
 
     }
-
     public void Sounds()
     {
         FireBaseAnalyticsEvents.EventsMusicSounds("MusicSounds");
         settingsUI.gameObject.SetActive(false);
         soundsUI.gameObject.SetActive(true);
     }
-
     public void Load()
     {
         imgMenuAnim.gameObject.SetActive(true);
@@ -397,5 +365,4 @@ public class ActiveMenu : MonoBehaviour
     {
         Application.OpenURL("https://www.facebook.com/textbasedapp/");
     }
-
 }

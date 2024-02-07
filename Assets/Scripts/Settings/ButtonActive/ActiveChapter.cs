@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Reflection;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
 
 public class ActiveChapter : MonoBehaviour
@@ -23,13 +22,11 @@ public class ActiveChapter : MonoBehaviour
     [SerializeField] private LogicValuesChapters logicValuesChapters;
     [SerializeField] private GameObject[] buttonIf;
     [SerializeField] private AnimStar animStar;
-    //[SerializeField] private ActiveCamp activeCamp;
-    //[SerializeField] private MusicCamp musicCamp;
 
     public GameObject panel;
     public GameObject[] charter;
 
-    [SerializeField] public Image imgBlackout;
+    public Image imgBlackout;
     public TMP_Text toBeContinued;
     public GameObject rateUs;
     public Button star1;
@@ -51,1093 +48,1129 @@ public class ActiveChapter : MonoBehaviour
         if (gameManager.charter[0] == 1)
         {
             Charter1UI(0);
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[182] == 1)
+        {
+            ButtonC1_0_1();
+            panel.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[183] == 1)
+        {
+            ButtonC1_0_2();
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[1] == 1)
         {
             ButtonC2();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[184] == 1)
+        {
+            ButtonC2_0_1();
+            panel.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[185] == 1)
+        {
+            ButtonC2_0_2();
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[2] == 1)
         {
             ButtonC3();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[3] == 1)
         {
             ButtonC4();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[4] == 1)
         {
             ButtonC5();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[5] == 1)
         {
             ButtonC6();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[186] == 1)
+        {
+            ButtonC6_0_1();
+            panel.SetActive(true);
+            tPCharter.C1();
+        }
+        else if (gameManager.charter[187] == 1)
+        {
+            ButtonC6_0_2();
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[6] == 1)
         {
             ButtonC7();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[7] == 1)
         {
             ButtonC8();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[8] == 1)
         {
             ButtonC9();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[9] == 1)
         {
             ButtonC10();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[10] == 1)
         {
             ButtonC11();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[11] == 1)
         {
             ButtonC12();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[12] == 1)
         {
             ButtonC13();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[13] == 1)
         {
             ButtonC14();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[14] == 1)
         {
             ButtonC15();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[15] == 1)
         {
             ButtonC16();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[16] == 1)
         {
             ButtonC17();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[17] == 1)
         {
             ButtonC18();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[18] == 1)
         {
             ButtonC19();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[19] == 1)
         {
             ButtonC20();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[20] == 1)
         {
             ButtonC21();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[21] == 1)
         {
             ButtonC22();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[22] == 1)
         {
             ButtonC23();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[23] == 1)
         {
             ButtonC24();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[24] == 1)
         {
             ButtonC25();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[25] == 1)
         {
             ButtonC26();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[26] == 1)
         {
             ButtonC27();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[27] == 1)
         {
             ButtonC28();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[28] == 1)
         {
             ButtonC29();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[29] == 1)
         {
             ButtonC30();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[30] == 1)
         {
             ButtonC31();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[31] == 1)
         {
             ButtonC32();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[32] == 1)
         {
             ButtonC33();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[33] == 1)
         {
             ButtonC34();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[34] == 1)
         {
             ButtonC35();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[35] == 1)
         {
             ButtonC36();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[36] == 1)
         {
             ButtonC37();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[37] == 1)
         {
             ButtonC38();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[38] == 1)
         {
             ButtonC39();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[39] == 1)
         {
             ButtonC40();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[40] == 1)
         {
             ButtonC41();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[41] == 1)
         {
             ButtonC42();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[42] == 1)
         {
             ButtonC43();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[43] == 1)
         {
             ButtonC44();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[44] == 1)
         {
             ButtonC45();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[45] == 1)
         {
             ButtonC46();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[46] == 1)
         {
             ButtonC47();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[47] == 1)
         {
             ButtonC48();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[48] == 1)
         {
             ButtonC49();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[49] == 1)
         {
             ButtonC50();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[50] == 1)
         {
             ButtonC51();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[51] == 1)
         {
             ButtonC52();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[52] == 1)
         {
             ButtonC53();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[53] == 1)
         {
             ButtonC54();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[54] == 1)
         {
             ButtonC55();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[55] == 1)
         {
             ButtonC56();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[56] == 1)
         {
             ButtonC57();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[57] == 1)
         {
             ButtonC58();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[58] == 1)
         {
             ButtonC59();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[59] == 1)
         {
             ButtonC60();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[60] == 1)
         {
             ButtonC61();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[61] == 1)
         {
             ButtonC62();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[62] == 1)
         {
             ButtonC63();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[63] == 1)
         {
             ButtonC64();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[64] == 1)
         {
             ButtonC65();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[65] == 1)
         {
             ButtonC66();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[66] == 1)
         {
             ButtonC67();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[67] == 1)
         {
             ButtonC68();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[68] == 1)
         {
             ButtonC69();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[69] == 1)
         {
             ButtonC70();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[70] == 1)
         {
             ButtonC71();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[71] == 1)
         {
             ButtonC72();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[72] == 1)
         {
             ButtonC73();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[73] == 1)
         {
             ButtonC74();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[74] == 1)
         {
             ButtonC75();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[75] == 1)
         {
             ButtonC76();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[76] == 1)
         {
             ButtonC77();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[77] == 1)
         {
             ButtonC78();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[78] == 1)
         {
             ButtonC79();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[79] == 1)
         {
             ButtonC80();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[80] == 1)
         {
             ButtonC81();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[81] == 1)
         {
             ButtonC82();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[82] == 1)
         {
             ButtonC83();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[83] == 1)
         {
             ButtonC84();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[84] == 1)
         {
             ButtonC85();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[85] == 1)
         {
             ButtonC86();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[86] == 1)
         {
             ButtonC87();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[87] == 1)
         {
             ButtonC88();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[88] == 1)
         {
             ButtonC89();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[89] == 1)
         {
             ButtonC90();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[90] == 1)
         {
             ButtonC91();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[91] == 1)
         {
             ButtonC92();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[92] == 1)
         {
             ButtonC93();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[93] == 1)
         {
             ButtonC94();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[94] == 1)
         {
             ButtonC95();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[95] == 1)
         {
             ButtonC96();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[96] == 1)
         {
             ButtonC97();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[97] == 1)
         {
             ButtonC98();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[98] == 1)
         {
             ButtonC99();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[99] == 1)
         {
             ButtonC100();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[100] == 1)
         {
             ButtonC101();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[101] == 1)
         {
             ButtonC102();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[102] == 1)
         {
             ButtonC103();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[103] == 1)
         {
             ButtonC104();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[104] == 1)
         {
             ButtonC105();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[105] == 1)
         {
             ButtonC106();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[106] == 1)
         {
             ButtonC107();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[107] == 1)
         {
             ButtonC108();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[108] == 1)
         {
             ButtonC109();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[109] == 1)
         {
             ButtonC110();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[110] == 1)
         {
             ButtonC111();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[111] == 1)
         {
             ButtonC112();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[112] == 1)
         {
             ButtonC113();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[113] == 1)
         {
             ButtonC114();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[114] == 1)
         {
             ButtonC115();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[115] == 1)
         {
             ButtonC116();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[116] == 1)
         {
             ButtonC117();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[117] == 1)
         {
             ButtonC118();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[118] == 1)
         {
             ButtonC119();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[119] == 1)
         {
             ButtonC120();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[120] == 1)
         {
             ButtonC121();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[121] == 1)
         {
             ButtonC122();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[122] == 1)
         {
             ButtonC123();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[123] == 1)
         {
             ButtonC124();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[124] == 1)
         {
             ButtonC125();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[125] == 1)
         {
             ButtonC126();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[126] == 1)
         {
             ButtonC127();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[127] == 1)
         {
             ButtonC128();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[128] == 1)
         {
             ButtonC129();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[129] == 1)
         {
             ButtonC130();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[130] == 1)
         {
             ButtonC131();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[131] == 1)
         {
             ButtonC132();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[132] == 1)
         {
             ButtonC133();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[133] == 1)
         {
             ButtonC134();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[134] == 1)
         {
             ButtonC135();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[135] == 1)
         {
             ButtonC136();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[136] == 1)
         {
             ButtonC137();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[137] == 1)
         {
             ButtonC138();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[138] == 1)
         {
             ButtonC139();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[139] == 1)
         {
             ButtonC140();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[140] == 1)
         {
             ButtonC141();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[141] == 1)
         {
             ButtonC142();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[142] == 1)
         {
             ButtonC143();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[143] == 1)
         {
             ButtonC144();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[144] == 1)
         {
             ButtonC145();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[145] == 1)
         {
             ButtonC146();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[146] == 1)
         {
             ButtonC147();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[147] == 1)
         {
             ButtonC148();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[148] == 1)
         {
             ButtonC149();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[149] == 1)
         {
             ButtonC150();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[150] == 1)
         {
             ButtonC151();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[151] == 1)
         {
             ButtonC152();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[152] == 1)
         {
             ButtonC153();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[153] == 1)
         {
             ButtonC154();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[154] == 1)
         {
             ButtonC155();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[155] == 1)
         {
             ButtonC156();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[156] == 1)
         {
             ButtonC157();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[157] == 1)
         {
             ButtonC158();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[158] == 1)
         {
             ButtonC159();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[159] == 1)
         {
             ButtonC160();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[160] == 1)
         {
             ButtonC161();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[161] == 1)
         {
             ButtonC162();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[162] == 1)
         {
             ButtonC163();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[163] == 1)
         {
             ButtonC164();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[164] == 1)
         {
             ButtonC165();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[165] == 1)
         {
             ButtonC166();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[166] == 1)
         {
             ButtonC167();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[167] == 1)
         {
             ButtonC168();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[168] == 1)
         {
             ButtonC169();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[169] == 1)
         {
             ButtonC170();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[170] == 1)
         {
             ButtonC171();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[171] == 1)
         {
             ButtonC172();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[172] == 1)
         {
             ButtonC173();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[173] == 1)
         {
             ButtonC174();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[174] == 1)
         {
             ButtonC175();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[175] == 1)
         {
             ButtonC176();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[176] == 1)
         {
             ButtonC177();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[177] == 1)
         {
             ButtonC178();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[178] == 1)
         {
             ButtonC179();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[179] == 1)
         {
             ButtonC180();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[180] == 1)
         {
             ButtonC181();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else if (gameManager.charter[181] == 1)
         {
             ButtonC182();
-            panel.gameObject.SetActive(true);
+            panel.SetActive(true);
             tPCharter.C1();
         }
         else
@@ -1147,222 +1180,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-
-
-
-
-        //if (gameManager.charter1UI == true)
-        //{
-        //    Charter1UI(0);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter2UI == true)
-        //{
-        //    Charter2UI(1);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter3UI == true)
-        //{
-        //    Charter3UI(2);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter4UI == true)
-        //{
-        //    Charter4UI(3);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter5UI == true)
-        //{
-        //    Charter5UI(4);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter6UI == true)
-        //{
-        //    Charter6UI(5);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter7UI == true)
-        //{
-        //    Charter7UI(6);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter8UI == true)
-        //{
-        //    Charter8UI(7);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter9UI == true)
-        //{
-        //    Charter9UI(8);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter10UI == true)
-        //{
-        //    Charter10UI(9);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter11UI == true)
-        //{
-        //    Charter11UI(10);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter12UI == true)
-        //{
-        //    Charter12UI(11);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter13UI == true)
-        //{
-        //    Charter13UI(12);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter14UI == true)
-        //{
-        //    Charter14UI(13);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter15UI == true)
-        //{
-        //    Charter15UI(14);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter16UI == true)
-        //{
-        //    Charter16UI(15);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter17UI == true)
-        //{
-        //    Charter17UI(16);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter18UI == true)
-        //{
-        //    Charter18UI(17);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter19UI == true)
-        //{
-        //    Charter19UI(18);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter20UI == true)
-        //{
-        //    Charter20UI(19);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter21UI == true)
-        //{
-        //    Charter21UI(20);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter22UI == true)
-        //{
-        //    Charter22UI(21);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter23UI == true)
-        //{
-        //    Charter23UI(22);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter24UI == true)
-        //{
-        //    Charter24UI(23);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter25UI == true)
-        //{
-        //    Charter25UI(24);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter26UI == true)
-        //{
-        //    Charter26UI(25);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter27UI == true)
-        //{
-        //    Charter27UI(26);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter28UI == true)
-        //{
-        //    Charter28UI(27);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter29UI == true)
-        //{
-        //    Charter29UI(28);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else if (gameManager.charter30UI == true)
-        //{
-        //    Charter30UI(29);
-        //    panel.gameObject.SetActive(true);
-        //    tPCharter.C1();
-        //}
-        //else
-        //{
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-        //}
     }
 
     public void AAA()
@@ -1372,6 +1189,7 @@ public class ActiveChapter : MonoBehaviour
     //1
     public void Charter1_1UI(int index)
     {
+        FireBaseAnalyticsEvents.EventsScreen_1("Screen_1");
         toBeContinued.text = "Prologue";
         gameManager.numberMusic = 0;
         for (int i = 0; i < gameManager.charter.Length; i++)
@@ -1397,16 +1215,74 @@ public class ActiveChapter : MonoBehaviour
                 charter[i].SetActive(false);
             }
         }
-        panel.gameObject.SetActive(true);
+        panel.SetActive(true);
         tPCharter.C1();
         musicCharter.PlayMusic(gameManager.numberMusic);
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[0].AllAnim();
+            if(i == index)
+            {
+                animContent[0].AllAnim();
+            }
         }
         gameManager.SavePlayer();
     }
     public void Charter1UI(int index)
+    {
+        FireBaseAnalyticsEvents.EventsScreen_1("Screen_1");
+        toBeContinued.text = "Prologue";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+        for (int i = 0; i < animContent.Length; i++)
+        {
+            if (i == index)
+            {
+                animContent[0].AllAnim();
+            }
+        }
+        gameManager.SavePlayer();
+    }
+
+    //1_0_1
+    public void ButtonC1_0_1()
+    {
+        FireBaseAnalyticsEvents.EventsScreen_1_0_1("Screen_1_0_1");
+        imgBlackout.gameObject.SetActive(true);
+        anim.Play("BlackoutDarkAnimation");
+        Invoke("InvokerC1_0_1", 0.5f);
+        Invoke("InvokerAchievements1_0_1", 6.5f);
+    }
+    private void InvokerC1_0_1()
+    {
+        Charter1_0_1UI(182);
+        gameManager.SavePlayer();
+    }
+    private void InvokerAchievements1_0_1()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void Charter1_0_1UI(int index)
     {
         toBeContinued.text = "Prologue";
         for (int i = 0; i < gameManager.charter.Length; i++)
@@ -1433,31 +1309,189 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[0].AllAnim();
+            if (i == 186)
+            {
+                animContent[186].AllAnim();
+            }
         }
+    }
+    //1_0_1A
+    public void AButtonC1_0_1()
+    {
+        FireBaseAnalyticsEvents.EventsScreen_1_0_1("Screen_1_0_1");
+        imgBlackout.gameObject.SetActive(true);
+        animContent[0].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC1_0_1", 1.1f);
+        Invoke("AInvokerAchievements1_0_1", 2.2f);
+    }
+    private void AInvokerC1_0_1()
+    {
+        ACharter1_0_1UI(182);
         gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements1_0_1()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter1_0_1UI(int index)
+    {
+        toBeContinued.text = "Prologue";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        animContent[186].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
+    //1_0_2
+    public void ButtonC1_0_2()
+    {
+        FireBaseAnalyticsEvents.EventsScreen_1_0_2("Screen_1_0_2");
+        imgBlackout.gameObject.SetActive(true);
+        anim.Play("BlackoutDarkAnimation");
+        Invoke("InvokerC1_0_2", 0.5f);
+        Invoke("InvokerAchievements1_0_2", 6.5f);
+    }
+    private void InvokerC1_0_2()
+    {
+        Charter1_0_2UI(183);
+        gameManager.SavePlayer();
+    }
+    private void InvokerAchievements1_0_2()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void Charter1_0_2UI(int index)
+    {
+        toBeContinued.text = "Prologue";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        for (int i = 0; i < animContent.Length; i++)
+        {
+            if (i == 187)
+            {
+                animContent[187].AllAnim();
+            }
+        }
+    }
+    //1_0_2A
+    public void AButtonC1_0_2()
+    {
+        FireBaseAnalyticsEvents.EventsScreen_1_0_2("Screen_1_0_2");
+        imgBlackout.gameObject.SetActive(true);
+        animContent[186].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC1_0_2", 1.1f);
+        Invoke("AInvokerAchievements1_0_2", 2.2f);
+    }
+    private void AInvokerC1_0_2()
+    {
+        ACharter1_0_2UI(183);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements1_0_2()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter1_0_2UI(int index)
+    {
+        toBeContinued.text = "Prologue";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        animContent[187].AllAnim2();
+        animContentPanel.AllAnimP();
     }
 
     //2
     public void ButtonC2()
     {
+        FireBaseAnalyticsEvents.EventsScreen_2("Screen_2");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC2", 0.5f);
         Invoke("InvokerAchievements1", 6.5f);
     }
-    public void InvokerC2()
+    private void InvokerC2()
     {
         Charter2UI(1);
         gameManager.SavePlayer();
     }
-    public void InvokerAchievements1()
+    private void InvokerAchievements1()
     {
         imgBlackout.gameObject.SetActive(false);
     }
-    public void Charter2UI(int index)
+    private void Charter2UI(int index)
     {
         toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
@@ -1491,11 +1525,11 @@ public class ActiveChapter : MonoBehaviour
                 animContent[i].AllAnim();
             }
         }
-        sound.PlaySound(0);
     }
     //2_2
     public void ButtonC2_2()
     {
+        FireBaseAnalyticsEvents.EventsScreen_2("Screen_2");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("ActiveImg", 0.5f);
@@ -1507,8 +1541,8 @@ public class ActiveChapter : MonoBehaviour
     }
     public void ActiveImg()
     {
-        Img2.gameObject.SetActive(true);
-        charter[0].SetActive(false);
+        Img2.SetActive(true);
+        charter[183].SetActive(false);
         panel.SetActive(false);
         animContent[182].AllAnim_2();
     }
@@ -1518,8 +1552,8 @@ public class ActiveChapter : MonoBehaviour
     }
     public void InvokerC2_2()
     {
-        Img2.gameObject.SetActive(false);
-        Img_charter_1.gameObject.SetActive(true);
+        Img2.SetActive(false);
+        Img_charter_1.SetActive(true);
         animContent[183].AllAnim();
         musicCharter.StopMusic();
         sound.PlaySound(0);
@@ -1532,7 +1566,7 @@ public class ActiveChapter : MonoBehaviour
     {
         Charter2_2UI(1);
         panel.SetActive(true);
-        Img_charter_1.gameObject.SetActive(false);
+        Img_charter_1.SetActive(false);
         gameManager.SavePlayer();
     }
     public void InvokerAchievements1_2()
@@ -1577,24 +1611,25 @@ public class ActiveChapter : MonoBehaviour
         musicCharter.PlayMusic(gameManager.numberMusic);
     }
 
-    //3
-    public void ButtonC3()
+    //2_0_1
+    public void ButtonC2_0_1()
     {
+        FireBaseAnalyticsEvents.EventsScreen_2_0_1("Screen_2_0_1");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
-        Invoke("InvokerC3", 0.5f);
-        Invoke("InvokerAchievements2", 6.5f);
+        Invoke("InvokerC2_0_1", 0.5f);
+        Invoke("InvokerAchievements2_0_1", 6.5f);
     }
-    public void InvokerC3()
+    private void InvokerC2_0_1()
     {
-        Charter3UI(2);
+        Charter2_0_1UI(184);
         gameManager.SavePlayer();
     }
-    public void InvokerAchievements2()
+    private void InvokerAchievements2_0_1()
     {
         imgBlackout.gameObject.SetActive(false);
     }
-    public void Charter3UI(int index)
+    private void Charter2_0_1UI(int index)
     {
         toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
@@ -1624,7 +1659,219 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[2].AllAnim();
+            if (i == 188)
+            {
+                animContent[188].AllAnim();
+            }
+        }
+    }
+    //2_0_1A
+    public void AButtonC2_0_1()
+    {
+        FireBaseAnalyticsEvents.EventsScreen_2_0_1("Screen_2_0_1");
+        imgBlackout.gameObject.SetActive(true);
+        animContent[1].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC2_0_1", 1.1f);
+        Invoke("AInvokerAchievements2_0_1", 2.2f);
+    }
+    private void AInvokerC2_0_1()
+    {
+        ACharter2_0_1UI(184);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements2_0_1()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter2_0_1UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        animContent[188].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
+    //2_0_2
+    public void ButtonC2_0_2()
+    {
+        FireBaseAnalyticsEvents.EventsScreen_2_0_2("Screen_2_0_2");
+        imgBlackout.gameObject.SetActive(true);
+        anim.Play("BlackoutDarkAnimation");
+        Invoke("InvokerC2_0_2", 0.5f);
+        Invoke("InvokerAchievements2_0_2", 6.5f);
+    }
+    private void InvokerC2_0_2()
+    {
+        Charter2_0_2UI(185);
+        gameManager.SavePlayer();
+    }
+    private void InvokerAchievements2_0_2()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void Charter2_0_2UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        for (int i = 0; i < animContent.Length; i++)
+        {
+            if (i == 189)
+            {
+                animContent[189].AllAnim();
+            }
+        }
+    }
+    //2_0_2A
+    public void AButtonC2_0_2()
+    {
+        FireBaseAnalyticsEvents.EventsScreen_2_0_2("Screen_2_0_2");
+        imgBlackout.gameObject.SetActive(true);
+        animContent[188].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC2_0_2", 1.1f);
+        Invoke("AInvokerAchievements2_0_2", 2.2f);
+    }
+    private void AInvokerC2_0_2()
+    {
+        ACharter2_0_2UI(185);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements2_0_2()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter2_0_2UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        animContent[189].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
+
+    //3
+    public void ButtonC3()
+    {
+        FireBaseAnalyticsEvents.EventsScreen_3("Screen_3");
+        imgBlackout.gameObject.SetActive(true);
+        anim.Play("BlackoutDarkAnimation");
+        Invoke("InvokerC3", 0.5f);
+        Invoke("InvokerAchievements2", 6.5f);
+    }
+    private void InvokerC3()
+    {
+        Charter3UI(2);
+        gameManager.SavePlayer();
+    }
+    private void InvokerAchievements2()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void Charter3UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        for (int i = 0; i < animContent.Length; i++)
+        {
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
 
         sound.PlaySound(1);
@@ -1632,8 +1879,9 @@ public class ActiveChapter : MonoBehaviour
     //3A
     public void AButtonC3()
     {
+        FireBaseAnalyticsEvents.EventsScreen_3("Screen_3");
         imgBlackout.gameObject.SetActive(true);
-        animContent[1].AllAnim1();
+        animContent[189].AllAnim1();
         animContentPanel.AllAnimP();
         Invoke("AInvokerC3", 1.1f);
         Invoke("AInvokerAchievements2", 2.2f);
@@ -1683,21 +1931,22 @@ public class ActiveChapter : MonoBehaviour
     //4
     public void ButtonC4()
     {
+        FireBaseAnalyticsEvents.EventsScreen_4("Screen_4");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC4", 0.5f);
         Invoke("InvokerAchievements3", 6.5f);
     }
-    public void InvokerC4()
+    private void InvokerC4()
     {
         Charter4UI(3);
         gameManager.SavePlayer();
     }
-    public void InvokerAchievements3()
+    private void InvokerAchievements3()
     {
         imgBlackout.gameObject.SetActive(false);
     }
-    public void Charter4UI(int index)
+    private void Charter4UI(int index)
     {
         toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
@@ -1726,14 +1975,18 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[3].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //4A
     public void AButtonC4()
     {
+        FireBaseAnalyticsEvents.EventsScreen_4("Screen_4");
         imgBlackout.gameObject.SetActive(true);
-        animContent[1].AllAnim1();
+        animContent[189].AllAnim1();
         animContentPanel.AllAnimP();
         Invoke("AInvokerC4", 1.1f);
         Invoke("AInvokerAchievements3", 2.2f);
@@ -1781,21 +2034,22 @@ public class ActiveChapter : MonoBehaviour
     //5
     public void ButtonC5()
     {
+        FireBaseAnalyticsEvents.EventsScreen_5("Screen_5");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC5", 0.5f);
         Invoke("InvokerAchievements4", 6.5f);
     }
-    public void InvokerC5()
+    private void InvokerC5()
     {
         Charter5UI(4);
         gameManager.SavePlayer();
     }
-    public void InvokerAchievements4()
+    private void InvokerAchievements4()
     {
         imgBlackout.gameObject.SetActive(false);
     }
-    public void Charter5UI(int index)
+    private void Charter5UI(int index)
     {
         toBeContinued.text = "Chapter 1";
         for (int i = 0; i < gameManager.charter.Length; i++)
@@ -1824,7 +2078,10 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[4].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
 
         sound.PlaySound(24);
@@ -1832,6 +2089,7 @@ public class ActiveChapter : MonoBehaviour
     //5A
     public void AButtonC5()
     {
+        FireBaseAnalyticsEvents.EventsScreen_5("Screen_5");
         imgBlackout.gameObject.SetActive(true);
         animContent[2].AllAnim1();
         animContent[3].AllAnim1();
@@ -1883,6 +2141,7 @@ public class ActiveChapter : MonoBehaviour
     //6
     public void ButtonC6()
     {
+        FireBaseAnalyticsEvents.EventsScreen_6("Screen_6");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC6", 0.5f);
@@ -1927,12 +2186,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[5].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //6A
     public void AButtonC6()
     {
+        FireBaseAnalyticsEvents.EventsScreen_6("Screen_6");
         imgBlackout.gameObject.SetActive(true);
         animContent[4].AllAnim1();
         animContentPanel.AllAnimP();
@@ -1981,9 +2244,219 @@ public class ActiveChapter : MonoBehaviour
         animContentPanel.AllAnimP();
     }
 
+    //6_0_1
+    public void ButtonC6_0_1()
+    {
+        FireBaseAnalyticsEvents.EventsScreen_6_0_1("Screen_6_0_1");
+        imgBlackout.gameObject.SetActive(true);
+        anim.Play("BlackoutDarkAnimation");
+        Invoke("InvokerC6_0_1", 0.5f);
+        Invoke("InvokerAchievements6_0_1", 6.5f);
+    }
+    private void InvokerC6_0_1()
+    {
+        Charter6_0_1UI(186);
+        gameManager.SavePlayer();
+    }
+    private void InvokerAchievements6_0_1()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void Charter6_0_1UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        for (int i = 0; i < animContent.Length; i++)
+        {
+            if (i == 190)
+            {
+                animContent[190].AllAnim();
+            }
+        }
+    }
+    //6_0_1A
+    public void AButtonC6_0_1()
+    {
+        FireBaseAnalyticsEvents.EventsScreen_6_0_1("Screen_6_0_1");
+        imgBlackout.gameObject.SetActive(true);
+        animContent[5].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC6_0_1", 1.1f);
+        Invoke("AInvokerAchievements6_0_1", 2.2f);
+    }
+    private void AInvokerC6_0_1()
+    {
+        ACharter6_0_1UI(186);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements6_0_1()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter6_0_1UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        animContent[190].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
+    //6_0_2
+    public void ButtonC6_0_2()
+    {
+        FireBaseAnalyticsEvents.EventsScreen_6_0_2("Screen_6_0_2");
+        imgBlackout.gameObject.SetActive(true);
+        anim.Play("BlackoutDarkAnimation");
+        Invoke("InvokerC6_0_2", 0.5f);
+        Invoke("InvokerAchievements6_0_2", 6.5f);
+    }
+    private void InvokerC6_0_2()
+    {
+        Charter6_0_2UI(187);
+        gameManager.SavePlayer();
+    }
+    private void InvokerAchievements6_0_2()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void Charter6_0_2UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        for (int i = 0; i < animContent.Length; i++)
+        {
+            if (i == 191)
+            {
+                animContent[191].AllAnim();
+            }
+        }
+    }
+    //6_0_2A
+    public void AButtonC6_0_2()
+    {
+        FireBaseAnalyticsEvents.EventsScreen_6_0_2("Screen_6_0_2");
+        imgBlackout.gameObject.SetActive(true);
+        animContent[5].AllAnim1();
+        animContentPanel.AllAnimP();
+        Invoke("AInvokerC6_0_2", 1.1f);
+        Invoke("AInvokerAchievements6_0_2", 2.2f);
+    }
+    private void AInvokerC6_0_2()
+    {
+        ACharter6_0_2UI(187);
+        gameManager.SavePlayer();
+    }
+    private void AInvokerAchievements6_0_2()
+    {
+        imgBlackout.gameObject.SetActive(false);
+    }
+    private void ACharter6_0_2UI(int index)
+    {
+        toBeContinued.text = "Chapter 1";
+        for (int i = 0; i < gameManager.charter.Length; i++)
+        {
+            if (i == index)
+            {
+                gameManager.charter[i] = 1;
+            }
+            else
+            {
+                gameManager.charter[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < charter.Length; i++)
+        {
+            if (i == index)
+            {
+                charter[i].SetActive(true);
+            }
+            else
+            {
+                charter[i].SetActive(false);
+            }
+        }
+
+
+        animContent[191].AllAnim2();
+        animContentPanel.AllAnimP();
+    }
+
     //7
     public void ButtonC7()
     {
+        FireBaseAnalyticsEvents.EventsScreen_7("Screen_7");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC7", 0.5f);
@@ -2027,12 +2500,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[6].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //7A
     public void AButtonC7()
     {
+        FireBaseAnalyticsEvents.EventsScreen_7("Screen_7");
         imgBlackout.gameObject.SetActive(true);
         animContent[4].AllAnim1();
         animContentPanel.AllAnimP();
@@ -2094,7 +2571,7 @@ public class ActiveChapter : MonoBehaviour
         {
             charter[i].SetActive(false);
         }
-        panel.gameObject.SetActive(false);
+        panel.SetActive(false);
         saveAndLoad.continueGame = 0;
         PlayerPrefs.SetInt("continueGame", saveAndLoad.continueGame);
         PlayerPrefs.Save();
@@ -2106,6 +2583,7 @@ public class ActiveChapter : MonoBehaviour
     //8
     public void ButtonC8()
     {
+        FireBaseAnalyticsEvents.EventsScreen_8("Screen_8");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC8", 0.5f);
@@ -2150,12 +2628,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[7].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //8A
     public void AButtonC8()
     {
+        FireBaseAnalyticsEvents.EventsScreen_8("Screen_8");
         imgBlackout.gameObject.SetActive(true);
         animContent[6].AllAnim1();
         animContentPanel.AllAnimP();
@@ -2205,6 +2687,7 @@ public class ActiveChapter : MonoBehaviour
     //9
     public void ButtonC9()
     {
+        FireBaseAnalyticsEvents.EventsScreen_9("Screen_9");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC9", 0.5f);
@@ -2244,16 +2727,19 @@ public class ActiveChapter : MonoBehaviour
                 charter[i].SetActive(false);
             }
         }
-
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[8].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //10
     public void ButtonC10()
     {
+        FireBaseAnalyticsEvents.EventsScreen_10("Screen_10");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC10", 0.5f);
@@ -2283,56 +2769,6 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = true;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-        //gameManager.charter31UI = false;
-        //gameManager.charter32UI = false;
-        //gameManager.charter33UI = false;
-        //gameManager.charter34UI = false;
-        //gameManager.charter35UI = false;
-        //gameManager.charter36UI = false;
-        //gameManager.charter37UI = false;
-        //gameManager.charter38UI = false;
-        //gameManager.charter39UI = false;
-        //gameManager.charter40UI = false;
-        //gameManager.charter41UI = false;
-        //gameManager.charter42UI = false;
-        //gameManager.charter43UI = false;
-        //gameManager.charter44UI = false;
-        //gameManager.charter45UI = false;
-        //gameManager.charter46UI = false;
-        //gameManager.charter47UI = false;
-        //gameManager.charter48UI = false;
-        //gameManager.charter49UI = false;
-        //gameManager.charter50UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -2348,12 +2784,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[9].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //10A
     public void AButtonC10()
     {
+        FireBaseAnalyticsEvents.EventsScreen_10("Screen_10");
         imgBlackout.gameObject.SetActive(true);
         animContent[8].AllAnim1();
         animContentPanel.AllAnimP();
@@ -2401,6 +2841,7 @@ public class ActiveChapter : MonoBehaviour
     //11
     public void ButtonC11()
     {
+        FireBaseAnalyticsEvents.EventsScreen_11("Screen_11");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC11", 0.5f);
@@ -2446,12 +2887,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[10].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //11A
     public void AButtonC11()
     {
+        FireBaseAnalyticsEvents.EventsScreen_11("Screen_11");
         imgBlackout.gameObject.SetActive(true);
         animContent[8].AllAnim1();
         animContentPanel.AllAnimP();
@@ -2502,6 +2947,7 @@ public class ActiveChapter : MonoBehaviour
     //12
     public void ButtonC12()
     {
+        FireBaseAnalyticsEvents.EventsScreen_12("Screen_12");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC12", 0.5f);
@@ -2545,9 +2991,13 @@ public class ActiveChapter : MonoBehaviour
 
         logicValuesChapters.B_Visit_The_Cigar_Bar();
 
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[11].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         musicCharter.PlayMusic(2);
     }
@@ -2555,7 +3005,7 @@ public class ActiveChapter : MonoBehaviour
     //13
     public void ButtonC13()
     {
-        //FireBaseAnalyticsEvents.EventsWinGame("WinGame");
+        FireBaseAnalyticsEvents.EventsScreen_13("Screen_13");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC13", 0.5f);
@@ -2599,22 +3049,25 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_any_other_flights == 0)
         {
-            buttonIf[0].gameObject.SetActive(false);
+            buttonIf[0].SetActive(false);
         }
         else if (gameManager.b_any_other_flights == 1)
         {
-            buttonIf[0].gameObject.SetActive(true);
+            buttonIf[0].SetActive(true);
         }
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[12].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //13A
     public void AButtonC13()
     {
-        //FireBaseAnalyticsEvents.EventsWinGame("WinGame");
+        FireBaseAnalyticsEvents.EventsScreen_13("Screen_13");
         imgBlackout.gameObject.SetActive(true);
         animContent[9].AllAnim1();
         animContent[10].AllAnim1();
@@ -2660,11 +3113,11 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_any_other_flights == 0)
         {
-            buttonIf[0].gameObject.SetActive(false);
+            buttonIf[0].SetActive(false);
         }
         else if (gameManager.b_any_other_flights == 1)
         {
-            buttonIf[0].gameObject.SetActive(true);
+            buttonIf[0].SetActive(true);
         }
 
 
@@ -2675,6 +3128,7 @@ public class ActiveChapter : MonoBehaviour
     //14
     public void ButtonC14()
     {
+        FireBaseAnalyticsEvents.EventsScreen_14("Screen_14");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC14", 0.5f);
@@ -2716,16 +3170,19 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
-
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[13].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(3);
     }
     //14A
     public void AButtonC14()
     {
+        FireBaseAnalyticsEvents.EventsScreen_14("Screen_14");
         imgBlackout.gameObject.SetActive(true);
         animContent[11].AllAnim1();
         animContentPanel.AllAnimP();
@@ -2777,6 +3234,7 @@ public class ActiveChapter : MonoBehaviour
     //15
     public void ButtonC15()
     {
+        FireBaseAnalyticsEvents.EventsScreen_15("Screen_15");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC15", 0.5f);
@@ -2805,56 +3263,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = true;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-        //gameManager.charter31UI = false;
-        //gameManager.charter32UI = false;
-        //gameManager.charter33UI = false;
-        //gameManager.charter34UI = false;
-        //gameManager.charter35UI = false;
-        //gameManager.charter36UI = false;
-        //gameManager.charter37UI = false;
-        //gameManager.charter38UI = false;
-        //gameManager.charter39UI = false;
-        //gameManager.charter40UI = false;
-        //gameManager.charter41UI = false;
-        //gameManager.charter42UI = false;
-        //gameManager.charter43UI = false;
-        //gameManager.charter44UI = false;
-        //gameManager.charter45UI = false;
-        //gameManager.charter46UI = false;
-        //gameManager.charter47UI = false;
-        //gameManager.charter48UI = false;
-        //gameManager.charter49UI = false;
-        //gameManager.charter50UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -2870,12 +3278,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[14].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //15A
     public void AButtonC15()
     {
+        FireBaseAnalyticsEvents.EventsScreen_15("Screen_15");
         imgBlackout.gameObject.SetActive(true);
         animContent[11].AllAnim1();
         animContentPanel.AllAnimP();
@@ -2925,6 +3337,7 @@ public class ActiveChapter : MonoBehaviour
     //16
     public void ButtonC16()
     {
+        FireBaseAnalyticsEvents.EventsScreen_16("Screen_16");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC16", 0.5f);
@@ -2966,15 +3379,20 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[15].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(4);
     }
     //16AA
     public void AAButtonC16()
     {
+        FireBaseAnalyticsEvents.EventsScreen_16("Screen_16");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("AAInvokerC16", 0.5f);
@@ -3028,6 +3446,7 @@ public class ActiveChapter : MonoBehaviour
     //17
     public void ButtonC17()
     {
+        FireBaseAnalyticsEvents.EventsScreen_17("Screen_17");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC17", 0.5f);
@@ -3073,13 +3492,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[16].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //18
     public void ButtonC18()
     {
+        FireBaseAnalyticsEvents.EventsScreen_18("Screen_18");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC18", 0.5f);
@@ -3108,56 +3531,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = true;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-        //gameManager.charter31UI = false;
-        //gameManager.charter32UI = false;
-        //gameManager.charter33UI = false;
-        //gameManager.charter34UI = false;
-        //gameManager.charter35UI = false;
-        //gameManager.charter36UI = false;
-        //gameManager.charter37UI = false;
-        //gameManager.charter38UI = false;
-        //gameManager.charter39UI = false;
-        //gameManager.charter40UI = false;
-        //gameManager.charter41UI = false;
-        //gameManager.charter42UI = false;
-        //gameManager.charter43UI = false;
-        //gameManager.charter44UI = false;
-        //gameManager.charter45UI = false;
-        //gameManager.charter46UI = false;
-        //gameManager.charter47UI = false;
-        //gameManager.charter48UI = false;
-        //gameManager.charter49UI = false;
-        //gameManager.charter50UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -3173,12 +3546,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[17].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //18A
     public void AButtonC18()
     {
+        FireBaseAnalyticsEvents.EventsScreen_18("Screen_18");
         imgBlackout.gameObject.SetActive(true);
         animContent[16].AllAnim1();
         animContentPanel.AllAnimP();
@@ -3228,6 +3605,7 @@ public class ActiveChapter : MonoBehaviour
     //19
     public void ButtonC19()
     {
+        FireBaseAnalyticsEvents.EventsScreen_19("Screen_19");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC19", 0.5f);
@@ -3256,56 +3634,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = true;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-        //gameManager.charter31UI = false;
-        //gameManager.charter32UI = false;
-        //gameManager.charter33UI = false;
-        //gameManager.charter34UI = false;
-        //gameManager.charter35UI = false;
-        //gameManager.charter36UI = false;
-        //gameManager.charter37UI = false;
-        //gameManager.charter38UI = false;
-        //gameManager.charter39UI = false;
-        //gameManager.charter40UI = false;
-        //gameManager.charter41UI = false;
-        //gameManager.charter42UI = false;
-        //gameManager.charter43UI = false;
-        //gameManager.charter44UI = false;
-        //gameManager.charter45UI = false;
-        //gameManager.charter46UI = false;
-        //gameManager.charter47UI = false;
-        //gameManager.charter48UI = false;
-        //gameManager.charter49UI = false;
-        //gameManager.charter50UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -3321,12 +3649,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[18].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //19A
     public void AButtonC19()
     {
+        FireBaseAnalyticsEvents.EventsScreen_19("Screen_19");
         imgBlackout.gameObject.SetActive(true);
         animContent[16].AllAnim1();
         animContent[17].AllAnim1();
@@ -3377,6 +3709,7 @@ public class ActiveChapter : MonoBehaviour
     //20
     public void ButtonC20()
     {
+        FireBaseAnalyticsEvents.EventsScreen_20("Screen_20");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC20", 0.5f);
@@ -3405,36 +3738,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = true;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -3450,12 +3753,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[19].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //20A
     public void AButtonC20()
     {
+        FireBaseAnalyticsEvents.EventsScreen_20("Screen_20");
         imgBlackout.gameObject.SetActive(true);
         animContent[16].AllAnim1();
         animContentPanel.AllAnimP();
@@ -3505,6 +3812,7 @@ public class ActiveChapter : MonoBehaviour
     //21
     public void ButtonC21()
     {
+        FireBaseAnalyticsEvents.EventsScreen_21("Screen_21");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC21", 0.5f);
@@ -3533,36 +3841,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = true;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -3578,12 +3856,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[20].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //21A
     public void AButtonC21()
     {
+        FireBaseAnalyticsEvents.EventsScreen_21("Screen_21");
         imgBlackout.gameObject.SetActive(true);
         animContent[17].AllAnim1();
         animContentPanel.AllAnimP();
@@ -3633,6 +3915,7 @@ public class ActiveChapter : MonoBehaviour
     //22
     public void ButtonC22()
     {
+        FireBaseAnalyticsEvents.EventsScreen_22("Screen_22");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC22", 0.5f);
@@ -3661,37 +3944,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = true;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-
         for (int i = 0; i < charter.Length; i++)
         {
             if (i == index)
@@ -3706,12 +3958,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[21].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //22A
     public void AButtonC22()
     {
+        FireBaseAnalyticsEvents.EventsScreen_22("Screen_22");
         imgBlackout.gameObject.SetActive(true);
         animContent[20].AllAnim1();
         animContentPanel.AllAnimP();
@@ -3761,6 +4017,7 @@ public class ActiveChapter : MonoBehaviour
     //23
     public void ButtonC23()
     {
+        FireBaseAnalyticsEvents.EventsScreen_23("Screen_23");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC23", 0.5f);
@@ -3789,36 +4046,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = true;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -3832,14 +4059,19 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[22].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //23A
     public void AButtonC23()
     {
+        FireBaseAnalyticsEvents.EventsScreen_23("Screen_23");
         imgBlackout.gameObject.SetActive(true);
         animContent[20].AllAnim1();
         animContentPanel.AllAnimP();
@@ -3889,6 +4121,7 @@ public class ActiveChapter : MonoBehaviour
     //24
     public void ButtonC24()
     {
+        FireBaseAnalyticsEvents.EventsScreen_24("Screen_24");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC24", 0.5f);
@@ -3917,36 +4150,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = true;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -3962,13 +4165,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[23].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //25
     public void ButtonC25()
     {
+        FireBaseAnalyticsEvents.EventsScreen_25("Screen_25");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC25", 0.5f);
@@ -3997,36 +4204,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = true;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -4042,13 +4219,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[24].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(5);
     }
     //25A
     public void AButtonC25()
     {
+        FireBaseAnalyticsEvents.EventsScreen_25("Screen_25");
         imgBlackout.gameObject.SetActive(true);
         animContent[23].AllAnim1();
         animContentPanel.AllAnimP();
@@ -4100,6 +4281,7 @@ public class ActiveChapter : MonoBehaviour
     //26
     public void ButtonC26()
     {
+        FireBaseAnalyticsEvents.EventsScreen_26("Screen_26");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC26", 0.5f);
@@ -4143,12 +4325,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[25].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //26A
     public void AButtonC26()
     {
+        FireBaseAnalyticsEvents.EventsScreen_26("Screen_26");
         imgBlackout.gameObject.SetActive(true);
         animContent[24].AllAnim1();
         animContentPanel.AllAnimP();
@@ -4198,6 +4384,7 @@ public class ActiveChapter : MonoBehaviour
     //27
     public void ButtonC27()
     {
+        FireBaseAnalyticsEvents.EventsScreen_27("Screen_27");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC27", 0.5f);
@@ -4226,36 +4413,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = true;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -4271,12 +4428,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[26].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //27A
     public void AButtonC27()
     {
+        FireBaseAnalyticsEvents.EventsScreen_27("Screen_27");
         imgBlackout.gameObject.SetActive(true);
         animContent[24].AllAnim1();
         animContentPanel.AllAnimP();
@@ -4325,6 +4486,7 @@ public class ActiveChapter : MonoBehaviour
     //28
     public void ButtonC28()
     {
+        FireBaseAnalyticsEvents.EventsScreen_28("Screen_28");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC28", 0.5f);
@@ -4353,36 +4515,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = true;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -4398,12 +4530,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[27].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //28A
     public void AButtonC28()
     {
+        FireBaseAnalyticsEvents.EventsScreen_28("Screen_28");
         imgBlackout.gameObject.SetActive(true);
         animContent[24].AllAnim1();
         animContent[25].AllAnim1();
@@ -4455,6 +4591,7 @@ public class ActiveChapter : MonoBehaviour
     //29
     public void ButtonC29()
     {
+        FireBaseAnalyticsEvents.EventsScreen_29("Screen_29");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC29", 0.5f);
@@ -4483,36 +4620,6 @@ public class ActiveChapter : MonoBehaviour
                 gameManager.charter[i] = 0;
             }
         }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = true;
-        //gameManager.charter30UI = false;
 
         for (int i = 0; i < charter.Length; i++)
         {
@@ -4526,15 +4633,20 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[28].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //30
     public void ButtonC30()
     {
+        FireBaseAnalyticsEvents.EventsScreen_30("Screen_30");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC30", 0.5f);
@@ -4578,12 +4690,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[29].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //30A
     public void AButtonC30()
     {
+        FireBaseAnalyticsEvents.EventsScreen_30("Screen_30");
         imgBlackout.gameObject.SetActive(true);
         animContent[28].AllAnim1();
         animContentPanel.AllAnimP();
@@ -4633,6 +4749,7 @@ public class ActiveChapter : MonoBehaviour
     //31
     public void ButtonC31()
     {
+        FireBaseAnalyticsEvents.EventsScreen_31("Screen_31");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC31", 0.5f);
@@ -4676,12 +4793,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[30].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //31A
     public void AButtonC31()
     {
+        FireBaseAnalyticsEvents.EventsScreen_31("Screen_31");
         imgBlackout.gameObject.SetActive(true);
         animContent[28].AllAnim1();
         animContent[29].AllAnim1();
@@ -4733,6 +4854,7 @@ public class ActiveChapter : MonoBehaviour
     //32
     public void ButtonC32()
     {
+        FireBaseAnalyticsEvents.EventsScreen_32("Screen_32");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC32", 0.5f);
@@ -4776,12 +4898,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[31].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //32A
     public void AButtonC32()
     {
+        FireBaseAnalyticsEvents.EventsScreen_32("Screen_32");
         imgBlackout.gameObject.SetActive(true);
         animContent[29].AllAnim1();
         animContentPanel.AllAnimP();
@@ -4831,6 +4957,7 @@ public class ActiveChapter : MonoBehaviour
     //33
     public void ButtonC33()
     {
+        FireBaseAnalyticsEvents.EventsScreen_33("Screen_33");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC33", 0.5f);
@@ -4874,12 +5001,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[32].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //33A
     public void AButtonC33()
     {
+        FireBaseAnalyticsEvents.EventsScreen_33("Screen_33");
         imgBlackout.gameObject.SetActive(true);
         animContent[31].AllAnim1();
         animContentPanel.AllAnimP();
@@ -4929,6 +5060,7 @@ public class ActiveChapter : MonoBehaviour
     //34
     public void ButtonC34()
     {
+        FireBaseAnalyticsEvents.EventsScreen_34("Screen_34");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC34", 0.5f);
@@ -4970,14 +5102,19 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[33].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //34A
     public void AButtonC34()
     {
+        FireBaseAnalyticsEvents.EventsScreen_34("Screen_34");
         imgBlackout.gameObject.SetActive(true);
         animContent[32].AllAnim1();
         animContentPanel.AllAnimP();
@@ -5027,6 +5164,7 @@ public class ActiveChapter : MonoBehaviour
     //35
     public void ButtonC35()
     {
+        FireBaseAnalyticsEvents.EventsScreen_35("Screen_35");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC35", 0.5f);
@@ -5072,21 +5210,25 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_make_conversation == 0)
         {
-            buttonIf[1].gameObject.SetActive(true);
+            buttonIf[1].SetActive(true);
         }
         else if (gameManager.b_make_conversation == 1)
         {
-            buttonIf[1].gameObject.SetActive(false);
+            buttonIf[1].SetActive(false);
         }
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[34].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //35A
     public void AButtonC35()
     {
+        FireBaseAnalyticsEvents.EventsScreen_35("Screen_35");
         imgBlackout.gameObject.SetActive(true);
         animContent[33].AllAnim1();
         animContent[35].AllAnim1();
@@ -5134,11 +5276,11 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_make_conversation == 0)
         {
-            buttonIf[1].gameObject.SetActive(true);
+            buttonIf[1].SetActive(true);
         }
         else if (gameManager.b_make_conversation == 1)
         {
-            buttonIf[1].gameObject.SetActive(false);
+            buttonIf[1].SetActive(false);
         }
 
         animContent[34].AllAnim2();
@@ -5148,6 +5290,7 @@ public class ActiveChapter : MonoBehaviour
     //36
     public void ButtonC36()
     {
+        FireBaseAnalyticsEvents.EventsScreen_36("Screen_36");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC36", 0.5f);
@@ -5193,21 +5336,25 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_ask_about_her_toys == 0)
         {
-            buttonIf[2].gameObject.SetActive(true);
+            buttonIf[2].SetActive(true);
         }
         else if (gameManager.b_ask_about_her_toys == 1)
         {
-            buttonIf[2].gameObject.SetActive(false);
+            buttonIf[2].SetActive(false);
         }
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[35].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //36A
     public void AButtonC36()
     {
+        FireBaseAnalyticsEvents.EventsScreen_36("Screen_36");
         imgBlackout.gameObject.SetActive(true);
         animContent[33].AllAnim1();
         animContent[34].AllAnim1();
@@ -5255,11 +5402,11 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_ask_about_her_toys == 0)
         {
-            buttonIf[2].gameObject.SetActive(true);
+            buttonIf[2].SetActive(true);
         }
         else if (gameManager.b_ask_about_her_toys == 1)
         {
-            buttonIf[2].gameObject.SetActive(false);
+            buttonIf[2].SetActive(false);
         }
 
         animContent[35].AllAnim2();
@@ -5269,6 +5416,7 @@ public class ActiveChapter : MonoBehaviour
     //37
     public void ButtonC37()
     {
+        FireBaseAnalyticsEvents.EventsScreen_37("Screen_37");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC37", 0.5f);
@@ -5312,15 +5460,20 @@ public class ActiveChapter : MonoBehaviour
 
         logicValuesChapters.B_Try_To_Find_Her_Parents();
 
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[36].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //38
     public void ButtonC38()
     {
+        FireBaseAnalyticsEvents.EventsScreen_38("Screen_38");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC38", 0.5f);
@@ -5364,12 +5517,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[37].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //38A
     public void AButtonC38()
     {
+        FireBaseAnalyticsEvents.EventsScreen_38("Screen_38");
         imgBlackout.gameObject.SetActive(true);
         animContent[36].AllAnim1();
         animContentPanel.AllAnimP();
@@ -5419,6 +5576,7 @@ public class ActiveChapter : MonoBehaviour
     //39
     public void ButtonC39()
     {
+        FireBaseAnalyticsEvents.EventsScreen_39("Screen_39");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC39", 0.5f);
@@ -5465,12 +5623,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[38].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //39A
     public void AButtonC39()
     {
+        FireBaseAnalyticsEvents.EventsScreen_39("Screen_39");
         imgBlackout.gameObject.SetActive(true);
         animContent[37].AllAnim1();
         animContentPanel.AllAnimP();
@@ -5523,6 +5685,7 @@ public class ActiveChapter : MonoBehaviour
     //40
     public void ButtonC40()
     {
+        FireBaseAnalyticsEvents.EventsScreen_40("Screen_40");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC40", 0.5f);
@@ -5565,14 +5728,19 @@ public class ActiveChapter : MonoBehaviour
         }
 
 
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[39].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //40A
     public void AButtonC40()
     {
+        FireBaseAnalyticsEvents.EventsScreen_40("Screen_40");
         imgBlackout.gameObject.SetActive(true);
         animContent[37].AllAnim1();
         animContentPanel.AllAnimP();
@@ -5622,6 +5790,7 @@ public class ActiveChapter : MonoBehaviour
     //41
     public void ButtonC41()
     {
+        FireBaseAnalyticsEvents.EventsScreen_41("Screen_41");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC41", 0.5f);
@@ -5665,15 +5834,20 @@ public class ActiveChapter : MonoBehaviour
 
 
         logicValuesChapters.B_Take_The_Girl_To_An_Officer();
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[40].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //42
     public void ButtonC42()
     {
+        FireBaseAnalyticsEvents.EventsScreen_42("Screen_42");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC42", 0.5f);
@@ -5717,12 +5891,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[41].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //42A
     public void AButtonC42()
     {
+        FireBaseAnalyticsEvents.EventsScreen_42("Screen_42");
         imgBlackout.gameObject.SetActive(true);
         animContent[40].AllAnim1();
         animContentPanel.AllAnimP();
@@ -5772,6 +5950,7 @@ public class ActiveChapter : MonoBehaviour
     //43
     public void ButtonC43()
     {
+        FireBaseAnalyticsEvents.EventsScreen_43("Screen_43");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC43", 0.5f);
@@ -5815,31 +5994,33 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_ask_about_her_toys == 1 && gameManager.b_make_conversation == 1)
         {
-            buttonIf[3].gameObject.SetActive(true);
+            buttonIf[3].SetActive(true);
         }
         else
         {
-            buttonIf[3].gameObject.SetActive(false);
+            buttonIf[3].SetActive(false);
         }
 
         if (gameManager.b_ask_about_her_toys == 0 || gameManager.b_make_conversation == 0)
         {
-            buttonIf[4].gameObject.SetActive(true);
+            buttonIf[4].SetActive(true);
         }
         else
         {
-            buttonIf[4].gameObject.SetActive(false);
+            buttonIf[4].SetActive(false);
         }
-
-
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[42].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //43A
     public void AButtonC43()
     {
+        FireBaseAnalyticsEvents.EventsScreen_43("Screen_43");
         imgBlackout.gameObject.SetActive(true);
         animContent[41].AllAnim1();
         animContentPanel.AllAnimP();
@@ -5884,20 +6065,20 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_ask_about_her_toys == 1 && gameManager.b_make_conversation == 1)
         {
-            buttonIf[3].gameObject.SetActive(true);
+            buttonIf[3].SetActive(true);
         }
         else
         {
-            buttonIf[3].gameObject.SetActive(false);
+            buttonIf[3].SetActive(false);
         }
 
         if (gameManager.b_ask_about_her_toys == 0 || gameManager.b_make_conversation == 0)
         {
-            buttonIf[4].gameObject.SetActive(true);
+            buttonIf[4].SetActive(true);
         }
         else
         {
-            buttonIf[4].gameObject.SetActive(false);
+            buttonIf[4].SetActive(false);
         }
 
         animContent[42].AllAnim2();
@@ -5907,6 +6088,7 @@ public class ActiveChapter : MonoBehaviour
     //44
     public void ButtonC44()
     {
+        FireBaseAnalyticsEvents.EventsScreen_44("Screen_44");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC44", 0.5f);
@@ -5948,15 +6130,18 @@ public class ActiveChapter : MonoBehaviour
                 charter[i].SetActive(false);
             }
         }
-
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[43].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //44A
     public void AButtonC44()
     {
+        FireBaseAnalyticsEvents.EventsScreen_44("Screen_44");
         imgBlackout.gameObject.SetActive(true);
         animContent[42].AllAnim1();
         animContentPanel.AllAnimP();
@@ -6007,6 +6192,7 @@ public class ActiveChapter : MonoBehaviour
     //45
     public void ButtonC45()
     {
+        FireBaseAnalyticsEvents.EventsScreen_45("Screen_45");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC45", 0.5f);
@@ -6051,24 +6237,27 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_grab_some_food == 0)
         {
-            buttonIf[5].gameObject.SetActive(true);
-            buttonIf[6].gameObject.SetActive(false);
+            buttonIf[5].SetActive(true);
+            buttonIf[6].SetActive(false);
         }
         else if (gameManager.b_grab_some_food == 1)
         {
-            buttonIf[5].gameObject.SetActive(false);
-            buttonIf[6].gameObject.SetActive(true);
+            buttonIf[5].SetActive(false);
+            buttonIf[6].SetActive(true);
         }
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[44].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
-
     }
 
     //46
     public void ButtonC46()
     {
+        FireBaseAnalyticsEvents.EventsScreen_46("Screen_46");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC46", 0.5f);
@@ -6114,13 +6303,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[45].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //47
     public void ButtonC47()
     {
+        FireBaseAnalyticsEvents.EventsScreen_47("Screen_47");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC47", 0.5f);
@@ -6168,42 +6361,46 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_talk_with_a_stranger == 0)
         {
-            buttonIf[7].gameObject.SetActive(true);
+            buttonIf[7].SetActive(true);
         }
         else if (gameManager.b_talk_with_a_stranger == 1)
         {
-            buttonIf[7].gameObject.SetActive(false);
+            buttonIf[7].SetActive(false);
         }
 
 
         if (gameManager.b_grab_some_food == 0)
         {
-            buttonIf[8].gameObject.SetActive(true);
+            buttonIf[8].SetActive(true);
         }
         else
         {
-            buttonIf[8].gameObject.SetActive(false);
+            buttonIf[8].SetActive(false);
         }
 
         if (gameManager.b_grab_some_food == 1)
         {
-            buttonIf[9].gameObject.SetActive(true);
+            buttonIf[9].SetActive(true);
         }
         else
         {
-            buttonIf[9].gameObject.SetActive(false);
+            buttonIf[9].SetActive(false);
         }
 
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[46].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(6);
     }
     //47A
     public void AButtonC47()
     {
+        FireBaseAnalyticsEvents.EventsScreen_47("Screen_47");
         imgBlackout.gameObject.SetActive(true);
         animContent[45].AllAnim1();
         animContentPanel.AllAnimP();
@@ -6252,30 +6449,30 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_talk_with_a_stranger == 0)
         {
-            buttonIf[7].gameObject.SetActive(true);
+            buttonIf[7].SetActive(true);
         }
         else if (gameManager.b_talk_with_a_stranger == 1)
         {
-            buttonIf[7].gameObject.SetActive(false);
+            buttonIf[7].SetActive(false);
         }
 
 
         if (gameManager.b_grab_some_food == 0)
         {
-            buttonIf[8].gameObject.SetActive(true);
+            buttonIf[8].SetActive(true);
         }
         else
         {
-            buttonIf[8].gameObject.SetActive(false);
+            buttonIf[8].SetActive(false);
         }
 
         if (gameManager.b_grab_some_food == 1)
         {
-            buttonIf[9].gameObject.SetActive(true);
+            buttonIf[9].SetActive(true);
         }
         else
         {
-            buttonIf[9].gameObject.SetActive(false);
+            buttonIf[9].SetActive(false);
         }
 
 
@@ -6287,6 +6484,7 @@ public class ActiveChapter : MonoBehaviour
     //48
     public void ButtonC48()
     {
+        FireBaseAnalyticsEvents.EventsScreen_48("Screen_48");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC48", 0.5f);
@@ -6358,12 +6556,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[47].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //48A
     public void AButtonC48()
     {
+        FireBaseAnalyticsEvents.EventsScreen_48("Screen_48");
         imgBlackout.gameObject.SetActive(true);
         animContent[45].AllAnim1();
         animContentPanel.AllAnimP();
@@ -6440,6 +6642,7 @@ public class ActiveChapter : MonoBehaviour
     //49
     public void ButtonC49()
     {
+        FireBaseAnalyticsEvents.EventsScreen_49("Screen_49");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC49", 0.5f);
@@ -6510,14 +6713,19 @@ public class ActiveChapter : MonoBehaviour
             buttonIf[15].gameObject.SetActive(false);
         }
 
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[48].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //49A
     public void AButtonC49()
     {
+        FireBaseAnalyticsEvents.EventsScreen_49("Screen_49");
         imgBlackout.gameObject.SetActive(true);
         animContent[46].AllAnim1();
         animContent[47].AllAnim1();
@@ -6597,6 +6805,7 @@ public class ActiveChapter : MonoBehaviour
     //50
     public void ButtonC50()
     {
+        FireBaseAnalyticsEvents.EventsScreen_50("Screen_50");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC50", 0.5f);
@@ -6640,7 +6849,10 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[49].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(25);
     }
@@ -6648,6 +6860,7 @@ public class ActiveChapter : MonoBehaviour
     //51
     public void ButtonC51()
     {
+        FireBaseAnalyticsEvents.EventsScreen_51("Screen_51");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC51", 0.5f);
@@ -6691,7 +6904,10 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[50].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(25);
     }
@@ -6699,6 +6915,7 @@ public class ActiveChapter : MonoBehaviour
     //52
     public void ButtonC52()
     {
+        FireBaseAnalyticsEvents.EventsScreen_52("Screen_52");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC52", 0.5f);
@@ -6742,13 +6959,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[51].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //53
     public void ButtonC53()
     {
+        FireBaseAnalyticsEvents.EventsScreen_53("Screen_53");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC53", 0.5f);
@@ -6792,13 +7013,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[52].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //54
     public void ButtonC54()
     {
+        FireBaseAnalyticsEvents.EventsScreen_54("Screen_54");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC54", 0.5f);
@@ -6844,7 +7069,10 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[53].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         musicCharter.PlayMusic(gameManager.numberMusic);
         sound.PlaySound(7);
@@ -6853,6 +7081,7 @@ public class ActiveChapter : MonoBehaviour
     //55
     public void ButtonC55()
     {
+        FireBaseAnalyticsEvents.EventsScreen_55("Screen_55");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC55", 0.5f);
@@ -6896,13 +7125,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[54].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //56
     public void ButtonC56()
     {
+        FireBaseAnalyticsEvents.EventsScreen_56("Screen_56");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC56", 0.5f);
@@ -6946,13 +7179,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[55].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //57
     public void ButtonC57()
     {
+        FireBaseAnalyticsEvents.EventsScreen_57("Screen_57");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC57", 0.5f);
@@ -6996,13 +7233,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[56].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //58
     public void ButtonC58()
     {
+        FireBaseAnalyticsEvents.EventsScreen_58("Screen_58");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC58", 0.5f);
@@ -7046,12 +7287,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[57].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //58A
     public void AButtonC58()
     {
+        FireBaseAnalyticsEvents.EventsScreen_58("Screen_58");
         imgBlackout.gameObject.SetActive(true);
         animContent[55].AllAnim1();
         animContentPanel.AllAnimP();
@@ -7101,6 +7346,7 @@ public class ActiveChapter : MonoBehaviour
     //59
     public void ButtonC59()
     {
+        FireBaseAnalyticsEvents.EventsScreen_59("Screen_59");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC59", 0.5f);
@@ -7144,12 +7390,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[58].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //59A
     public void AButtonC59()
     {
+        FireBaseAnalyticsEvents.EventsScreen_59("Screen_59");
         imgBlackout.gameObject.SetActive(true);
         animContent[56].AllAnim1();
         animContentPanel.AllAnimP();
@@ -7199,6 +7449,7 @@ public class ActiveChapter : MonoBehaviour
     //60
     public void ButtonC60()
     {
+        FireBaseAnalyticsEvents.EventsScreen_60("Screen_60");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC60", 0.5f);
@@ -7242,12 +7493,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[59].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //60A
     public void AButtonC60()
     {
+        FireBaseAnalyticsEvents.EventsScreen_60("Screen_60");
         imgBlackout.gameObject.SetActive(true);
         animContent[55].AllAnim1();
         animContentPanel.AllAnimP();
@@ -7297,6 +7552,7 @@ public class ActiveChapter : MonoBehaviour
     //61
     public void ButtonC61()
     {
+        FireBaseAnalyticsEvents.EventsScreen_61("Screen_61");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC61", 0.5f);
@@ -7340,12 +7596,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[60].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //61A
     public void AButtonC61()
     {
+        FireBaseAnalyticsEvents.EventsScreen_61("Screen_61");
         imgBlackout.gameObject.SetActive(true);
         animContent[56].AllAnim1();
         animContentPanel.AllAnimP();
@@ -7395,6 +7655,7 @@ public class ActiveChapter : MonoBehaviour
     //62
     public void ButtonC62()
     {
+        FireBaseAnalyticsEvents.EventsScreen_62("Screen_62");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC62", 0.5f);
@@ -7438,12 +7699,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[61].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //62A
     public void AButtonC62()
     {
+        FireBaseAnalyticsEvents.EventsScreen_62("Screen_62");
         imgBlackout.gameObject.SetActive(true);
         animContent[55].AllAnim1();
         animContentPanel.AllAnimP();
@@ -7493,6 +7758,7 @@ public class ActiveChapter : MonoBehaviour
     //63
     public void ButtonC63()
     {
+        FireBaseAnalyticsEvents.EventsScreen_63("Screen_63");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC63", 0.5f);
@@ -7536,13 +7802,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[62].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //64
     public void ButtonC64()
     {
+        FireBaseAnalyticsEvents.EventsScreen_64("Screen_64");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC64", 0.5f);
@@ -7586,12 +7856,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[63].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //64A
     public void AButtonC64()
     {
+        FireBaseAnalyticsEvents.EventsScreen_64("Screen_64");
         imgBlackout.gameObject.SetActive(true);
         animContent[62].AllAnim1();
         animContentPanel.AllAnimP();
@@ -7641,6 +7915,7 @@ public class ActiveChapter : MonoBehaviour
     //65
     public void ButtonC65()
     {
+        FireBaseAnalyticsEvents.EventsScreen_65("Screen_65");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC65", 0.5f);
@@ -7721,9 +7996,13 @@ public class ActiveChapter : MonoBehaviour
         }
 
 
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[64].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         musicCharter.PlayMusic(gameManager.numberMusic);
     }
@@ -7731,6 +8010,7 @@ public class ActiveChapter : MonoBehaviour
     //66
     public void ButtonC66()
     {
+        FireBaseAnalyticsEvents.EventsScreen_66("Screen_66");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC66", 0.5f);
@@ -7773,15 +8053,20 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[65].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         musicCharter.PlayMusic(gameManager.numberMusic);
     }
     //66A
     public void AButtonC66()
     {
+        FireBaseAnalyticsEvents.EventsScreen_66("Screen_66");
         imgBlackout.gameObject.SetActive(true);
         animContent[51].AllAnim1();
         animContentPanel.AllAnimP();
@@ -7834,6 +8119,7 @@ public class ActiveChapter : MonoBehaviour
     //67
     public void ButtonC67()
     {
+        FireBaseAnalyticsEvents.EventsScreen_67("Screen_67");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC67", 0.5f);
@@ -7877,12 +8163,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[66].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //67A
     public void AButtonC67()
     {
+        FireBaseAnalyticsEvents.EventsScreen_67("Screen_67");
         imgBlackout.gameObject.SetActive(true);
         animContent[65].AllAnim1();
         animContentPanel.AllAnimP();
@@ -7932,6 +8222,7 @@ public class ActiveChapter : MonoBehaviour
     //68
     public void ButtonC68()
     {
+        FireBaseAnalyticsEvents.EventsScreen_68("Screen_68");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC68", 0.5f);
@@ -7980,13 +8271,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[67].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(3);
     }
     //68A
     public void AButtonC68()
     {
+        FireBaseAnalyticsEvents.EventsScreen_68("Screen_68");
         imgBlackout.gameObject.SetActive(true);
         animContent[66].AllAnim1();
         animContentPanel.AllAnimP();
@@ -8042,6 +8337,7 @@ public class ActiveChapter : MonoBehaviour
     //69
     public void ButtonC69()
     {
+        FireBaseAnalyticsEvents.EventsScreen_69("Screen_69");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC69", 0.5f);
@@ -8089,12 +8385,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[68].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //69A
     public void AButtonC69()
     {
+        FireBaseAnalyticsEvents.EventsScreen_69("Screen_69");
         imgBlackout.gameObject.SetActive(true);
         animContent[66].AllAnim1();
         animContentPanel.AllAnimP();
@@ -8148,6 +8448,7 @@ public class ActiveChapter : MonoBehaviour
     //70
     public void ButtonC70()
     {
+        FireBaseAnalyticsEvents.EventsScreen_70("Screen_70");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC70", 0.5f);
@@ -8191,13 +8492,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[69].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(24);
     }
     //70A
     public void AButtonC70()
     {
+        FireBaseAnalyticsEvents.EventsScreen_70("Screen_70");
         imgBlackout.gameObject.SetActive(true);
         animContent[67].AllAnim1();
         animContent[68].AllAnim1();
@@ -8249,6 +8554,7 @@ public class ActiveChapter : MonoBehaviour
     //71
     public void ButtonC71()
     {
+        FireBaseAnalyticsEvents.EventsScreen_71("Screen_71");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC71", 0.5f);
@@ -8312,14 +8618,19 @@ public class ActiveChapter : MonoBehaviour
             buttonIf[23].gameObject.SetActive(false);
         }
 
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[70].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //71A
     public void AButtonC71()
     {
+        FireBaseAnalyticsEvents.EventsScreen_71("Screen_71");
         imgBlackout.gameObject.SetActive(true);
         animContent[69].AllAnim1();
         animContentPanel.AllAnimP();
@@ -8391,6 +8702,7 @@ public class ActiveChapter : MonoBehaviour
     //72
     public void ButtonC72()
     {
+        FireBaseAnalyticsEvents.EventsScreen_72("Screen_72");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC72", 0.5f);
@@ -8433,14 +8745,19 @@ public class ActiveChapter : MonoBehaviour
             }
         }
         logicValuesChapters.B_Ignore_It_2();
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[71].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //72A
     public void AButtonC72()
     {
+        FireBaseAnalyticsEvents.EventsScreen_72("Screen_72");
         imgBlackout.gameObject.SetActive(true);
         animContent[69].AllAnim1();
         animContentPanel.AllAnimP();
@@ -8493,6 +8810,7 @@ public class ActiveChapter : MonoBehaviour
     //73
     public void ButtonC73()
     {
+        FireBaseAnalyticsEvents.EventsScreen_73("Screen_73");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC73", 0.5f);
@@ -8536,12 +8854,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[72].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //73A
     public void AButtonC73()
     {
+        FireBaseAnalyticsEvents.EventsScreen_73("Screen_73");
         imgBlackout.gameObject.SetActive(true);
         animContent[70].AllAnim1();
         animContent[80].AllAnim1();
@@ -8592,6 +8914,7 @@ public class ActiveChapter : MonoBehaviour
     //74
     public void ButtonC74()
     {
+        FireBaseAnalyticsEvents.EventsScreen_74("Screen_74");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC74", 0.5f);
@@ -8634,14 +8957,19 @@ public class ActiveChapter : MonoBehaviour
         }
 
         logicValuesChapters.B_Too_Much_Of_A_Risk();
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[73].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //74A
     public void AButtonC74()
     {
+        FireBaseAnalyticsEvents.EventsScreen_74("Screen_74");
         imgBlackout.gameObject.SetActive(true);
         animContent[70].AllAnim1();
         animContent[80].AllAnim1();
@@ -8694,6 +9022,7 @@ public class ActiveChapter : MonoBehaviour
     //75
     public void ButtonC75()
     {
+        FireBaseAnalyticsEvents.EventsScreen_75("Screen_75");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC75", 0.5f);
@@ -8739,12 +9068,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[74].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //75A
     public void AButtonC75()
     {
+        FireBaseAnalyticsEvents.EventsScreen_75("Screen_75");
         imgBlackout.gameObject.SetActive(true);
         animContent[70].AllAnim1();
         animContentPanel.AllAnimP();
@@ -8796,6 +9129,7 @@ public class ActiveChapter : MonoBehaviour
     //76
     public void ButtonC76()
     {
+        FireBaseAnalyticsEvents.EventsScreen_76("Screen_76");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC76", 0.5f);
@@ -8839,13 +9173,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[75].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //77
     public void ButtonC77()
     {
+        FireBaseAnalyticsEvents.EventsScreen_77("Screen_77");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC77", 0.5f);
@@ -8889,12 +9227,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[76].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //77A
     public void AButtonC77()
     {
+        FireBaseAnalyticsEvents.EventsScreen_77("Screen_77");
         imgBlackout.gameObject.SetActive(true);
         animContent[70].AllAnim1();
         animContentPanel.AllAnimP();
@@ -8944,6 +9286,7 @@ public class ActiveChapter : MonoBehaviour
     //78
     public void ButtonC78()
     {
+        FireBaseAnalyticsEvents.EventsScreen_78("Screen_78");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC78", 0.5f);
@@ -8987,7 +9330,10 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[77].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(8);
     }
@@ -8995,6 +9341,7 @@ public class ActiveChapter : MonoBehaviour
     //79
     public void ButtonC79()
     {
+        FireBaseAnalyticsEvents.EventsScreen_79("Screen_79");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC79", 0.5f);
@@ -9038,14 +9385,19 @@ public class ActiveChapter : MonoBehaviour
 
         logicValuesChapters.B_Nevermind();
 
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[78].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //79A
     public void AButtonC79()
     {
+        FireBaseAnalyticsEvents.EventsScreen_79("Screen_79");
         imgBlackout.gameObject.SetActive(true);
         animContent[75].AllAnim1();
         animContentPanel.AllAnimP();
@@ -9097,6 +9449,7 @@ public class ActiveChapter : MonoBehaviour
     //80
     public void ButtonC80()
     {
+        FireBaseAnalyticsEvents.EventsScreen_80("Screen_80");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC80", 0.5f);
@@ -9141,30 +9494,34 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_too_much_of_a_risk == 0 && gameManager.b_nevermind == 0 && gameManager.b_alcohol == 0 && gameManager.b_ignore_it_2 == 0)
         {
-            buttonIf[24].gameObject.SetActive(true);
+            buttonIf[24].SetActive(true);
         }
         else
         {
-            buttonIf[24].gameObject.SetActive(false);
+            buttonIf[24].SetActive(false);
         }
 
         if (gameManager.b_give_me_some_time == 1 && gameManager.b_check_the_weather == 0 && gameManager.b_alcohol == 0 && gameManager.b_ignore_it_2 == 0 && gameManager.call_back == 0)
         {
-            buttonIf[25].gameObject.SetActive(true);
+            buttonIf[25].SetActive(true);
         }
         else
         {
-            buttonIf[25].gameObject.SetActive(false);
+            buttonIf[25].SetActive(false);
         }
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[79].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //80A
     public void AButtonC80()
     {
+        FireBaseAnalyticsEvents.EventsScreen_80("Screen_80");
         imgBlackout.gameObject.SetActive(true);
         animContent[72].AllAnim1();
         animContent[74].AllAnim1();
@@ -9213,20 +9570,20 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_too_much_of_a_risk == 0 && gameManager.b_nevermind == 0 && gameManager.b_alcohol == 0 && gameManager.b_ignore_it_2 == 0)
         {
-            buttonIf[24].gameObject.SetActive(true);
+            buttonIf[24].SetActive(true);
         }
         else
         {
-            buttonIf[24].gameObject.SetActive(false);
+            buttonIf[24].SetActive(false);
         }
 
         if (gameManager.b_give_me_some_time == 1 && gameManager.b_check_the_weather == 0 && gameManager.b_alcohol == 0 && gameManager.b_ignore_it_2 == 0 && gameManager.call_back == 0)
         {
-            buttonIf[25].gameObject.SetActive(true);
+            buttonIf[25].SetActive(true);
         }
         else
         {
-            buttonIf[25].gameObject.SetActive(false);
+            buttonIf[25].SetActive(false);
         }
 
         animContent[79].AllAnim2();
@@ -9236,6 +9593,7 @@ public class ActiveChapter : MonoBehaviour
     //81
     public void ButtonC81()
     {
+        FireBaseAnalyticsEvents.EventsScreen_81("Screen_81");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC81", 0.5f);
@@ -9279,12 +9637,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[80].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //81A
     public void AButtonC81()
     {
+        FireBaseAnalyticsEvents.EventsScreen_81("Screen_81");
         imgBlackout.gameObject.SetActive(true);
         animContent[79].AllAnim1();
         animContent[81].AllAnim1();
@@ -9335,6 +9697,7 @@ public class ActiveChapter : MonoBehaviour
     //82
     public void ButtonC82()
     {
+        FireBaseAnalyticsEvents.EventsScreen_82("Screen_82");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC82", 0.5f);
@@ -9377,14 +9740,19 @@ public class ActiveChapter : MonoBehaviour
             }
         }
         logicValuesChapters.B_Check_The_Weather();
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[81].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //82A
     public void AButtonC82()
     {
+        FireBaseAnalyticsEvents.EventsScreen_82("Screen_82");
         imgBlackout.gameObject.SetActive(true);
         animContent[79].AllAnim1();
         animContentPanel.AllAnimP();
@@ -9436,6 +9804,7 @@ public class ActiveChapter : MonoBehaviour
     //83
     public void ButtonC83()
     {
+        FireBaseAnalyticsEvents.EventsScreen_83("Screen_83");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC83", 0.5f);
@@ -9479,12 +9848,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[82].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //83A
     public void AButtonC83()
     {
+        FireBaseAnalyticsEvents.EventsScreen_83("Screen_83");
         imgBlackout.gameObject.SetActive(true);
         animContent[51].AllAnim1();
         animContent[79].AllAnim1();
@@ -9536,6 +9909,7 @@ public class ActiveChapter : MonoBehaviour
     //84
     public void ButtonC84()
     {
+        FireBaseAnalyticsEvents.EventsScreen_84("Screen_84");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC84", 0.5f);
@@ -9581,48 +9955,52 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_the_food_court == 0)
         {
-            buttonIf[26].gameObject.SetActive(true);
+            buttonIf[26].SetActive(true);
         }
         else
         {
-            buttonIf[26].gameObject.SetActive(false);
+            buttonIf[26].SetActive(false);
         }
 
         if (gameManager.b_halls == 0)
         {
-            buttonIf[27].gameObject.SetActive(true);
+            buttonIf[27].SetActive(true);
         }
         else
         {
-            buttonIf[27].gameObject.SetActive(false);
+            buttonIf[27].SetActive(false);
         }
 
         if (gameManager.b_gates == 0)
         {
-            buttonIf[28].gameObject.SetActive(true);
+            buttonIf[28].SetActive(true);
         }
         else
         {
-            buttonIf[28].gameObject.SetActive(false);
+            buttonIf[28].SetActive(false);
         }
 
         if (gameManager.b_gates == 1 && gameManager.b_halls == 1 && gameManager.b_the_food_court == 1 && gameManager.b_the_lounge == 1)
         {
-            buttonIf[29].gameObject.SetActive(true);
+            buttonIf[29].SetActive(true);
         }
         else
         {
-            buttonIf[29].gameObject.SetActive(false);
+            buttonIf[29].SetActive(false);
         }
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[83].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //84A
     public void AButtonC84()
     {
+        FireBaseAnalyticsEvents.EventsScreen_84("Screen_84");
         imgBlackout.gameObject.SetActive(true);
         animContent[82].AllAnim1();
         animContentPanel.AllAnimP();
@@ -9669,38 +10047,38 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_the_food_court == 0)
         {
-            buttonIf[26].gameObject.SetActive(true);
+            buttonIf[26].SetActive(true);
         }
         else
         {
-            buttonIf[26].gameObject.SetActive(false);
+            buttonIf[26].SetActive(false);
         }
 
         if (gameManager.b_halls == 0)
         {
-            buttonIf[27].gameObject.SetActive(true);
+            buttonIf[27].SetActive(true);
         }
         else
         {
-            buttonIf[27].gameObject.SetActive(false);
+            buttonIf[27].SetActive(false);
         }
 
         if (gameManager.b_gates == 0)
         {
-            buttonIf[28].gameObject.SetActive(true);
+            buttonIf[28].SetActive(true);
         }
         else
         {
-            buttonIf[28].gameObject.SetActive(false);
+            buttonIf[28].SetActive(false);
         }
 
         if (gameManager.b_gates == 1 && gameManager.b_halls == 1 && gameManager.b_the_food_court == 1 && gameManager.b_the_lounge == 1)
         {
-            buttonIf[29].gameObject.SetActive(true);
+            buttonIf[29].SetActive(true);
         }
         else
         {
-            buttonIf[29].gameObject.SetActive(false);
+            buttonIf[29].SetActive(false);
         }
 
         animContent[83].AllAnim2();
@@ -9710,6 +10088,7 @@ public class ActiveChapter : MonoBehaviour
     //85
     public void ButtonC85()
     {
+        FireBaseAnalyticsEvents.EventsScreen_85("Screen_85");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC85", 0.5f);
@@ -9755,49 +10134,53 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_the_lounge == 0)
         {
-            buttonIf[30].gameObject.SetActive(true);
+            buttonIf[30].SetActive(true);
         }
         else
         {
-            buttonIf[30].gameObject.SetActive(false);
+            buttonIf[30].SetActive(false);
         }
 
         if (gameManager.b_halls == 0)
         {
-            buttonIf[31].gameObject.SetActive(true);
+            buttonIf[31].SetActive(true);
         }
         else
         {
-            buttonIf[31].gameObject.SetActive(false);
+            buttonIf[31].SetActive(false);
         }
 
         if (gameManager.b_gates == 0)
         {
-            buttonIf[32].gameObject.SetActive(true);
+            buttonIf[32].SetActive(true);
         }
         else
         {
-            buttonIf[32].gameObject.SetActive(false);
+            buttonIf[32].SetActive(false);
         }
 
         if (gameManager.b_gates == 1 && gameManager.b_halls == 1 && gameManager.b_the_food_court == 1 && gameManager.b_the_lounge == 1)
         {
-            buttonIf[33].gameObject.SetActive(true);
+            buttonIf[33].SetActive(true);
         }
         else
         {
-            buttonIf[33].gameObject.SetActive(false);
+            buttonIf[33].SetActive(false);
         }
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[84].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //86
     public void ButtonC86()
     {
+        FireBaseAnalyticsEvents.EventsScreen_86("Screen_86");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC86", 0.5f);
@@ -9843,50 +10226,53 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_the_lounge == 0)
         {
-            buttonIf[34].gameObject.SetActive(true);
+            buttonIf[34].SetActive(true);
         }
         else
         {
-            buttonIf[34].gameObject.SetActive(false);
+            buttonIf[34].SetActive(false);
         }
 
         if (gameManager.b_the_food_court == 0)
         {
-            buttonIf[35].gameObject.SetActive(true);
+            buttonIf[35].SetActive(true);
         }
         else
         {
-            buttonIf[35].gameObject.SetActive(false);
+            buttonIf[35].SetActive(false);
         }
 
         if (gameManager.b_gates == 0)
         {
-            buttonIf[36].gameObject.SetActive(true);
+            buttonIf[36].SetActive(true);
         }
         else
         {
-            buttonIf[36].gameObject.SetActive(false);
+            buttonIf[36].SetActive(false);
         }
 
         if (gameManager.b_gates == 1 && gameManager.b_halls == 1 && gameManager.b_the_food_court == 1 && gameManager.b_the_lounge == 1)
         {
-            buttonIf[37].gameObject.SetActive(true);
+            buttonIf[37].SetActive(true);
         }
         else
         {
-            buttonIf[37].gameObject.SetActive(false);
+            buttonIf[37].SetActive(false);
         }
-
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[85].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //87
     public void ButtonC87()
     {
+        FireBaseAnalyticsEvents.EventsScreen_87("Screen_87");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC87", 0.5f);
@@ -9932,48 +10318,53 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_the_lounge == 0)
         {
-            buttonIf[38].gameObject.SetActive(true);
+            buttonIf[38].SetActive(true);
         }
         else if (gameManager.b_the_lounge == 1)
         {
-            buttonIf[38].gameObject.SetActive(false);
+            buttonIf[38].SetActive(false);
         }
 
         if (gameManager.b_the_food_court == 0)
         {
-            buttonIf[39].gameObject.SetActive(true);
+            buttonIf[39].SetActive(true);
         }
         else if (gameManager.b_the_food_court == 1)
         {
-            buttonIf[39].gameObject.SetActive(false);
+            buttonIf[39].SetActive(false);
         }
 
         if (gameManager.b_halls == 0)
         {
-            buttonIf[40].gameObject.SetActive(true);
+            buttonIf[40].SetActive(true);
         }
         else if (gameManager.b_halls == 1)
         {
-            buttonIf[40].gameObject.SetActive(false);
+            buttonIf[40].SetActive(false);
         }
 
         if (gameManager.b_gates == 1 && gameManager.b_halls == 1 && gameManager.b_the_food_court == 1 && gameManager.b_the_lounge == 1)
         {
-            buttonIf[41].gameObject.SetActive(true);
+            buttonIf[41].SetActive(true);
         }
         else 
         {
-            buttonIf[41].gameObject.SetActive(false);
+            buttonIf[41].SetActive(false);
         }
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[86].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //88
     public void ButtonC88()
     {
+        FireBaseAnalyticsEvents.EventsScreen_88("Screen_88");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC88", 0.5f);
@@ -10017,12 +10408,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[87].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //88A
     public void AButtonC88()
     {
+        FireBaseAnalyticsEvents.EventsScreen_88("Screen_88");
         imgBlackout.gameObject.SetActive(true);
         animContent[86].AllAnim1();
         animContentPanel.AllAnimP();
@@ -10072,6 +10467,7 @@ public class ActiveChapter : MonoBehaviour
     //89
     public void ButtonC89()
     {
+        FireBaseAnalyticsEvents.EventsScreen_89("Screen_89");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC89", 0.5f);
@@ -10115,49 +10511,53 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_buy_book == 0)
         {
-            buttonIf[42].gameObject.SetActive(true);
+            buttonIf[42].SetActive(true);
         }
         else
         {
-            buttonIf[42].gameObject.SetActive(false);
+            buttonIf[42].SetActive(false);
         }
 
         if (gameManager.b_buy_book == 1)
         {
-            buttonIf[43].gameObject.SetActive(true);
+            buttonIf[43].SetActive(true);
         }
         else
         {
-            buttonIf[43].gameObject.SetActive(false);
+            buttonIf[43].SetActive(false);
         }
 
         if (gameManager.b_we_were_looking == 1)
         {
-            buttonIf[44].gameObject.SetActive(true);
+            buttonIf[44].SetActive(true);
         }
         else
         {
-            buttonIf[44].gameObject.SetActive(false);
+            buttonIf[44].SetActive(false);
         }
 
         if (gameManager.b_take_the_girl_to_an_officer == 1)
         {
-            buttonIf[45].gameObject.SetActive(true);
+            buttonIf[45].SetActive(true);
         }
         else
         {
-            buttonIf[45].gameObject.SetActive(false);
+            buttonIf[45].SetActive(false);
         }
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[88].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //90
     public void ButtonC90()
     {
+        FireBaseAnalyticsEvents.EventsScreen_90("Screen_90");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC90", 0.5f);
@@ -10202,48 +10602,52 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_buy_book == 0)
         {
-            buttonIf[46].gameObject.SetActive(true);
+            buttonIf[46].SetActive(true);
         }
         else
         {
-            buttonIf[46].gameObject.SetActive(false);
+            buttonIf[46].SetActive(false);
         }
 
         if (gameManager.b_buy_book == 1)
         {
-            buttonIf[47].gameObject.SetActive(true);
+            buttonIf[47].SetActive(true);
         }
         else
         {
-            buttonIf[47].gameObject.SetActive(false);
+            buttonIf[47].SetActive(false);
         }
 
         if (gameManager.b_we_were_looking == 1)
         {
-            buttonIf[48].gameObject.SetActive(true);
+            buttonIf[48].SetActive(true);
         }
         else
         {
-            buttonIf[48].gameObject.SetActive(false);
+            buttonIf[48].SetActive(false);
         }
 
         if (gameManager.b_take_the_girl_to_an_officer == 1)
         {
-            buttonIf[49].gameObject.SetActive(true);
+            buttonIf[49].SetActive(true);
         }
         else
         {
-            buttonIf[49].gameObject.SetActive(false);
+            buttonIf[49].SetActive(false);
         }
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[89].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //90A
     public void AButtonC90()
     {
+        FireBaseAnalyticsEvents.EventsScreen_90("Screen_90");
         imgBlackout.gameObject.SetActive(true);
         animContent[64].AllAnim1();
         animContent[88].AllAnim1();
@@ -10290,38 +10694,38 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_buy_book == 0)
         {
-            buttonIf[46].gameObject.SetActive(true);
+            buttonIf[46].SetActive(true);
         }
         else
         {
-            buttonIf[46].gameObject.SetActive(false);
+            buttonIf[46].SetActive(false);
         }
 
         if (gameManager.b_buy_book == 1)
         {
-            buttonIf[47].gameObject.SetActive(true);
+            buttonIf[47].SetActive(true);
         }
         else
         {
-            buttonIf[47].gameObject.SetActive(false);
+            buttonIf[47].SetActive(false);
         }
 
         if (gameManager.b_we_were_looking == 1)
         {
-            buttonIf[48].gameObject.SetActive(true);
+            buttonIf[48].SetActive(true);
         }
         else
         {
-            buttonIf[48].gameObject.SetActive(false);
+            buttonIf[48].SetActive(false);
         }
 
         if (gameManager.b_take_the_girl_to_an_officer == 1)
         {
-            buttonIf[49].gameObject.SetActive(true);
+            buttonIf[49].SetActive(true);
         }
         else
         {
-            buttonIf[49].gameObject.SetActive(false);
+            buttonIf[49].SetActive(false);
         }
 
         animContent[89].AllAnim2();
@@ -10331,6 +10735,7 @@ public class ActiveChapter : MonoBehaviour
     //91
     public void ButtonC91()
     {
+        FireBaseAnalyticsEvents.EventsScreen_91("Screen_91");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC91", 0.5f);
@@ -10375,12 +10780,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[90].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //91A
     public void AButtonC91()
     {
+        FireBaseAnalyticsEvents.EventsScreen_91("Screen_91");
         imgBlackout.gameObject.SetActive(true);
         animContent[64].AllAnim1();
         animContent[88].AllAnim1();
@@ -10433,6 +10842,7 @@ public class ActiveChapter : MonoBehaviour
     //92
     public void ButtonC92()
     {
+        FireBaseAnalyticsEvents.EventsScreen_92("Screen_92");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC92", 0.5f);
@@ -10476,12 +10886,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[91].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //92A
     public void AButtonC92()
     {
+        FireBaseAnalyticsEvents.EventsScreen_92("Screen_92");
         imgBlackout.gameObject.SetActive(true);
         animContent[64].AllAnim1();
         animContent[88].AllAnim1();
@@ -10533,6 +10947,7 @@ public class ActiveChapter : MonoBehaviour
     //93
     public void ButtonC93()
     {
+        FireBaseAnalyticsEvents.EventsScreen_93("Screen_93");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC93", 0.5f);
@@ -10577,12 +10992,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[92].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //93A
     public void AButtonC93()
     {
+        FireBaseAnalyticsEvents.EventsScreen_93("Screen_93");
         imgBlackout.gameObject.SetActive(true);
         animContent[64].AllAnim1();
         animContent[88].AllAnim1();
@@ -10635,6 +11054,7 @@ public class ActiveChapter : MonoBehaviour
     //94
     public void ButtonC94()
     {
+        FireBaseAnalyticsEvents.EventsScreen_94("Screen_94");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC94", 0.5f);
@@ -10678,12 +11098,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[93].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //94A
     public void AButtonC94()
     {
+        FireBaseAnalyticsEvents.EventsScreen_94("Screen_94");
         imgBlackout.gameObject.SetActive(true);
         animContent[64].AllAnim1();
         animContent[88].AllAnim1();
@@ -10735,6 +11159,7 @@ public class ActiveChapter : MonoBehaviour
     //95
     public void ButtonC95()
     {
+        FireBaseAnalyticsEvents.EventsScreen_95("Screen_95");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC95", 0.5f);
@@ -10778,12 +11203,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[94].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //96_2
     public void ButtonC96_2()
     {
+        FireBaseAnalyticsEvents.EventsScreen_96("Screen_96");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("ActiveImg2", 0.5f);
@@ -10858,6 +11287,7 @@ public class ActiveChapter : MonoBehaviour
     //96
     public void ButtonC96()
     {
+        FireBaseAnalyticsEvents.EventsScreen_96("Screen_96");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC96", 0.5f);
@@ -10901,14 +11331,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[95].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
-        //sound.PlaySound(9);
     }
 
     //97
     public void ButtonC97()
     {
+        FireBaseAnalyticsEvents.EventsScreen_97("Screen_97");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC97", 0.5f);
@@ -10952,12 +11385,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[96].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //97A
     public void AButtonC97()
     {
+        FireBaseAnalyticsEvents.EventsScreen_97("Screen_97");
         imgBlackout.gameObject.SetActive(true);
         animContent[95].AllAnim1();
         animContentPanel.AllAnimP();
@@ -11007,6 +11444,7 @@ public class ActiveChapter : MonoBehaviour
     //98
     public void ButtonC98()
     {
+        FireBaseAnalyticsEvents.EventsScreen_98("Screen_98");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC98", 0.5f);
@@ -11051,12 +11489,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[97].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //98A
     public void AButtonC98()
     {
+        FireBaseAnalyticsEvents.EventsScreen_98("Screen_98");
         imgBlackout.gameObject.SetActive(true);
         animContent[96].AllAnim1();
         animContentPanel.AllAnimP();
@@ -11107,6 +11549,7 @@ public class ActiveChapter : MonoBehaviour
     //99
     public void ButtonC99()
     {
+        FireBaseAnalyticsEvents.EventsScreen_99("Screen_99");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC99", 0.5f);
@@ -11151,7 +11594,10 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[98].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         musicCharter.PlayMusic(gameManager.numberMusic);
     }
@@ -11159,6 +11605,7 @@ public class ActiveChapter : MonoBehaviour
     //100
     public void ButtonC100()
     {
+        FireBaseAnalyticsEvents.EventsScreen_100("Screen_100");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC100", 0.5f);
@@ -11202,12 +11649,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[99].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //100A
     public void AButtonC100()
     {
+        FireBaseAnalyticsEvents.EventsScreen_100("Screen_100");
         imgBlackout.gameObject.SetActive(true);
         animContent[98].AllAnim1();
         animContent[121].AllAnim1();
@@ -11258,6 +11709,7 @@ public class ActiveChapter : MonoBehaviour
     //101
     public void ButtonC101()
     {
+        FireBaseAnalyticsEvents.EventsScreen_101("Screen_101");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC101", 0.5f);
@@ -11302,13 +11754,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[100].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         musicCharter.PlayMusic(gameManager.numberMusic);
     }
     //101A
     public void AButtonC101()
     {
+        FireBaseAnalyticsEvents.EventsScreen_101("Screen_101");
         imgBlackout.gameObject.SetActive(true);
         animContent[97].AllAnim1();
         animContentPanel.AllAnimP();
@@ -11360,6 +11816,7 @@ public class ActiveChapter : MonoBehaviour
     //102
     public void ButtonC102()
     {
+        FireBaseAnalyticsEvents.EventsScreen_102("Screen_102");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC102", 0.5f);
@@ -11403,13 +11860,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[101].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //103
     public void ButtonC103()
     {
+        FireBaseAnalyticsEvents.EventsScreen_103("Screen_103");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC103", 0.5f);
@@ -11453,12 +11914,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[102].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //103A
     public void AButtonC103()
     {
+        FireBaseAnalyticsEvents.EventsScreen_103("Screen_103");
         imgBlackout.gameObject.SetActive(true);
         animContent[99].AllAnim1();
         animContentPanel.AllAnimP();
@@ -11508,6 +11973,7 @@ public class ActiveChapter : MonoBehaviour
     //104
     public void ButtonC104()
     {
+        FireBaseAnalyticsEvents.EventsScreen_104("Screen_104");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC104", 0.5f);
@@ -11552,13 +12018,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[103].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         musicCharter.PlayMusic(gameManager.numberMusic);
     }
     //104A
     public void AButtonC104()
     {
+        FireBaseAnalyticsEvents.EventsScreen_104("Screen_104");
         imgBlackout.gameObject.SetActive(true);
         animContent[99].AllAnim1();
         animContentPanel.AllAnimP();
@@ -11610,6 +12080,7 @@ public class ActiveChapter : MonoBehaviour
     //105
     public void ButtonC105()
     {
+        FireBaseAnalyticsEvents.EventsScreen_105("Screen_105");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC105", 0.5f);
@@ -11653,12 +12124,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[104].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //105A
     public void AButtonC105()
     {
+        FireBaseAnalyticsEvents.EventsScreen_105("Screen_105");
         imgBlackout.gameObject.SetActive(true);
         animContent[98].AllAnim1();
         animContent[121].AllAnim1();
@@ -11709,6 +12184,7 @@ public class ActiveChapter : MonoBehaviour
     //106
     public void ButtonC106()
     {
+        FireBaseAnalyticsEvents.EventsScreen_106("Screen_106");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC106", 0.5f);
@@ -11753,13 +12229,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[105].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         musicCharter.PlayMusic(gameManager.numberMusic);
     }
     //106A
     public void AButtonC106()
     {
+        FireBaseAnalyticsEvents.EventsScreen_106("Screen_106");
         imgBlackout.gameObject.SetActive(true);
         animContent[98].AllAnim1();
         animContent[121].AllAnim1();
@@ -11812,6 +12292,7 @@ public class ActiveChapter : MonoBehaviour
     //107
     public void ButtonC107()
     {
+        FireBaseAnalyticsEvents.EventsScreen_107("Screen_107");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC107", 0.5f);
@@ -11829,7 +12310,7 @@ public class ActiveChapter : MonoBehaviour
     public void Charter107UI(int index)
     {
         toBeContinued.text = "Chapter 2";
-        gameManager.numberMusic = 3;
+        gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -11856,13 +12337,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[106].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         musicCharter.PlayMusic(gameManager.numberMusic);
     }
     //107A
     public void AButtonC107()
     {
+        FireBaseAnalyticsEvents.EventsScreen_107("Screen_107");
         imgBlackout.gameObject.SetActive(true);
         animContent[100].AllAnim1();
         animContent[127].AllAnim1();
@@ -11882,7 +12367,7 @@ public class ActiveChapter : MonoBehaviour
     private void ACharter107UI(int index)
     {
         toBeContinued.text = "Chapter 2";
-        gameManager.numberMusic = 3;
+        gameManager.numberMusic = 1;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -11915,6 +12400,7 @@ public class ActiveChapter : MonoBehaviour
     //108
     public void ButtonC108()
     {
+        FireBaseAnalyticsEvents.EventsScreen_108("Screen_108");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC108", 0.5f);
@@ -11959,7 +12445,10 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[107].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         musicCharter.PlayMusic(gameManager.numberMusic);
     }
@@ -11967,6 +12456,7 @@ public class ActiveChapter : MonoBehaviour
     //109
     public void ButtonC109()
     {
+        FireBaseAnalyticsEvents.EventsScreen_109("Screen_109");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC109", 0.5f);
@@ -12010,12 +12500,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[108].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //109A
     public void AButtonC109()
     {
+        FireBaseAnalyticsEvents.EventsScreen_109("Screen_109");
         imgBlackout.gameObject.SetActive(true);
         animContent[107].AllAnim1();
         animContentPanel.AllAnimP();
@@ -12065,6 +12559,7 @@ public class ActiveChapter : MonoBehaviour
     //110
     public void ButtonC110()
     {
+        FireBaseAnalyticsEvents.EventsScreen_110("Screen_110");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC110", 0.5f);
@@ -12108,12 +12603,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[109].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //110A
     public void AButtonC110()
     {
+        FireBaseAnalyticsEvents.EventsScreen_110("Screen_110");
         imgBlackout.gameObject.SetActive(true);
         animContent[108].AllAnim1();
         animContentPanel.AllAnimP();
@@ -12163,6 +12662,7 @@ public class ActiveChapter : MonoBehaviour
     //111
     public void ButtonC111()
     {
+        FireBaseAnalyticsEvents.EventsScreen_111("Screen_111");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC111", 0.5f);
@@ -12206,12 +12706,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[110].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //111A
     public void AButtonC111()
     {
+        FireBaseAnalyticsEvents.EventsScreen_111("Screen_111");
         imgBlackout.gameObject.SetActive(true);
         animContent[109].AllAnim1();
         animContentPanel.AllAnimP();
@@ -12261,6 +12765,7 @@ public class ActiveChapter : MonoBehaviour
     //112
     public void ButtonC112()
     {
+        FireBaseAnalyticsEvents.EventsScreen_112("Screen_112");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC112", 0.5f);
@@ -12304,12 +12809,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[111].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //112A
     public void AButtonC112()
     {
+        FireBaseAnalyticsEvents.EventsScreen_112("Screen_112");
         imgBlackout.gameObject.SetActive(true);
         animContent[110].AllAnim1();
         animContentPanel.AllAnimP();
@@ -12359,6 +12868,7 @@ public class ActiveChapter : MonoBehaviour
     //113
     public void ButtonC113()
     {
+        FireBaseAnalyticsEvents.EventsScreen_113("Screen_113");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC113", 0.5f);
@@ -12402,12 +12912,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[112].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //113A
     public void AButtonC113()
     {
+        FireBaseAnalyticsEvents.EventsScreen_113("Screen_113");
         imgBlackout.gameObject.SetActive(true);
         animContent[111].AllAnim1();
         animContentPanel.AllAnimP();
@@ -12457,6 +12971,7 @@ public class ActiveChapter : MonoBehaviour
     //114
     public void ButtonC114()
     {
+        FireBaseAnalyticsEvents.EventsScreen_114("Screen_114");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC114", 0.5f);
@@ -12500,12 +13015,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[113].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //114A
     public void AButtonC114()
     {
+        FireBaseAnalyticsEvents.EventsScreen_114("Screen_114");
         imgBlackout.gameObject.SetActive(true);
         animContent[112].AllAnim1();
         animContentPanel.AllAnimP();
@@ -12555,6 +13074,7 @@ public class ActiveChapter : MonoBehaviour
     //115
     public void ButtonC115()
     {
+        FireBaseAnalyticsEvents.EventsScreen_115("Screen_115");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC115", 0.5f);
@@ -12598,12 +13118,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[114].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //115A
     public void AButtonC115()
     {
+        FireBaseAnalyticsEvents.EventsScreen_115("Screen_115");
         imgBlackout.gameObject.SetActive(true);
         animContent[113].AllAnim1();
         animContentPanel.AllAnimP();
@@ -12653,6 +13177,7 @@ public class ActiveChapter : MonoBehaviour
     //116
     public void ButtonC116()
     {
+        FireBaseAnalyticsEvents.EventsScreen_116("Screen_116");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC116", 0.5f);
@@ -12696,12 +13221,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[115].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //116A
     public void AButtonC116()
     {
+        FireBaseAnalyticsEvents.EventsScreen_116("Screen_116");
         imgBlackout.gameObject.SetActive(true);
         animContent[114].AllAnim1();
         animContentPanel.AllAnimP();
@@ -12751,6 +13280,7 @@ public class ActiveChapter : MonoBehaviour
     //117
     public void ButtonC117()
     {
+        FireBaseAnalyticsEvents.EventsScreen_117("Screen_117");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC117", 0.5f);
@@ -12794,12 +13324,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[116].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //117A
     public void AButtonC117()
     {
+        FireBaseAnalyticsEvents.EventsScreen_117("Screen_117");
         imgBlackout.gameObject.SetActive(true);
         animContent[115].AllAnim1();
         animContentPanel.AllAnimP();
@@ -12849,6 +13383,7 @@ public class ActiveChapter : MonoBehaviour
     //118
     public void ButtonC118()
     {
+        FireBaseAnalyticsEvents.EventsScreen_118("Screen_118");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC118", 0.5f);
@@ -12892,12 +13427,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[117].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //118A
     public void AButtonC118()
     {
+        FireBaseAnalyticsEvents.EventsScreen_118("Screen_118");
         imgBlackout.gameObject.SetActive(true);
         animContent[116].AllAnim1();
         animContentPanel.AllAnimP();
@@ -12947,6 +13486,7 @@ public class ActiveChapter : MonoBehaviour
     //119
     public void ButtonC119()
     {
+        FireBaseAnalyticsEvents.EventsScreen_119("Screen_119");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC119", 0.5f);
@@ -12990,12 +13530,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[118].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //119A
     public void AButtonC119()
     {
+        FireBaseAnalyticsEvents.EventsScreen_119("Screen_119");
         imgBlackout.gameObject.SetActive(true);
         animContent[117].AllAnim1();
         animContentPanel.AllAnimP();
@@ -13045,6 +13589,7 @@ public class ActiveChapter : MonoBehaviour
     //120
     public void ButtonC120()
     {
+        FireBaseAnalyticsEvents.EventsScreen_120("Screen_120");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC120", 0.5f);
@@ -13088,12 +13633,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[119].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //120A
     public void AButtonC120()
     {
+        FireBaseAnalyticsEvents.EventsScreen_120("Screen_120");
         imgBlackout.gameObject.SetActive(true);
         animContent[118].AllAnim1();
         animContentPanel.AllAnimP();
@@ -13143,6 +13692,7 @@ public class ActiveChapter : MonoBehaviour
     //121
     public void ButtonC121()
     {
+        FireBaseAnalyticsEvents.EventsScreen_121("Screen_121");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC121", 0.5f);
@@ -13186,12 +13736,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[120].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //121A
     public void AButtonC121()
     {
+        FireBaseAnalyticsEvents.EventsScreen_121("Screen_121");
         imgBlackout.gameObject.SetActive(true);
         animContent[107].AllAnim1();
         animContent[109].AllAnim1();
@@ -13244,6 +13798,7 @@ public class ActiveChapter : MonoBehaviour
     //122
     public void ButtonC122()
     {
+        FireBaseAnalyticsEvents.EventsScreen_122("Screen_122");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC122", 0.5f);
@@ -13287,12 +13842,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[121].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //122A
     public void AButtonC122()
     {
+        FireBaseAnalyticsEvents.EventsScreen_122("Screen_122");
         imgBlackout.gameObject.SetActive(true);
         animContent[120].AllAnim1();
         animContentPanel.AllAnimP();
@@ -13342,6 +13901,7 @@ public class ActiveChapter : MonoBehaviour
     //123
     public void ButtonC123()
     {
+        FireBaseAnalyticsEvents.EventsScreen_123("Screen_123");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC123", 0.5f);
@@ -13386,13 +13946,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[122].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         musicCharter.PlayMusic(gameManager.numberMusic);
     }
     //123A
     public void AButtonC123()
     {
+        FireBaseAnalyticsEvents.EventsScreen_123("Screen_123");
         imgBlackout.gameObject.SetActive(true);
         animContent[107].AllAnim1();
         animContent[109].AllAnim1();
@@ -13449,6 +14013,7 @@ public class ActiveChapter : MonoBehaviour
     //124
     public void ButtonC124()
     {
+        FireBaseAnalyticsEvents.EventsScreen_124("Screen_124");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC124", 0.5f);
@@ -13491,15 +14056,20 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[123].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(10);
     }
     //124A
     public void AButtonC124()
     {
+        FireBaseAnalyticsEvents.EventsScreen_124("Screen_124");
         imgBlackout.gameObject.SetActive(true);
         animContent[111].AllAnim1();
         animContent[117].AllAnim1();
@@ -13552,6 +14122,7 @@ public class ActiveChapter : MonoBehaviour
     //125
     public void ButtonC125()
     {
+        FireBaseAnalyticsEvents.EventsScreen_125("Screen_125");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC125", 0.5f);
@@ -13595,12 +14166,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[124].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //125A
     public void AButtonC125()
     {
+        FireBaseAnalyticsEvents.EventsScreen_125("Screen_125");
         imgBlackout.gameObject.SetActive(true);
         animContent[123].AllAnim1();
         animContentPanel.AllAnimP();
@@ -13650,6 +14225,7 @@ public class ActiveChapter : MonoBehaviour
     //126
     public void ButtonC126()
     {
+        FireBaseAnalyticsEvents.EventsScreen_126("Screen_126");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC126", 0.5f);
@@ -13695,12 +14271,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[125].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //126A
     public void AButtonC126()
     {
+        FireBaseAnalyticsEvents.EventsScreen_126("Screen_126");
         imgBlackout.gameObject.SetActive(true);
         animContent[124].AllAnim1();
         animContentPanel.AllAnimP();
@@ -13752,6 +14332,7 @@ public class ActiveChapter : MonoBehaviour
     //127
     public void ButtonC127()
     {
+        FireBaseAnalyticsEvents.EventsScreen_127("Screen_127");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC127", 0.5f);
@@ -13795,12 +14376,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[126].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //127A
     public void AButtonC127()
     {
+        FireBaseAnalyticsEvents.EventsScreen_127("Screen_127");
         imgBlackout.gameObject.SetActive(true);
         animContent[125].AllAnim1();
         animContentPanel.AllAnimP();
@@ -13850,6 +14435,7 @@ public class ActiveChapter : MonoBehaviour
     //128
     public void ButtonC128()
     {
+        FireBaseAnalyticsEvents.EventsScreen_128("Screen_128");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC128", 0.5f);
@@ -13894,7 +14480,10 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[127].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         musicCharter.PlayMusic(gameManager.numberMusic);
     }
@@ -13902,6 +14491,7 @@ public class ActiveChapter : MonoBehaviour
     //129
     public void ButtonC129()
     {
+        FireBaseAnalyticsEvents.EventsScreen_129("Screen_129");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC129", 0.5f);
@@ -13945,12 +14535,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[128].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //129A
     public void AButtonC129()
     {
+        FireBaseAnalyticsEvents.EventsScreen_129("Screen_129");
         imgBlackout.gameObject.SetActive(true);
         animContent[124].AllAnim1();
         animContentPanel.AllAnimP();
@@ -14000,6 +14594,7 @@ public class ActiveChapter : MonoBehaviour
     //130
     public void ButtonC130()
     {
+        FireBaseAnalyticsEvents.EventsScreen_130("Screen_130");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC130", 0.5f);
@@ -14043,12 +14638,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[129].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //130A
     public void AButtonC130()
     {
+        FireBaseAnalyticsEvents.EventsScreen_130("Screen_130");
         imgBlackout.gameObject.SetActive(true);
         animContent[126].AllAnim1();
         animContent[128].AllAnim1();
@@ -14099,6 +14698,7 @@ public class ActiveChapter : MonoBehaviour
     //131
     public void ButtonC131()
     {
+        FireBaseAnalyticsEvents.EventsScreen_131("Screen_131");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC131", 0.5f);
@@ -14144,12 +14744,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[130].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //131A
     public void AButtonC131()
     {
+        FireBaseAnalyticsEvents.EventsScreen_131("Screen_131");
         imgBlackout.gameObject.SetActive(true);
         animContent[129].AllAnim1();
         animContentPanel.AllAnimP();
@@ -14201,6 +14805,7 @@ public class ActiveChapter : MonoBehaviour
     //132
     public void ButtonC132()
     {
+        FireBaseAnalyticsEvents.EventsScreen_132("Screen_132");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC132", 0.5f);
@@ -14246,13 +14851,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[131].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         musicCharter.PlayMusic(gameManager.numberMusic);
     }
     //132A
     public void AButtonC132()
     {
+        FireBaseAnalyticsEvents.EventsScreen_132("Screen_132");
         imgBlackout.gameObject.SetActive(true);
         animContent[129].AllAnim1();
         animContentPanel.AllAnimP();
@@ -14305,6 +14914,7 @@ public class ActiveChapter : MonoBehaviour
     //133
     public void ButtonC133()
     {
+        FireBaseAnalyticsEvents.EventsScreen_133("Screen_133");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC133", 0.5f);
@@ -14348,13 +14958,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[132].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(11);
     }
     //133A
     public void AButtonC133()
     {
+        FireBaseAnalyticsEvents.EventsScreen_133("Screen_133");
         imgBlackout.gameObject.SetActive(true);
         animContent[131].AllAnim1();
         animContentPanel.AllAnimP();
@@ -14405,6 +15019,7 @@ public class ActiveChapter : MonoBehaviour
     //134
     public void ButtonC134()
     {
+        FireBaseAnalyticsEvents.EventsScreen_134("Screen_134");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC134", 0.5f);
@@ -14448,13 +15063,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[133].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(12);
     }
     //134A
     public void AButtonC134()
     {
+        FireBaseAnalyticsEvents.EventsScreen_134("Screen_134");
         imgBlackout.gameObject.SetActive(true);
         animContent[131].AllAnim1();
         animContentPanel.AllAnimP();
@@ -14505,6 +15124,7 @@ public class ActiveChapter : MonoBehaviour
     //135
     public void ButtonC135()
     {
+        FireBaseAnalyticsEvents.EventsScreen_135("Screen_135");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC135", 0.5f);
@@ -14548,13 +15168,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[134].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(11);
     }
     //135A
     public void AButtonC135()
     {
+        FireBaseAnalyticsEvents.EventsScreen_135("Screen_135");
         imgBlackout.gameObject.SetActive(true);
         animContent[131].AllAnim1();
         animContentPanel.AllAnimP();
@@ -14605,6 +15229,7 @@ public class ActiveChapter : MonoBehaviour
     //136
     public void ButtonC136()
     {
+        FireBaseAnalyticsEvents.EventsScreen_136("Screen_136");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC136", 0.5f);
@@ -14648,12 +15273,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[135].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //136A
     public void AButtonC136()
     {
+        FireBaseAnalyticsEvents.EventsScreen_136("Screen_136");
         imgBlackout.gameObject.SetActive(true);
         animContent[132].AllAnim1();
         animContent[133].AllAnim1();
@@ -14704,6 +15333,7 @@ public class ActiveChapter : MonoBehaviour
     //137
     public void ButtonC137()
     {
+        FireBaseAnalyticsEvents.EventsScreen_137("Screen_137");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC137", 0.5f);
@@ -14756,12 +15386,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[136].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //137A
     public void AButtonC137()
     {
+        FireBaseAnalyticsEvents.EventsScreen_137("Screen_137");
         imgBlackout.gameObject.SetActive(true);
         animContent[133].AllAnim1();
         animContentPanel.AllAnimP();
@@ -14821,6 +15455,7 @@ public class ActiveChapter : MonoBehaviour
     //138
     public void ButtonC138()
     {
+        FireBaseAnalyticsEvents.EventsScreen_138("Screen_138");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC138", 0.5f);
@@ -14864,12 +15499,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[137].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //138A
     public void AButtonC138()
     {
+        FireBaseAnalyticsEvents.EventsScreen_138("Screen_138");
         imgBlackout.gameObject.SetActive(true);
         animContent[136].AllAnim1();
         animContent[138].AllAnim1();
@@ -14921,6 +15560,7 @@ public class ActiveChapter : MonoBehaviour
     //139
     public void ButtonC139()
     {
+        FireBaseAnalyticsEvents.EventsScreen_139("Screen_139");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC139", 0.5f);
@@ -14973,12 +15613,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[138].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //139A
     public void AButtonC139()
     {
+        FireBaseAnalyticsEvents.EventsScreen_139("Screen_139");
         imgBlackout.gameObject.SetActive(true);
         animContent[132].AllAnim1();
         animContentPanel.AllAnimP();
@@ -15038,6 +15682,7 @@ public class ActiveChapter : MonoBehaviour
     //140
     public void ButtonC140()
     {
+        FireBaseAnalyticsEvents.EventsScreen_140("Screen_140");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC140", 0.5f);
@@ -15081,13 +15726,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[139].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(11);
     }
     //140A
     public void AButtonC140()
     {
+        FireBaseAnalyticsEvents.EventsScreen_140("Screen_140");
         imgBlackout.gameObject.SetActive(true);
         animContent[136].AllAnim1();
         animContentPanel.AllAnimP();
@@ -15138,6 +15787,7 @@ public class ActiveChapter : MonoBehaviour
     //141
     public void ButtonC141()
     {
+        FireBaseAnalyticsEvents.EventsScreen_141("Screen_141");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC141", 0.5f);
@@ -15181,12 +15831,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[140].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //141A
     public void AButtonC141()
     {
+        FireBaseAnalyticsEvents.EventsScreen_141("Screen_141");
         imgBlackout.gameObject.SetActive(true);
         animContent[136].AllAnim1();
         animContent[138].AllAnim1();
@@ -15237,6 +15891,7 @@ public class ActiveChapter : MonoBehaviour
     //142
     public void ButtonC142()
     {
+        FireBaseAnalyticsEvents.EventsScreen_142("Screen_142");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC142", 0.5f);
@@ -15254,7 +15909,6 @@ public class ActiveChapter : MonoBehaviour
     public void Charter142UI(int index)
     {
         toBeContinued.text = "Chapter 2";
-        gameManager.numberMusic = 3;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15281,13 +15935,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[141].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
-        musicCharter.PlayMusic(gameManager.numberMusic);
     }
     //142A
     public void AButtonC142()
     {
+        FireBaseAnalyticsEvents.EventsScreen_142("Screen_142");
         imgBlackout.gameObject.SetActive(true);
         animContent[138].AllAnim1();
         animContentPanel.AllAnimP();
@@ -15306,7 +15963,6 @@ public class ActiveChapter : MonoBehaviour
     private void ACharter142UI(int index)
     {
         toBeContinued.text = "Chapter 2";
-        gameManager.numberMusic = 3;
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             if (i == index)
@@ -15333,12 +15989,12 @@ public class ActiveChapter : MonoBehaviour
 
         animContent[141].AllAnim2();
         animContentPanel.AllAnimP();
-        musicCharter.PlayMusic(gameManager.numberMusic);
     }
 
     //143
     public void ButtonC143()
     {
+        FireBaseAnalyticsEvents.EventsScreen_143("Screen_143");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC143", 0.5f);
@@ -15382,12 +16038,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[142].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //143A
     public void AButtonC143()
     {
+        FireBaseAnalyticsEvents.EventsScreen_143("Screen_143");
         imgBlackout.gameObject.SetActive(true);
         animContent[136].AllAnim1();
         animContent[138].AllAnim1();
@@ -15437,6 +16097,7 @@ public class ActiveChapter : MonoBehaviour
     //144_2
     public void ButtonC144_2()
     {
+        FireBaseAnalyticsEvents.EventsScreen_144("Screen_144");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("ActiveImg3", 0.5f);
@@ -15512,6 +16173,7 @@ public class ActiveChapter : MonoBehaviour
     //144
     public void ButtonC144()
     {
+        FireBaseAnalyticsEvents.EventsScreen_144("Screen_144");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC144", 0.5f);
@@ -15556,7 +16218,10 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[143].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         musicCharter.PlayMusic(gameManager.numberMusic);
     }
@@ -15564,6 +16229,7 @@ public class ActiveChapter : MonoBehaviour
     //145
     public void ButtonC145()
     {
+        FireBaseAnalyticsEvents.EventsScreen_145("Screen_145");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC145", 0.5f);
@@ -15618,12 +16284,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[144].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //145A
     public void AButtonC145()
     {
+        FireBaseAnalyticsEvents.EventsScreen_145("Screen_145");
         imgBlackout.gameObject.SetActive(true);
         animContent[143].AllAnim1();
         animContent[145].AllAnim1();
@@ -15685,6 +16355,7 @@ public class ActiveChapter : MonoBehaviour
     //146
     public void ButtonC146()
     {
+        FireBaseAnalyticsEvents.EventsScreen_146("Screen_146");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC146", 0.5f);
@@ -15739,12 +16410,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[145].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //146A
     public void AButtonC146()
     {
+        FireBaseAnalyticsEvents.EventsScreen_146("Screen_146");
         imgBlackout.gameObject.SetActive(true);
         animContent[143].AllAnim1();
         animContent[144].AllAnim1();
@@ -15806,6 +16481,7 @@ public class ActiveChapter : MonoBehaviour
     //147
     public void ButtonC147()
     {
+        FireBaseAnalyticsEvents.EventsScreen_147("Screen_147");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC147", 0.5f);
@@ -15849,12 +16525,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[146].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //147A
     public void AButtonC147()
     {
+        FireBaseAnalyticsEvents.EventsScreen_147("Screen_147");
         imgBlackout.gameObject.SetActive(true);
         animContent[147].AllAnim1();
         animContentPanel.AllAnimP();
@@ -15904,6 +16584,7 @@ public class ActiveChapter : MonoBehaviour
     //148
     public void ButtonC148()
     {
+        FireBaseAnalyticsEvents.EventsScreen_148("Screen_148");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC148", 0.5f);
@@ -15947,12 +16628,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[147].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //148A
     public void AButtonC148()
     {
+        FireBaseAnalyticsEvents.EventsScreen_148("Screen_148");
         imgBlackout.gameObject.SetActive(true);
         animContent[144].AllAnim1();
         animContent[145].AllAnim1();
@@ -16004,6 +16689,7 @@ public class ActiveChapter : MonoBehaviour
     //149
     public void ButtonC149()
     {
+        FireBaseAnalyticsEvents.EventsScreen_149("Screen_149");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC149", 0.5f);
@@ -16047,12 +16733,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[148].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //149A
     public void AButtonC149()
     {
+        FireBaseAnalyticsEvents.EventsScreen_149("Screen_149");
         imgBlackout.gameObject.SetActive(true);
         animContent[147].AllAnim1();
         animContentPanel.AllAnimP();
@@ -16103,6 +16793,7 @@ public class ActiveChapter : MonoBehaviour
     //150
     public void ButtonC150()
     {
+        FireBaseAnalyticsEvents.EventsScreen_150("Screen_150");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC150", 0.5f);
@@ -16146,13 +16837,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[149].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(13);
     }
     //150A
     public void AButtonC150()
     {
+        FireBaseAnalyticsEvents.EventsScreen_150("Screen_150");
         imgBlackout.gameObject.SetActive(true);
         animContent[148].AllAnim1();
         animContent[151].AllAnim1();
@@ -16204,6 +16899,7 @@ public class ActiveChapter : MonoBehaviour
     //151
     public void ButtonC151()
     {
+        FireBaseAnalyticsEvents.EventsScreen_151("Screen_151");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC151", 0.5f);
@@ -16247,13 +16943,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[150].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(14);
     }
     //151A
     public void AButtonC151()
     {
+        FireBaseAnalyticsEvents.EventsScreen_151("Screen_151");
         imgBlackout.gameObject.SetActive(true);
         animContent[148].AllAnim1();
         animContent[151].AllAnim1();
@@ -16305,6 +17005,7 @@ public class ActiveChapter : MonoBehaviour
     //152
     public void ButtonC152()
     {
+        FireBaseAnalyticsEvents.EventsScreen_152("Screen_152");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC152", 0.5f);
@@ -16348,12 +17049,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[151].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //152A
     public void AButtonC152()
     {
+        FireBaseAnalyticsEvents.EventsScreen_152("Screen_152");
         imgBlackout.gameObject.SetActive(true);
         animContent[148].AllAnim1();
         animContentPanel.AllAnimP();
@@ -16403,6 +17108,7 @@ public class ActiveChapter : MonoBehaviour
     //153
     public void ButtonC153()
     {
+        FireBaseAnalyticsEvents.EventsScreen_153("Screen_153");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC153", 0.5f);
@@ -16446,12 +17152,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[152].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //153A
     public void AButtonC153()
     {
+        FireBaseAnalyticsEvents.EventsScreen_153("Screen_153");
         imgBlackout.gameObject.SetActive(true);
         animContent[149].AllAnim1();
         animContent[150].AllAnim1();
@@ -16502,6 +17212,7 @@ public class ActiveChapter : MonoBehaviour
     //154
     public void ButtonC154()
     {
+        FireBaseAnalyticsEvents.EventsScreen_154("Screen_154");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC154", 0.5f);
@@ -16545,12 +17256,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[153].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //154A
     public void AButtonC154()
     {
+        FireBaseAnalyticsEvents.EventsScreen_154("Screen_154");
         imgBlackout.gameObject.SetActive(true);
         animContent[152].AllAnim1();
         animContentPanel.AllAnimP();
@@ -16600,6 +17315,7 @@ public class ActiveChapter : MonoBehaviour
     //155
     public void ButtonC155()
     {
+        FireBaseAnalyticsEvents.EventsScreen_155("Screen_155");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC155", 0.5f);
@@ -16641,15 +17357,20 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[154].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //156
     public void ButtonC156()
     {
+        FireBaseAnalyticsEvents.EventsScreen_156("Screen_156");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC156", 0.5f);
@@ -16693,12 +17414,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[155].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //156A
     public void AButtonC156()
     {
+        FireBaseAnalyticsEvents.EventsScreen_156("Screen_156");
         imgBlackout.gameObject.SetActive(true);
         animContent[154].AllAnim1();
         animContentPanel.AllAnimP();
@@ -16748,6 +17473,7 @@ public class ActiveChapter : MonoBehaviour
     //157
     public void ButtonC157()
     {
+        FireBaseAnalyticsEvents.EventsScreen_157("Screen_157");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC157", 0.5f);
@@ -16791,12 +17517,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[156].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //157A
     public void AButtonC157()
     {
+        FireBaseAnalyticsEvents.EventsScreen_157("Screen_157");
         imgBlackout.gameObject.SetActive(true);
         animContent[155].AllAnim1();
         animContentPanel.AllAnimP();
@@ -16846,6 +17576,7 @@ public class ActiveChapter : MonoBehaviour
     //158
     public void ButtonC158()
     {
+        FireBaseAnalyticsEvents.EventsScreen_158("Screen_158");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC158", 0.5f);
@@ -16889,13 +17620,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[157].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(15);
     }
     //158A
     public void AButtonC158()
     {
+        FireBaseAnalyticsEvents.EventsScreen_158("Screen_158");
         imgBlackout.gameObject.SetActive(true);
         animContent[155].AllAnim1();
         animContent[156].AllAnim1();
@@ -16947,6 +17682,7 @@ public class ActiveChapter : MonoBehaviour
     //159
     public void ButtonC159()
     {
+        FireBaseAnalyticsEvents.EventsScreen_159("Screen_159");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC159", 0.5f);
@@ -16988,14 +17724,19 @@ public class ActiveChapter : MonoBehaviour
             }
         }
 
+
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[158].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //159A
     public void AButtonC159()
     {
+        FireBaseAnalyticsEvents.EventsScreen_159("Screen_159");
         imgBlackout.gameObject.SetActive(true);
         animContent[155].AllAnim1();
         animContent[156].AllAnim1();
@@ -17046,6 +17787,7 @@ public class ActiveChapter : MonoBehaviour
     //160
     public void ButtonC160()
     {
+        FireBaseAnalyticsEvents.EventsScreen_160("Screen_160");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC160", 0.5f);
@@ -17089,12 +17831,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[159].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //160A
     public void AButtonC160()
     {
+        FireBaseAnalyticsEvents.EventsScreen_160("Screen_160");
         imgBlackout.gameObject.SetActive(true);
         animContent[158].AllAnim1();
         animContentPanel.AllAnimP();
@@ -17144,6 +17890,7 @@ public class ActiveChapter : MonoBehaviour
     //161
     public void ButtonC161()
     {
+        FireBaseAnalyticsEvents.EventsScreen_161("Screen_161");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -17247,16 +17994,19 @@ public class ActiveChapter : MonoBehaviour
             buttonIf[57].gameObject.SetActive(false);
         }
 
-
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[160].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(16);
     }
     //161A
     public void AButtonC161()
     {
+        FireBaseAnalyticsEvents.EventsScreen_161("Screen_161");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -17373,6 +18123,7 @@ public class ActiveChapter : MonoBehaviour
     //162
     public void ButtonC162()
     {
+        FireBaseAnalyticsEvents.EventsScreen_162("Screen_162");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -17479,13 +18230,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[161].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(17);
     }
     //162A
     public void AButtonC162()
     {
+        FireBaseAnalyticsEvents.EventsScreen_162("Screen_162");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -17603,6 +18358,7 @@ public class ActiveChapter : MonoBehaviour
     //163
     public void ButtonC163()
     {
+        FireBaseAnalyticsEvents.EventsScreen_163("Screen_163");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -17656,67 +18412,71 @@ public class ActiveChapter : MonoBehaviour
 
         if (gameManager.b_push_the_chair == 0)
         {
-            buttonIf[64].gameObject.SetActive(true);
+            buttonIf[64].SetActive(true);
         }
         else
         {
-            buttonIf[64].gameObject.SetActive(false);
+            buttonIf[64].SetActive(false);
         }
 
         if (gameManager.b_move_the_luggage == 0)
         {
-            buttonIf[65].gameObject.SetActive(true);
+            buttonIf[65].SetActive(true);
         }
         else
         {
-            buttonIf[65].gameObject.SetActive(false);
+            buttonIf[65].SetActive(false);
         }
 
         if (gameManager.b_pick_up_the_bent_metal == 0)
         {
-            buttonIf[66].gameObject.SetActive(true);
+            buttonIf[66].SetActive(true);
         }
         else
         {
-            buttonIf[66].gameObject.SetActive(false);
+            buttonIf[66].SetActive(false);
         }
 
         if (gameManager.b_tuck_in_the_loose_wires == 0)
         {
-            buttonIf[67].gameObject.SetActive(true);
+            buttonIf[67].SetActive(true);
         }
         else
         {
-            buttonIf[67].gameObject.SetActive(false);
+            buttonIf[67].SetActive(false);
         }
 
         if (gameManager.climb_over <= 2)
         {
-            buttonIf[68].gameObject.SetActive(true);
+            buttonIf[68].SetActive(true);
         }
         else
         {
-            buttonIf[68].gameObject.SetActive(false);
+            buttonIf[68].SetActive(false);
         }
         if (gameManager.climb_over >= 3)
         {
-            buttonIf[69].gameObject.SetActive(true);
+            buttonIf[69].SetActive(true);
         }
         else
         {
-            buttonIf[69].gameObject.SetActive(false);
+            buttonIf[69].SetActive(false);
         }
 
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[162].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(21);
     }
     //163A
     public void AButtonC163()
     {
+        FireBaseAnalyticsEvents.EventsScreen_163("Screen_163");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -17834,6 +18594,7 @@ public class ActiveChapter : MonoBehaviour
     //164
     public void ButtonC164()
     {
+        FireBaseAnalyticsEvents.EventsScreen_164("Screen_164");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -17937,16 +18698,19 @@ public class ActiveChapter : MonoBehaviour
             buttonIf[75].gameObject.SetActive(false);
         }
 
-
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[163].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(18);
     }
     //164A
     public void AButtonC164()
     {
+        FireBaseAnalyticsEvents.EventsScreen_164("Screen_164");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -18063,6 +18827,7 @@ public class ActiveChapter : MonoBehaviour
     //165
     public void ButtonC165()
     {
+        FireBaseAnalyticsEvents.EventsScreen_165("Screen_165");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -18168,7 +18933,10 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[164].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
 
         sound.PlaySound(22);
@@ -18176,6 +18944,7 @@ public class ActiveChapter : MonoBehaviour
     //165A
     public void AButtonC165()
     {
+        FireBaseAnalyticsEvents.EventsScreen_165("Screen_165");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -18292,6 +19061,7 @@ public class ActiveChapter : MonoBehaviour
     //166
     public void ButtonC166()
     {
+        FireBaseAnalyticsEvents.EventsScreen_166("Screen_166");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -18342,12 +19112,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[165].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //166A
     public void AButtonC166()
     {
+        FireBaseAnalyticsEvents.EventsScreen_166("Screen_166");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -18408,6 +19182,7 @@ public class ActiveChapter : MonoBehaviour
     //167
     public void ButtonC167()
     {
+        FireBaseAnalyticsEvents.EventsScreen_167("Screen_167");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -18458,12 +19233,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[166].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //167A
     public void AButtonC167()
     {
+        FireBaseAnalyticsEvents.EventsScreen_167("Screen_167");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -18524,6 +19303,7 @@ public class ActiveChapter : MonoBehaviour
     //168
     public void ButtonC168()
     {
+        FireBaseAnalyticsEvents.EventsScreen_168("Screen_168");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -18590,15 +19370,18 @@ public class ActiveChapter : MonoBehaviour
             buttonIf[83].gameObject.SetActive(false);
         }
 
-
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[167].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //168A
     public void AButtonC168()
     {
+        FireBaseAnalyticsEvents.EventsScreen_168("Screen_168");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -18774,6 +19557,7 @@ public class ActiveChapter : MonoBehaviour
     //171
     public void ButtonC171()
     {
+        FireBaseAnalyticsEvents.EventsScreen_171("Screen_171");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -18824,13 +19608,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[170].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //172
     public void ButtonC172()
     {
+        FireBaseAnalyticsEvents.EventsScreen_172("Screen_172");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -18881,7 +19669,10 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[171].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(19);
     }
@@ -18889,6 +19680,7 @@ public class ActiveChapter : MonoBehaviour
     //173
     public void ButtonC173()
     {
+        FireBaseAnalyticsEvents.EventsScreen_173("Screen_173");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -18940,13 +19732,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[172].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //174
     public void ButtonC174()
     {
+        FireBaseAnalyticsEvents.EventsScreen_174("Screen_174");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -18998,12 +19794,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[173].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //174A
     public void AButtonC174()
     {
+        FireBaseAnalyticsEvents.EventsScreen_174("Screen_174");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -19061,6 +19861,7 @@ public class ActiveChapter : MonoBehaviour
     //175
     public void ButtonC175()
     {
+        FireBaseAnalyticsEvents.EventsScreen_175("Screen_175");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -19111,12 +19912,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[174].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //175A
     public void AButtonC175()
     {
+        FireBaseAnalyticsEvents.EventsScreen_175("Screen_175");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -19173,6 +19978,7 @@ public class ActiveChapter : MonoBehaviour
     //176
     public void ButtonC176()
     {
+        FireBaseAnalyticsEvents.EventsScreen_176("Screen_176");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -19223,13 +20029,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[175].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
 
     //177
     public void ButtonC177()
     {
+        FireBaseAnalyticsEvents.EventsScreen_177("Screen_177");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -19280,12 +20090,16 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[176].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
     }
     //177A
     public void AButtonC177()
     {
+        FireBaseAnalyticsEvents.EventsScreen_177("Screen_177");
         if (gameManager.b_the_end == 18)
         {
             ButtonC180();
@@ -19343,6 +20157,7 @@ public class ActiveChapter : MonoBehaviour
     //178
     public void ButtonC178()
     {
+        FireBaseAnalyticsEvents.EventsScreen_178("Screen_178");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC178", 0.5f);
@@ -19386,7 +20201,10 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[177].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(19);
     }
@@ -19394,6 +20212,7 @@ public class ActiveChapter : MonoBehaviour
     //179
     public void ButtonC179()
     {
+        FireBaseAnalyticsEvents.EventsScreen_179("Screen_179");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC179", 0.5f);
@@ -19437,7 +20256,10 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[178].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(20);
     }
@@ -19445,6 +20267,7 @@ public class ActiveChapter : MonoBehaviour
     //180 LOGIC
     public void ButtonC180()
     {
+        FireBaseAnalyticsEvents.EventsScreen_180("Screen_180");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC180", 0.5f);
@@ -19488,7 +20311,10 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[179].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         sound.PlaySound(20);
     }
@@ -19496,6 +20322,7 @@ public class ActiveChapter : MonoBehaviour
     //181
     public void ButtonC181()
     {
+        FireBaseAnalyticsEvents.EventsScreen_181("Screen_181");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
         Invoke("InvokerC181", 0.5f);
@@ -19541,13 +20368,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[180].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         musicCharter.PlayMusic(gameManager.numberMusic);
     }
     //181A
     public void AButtonC181()
     {
+        FireBaseAnalyticsEvents.EventsScreen_181("Screen_181");
         imgBlackout.gameObject.SetActive(true);
         animContent[172].AllAnim1();
         animContent[177].AllAnim1();
@@ -19601,7 +20432,6 @@ public class ActiveChapter : MonoBehaviour
     //182
     public void ButtonC182()
     {
-
         FireBaseAnalyticsEvents.EventsWinGame("WinGame");
         imgBlackout.gameObject.SetActive(true);
         anim.Play("BlackoutDarkAnimation");
@@ -19647,78 +20477,17 @@ public class ActiveChapter : MonoBehaviour
 
         for (int i = 0; i < animContent.Length; i++)
         {
-            animContent[181].AllAnim();
+            if (i == index)
+            {
+                animContent[i].AllAnim();
+            }
         }
         animStar.StarAnim();
         musicCharter.PlayMusic(gameManager.numberMusic);
-    }
-
-    //Лагерь
-    public void CampCharter13UI(int index)
-    {
-        sound.StopSound();
-        for (int i = 0; i < gameManager.charter.Length; i++)
-        {
-            gameManager.charter[i] = 0;
-        }
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-
-        for (int i = 0; i < charter.Length; i++)
-        {
-            if (i == index)
-            {
-                charter[i].SetActive(true);
-            }
-            else
-            {
-                charter[i].SetActive(false);
-            }
-        }
-
-        panel.gameObject.SetActive(false);
-        saveAndLoad.continueGame = 0;
-        PlayerPrefs.SetInt("continueGame", saveAndLoad.continueGame);
-        PlayerPrefs.Save();
-        musicCharter.StopMusic();
-        gameManager.ResetPlayer();
-        activeMenu.BackMenu();
-    }
-
+    }  
     //Кнопка МЕНЮ на панели
     public void MenuCharterPanel(int index)
     {
-
-        //sound.StopSound();
-
         for (int i = 0; i < gameManager.charter.Length; i++)
         {
             gameManager.charter[i] = 0;
@@ -19726,38 +20495,6 @@ public class ActiveChapter : MonoBehaviour
 
         toBeContinued.text = "Chapter 1";
 
-
-        //gameManager.charter1UI = false;
-        //gameManager.charter2UI = false;
-        //gameManager.charter3UI = false;
-        //gameManager.charter4UI = false;
-        //gameManager.charter5UI = false;
-        //gameManager.charter6UI = false;
-        //gameManager.charter7UI = false;
-        //gameManager.charter8UI = false;
-        //gameManager.charter9UI = false;
-        //gameManager.charter10UI = false;
-        //gameManager.charter11UI = false;
-        //gameManager.charter12UI = false;
-        //gameManager.charter13UI = false;
-        //gameManager.charter14UI = false;
-        //gameManager.charter15UI = false;
-        //gameManager.charter16UI = false;
-        //gameManager.charter17UI = false;
-        //gameManager.charter18UI = false;
-        //gameManager.charter19UI = false;
-        //gameManager.charter20UI = false;
-        //gameManager.charter21UI = false;
-        //gameManager.charter22UI = false;
-        //gameManager.charter23UI = false;
-        //gameManager.charter24UI = false;
-        //gameManager.charter25UI = false;
-        //gameManager.charter26UI = false;
-        //gameManager.charter27UI = false;
-        //gameManager.charter28UI = false;
-        //gameManager.charter29UI = false;
-        //gameManager.charter30UI = false;
-
         for (int i = 0; i < charter.Length; i++)
         {
             if (i == index)
@@ -19773,7 +20510,6 @@ public class ActiveChapter : MonoBehaviour
         musicCharter.StopMusic();
         activeMenu.BackMenu();
     }
-
     //Оценить
     public void RateUs()
     {

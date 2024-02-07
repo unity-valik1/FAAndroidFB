@@ -9,8 +9,6 @@ public class MusicSound : MonoBehaviour
     [SerializeField] private MusicMenu musicMenu;
     [SerializeField] private MusicCharter musicCharter;
     [SerializeField] private Sound sound;
-    //[SerializeField] private MusicCamp musicCamp;
-    //[SerializeField] private MusicForest musicForest;
 
     [Header("Текст ON/OFF")]
     [Tooltip("Текст музыки")] public TMP_Text musicText;

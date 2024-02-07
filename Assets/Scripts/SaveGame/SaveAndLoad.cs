@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
 
 public class SaveAndLoad : MonoBehaviour
@@ -495,18 +494,10 @@ public class SaveAndLoad : MonoBehaviour
             DateTime now = DateTime.Now;
             display.text = now.ToString("dd.MM.yyyy HH:mm");
             displayLoad.text = display.text;
-            //hour = System.DateTime.Now.Hour;
-            //minutes = System.DateTime.Now.Minute;
-            //day = System.DateTime.Now.Day;
-            //month = System.DateTime.Now.Month;
-            //year = System.DateTime.Now.Year;
-            //display.text = day + "." + month + "." + year + " " + hour + ":" + minutes;
-            //displayLoad.text = display.text;
             if (PlayerPrefs.HasKey("nameSave"))
             {
                 nameLocation1.text = PlayerPrefs.GetString("nameSave");
             }
-            //nameLocation1.text = saveName.nameSave;
             nameLocation1Load.text = nameLocation1.text;
             save1Text.text = "";
             load1Text.text = save1Text.text;
@@ -559,18 +550,10 @@ public class SaveAndLoad : MonoBehaviour
             DateTime now = DateTime.Now;
             display2.text = now.ToString("dd.MM.yyyy HH:mm");
             display2Load.text = display2.text;
-            //hour = System.DateTime.Now.Hour;
-            //minutes = System.DateTime.Now.Minute;
-            //day = System.DateTime.Now.Day;
-            //month = System.DateTime.Now.Month;
-            //year = System.DateTime.Now.Year;
-            //display2.text = day + "." + month + "." + year + " " + hour + ":" + minutes;
-            //display2Load.text = display2.text;
             if (PlayerPrefs.HasKey("nameSave"))
             {
                 nameLocation2.text = PlayerPrefs.GetString("nameSave");
             }
-            //nameLocation2.text = saveName.nameSave;
             nameLocation2Load.text = nameLocation2.text;
             save2Text.text = "";
             load2Text.text = save2Text.text;
@@ -623,18 +606,10 @@ public class SaveAndLoad : MonoBehaviour
             DateTime now = DateTime.Now;
             display3.text = now.ToString("dd.MM.yyyy HH:mm");
             display3Load.text = display3.text;
-            //hour = System.DateTime.Now.Hour;
-            //minutes = System.DateTime.Now.Minute;
-            //day = System.DateTime.Now.Day;
-            //month = System.DateTime.Now.Month;
-            //year = System.DateTime.Now.Year;
-            //display3.text = day + "." + month + "." + year + " " + hour + ":" + minutes;
-            //display3Load.text = display3.text;
             if (PlayerPrefs.HasKey("nameSave"))
             {
                 nameLocation3.text = PlayerPrefs.GetString("nameSave");
             }
-            //nameLocation3.text = saveName.nameSave;
             nameLocation3Load.text = nameLocation3.text;
             save3Text.text = "";
             load3Text.text = save3Text.text;
@@ -687,18 +662,10 @@ public class SaveAndLoad : MonoBehaviour
             DateTime now = DateTime.Now;
             display4.text = now.ToString("dd.MM.yyyy HH:mm");
             display4Load.text = display4.text;
-            //hour = System.DateTime.Now.Hour;
-            //minutes = System.DateTime.Now.Minute;
-            //day = System.DateTime.Now.Day;
-            //month = System.DateTime.Now.Month;
-            //year = System.DateTime.Now.Year;
-            //display4.text = day + "." + month + "." + year + " " + hour + ":" + minutes;
-            //display4Load.text = display4.text;
             if (PlayerPrefs.HasKey("nameSave"))
             {
                 nameLocation4.text = PlayerPrefs.GetString("nameSave");
             }
-            //nameLocation4.text = saveName.nameSave;
             nameLocation4Load.text = nameLocation4.text;
             save4Text.text = "";
             load4Text.text = save4Text.text;
@@ -751,18 +718,10 @@ public class SaveAndLoad : MonoBehaviour
             DateTime now = DateTime.Now;
             display5.text = now.ToString("dd.MM.yyyy HH:mm");
             display5Load.text = display5.text;
-            //hour = System.DateTime.Now.Hour;
-            //minutes = System.DateTime.Now.Minute;
-            //day = System.DateTime.Now.Day;
-            //month = System.DateTime.Now.Month;
-            //year = System.DateTime.Now.Year;
-            //display5.text = day + "." + month + "." + year + " " + hour + ":" + minutes;
-            //display5Load.text = display5.text;
             if (PlayerPrefs.HasKey("nameSave"))
             {
                 nameLocation5.text = PlayerPrefs.GetString("nameSave");
             }
-            //nameLocation5.text = saveName.nameSave;
             nameLocation5Load.text = nameLocation5.text;
             save5Text.text = "";
             load5Text.text = save5Text.text;
@@ -818,7 +777,6 @@ public class SaveAndLoad : MonoBehaviour
         {
             nameLocation1.text = PlayerPrefs.GetString("nameSave");
         }
-        //nameLocation1.text = saveName.nameSave;
         nameLocation1Load.text = nameLocation1.text;
         save1Text.text = "";
         load1Text.text = save1Text.text;
@@ -859,18 +817,10 @@ public class SaveAndLoad : MonoBehaviour
         DateTime now = DateTime.Now;
         display2.text = now.ToString("dd.MM.yyyy HH:mm");
         display2Load.text = display2.text;
-        //hour = System.DateTime.Now.Hour;
-        //minutes = System.DateTime.Now.Minute;
-        //day = System.DateTime.Now.Day;
-        //month = System.DateTime.Now.Month;
-        //year = System.DateTime.Now.Year;
-        //display2.text = day + "." + month + "." + year + " " + hour + ":" + minutes;
-        //display2Load.text = display2.text;
         if (PlayerPrefs.HasKey("nameSave"))
         {
             nameLocation2.text = PlayerPrefs.GetString("nameSave");
         }
-        //nameLocation2.text = saveName.nameSave;
         nameLocation2Load.text = nameLocation2.text;
         save2Text.text = "";
         load2Text.text = save2Text.text;
@@ -911,18 +861,10 @@ public class SaveAndLoad : MonoBehaviour
         DateTime now = DateTime.Now;
         display3.text = now.ToString("dd.MM.yyyy HH:mm");
         display3Load.text = display3.text;
-        //hour = System.DateTime.Now.Hour;
-        //minutes = System.DateTime.Now.Minute;
-        //day = System.DateTime.Now.Day;
-        //month = System.DateTime.Now.Month;
-        //year = System.DateTime.Now.Year;
-        //display3.text = day + "." + month + "." + year + " " + hour + ":" + minutes;
-        //display3Load.text = display3.text;
         if (PlayerPrefs.HasKey("nameSave"))
         {
             nameLocation3.text = PlayerPrefs.GetString("nameSave");
         }
-        //nameLocation3.text = saveName.nameSave;
         nameLocation3Load.text = nameLocation3.text;
         save3Text.text = "";
         load3Text.text = save3Text.text;
@@ -963,18 +905,10 @@ public class SaveAndLoad : MonoBehaviour
         DateTime now = DateTime.Now;
         display4.text = now.ToString("dd.MM.yyyy HH:mm");
         display4Load.text = display4.text;
-        //hour = System.DateTime.Now.Hour;
-        //minutes = System.DateTime.Now.Minute;
-        //day = System.DateTime.Now.Day;
-        //month = System.DateTime.Now.Month;
-        //year = System.DateTime.Now.Year;
-        //display4.text = day + "." + month + "." + year + " " + hour + ":" + minutes;
-        //display4Load.text = display4.text;
         if (PlayerPrefs.HasKey("nameSave"))
         {
             nameLocation4.text = PlayerPrefs.GetString("nameSave");
         }
-        //nameLocation4.text = saveName.nameSave;
         nameLocation4Load.text = nameLocation4.text;
         save4Text.text = "";
         load4Text.text = save4Text.text;
@@ -1015,18 +949,10 @@ public class SaveAndLoad : MonoBehaviour
         DateTime now = DateTime.Now;
         display5.text = now.ToString("dd.MM.yyyy HH:mm");
         display5Load.text = display5.text;
-        //hour = System.DateTime.Now.Hour;
-        //minutes = System.DateTime.Now.Minute;
-        //day = System.DateTime.Now.Day;
-        //month = System.DateTime.Now.Month;
-        //year = System.DateTime.Now.Year;
-        //display5.text = day + "." + month + "." + year + " " + hour + ":" + minutes;
-        //display5Load.text = display5.text;
         if (PlayerPrefs.HasKey("nameSave"))
         {
             nameLocation5.text = PlayerPrefs.GetString("nameSave");
         }
-        //nameLocation5.text = saveName.nameSave;
         nameLocation5Load.text = nameLocation5.text;
         save5Text.text = "";
         load5Text.text = save5Text.text;

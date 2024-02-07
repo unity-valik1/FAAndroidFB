@@ -17,7 +17,7 @@ public class SaveSystem
         formatter.Serialize(stream, data);
         stream.Close();
 
-        Debug.Log("—хранено");
+        Debug.Log("path");
     }
 
     public static PlayerData LoadPlayer()
@@ -310,7 +310,7 @@ public class SaveSystem
         formatter.Serialize(stream, data);
         stream.Close();
 
-        Debug.Log("—хранено6");
+        Debug.Log(path);
     }
 
     public static PlayerIAP LoadPlayer6()

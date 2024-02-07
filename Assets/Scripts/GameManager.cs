@@ -9,126 +9,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ActiveChapter activeChapter;
     [SerializeField] private MusicMenu _musicMenu;
     [SerializeField] private MusicCharter _musicCharter;
-    //[SerializeField] private ActiveCamp activeCamp;
-    //[SerializeField] private MusicCamp _musicCamp;
-    //[SerializeField] private MusicForest _musicForest;
-
-    [Header("Статистика игрока")]
-    [Tooltip("Время дня")] public int time = 0;
-    [Tooltip("Здоровье")] public int health = 100;
-    [Tooltip("Энергия")] public int energy = 70;
-    [Tooltip("Макс. энергия")] public int maxEnergy = 0;
-    [Tooltip("Голод")] public int hunger = 200;
-    [Tooltip("Дыхание")] public int breath = 0;
-
-    [Header("Лагерь")]
-    [Header("Кровать")]
-    [Tooltip("Покрывало")] public bool coverlet = false;
-    [Tooltip("Навес")] public bool canopy = false;
-    [Tooltip("Обустроить спальное место")] public bool arrangeBedroom = false;
-    [Tooltip("Улучшить до хижины")] public bool upgradeToHut = false;
-    [Tooltip("Стена")] public bool wall = false;
-
-    [Header("Костер")]
-    [Tooltip("Здоровье костра")] public int bonfire = 0;
-
-    [Header("Предметы")]
-    [Tooltip("Лупа")] public bool magnifyingGlass = false;
-    [Tooltip("Топор")] public bool axe = false;
-    [Tooltip("Бумага")] public bool paper = false;
-    [Tooltip("Дрова")] public int firewood = 0;
-    [Tooltip("Бутылка")] public int bottle = 0;
-    [Tooltip("Аптечка")] public int medicines = 0;
-    [Tooltip("Деньги")] public int money = 0;
-
-    [Header("Оружие")]
-    [Tooltip("Нет оружия")] public bool noWeapons = true;
-    [Tooltip("Нож")] public bool knife = false;
-    [Tooltip("Пистолет")] public bool gun = false;
-
-    [Header("Еда")]
-    [Tooltip("Консерва")] public int cannedFood = 0;
-    [Tooltip("Вода")] public int water = 0;
-    [Tooltip("Ягоды")] public int berries = 0;
-    [Tooltip("Сырое мясо")] public int rawMeat = 0;
-    [Tooltip("Жареное мясо")] public int grilledMeat = 0;
-
-    [Header("Локация")]
-    [Tooltip("Локация лагеря")] public bool territorycamp = true;//Локация лагеря = активно
-    [Tooltip("Предупреждение лечь спать")] public GameObject territoryCamp;
-    [Tooltip("Локация вне лагеря")] public bool territorynocamp = false;//Локация лагеря = не активно
-    [Tooltip("Предупреждение смерть вне лагеря 0 энр")] public GameObject territoryNoCamp;
-
-    [Header("Предупреждения")]
-    [Tooltip("Предупреждение о ночи")] public bool nightwarning = false;
-    [Tooltip("Предупреждение о ночи")] public GameObject nightWarning;
-    [Tooltip("Предупреждение о нападении животных ночью")] public bool randomanimals = false;
-    [Tooltip("Предупреждение о нападении животных ночью")] public GameObject randomAnimals;
-
-    [Header("ЭлементыUI Игра")]
-    [Tooltip("Кэмп")] public bool campUI = false;
-    [Tooltip("Костер1")] public bool bonfire1UI = false;
-    [Tooltip("Костер2")] public bool bonfire2UI = false;
-    [Tooltip("Дом")] public bool houseUI = false;
-    [Tooltip("Спать")] public bool eatUI = false;
-    [Tooltip("Го")] public bool goUI = false;
-    [Tooltip("Лес")] public bool forestUI = false;
-    [Tooltip("Озеро")] public bool lakeUI = false;
 
     [Header("ЭлементыUI Самолет")]
-    [Tooltip("Самолет")] public int[] charter = new int[182];
-
-    //[Header("ЭлементыUI Самолет")]
-    //[Tooltip("Самолет")] public bool charter1UI = false;//S
-    //[Tooltip("Самолет")] public bool charter2UI = false;//S
-    //[Tooltip("Самолет")] public bool charter3UI = false;//S
-    //[Tooltip("Самолет")] public bool charter4UI = false;//S
-    //[Tooltip("Самолет")] public bool charter5UI = false;//S
-    //[Tooltip("Самолет")] public bool charter6UI = false;//S
-    //[Tooltip("Самолет")] public bool charter7UI = false;//S
-    //[Tooltip("Самолет")] public bool charter8UI = false;//S
-    //[Tooltip("Самолет")] public bool charter9UI = false;//S
-    //[Tooltip("Самолет")] public bool charter10UI = false;//S
-    //[Tooltip("Самолет")] public bool charter11UI = false;//S
-    //[Tooltip("Самолет")] public bool charter12UI = false;//S
-    //[Tooltip("Самолет")] public bool charter13UI = false;//S
-    //[Tooltip("Самолет")] public bool charter14UI = false;//S
-    //[Tooltip("Самолет")] public bool charter15UI = false;//S
-    //[Tooltip("Самолет")] public bool charter16UI = false;//S
-    //[Tooltip("Самолет")] public bool charter17UI = false;//S
-    //[Tooltip("Самолет")] public bool charter18UI = false;//S
-    //[Tooltip("Самолет")] public bool charter19UI = false;//S
-    //[Tooltip("Самолет")] public bool charter20UI = false;//S
-    //[Tooltip("Самолет")] public bool charter21UI = false;//S
-    //[Tooltip("Самолет")] public bool charter22UI = false;//S
-    //[Tooltip("Самолет")] public bool charter23UI = false;//S
-    //[Tooltip("Самолет")] public bool charter24UI = false;//S
-    //[Tooltip("Самолет")] public bool charter25UI = false;//S
-    //[Tooltip("Самолет")] public bool charter26UI = false;//S
-    //[Tooltip("Самолет")] public bool charter27UI = false;//S
-    //[Tooltip("Самолет")] public bool charter28UI = false;//S
-    //[Tooltip("Самолет")] public bool charter29UI = false;//S
-    //[Tooltip("Самолет")] public bool charter30UI = false;//S
-    //[Tooltip("Самолет")] public bool charter31UI = false;//S
-    //[Tooltip("Самолет")] public bool charter32UI = false;//S
-    //[Tooltip("Самолет")] public bool charter33UI = false;//S
-    //[Tooltip("Самолет")] public bool charter34UI = false;//S
-    //[Tooltip("Самолет")] public bool charter35UI = false;//S
-    //[Tooltip("Самолет")] public bool charter36UI = false;//S
-    //[Tooltip("Самолет")] public bool charter37UI = false;//S
-    //[Tooltip("Самолет")] public bool charter38UI = false;//S
-    //[Tooltip("Самолет")] public bool charter39UI = false;//S
-    //[Tooltip("Самолет")] public bool charter40UI = false;//S
-    //[Tooltip("Самолет")] public bool charter41UI = false;//S
-    //[Tooltip("Самолет")] public bool charter42UI = false;//S
-    //[Tooltip("Самолет")] public bool charter43UI = false;//S
-    //[Tooltip("Самолет")] public bool charter44UI = false;//S
-    //[Tooltip("Самолет")] public bool charter45UI = false;//S
-    //[Tooltip("Самолет")] public bool charter46UI = false;//S
-    //[Tooltip("Самолет")] public bool charter47UI = false;//S
-    //[Tooltip("Самолет")] public bool charter48UI = false;//S
-    //[Tooltip("Самолет")] public bool charter49UI = false;//S
-    //[Tooltip("Самолет")] public bool charter50UI = false;//S
+    [Tooltip("Самолет")] public int[] charter = new int[188];
 
     [Header("Покупка")]
     [Tooltip("Сохраненки")] public int saveGo = 0;//S
@@ -244,64 +127,10 @@ public class GameManager : MonoBehaviour
         b_the_end = data.b_the_end;
         call_back = data.call_back;
         numberMusic = data.numberMusic;
-        //charter1UI = data.charter1UI;
-        //charter2UI = data.charter2UI;
-        //charter3UI = data.charter3UI;
-        //charter4UI = data.charter4UI;
-        //charter5UI = data.charter5UI;
-        //charter6UI = data.charter6UI;
-        //charter7UI = data.charter7UI;
-        //charter8UI = data.charter8UI;
-        //charter9UI = data.charter9UI;
-        //charter10UI = data.charter10UI;
-        //charter11UI = data.charter11UI;
-        //charter12UI = data.charter12UI;
-        //charter13UI = data.charter13UI;
-        //charter14UI = data.charter14UI;
-        //charter15UI = data.charter15UI;
-        //charter16UI = data.charter16UI;
-        //charter17UI = data.charter17UI;
-        //charter18UI = data.charter18UI;
-        //charter19UI = data.charter19UI;
-        //charter20UI = data.charter20UI;
-        //charter21UI = data.charter21UI;
-        //charter22UI = data.charter22UI;
-        //charter23UI = data.charter23UI;
-        //charter24UI = data.charter24UI;
-        //charter25UI = data.charter25UI;
-        //charter26UI = data.charter26UI;
-        //charter27UI = data.charter27UI;
-        //charter28UI = data.charter28UI;
-        //charter29UI = data.charter29UI;
-        //charter30UI = data.charter30UI;
-        //charter31UI = data.charter31UI;
-        //charter32UI = data.charter32UI;
-        //charter33UI = data.charter33UI;
-        //charter34UI = data.charter34UI;
-        //charter35UI = data.charter35UI;
-        //charter36UI = data.charter36UI;
-        //charter37UI = data.charter37UI;
-        //charter38UI = data.charter38UI;
-        //charter39UI = data.charter39UI;
-        //charter40UI = data.charter40UI;
-        //charter41UI = data.charter41UI;
-        //charter42UI = data.charter42UI;
-        //charter43UI = data.charter43UI;
-        //charter44UI = data.charter44UI;
-        //charter45UI = data.charter45UI;
-        //charter46UI = data.charter46UI;
-        //charter47UI = data.charter47UI;
-        //charter48UI = data.charter48UI;
-        //charter49UI = data.charter49UI;
-        //charter50UI = data.charter50UI;
 
         _musicMenu.StopMusic();
         activeChapter.CharterActiveUpdate();
         _musicCharter.PlayMusic(numberMusic);
-        //_musicCharter.PlayMusic(0);
-        //activeCamp.CampActiveUpdate();
-        //_musicCamp.CampMusicOnOff();
-        //_musicForest.ForestMusicOnOff();
     }
     public void ResetPlayer()
     {
@@ -357,64 +186,11 @@ public class GameManager : MonoBehaviour
         b_the_end = data.b_the_end;
         call_back = data.call_back;
         numberMusic = data.numberMusic;
-        //charter1UI = data.charter1UI;
-        //charter2UI = data.charter2UI;
-        //charter3UI = data.charter3UI;
-        //charter4UI = data.charter4UI;
-        //charter5UI = data.charter5UI;
-        //charter6UI = data.charter6UI;
-        //charter7UI = data.charter7UI;
-        //charter8UI = data.charter8UI;
-        //charter9UI = data.charter9UI;
-        //charter10UI = data.charter10UI;
-        //charter11UI = data.charter11UI;
-        //charter12UI = data.charter12UI;
-        //charter13UI = data.charter13UI;
-        //charter14UI = data.charter14UI;
-        //charter15UI = data.charter15UI;
-        //charter16UI = data.charter16UI;
-        //charter17UI = data.charter17UI;
-        //charter18UI = data.charter18UI;
-        //charter19UI = data.charter19UI;
-        //charter20UI = data.charter20UI;
-        //charter21UI = data.charter21UI;
-        //charter22UI = data.charter22UI;
-        //charter23UI = data.charter23UI;
-        //charter24UI = data.charter24UI;
-        //charter25UI = data.charter25UI;
-        //charter26UI = data.charter26UI;
-        //charter27UI = data.charter27UI;
-        //charter28UI = data.charter28UI;
-        //charter29UI = data.charter29UI;
-        //charter30UI = data.charter30UI;
-        //charter31UI = data.charter31UI;
-        //charter32UI = data.charter32UI;
-        //charter33UI = data.charter33UI;
-        //charter34UI = data.charter34UI;
-        //charter35UI = data.charter35UI;
-        //charter36UI = data.charter36UI;
-        //charter37UI = data.charter37UI;
-        //charter38UI = data.charter38UI;
-        //charter39UI = data.charter39UI;
-        //charter40UI = data.charter40UI;
-        //charter41UI = data.charter41UI;
-        //charter42UI = data.charter42UI;
-        //charter43UI = data.charter43UI;
-        //charter44UI = data.charter44UI;
-        //charter45UI = data.charter45UI;
-        //charter46UI = data.charter46UI;
-        //charter47UI = data.charter47UI;
-        //charter48UI = data.charter48UI;
-        //charter49UI = data.charter49UI;
-        //charter50UI = data.charter50UI;
 
         activeMenu.Load1();
         _musicMenu.StopMusic();
         activeChapter.CharterActiveUpdate();
         _musicCharter.PlayMusic(numberMusic);
-        //activeCamp.CampActiveUpdate();
-        //_musicCamp.CampMusicOnOff();
-        //_musicForest.ForestMusicOnOff();
         SavePlayer();
         FireBaseAnalyticsEvents.EventsLoadGame1("LoadGame1");
     }
@@ -471,65 +247,11 @@ public class GameManager : MonoBehaviour
         b_the_end = data.b_the_end;
         call_back = data.call_back;
         numberMusic = data.numberMusic;
-        //charter1UI = data.charter1UI;
-        //charter2UI = data.charter2UI;
-        //charter3UI = data.charter3UI;
-        //charter4UI = data.charter4UI;
-        //charter5UI = data.charter5UI;
-        //charter6UI = data.charter6UI;
-        //charter7UI = data.charter7UI;
-        //charter8UI = data.charter8UI;
-        //charter9UI = data.charter9UI;
-        //charter10UI = data.charter10UI;
-        //charter11UI = data.charter11UI;
-        //charter12UI = data.charter12UI;
-        //charter13UI = data.charter13UI;
-        //charter14UI = data.charter14UI;
-        //charter15UI = data.charter15UI;
-        //charter16UI = data.charter16UI;
-        //charter17UI = data.charter17UI;
-        //charter18UI = data.charter18UI;
-        //charter19UI = data.charter19UI;
-        //charter20UI = data.charter20UI;
-        //charter21UI = data.charter21UI;
-        //charter22UI = data.charter22UI;
-        //charter23UI = data.charter23UI;
-        //charter24UI = data.charter24UI;
-        //charter25UI = data.charter25UI;
-        //charter26UI = data.charter26UI;
-        //charter27UI = data.charter27UI;
-        //charter28UI = data.charter28UI;
-        //charter29UI = data.charter29UI;
-        //charter30UI = data.charter30UI;
-        //charter31UI = data.charter31UI;
-        //charter32UI = data.charter32UI;
-        //charter33UI = data.charter33UI;
-        //charter34UI = data.charter34UI;
-        //charter35UI = data.charter35UI;
-        //charter36UI = data.charter36UI;
-        //charter37UI = data.charter37UI;
-        //charter38UI = data.charter38UI;
-        //charter39UI = data.charter39UI;
-        //charter40UI = data.charter40UI;
-        //charter41UI = data.charter41UI;
-        //charter42UI = data.charter42UI;
-        //charter43UI = data.charter43UI;
-        //charter44UI = data.charter44UI;
-        //charter45UI = data.charter45UI;
-        //charter46UI = data.charter46UI;
-        //charter47UI = data.charter47UI;
-        //charter48UI = data.charter48UI;
-        //charter49UI = data.charter49UI;
-        //charter50UI = data.charter50UI;
 
         activeMenu.Load1();
         _musicMenu.StopMusic();
         activeChapter.CharterActiveUpdate();
         _musicCharter.PlayMusic(numberMusic);
-
-        //activeCamp.CampActiveUpdate();
-        //_musicCamp.CampMusicOnOff();
-        //_musicForest.ForestMusicOnOff();
         SavePlayer();
         FireBaseAnalyticsEvents.EventsLoadGame2("LoadGame2");
     }
@@ -586,65 +308,12 @@ public class GameManager : MonoBehaviour
         b_the_end = data.b_the_end;
         call_back = data.call_back;
         numberMusic = data.numberMusic;
-        //charter1UI = data.charter1UI;
-        //charter2UI = data.charter2UI;
-        //charter3UI = data.charter3UI;
-        //charter4UI = data.charter4UI;
-        //charter5UI = data.charter5UI;
-        //charter6UI = data.charter6UI;
-        //charter7UI = data.charter7UI;
-        //charter8UI = data.charter8UI;
-        //charter9UI = data.charter9UI;
-        //charter10UI = data.charter10UI;
-        //charter11UI = data.charter11UI;
-        //charter12UI = data.charter12UI;
-        //charter13UI = data.charter13UI;
-        //charter14UI = data.charter14UI;
-        //charter15UI = data.charter15UI;
-        //charter16UI = data.charter16UI;
-        //charter17UI = data.charter17UI;
-        //charter18UI = data.charter18UI;
-        //charter19UI = data.charter19UI;
-        //charter20UI = data.charter20UI;
-        //charter21UI = data.charter21UI;
-        //charter22UI = data.charter22UI;
-        //charter23UI = data.charter23UI;
-        //charter24UI = data.charter24UI;
-        //charter25UI = data.charter25UI;
-        //charter26UI = data.charter26UI;
-        //charter27UI = data.charter27UI;
-        //charter28UI = data.charter28UI;
-        //charter29UI = data.charter29UI;
-        //charter30UI = data.charter30UI;
-        //charter31UI = data.charter31UI;
-        //charter32UI = data.charter32UI;
-        //charter33UI = data.charter33UI;
-        //charter34UI = data.charter34UI;
-        //charter35UI = data.charter35UI;
-        //charter36UI = data.charter36UI;
-        //charter37UI = data.charter37UI;
-        //charter38UI = data.charter38UI;
-        //charter39UI = data.charter39UI;
-        //charter40UI = data.charter40UI;
-        //charter41UI = data.charter41UI;
-        //charter42UI = data.charter42UI;
-        //charter43UI = data.charter43UI;
-        //charter44UI = data.charter44UI;
-        //charter45UI = data.charter45UI;
-        //charter46UI = data.charter46UI;
-        //charter47UI = data.charter47UI;
-        //charter48UI = data.charter48UI;
-        //charter49UI = data.charter49UI;
-        //charter50UI = data.charter50UI;
 
         activeMenu.Load1();
         _musicMenu.StopMusic();
         activeChapter.CharterActiveUpdate();
         _musicCharter.PlayMusic(numberMusic);
 
-        //activeCamp.CampActiveUpdate();
-        //_musicCamp.CampMusicOnOff();
-        //_musicForest.ForestMusicOnOff();
         SavePlayer();
         FireBaseAnalyticsEvents.EventsLoadGame3("LoadGame3");
     }
@@ -701,65 +370,12 @@ public class GameManager : MonoBehaviour
         b_the_end = data.b_the_end;
         call_back = data.call_back;
         numberMusic = data.numberMusic;
-        //charter1UI = data.charter1UI;
-        //charter2UI = data.charter2UI;
-        //charter3UI = data.charter3UI;
-        //charter4UI = data.charter4UI;
-        //charter5UI = data.charter5UI;
-        //charter6UI = data.charter6UI;
-        //charter7UI = data.charter7UI;
-        //charter8UI = data.charter8UI;
-        //charter9UI = data.charter9UI;
-        //charter10UI = data.charter10UI;
-        //charter11UI = data.charter11UI;
-        //charter12UI = data.charter12UI;
-        //charter13UI = data.charter13UI;
-        //charter14UI = data.charter14UI;
-        //charter15UI = data.charter15UI;
-        //charter16UI = data.charter16UI;
-        //charter17UI = data.charter17UI;
-        //charter18UI = data.charter18UI;
-        //charter19UI = data.charter19UI;
-        //charter20UI = data.charter20UI;
-        //charter21UI = data.charter21UI;
-        //charter22UI = data.charter22UI;
-        //charter23UI = data.charter23UI;
-        //charter24UI = data.charter24UI;
-        //charter25UI = data.charter25UI;
-        //charter26UI = data.charter26UI;
-        //charter27UI = data.charter27UI;
-        //charter28UI = data.charter28UI;
-        //charter29UI = data.charter29UI;
-        //charter30UI = data.charter30UI;
-        //charter31UI = data.charter31UI;
-        //charter32UI = data.charter32UI;
-        //charter33UI = data.charter33UI;
-        //charter34UI = data.charter34UI;
-        //charter35UI = data.charter35UI;
-        //charter36UI = data.charter36UI;
-        //charter37UI = data.charter37UI;
-        //charter38UI = data.charter38UI;
-        //charter39UI = data.charter39UI;
-        //charter40UI = data.charter40UI;
-        //charter41UI = data.charter41UI;
-        //charter42UI = data.charter42UI;
-        //charter43UI = data.charter43UI;
-        //charter44UI = data.charter44UI;
-        //charter45UI = data.charter45UI;
-        //charter46UI = data.charter46UI;
-        //charter47UI = data.charter47UI;
-        //charter48UI = data.charter48UI;
-        //charter49UI = data.charter49UI;
-        //charter50UI = data.charter50UI;
 
         activeMenu.Load1();
         _musicMenu.StopMusic();
         activeChapter.CharterActiveUpdate();
         _musicCharter.PlayMusic(numberMusic);
 
-        //activeCamp.CampActiveUpdate();
-        //_musicCamp.CampMusicOnOff();
-        //_musicForest.ForestMusicOnOff();
 
         SavePlayer();
         FireBaseAnalyticsEvents.EventsLoadGame4("LoadGame4");
@@ -817,64 +433,11 @@ public class GameManager : MonoBehaviour
         b_the_end = data.b_the_end;
         call_back = data.call_back;
         numberMusic = data.numberMusic;
-        //charter1UI = data.charter1UI;
-        //charter2UI = data.charter2UI;
-        //charter3UI = data.charter3UI;
-        //charter4UI = data.charter4UI;
-        //charter5UI = data.charter5UI;
-        //charter6UI = data.charter6UI;
-        //charter7UI = data.charter7UI;
-        //charter8UI = data.charter8UI;
-        //charter9UI = data.charter9UI;
-        //charter10UI = data.charter10UI;
-        //charter11UI = data.charter11UI;
-        //charter12UI = data.charter12UI;
-        //charter13UI = data.charter13UI;
-        //charter14UI = data.charter14UI;
-        //charter15UI = data.charter15UI;
-        //charter16UI = data.charter16UI;
-        //charter17UI = data.charter17UI;
-        //charter18UI = data.charter18UI;
-        //charter19UI = data.charter19UI;
-        //charter20UI = data.charter20UI;
-        //charter21UI = data.charter21UI;
-        //charter22UI = data.charter22UI;
-        //charter23UI = data.charter23UI;
-        //charter24UI = data.charter24UI;
-        //charter25UI = data.charter25UI;
-        //charter26UI = data.charter26UI;
-        //charter27UI = data.charter27UI;
-        //charter28UI = data.charter28UI;
-        //charter29UI = data.charter29UI;
-        //charter30UI = data.charter30UI;
-        //charter31UI = data.charter31UI;
-        //charter32UI = data.charter32UI;
-        //charter33UI = data.charter33UI;
-        //charter34UI = data.charter34UI;
-        //charter35UI = data.charter35UI;
-        //charter36UI = data.charter36UI;
-        //charter37UI = data.charter37UI;
-        //charter38UI = data.charter38UI;
-        //charter39UI = data.charter39UI;
-        //charter40UI = data.charter40UI;
-        //charter41UI = data.charter41UI;
-        //charter42UI = data.charter42UI;
-        //charter43UI = data.charter43UI;
-        //charter44UI = data.charter44UI;
-        //charter45UI = data.charter45UI;
-        //charter46UI = data.charter46UI;
-        //charter47UI = data.charter47UI;
-        //charter48UI = data.charter48UI;
-        //charter49UI = data.charter49UI;
-        //charter50UI = data.charter50UI;
 
         activeMenu.Load1();
         _musicMenu.StopMusic();
         activeChapter.CharterActiveUpdate();
         _musicCharter.PlayMusic(numberMusic);
-        //activeCamp.CampActiveUpdate();
-        //_musicCamp.CampMusicOnOff();
-        //_musicForest.ForestMusicOnOff();
         SavePlayer();
         FireBaseAnalyticsEvents.EventsLoadGame5("LoadGame5");
     }

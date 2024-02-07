@@ -404,55 +404,6 @@ public class Achievements : MonoBehaviour
 
     public void BackAchievement()
     {
-        //number = 0;
-        //PlayerPrefs.SetInt("number", number);
-        //PlayerPrefs.Save();
-
-        //achievements1 = 0;
-        //achievements2 = 0;
-        //achievements3 = 0;
-        //achievements4 = 0;
-        //achievements5 = 0;
-        //achievements6 = 0;
-        //achievements7 = 0;
-        //achievements8 = 0;
-        //achievements9 = 0;
-        //achievements10 = 0;
-        //achievements11 = 0;
-        //achievements12 = 0;
-        //achievements13 = 0;
-        //achievements14 = 0;
-        //achievements15 = 0;
-        //PlayerPrefs.SetInt("achievements1", achievements1);
-        //PlayerPrefs.Save();
-        //PlayerPrefs.SetInt("achievements2", achievements2);
-        //PlayerPrefs.Save();
-        //PlayerPrefs.SetInt("achievements3", achievements3);
-        //PlayerPrefs.Save();
-        //PlayerPrefs.SetInt("achievements4", achievements4);
-        //PlayerPrefs.Save();
-        //PlayerPrefs.SetInt("achievements5", achievements5);
-        //PlayerPrefs.Save();
-        //PlayerPrefs.SetInt("achievements6", achievements6);
-        //PlayerPrefs.Save();
-        //PlayerPrefs.SetInt("achievements7", achievements7);
-        //PlayerPrefs.Save();
-        //PlayerPrefs.SetInt("achievements8", achievements8);
-        //PlayerPrefs.Save();
-        //PlayerPrefs.SetInt("achievements9", achievements9);
-        //PlayerPrefs.Save();
-        //PlayerPrefs.SetInt("achievements10", achievements10);
-        //PlayerPrefs.Save();
-        //PlayerPrefs.SetInt("achievements11", achievements11);
-        //PlayerPrefs.Save();
-        //PlayerPrefs.SetInt("achievements12", achievements12);
-        //PlayerPrefs.Save();
-        //PlayerPrefs.SetInt("achievements13", achievements13);
-        //PlayerPrefs.Save();
-        //PlayerPrefs.SetInt("achievements14", achievements14);
-        //PlayerPrefs.Save();
-        //PlayerPrefs.SetInt("achievements15", achievements15);
-        //PlayerPrefs.Save();
         anim.Play("BackAchievement");
         Invoke("BackAchievementInvok", 0.5f);
     }
@@ -807,7 +758,7 @@ public class Achievements : MonoBehaviour
             Invoke("Invoker", 1f);
             canvasAchievement.gameObject.SetActive(true);
             nameAchievement = textnameAchievement.text;
-            textnameAchievement.text = "Stroke Man";
+            textnameAchievement.text = "Strong Man";
             achievement.sprite = imgAchievement[14];
             achievements15 = 1;
             number++;
